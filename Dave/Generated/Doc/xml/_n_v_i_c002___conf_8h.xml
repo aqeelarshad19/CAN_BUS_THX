@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_n_v_i_c002___conf_8h" kind="file">
+    <compoundname>NVIC002_Conf.h</compoundname>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_n_v_i_c002___conf_8h_1a83fd906e8707e57d8f9ed0cccc642f7f" prot="public" static="no">
+        <name>NVIC002_NUM_INSTANCES</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/NVIC002_Conf.h" line="81" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/NVIC002_Conf.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_n_v_i_c002___conf_8h_1a2601d3223ec2aa2c3163c1710337c0dc" prot="public" static="no">
+        <name>DEBUG_APP</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/NVIC002_Conf.h" line="71" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/NVIC002_Conf.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_n_v_i_c002___conf_8h_1a222cc1be3c05e4cf455eaf75409848db" prot="public" static="no">
+        <name>EventHandlerCAN001_0</name>
+        <initializer>IRQ_Hdlr_77</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/NVIC002_Conf.h" line="74" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/NVIC002_Conf.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration file generated based on UI settings of NVIC002 App. </para>    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2013 Infineon Technologies AG. All rights reserved.</para><para>Infineon Technologies AG (Infineon) is supplying this software for use with Infineon&apos;s microcontrollers. This file can be freely distributed within development tools that are supporting such microcontrollers.</para><para>THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;. NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER. <verbatim>                                                                       **
+                                                                       **
+</verbatim> PLATFORM : Infineon XMC4000/XMC1000 Series ** ** COMPILER : Compiler Independent ** ** AUTHOR : App Developer ** ** MAY BE CHANGED BY USER [yes/no]: Yes ** ** MODIFICATION DATE : Oct 08, 2013 **</para><para>Version NVIC002 &lt;1.0.26&gt; </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>NVIC002<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.26<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*CODE_BLOCK_BEGIN[NVIC002_Conf.h]*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/>Initials<sp/><sp/><sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">**<sp/>SNR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="comment">/*<sp/>Revision<sp/>History<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>18<sp/><sp/>Feb<sp/>2013<sp/><sp/><sp/>v1.0.12<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/>08<sp/><sp/>Oct<sp/>2013<sp/><sp/><sp/>v1.0.20<sp/>Updated<sp/>as<sp/>per<sp/>coding<sp/>guidelines</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_NVIC002_CONF_H_</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_NVIC002_CONF_H_</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">@Defines</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_APP<sp/>false</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>User<sp/>defined<sp/>function<sp/>mapped<sp/>to<sp/>IRQ_Hdlr_77<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EventHandlerCAN001_0<sp/><sp/><sp/><sp/>IRQ_Hdlr_77<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor">#define<sp/>NVIC002_NUM_INSTANCES<sp/>1U</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>ifndef<sp/>_NVIC002_CONF_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="comment">/*CODE_BLOCK_END*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/NVIC002_Conf.h"/>
+  </compounddef>
+</doxygen>

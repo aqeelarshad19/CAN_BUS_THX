@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_29af2c1e7b7f0f3e0668ef4e343c7c03" kind="dir">
+    <compoundname>DAVESupport</compoundname>
+    <innerfile refid="_d_a_v_e3_8h">DAVE3.h</innerfile>
+    <innerfile refid="_m_u_l_t_i_p_l_e_x_e_r_8h">MULTIPLEXER.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/"/>
+  </compounddef>
+</doxygen>

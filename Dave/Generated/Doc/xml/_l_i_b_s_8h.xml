@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_l_i_b_s_8h" kind="file">
+    <compoundname>LIBS.h</compoundname>
+    <includes refid="_c_c_u8_p_w_m_l_i_b_8h" local="yes">CCU8PWMLIB.h</includes>
+    <includes refid="_m_o_t_o_r_l_i_b_8h" local="yes">MOTORLIB.h</includes>
+    <includedby refid="_d_a_v_e3_8h" local="yes">DAVE3.h</includedby>
+    <incdepgraph>
+      <node id="656">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="663">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="647">
+        <label>stdint.h</label>
+      </node>
+      <node id="660">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>stddef.h</label>
+      </node>
+      <node id="662">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="646">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="649">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="654">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="657">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="652">
+        <label>uc_id.h</label>
+      </node>
+      <node id="655">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="644">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="651">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="642">
+        <label>LIBS.h</label>
+        <link refid="LIBS.h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="669">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="677">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="683">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="686">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="679">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="671">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="682">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="676">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="670">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="681">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="678">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="677" relation="include">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="674">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>LIBS.h</label>
+        <link refid="LIBS.h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>This file contains all public data structures,enums and function prototypes for SinglePhPWM with dead time APP. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>LIBS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.28<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2012<sp/>Infineon<sp/>Technologies<sp/>AG.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Infineon<sp/>Technologies<sp/>AG<sp/>(Infineon)<sp/>is<sp/>supplying<sp/>this<sp/>software<sp/>for<sp/>use<sp/>with</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Infineon&apos;s<sp/>microcontrollers.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>can<sp/>be<sp/>freely<sp/>distributed<sp/>within<sp/>development<sp/>tools<sp/>that<sp/>are</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>supporting<sp/>such<sp/>microcontrollers.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;.<sp/><sp/>NO<sp/>WARRANTIES,<sp/>WHETHER<sp/>EXPRESS,<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>OR<sp/>STATUTORY,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>APPLY<sp/>TO<sp/>THIS<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>INFINEON<sp/>SHALL<sp/>NOT,<sp/>IN<sp/>ANY<sp/>CIRCUMSTANCES,<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>SPECIAL,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>FOR<sp/>ANY<sp/>REASON<sp/>WHATSOEVER.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>&lt;Microcontroller<sp/>name,<sp/>step&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">**<sp/>MAY<sp/>BE<sp/>CHANGED<sp/>BY<sp/>USER<sp/>[yes/Yes]:<sp/>Ys<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">**<sp/>MODIFICATION<sp/>DATE<sp/>:<sp/>July<sp/>05,<sp/>2012<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">**<sp/>Initials<sp/><sp/><sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/>KS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">/*<sp/>Revision<sp/>History</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/><sp/>1<sp/>Dec<sp/>2012<sp/><sp/><sp/>v1.0.4<sp/><sp/><sp/>taken<sp/>as<sp/>base<sp/>version</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>13<sp/>Dec<sp/>2012<sp/><sp/><sp/>v1.0.6<sp/><sp/><sp/>app<sp/>ported<sp/>to<sp/>xmc4400<sp/>and<sp/>xmc4200<sp/>devices<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/><sp/>1<sp/>Feb<sp/>2013<sp/><sp/><sp/>v1.0.8<sp/><sp/><sp/>changed<sp/>as<sp/>jet<sp/>file<sp/>to<sp/>make<sp/>it<sp/>compatible<sp/>with<sp/>xmc1xxx<sp/>devices</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>05<sp/>Jul<sp/>2013<sp/><sp/><sp/>v1.0.16<sp/><sp/>MOTORLIB.h<sp/>included</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LIBS_H_</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LIBS_H_</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_c_u8_p_w_m_l_i_b_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes for SinglePhPWM with dead...">CCU8PWMLIB.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_o_t_o_r_l_i_b_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes for motor control library...">MOTORLIB.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CCU8PWMLIB_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/LIBS.h"/>
+  </compounddef>
+</doxygen>

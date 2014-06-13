@@ -1,0 +1,2003 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_a_n001_8h" kind="file">
+    <compoundname>CAN001.h</compoundname>
+    <includes refid="_d_a_v_e3_8h" local="no">DAVE3.h</includes>
+    <includes refid="_c_a_n___types_8h" local="yes">CAN_Types.h</includes>
+    <includes refid="_c_a_n001___conf_8h" local="yes">CAN001_Conf.h</includes>
+    <includedby refid="_d_a_v_e3_8h" local="yes">DAVE3.h</includedby>
+    <incdepgraph>
+      <node id="50">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="48">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="32">
+        <label>stdint.h</label>
+      </node>
+      <node id="45">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>stddef.h</label>
+      </node>
+      <node id="47">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="42">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>uc_id.h</label>
+      </node>
+      <node id="28">
+        <label>CAN001.h</label>
+        <link refid="CAN001.h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="39">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="54">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="63">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="69">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="72">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="65">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="56">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="68">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="62">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="55">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>CAN001.h</label>
+        <link refid="CAN001.h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="64">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="60">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_c_a_n001___baud_rate_type" prot="public">CAN001_BaudRateType</innerclass>
+    <innerclass refid="struct_c_a_n001___handle_type" prot="public">CAN001_HandleType</innerclass>
+    <innerclass refid="struct_c_a_n001___message_handle_type" prot="public">CAN001_MessageHandleType</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_c_a_n001_8h_1aa57c6c45498a3c66e8d522d49a9fb772" prot="public" static="no">
+        <name>CAN001_ENABLE</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to Enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="81" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n001_8h_1a0db285b7ec3ea188584f12d3f4078e21" prot="public" static="no">
+        <name>CAN001_DISABLE</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to Disable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="83" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_c_a_n001_8h_1af9c5e73e6a44a6b66cc6cadda3e02a21" prot="public" static="no">
+        <name>EnableNodeInterrupt</name>
+        <param><defname>Handle</defname></param>
+        <param><defname>Interrupt</defname></param>
+        <initializer>(Handle.CanNodeRegs-&gt;NCR |= Interrupt)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro function to enable node interrupt</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:CAN App instance handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Interrupt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:Interrupt to be enabled(Enum of type CAN_InterruptType) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="101" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n001_8h_1aa82a63411a15d11d0aae5c6449d6a661" prot="public" static="no">
+        <name>DisableNodeInterrupt</name>
+        <param><defname>Handle</defname></param>
+        <param><defname>Interrupt</defname></param>
+        <initializer>(Handle.CanNodeRegs-&gt;NCR &amp;= ~(Interrupt))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro function to Disable node interrupt</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:CAN App instance handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Interrupt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:Interrupt to be disabled(Enum of type CAN_InterruptType) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="109" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n001_8h_1a44536097dee182603597ad75d5fd5aa0" prot="public" static="no">
+        <name>EnableMOInterrupt</name>
+        <param><defname>Handle</defname></param>
+        <param><defname>Interrupt</defname></param>
+        <param><defname>MOnr</defname></param>
+        <initializer>(((CAN_MO_TypeDef *)((uint32_t)(CAN_MO0_BASE) + \
+                          ((Handle.FirstMOMapping+(MOnr-1)) * 0x0020)))-&gt;MOFCR |= Interrupt)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro function to enable MO interrupt</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:CAN App instance handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Interrupt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:Interrupt to be enabled(Enum of type CAN_InterruptType) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MOnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Logical MO number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="120" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a475ef2c34ceab6f92690100e4f437581" compoundref="_c_a_n001_8c" startline="420" endline="434">CAN001_Init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n001_8h_1a01dc55392121e00e402349b7d9c83780" prot="public" static="no">
+        <name>DisableMOInterrupt</name>
+        <param><defname>Handle</defname></param>
+        <param><defname>Interrupt</defname></param>
+        <param><defname>MOnr</defname></param>
+        <initializer>(((CAN_MO_TypeDef *)((uint32_t)(CAN_MO0_BASE) + \
+                         ((Handle.FirstMOMapping+(MOnr-1)) * 0x0020)))-&gt;MOFCR &amp;= ~(Interrupt))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro function to enable MO interrupt</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:CAN App instance handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Interrupt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:Interrupt to be enabled(Enum of type CAN_InterruptType) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MOnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Logical MO number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="132" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="enum" id="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" prot="public" static="no">
+        <name>CAN001_NodeStatusType</name>
+        <enumvalue id="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9bad51e54ff815920a35aac7cd51ea8b" prot="public">
+          <name>CAN001_ALERT_STATUS</name>
+          <initializer>= 32U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check Alert warning bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9cd477140612350c94839d9b4ac97bc9" prot="public">
+          <name>CAN001_ERROR_WARN_STATUS</name>
+          <initializer>= 64U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check error warning status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1aff23690298b247619426653a71d5c378ad2d3d22a0c1069ffc789089912a122c0" prot="public">
+          <name>CAN001_BUS_OFF_STATUS</name>
+          <initializer>= 128U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check Bus off status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a55e99d97b77a0f98593bf9f0d7696364" prot="public">
+          <name>CAN001_LIST_LENGTH_ERROR</name>
+          <initializer>= 256U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check list length error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a5a958aec2d38088f6fdc42cba552a707" prot="public">
+          <name>CAN001_LIST_OBJECT_ERROR</name>
+          <initializer>= 512U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check list object error </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains node status information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="150" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="150" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="enum" id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7" prot="public" static="no">
+        <name>CAN001_ErrorCodesType</name>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a54845798de3d3fea7f51468df53e7891" prot="public">
+          <name>CAN001_MO_NOT_ACCEPTABLE</name>
+          <initializer>= 1U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Status returned when specified MO type(Transmit/Receive) is not acceptable</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MODULENAME</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_MO_NOT_ACCEPTABLE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message object type not allowed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a34bfc2c1afefdabb22d1b86917f22944" prot="public">
+          <name>CAN001_MO_NOT_FOUND</name>
+          <initializer>= 2U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Status returned if MO is not available on node list</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_MO_NOT_FOUND </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MO not available in Node list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a9b25b7b797d89c1cdd008db73e64ca77" prot="public">
+          <name>CAN001_MSGOBJ_DISABLED</name>
+          <initializer>= 3U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Status returned if Message object is disabled</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_MSGOBJ_DISABLED </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MO Disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7ae74cf79d8534712871f6302397affb3f" prot="public">
+          <name>CAN001_MO_BUSY</name>
+          <initializer>= 4U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This code is returned if specified MO is currently transmitting or receiving</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_MO_BUSY </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MO Busy </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" prot="public">
+          <name>CAN001_ERROR</name>
+          <initializer>= 5U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Status returned when unknown error occurred</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_ERROR </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation Failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7ae02350131a2980c5c1781a0334d9300b" prot="public">
+          <name>CAN001_INVALID_INPUT</name>
+          <initializer>= 6U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Status returned when parameter passed to API are invalid</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING6</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_INVALID_INPUT </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING6</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid input </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a0298758c6c509749ec9441e2fb9b21a4" prot="public">
+          <name>CAN001_FUNCTION_ENTRY</name>
+          <initializer>= 7U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Entered a specific function</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING7</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_FUNCTION_ENTRY </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING7</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entered Function %s </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a4a5e67ce7a6e72c9c0c862ce855f4167" prot="public">
+          <name>CAN001_FUNCTION_EXIT</name>
+          <initializer>= 8U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Exited a specific function</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN001_FUNCTION_EXIT </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exited Function %s </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains CAN Error status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="178" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="178" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="_c_a_n001_8h_1a475ef2c34ceab6f92690100e4f437581" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN001_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN001_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes All CAN nodes instances and message objects configured through UI</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>CAN001_Init()<sp/>will<sp/>be<sp/>called<sp/>from<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="410" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="420" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1aa5a37c13321cc60553c418c5828308b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN001_NodeDeInit</definition>
+        <argsstring>(const CAN001_HandleType *Handle)</argsstring>
+        <name>CAN001_NodeDeInit</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will deinitialize all the node registers and de allocate all the message objects from the node list.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aa5a37c13321cc60553c418c5828308b1" kindref="member">CAN001_NodeDeInit</ref>(&amp;CAN001_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="438" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="440" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_ConfigMsgObj</definition>
+        <argsstring>(const CAN001_HandleType *Handle, const CAN001_MessageHandleType *SwMsgObjptr, uint8_t MsgObjnr)</argsstring>
+        <name>CAN001_ConfigMsgObj</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> *</type>
+          <declname>SwMsgObjptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes logical message object for reception or transmission and configures CAN message object related parameters.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">SwMsgObjptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to structure which contains message elements </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t DAVEApp_SUCCESS: if message object is configured<linebreak/>
+ CAN001_INVALID_INPUT: If Input parameter is invalid<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of MO selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>TempMsgHandle;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>TempMsgHandle.<ref refid="struct_c_a_n001___message_handle_type_1aaf7f5b0805c58511d90bcc2aec27ec1f" kindref="member">Identifier</ref><sp/>=<sp/>0x255;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>TempMsgHandle.<ref refid="struct_c_a_n001___message_handle_type_1ac47fe7fa9902f1232f8bec52c840666c" kindref="member">DataLength</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>TempMsgHandle.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[0]<sp/>=<sp/>0x23;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>TempMsgHandle.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[1]<sp/>=<sp/>0x46;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>message<sp/>object<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" kindref="member">CAN001_ConfigMsgObj</ref>(&amp;CAN001_Handle0,&amp;TempMsgHandle,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CAN<sp/>message<sp/>configuration<sp/>successfull</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="498" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="484" bodyend="521"/>
+        <referencedby refid="_c_a_n001_8c_1a475ef2c34ceab6f92690100e4f437581" compoundref="_c_a_n001_8c" startline="420" endline="434">CAN001_Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_SendDataFrame</definition>
+        <argsstring>(const CAN001_HandleType *Handle, uint8_t MsgObjnr)</argsstring>
+        <name>CAN001_SendDataFrame</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set transmit request to transmit message object for sending data frame.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t DAVEApp_SUCCESS: if message is transmitted<linebreak/>
+ CAN001_MO_NOT_ACCEPTABLE: If MO is not a transmit message object<linebreak/>
+ CAN001_MO_BUSY: if MO is currently transmitting a mesage<linebreak/>
+ CAN001_MSGOBJ_DISABLED: If MO is Disabled<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>Data[8]<sp/>=<sp/>{0xBC,0x11,0x22,0xA5,0xEF,0xFF,0x89,0x01};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>request<sp/>for<sp/>sending<sp/>data<sp/>frame<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="553" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="530" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_SendRemoteFrame</definition>
+        <argsstring>(const CAN001_HandleType *Handle, uint8_t MsgObjnr)</argsstring>
+        <name>CAN001_SendRemoteFrame</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set transmit request to receive message object for sending remote frame.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t DAVEApp_SUCCESS: if message is transmitted<linebreak/>
+ CAN001_MO_NOT_ACCEPTABLE: If MO is not a received message object<linebreak/>
+ CAN001_MO_BUSY: if MO is currently transmitting a mesage<linebreak/>
+ CAN001_MSGOBJ_DISABLED: If MO is Disabled<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" kindref="member">CAN001_SendRemoteFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>request<sp/>for<sp/>sending<sp/>remote<sp/>frame<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="602" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="578" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_ReadMsgObj</definition>
+        <argsstring>(const CAN001_HandleType *Handle, CAN001_MessageHandleType *SwMsgObjptr, uint8_t MsgObjnr)</argsstring>
+        <name>CAN001_ReadMsgObj</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> *</type>
+          <declname>SwMsgObjptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the specified receive message object parameters to the input data structure. It will read only CAN frame parameters like identifier, identifier extension, ID mask, data length and 8 bytes of data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">SwMsgObjptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to structure in which MO parameters are written </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t DAVEApp_SUCCESS: if message is received<linebreak/>
+ CAN001_MO_NOT_ACCEPTABLE: If MO is not a receive message object<linebreak/>
+ CAN001_MO_BUSY: if MO is currently receiving a message<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>CanRecMsgObj;</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" kindref="member">CAN001_SendRemoteFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>data<sp/>frame<sp/>is<sp/>received.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(<ref refid="_c_a_n001_8h_1a33cfce269fb266684be1431b7dc70933" kindref="member">CAN001_GetMOFlagStatus</ref>(&amp;CAN001_Handle0,1,<ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" kindref="member">RECEIVE_PENDING</ref>)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>CAN<sp/>message<sp/>to<sp/>handle<sp/>CanRecMsgObj</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" kindref="member">CAN001_ReadMsgObj</ref>(&amp;CAN001_Handle0,&amp;CanRecMsgObj,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="663" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="627" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_UpdateMODataRegisters</definition>
+        <argsstring>(const CAN001_HandleType *Handle, uint8_t MsgObjnr, uint8_t DataLength, const uint8_t *DataPtr)</argsstring>
+        <name>CAN001_UpdateMODataRegisters</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>DataLength</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>DataPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates data register of transmit message object</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">DataLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message data length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">DataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message data pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t CAN001_INVALID_INPUT: if input parameter is not valid<linebreak/>
+ CAN001_MO_NOT_ACCEPTABLE: if MO is not a transmit message object<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>Data[8]<sp/>=<sp/>{0xBC,0x11,0x22,0xA5,0xEF,0xFF,0x89,0x01};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>request<sp/>for<sp/>sending<sp/>data<sp/>frame<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="718" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="724" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a33cfce269fb266684be1431b7dc70933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_GetMOFlagStatus</definition>
+        <argsstring>(const CAN001_HandleType *Handle, uint8_t MsgObjnr, CAN_MsgStatusType NewMsgStatus)</argsstring>
+        <name>CAN001_GetMOFlagStatus</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <param>
+          <type><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" kindref="member">CAN_MsgStatusType</ref></type>
+          <declname>NewMsgStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the status of the message object specified. The flag value to be returned should be passed as input parameter of Enumtype CAN_MsgStatusType.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">NewMsgStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum values for getting MO status<linebreak/>
+ RECEIVE_PENDING<linebreak/>
+ TRANSMIT_PENDING<linebreak/>
+ NEW_DATA<linebreak/>
+ MESSAGE_LOST<linebreak/>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t CAN001_SET: if Value is 1<linebreak/>
+ CAN001_RESET: if value is 0<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Message objects selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>CanRecMsgObj;</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" kindref="member">CAN001_SendRemoteFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>data<sp/>frame<sp/>is<sp/>received.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(<ref refid="_c_a_n001_8h_1a33cfce269fb266684be1431b7dc70933" kindref="member">CAN001_GetMOFlagStatus</ref>(&amp;CAN001_Handle0,1,<ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" kindref="member">RECEIVE_PENDING</ref>)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>CAN<sp/>message<sp/>to<sp/>handle<sp/>CanRecMsgObj</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" kindref="member">CAN001_ReadMsgObj</ref>(&amp;CAN001_Handle0,&amp;CanRecMsgObj,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="782" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="794" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a41cc6c91f9def74cd9db7d29e9b500b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_GetNodeFlagStatus</definition>
+        <argsstring>(const CAN001_HandleType *Handle, CAN001_NodeStatusType NewNodeStatus)</argsstring>
+        <name>CAN001_GetNodeFlagStatus</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" kindref="member">CAN001_NodeStatusType</ref></type>
+          <declname>NewNodeStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the status of the node specified. The flag value to be returned should be passed as input parameter of type CAN001_NodeStatusType.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">NewNodeStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum value for getting node status<linebreak/>
+ CAN001_ALERT_STATUS<linebreak/>
+ CAN001_ERROR_WARN_STATUS<linebreak/>
+ CAN001_BUS_OFF_STATUS<linebreak/>
+ CAN001_LIST_LENGTH_ERROR<linebreak/>
+ CAN001_LIST_OBJECT_ERROR<linebreak/>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t CAN001_SET: if Value is 1<linebreak/>
+ CAN001_RESET: if value is 0<linebreak/>
+ CAN001_INVALID_INPUT: if input value is not valid<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a41cc6c91f9def74cd9db7d29e9b500b3" kindref="member">CAN001_GetNodeFlagStatus</ref>(&amp;CAN001_Handle0,<ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378ad2d3d22a0c1069ffc789089912a122c0" kindref="member">CAN001_BUS_OFF_STATUS</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/><ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a00c42e532df2ce88528fd93eb7a2f99c" kindref="member">CAN_SET</ref>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Bus<sp/>Off<sp/>Condition.<sp/>Deinit<sp/>the<sp/>CAN<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="842" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="832" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1aea102a989fd23f0d96606b15b2bbe65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_GetMOPndRegisterBitStatus</definition>
+        <argsstring>(const CAN001_HandleType *Handle, uint8_t MsgObjnr)</argsstring>
+        <name>CAN001_GetMOPndRegisterBitStatus</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the message object&apos;s message pending register bit value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired message object number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t CAN001_SET: if Value is 1<linebreak/>
+ CAN001_RESET: if value is 0<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>CanRecMsgObj;</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" kindref="member">CAN001_SendRemoteFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>data<sp/>frame<sp/>is<sp/>received.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(<ref refid="_c_a_n001_8h_1aea102a989fd23f0d96606b15b2bbe65e" kindref="member">CAN001_GetMOPndRegisterBitStatus</ref>(&amp;CAN001_Handle0,1)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>CAN<sp/>message<sp/>to<sp/>handle<sp/>CanRecMsgObj</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" kindref="member">CAN001_ReadMsgObj</ref>(&amp;CAN001_Handle0,&amp;CanRecMsgObj,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="897" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="865" bodyend="879"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a3e8baab1eee0750a8d7310e58420bcaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_ClearMOFlagStatus</definition>
+        <argsstring>(const CAN001_HandleType *Handle, uint8_t MsgObjnr, CAN_MsgStatusType NewMsgStatus)</argsstring>
+        <name>CAN001_ClearMOFlagStatus</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <param>
+          <type><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" kindref="member">CAN_MsgStatusType</ref></type>
+          <declname>NewMsgStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the status bits of message object register MOSTATx. The input parameter can be a combination of enum type CAN_MsgStatusType</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">NewMsgStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum values for clearing MO status<linebreak/>
+ RECEIVE_PENDING<linebreak/>
+ TRANSMIT_PENDING<linebreak/>
+ NEW_DATA<linebreak/>
+ MESSAGE_LOST<linebreak/>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t DAVEApp_SUCCESS: If Successful<linebreak/>
+ CAN001_MO_NOT_FOUND: if message object not found<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>CanRecMsgObj;</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" kindref="member">CAN001_SendRemoteFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>data<sp/>frame<sp/>is<sp/>received.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(<ref refid="_c_a_n001_8h_1a33cfce269fb266684be1431b7dc70933" kindref="member">CAN001_GetMOFlagStatus</ref>(&amp;CAN001_Handle0,1,<ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" kindref="member">RECEIVE_PENDING</ref>)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a3e8baab1eee0750a8d7310e58420bcaf" kindref="member">CAN001_ClearMOFlagStatus</ref>(&amp;CAN001_Handle0,1,<ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" kindref="member">RECEIVE_PENDING</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>CAN<sp/>message<sp/>to<sp/>handle<sp/>CanRecMsgObj</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" kindref="member">CAN001_ReadMsgObj</ref>(&amp;CAN001_Handle0,&amp;CanRecMsgObj,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}<sp/></highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="960" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="888" bodyend="912"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1aaa2383b3300ca5a8ab8501db8bd1effd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN001_ClearNodeFlagStatus</definition>
+        <argsstring>(const CAN001_HandleType *Handle, CAN001_NodeStatusType NewNodeStatus)</argsstring>
+        <name>CAN001_ClearNodeFlagStatus</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" kindref="member">CAN001_NodeStatusType</ref></type>
+          <declname>NewNodeStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the status bits of Node register NSRx. The input parameter can be a combination of enum type NodeStatus</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">NewNodeStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum value for deleting status bit<linebreak/>
+ CAN001_ALERT_STATUS<linebreak/>
+ CAN001_ERROR_WARN_STATUS<linebreak/>
+ CAN001_BUS_OFF_STATUS<linebreak/>
+ CAN001_LIST_LENGTH_ERROR<linebreak/>
+ CAN001_LIST_OBJECT_ERROR<linebreak/>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a41cc6c91f9def74cd9db7d29e9b500b3" kindref="member">CAN001_GetNodeFlagStatus</ref>(&amp;CAN001_Handle0,<ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9cd477140612350c94839d9b4ac97bc9" kindref="member">CAN001_ERROR_WARN_STATUS</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/><ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a00c42e532df2ce88528fd93eb7a2f99c" kindref="member">CAN_SET</ref>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aaa2383b3300ca5a8ab8501db8bd1effd" kindref="member">CAN001_ClearNodeFlagStatus</ref>(&amp;CAN001_Handle0,<ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9cd477140612350c94839d9b4ac97bc9" kindref="member">CAN001_ERROR_WARN_STATUS</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="1016" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="920" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n001_8h_1a6daaddccea102728a1428ee9e2c59b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t CAN001_ClearMOPndRegisterBit</definition>
+        <argsstring>(const CAN001_HandleType *Handle, uint8_t MsgObjnr)</argsstring>
+        <name>CAN001_ClearMOPndRegisterBit</name>
+        <param>
+          <type>const <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MsgObjnr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears message pending register bit of specific message object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN device Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MsgObjnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired logical message object no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t DAVEApp_SUCCESS: If Successful<linebreak/>
+ CAN001_MO_NOT_FOUND: if message object not found<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>CAN001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_Handle0 contains all node related configuration. <linebreak/>
+<emphasis><bold>CAN001_MessageHandle0_1</bold></emphasis> is a global structure of type <ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref> which will be configured in <ref refid="_c_a_n001___conf_8c" kindref="compound">CAN001_Conf.c</ref> file using UI parameters. CAN001_MessageHandle0_1 contains all message object related configuration. Number of Message handles generated will depend on No of Mo selected by the user. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>CanRecMsgObj;</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initializes<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Status<sp/>=<sp/><ref refid="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" kindref="member">CAN001_SendRemoteFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>data<sp/>frame<sp/>is<sp/>received.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(<ref refid="_c_a_n001_8h_1aea102a989fd23f0d96606b15b2bbe65e" kindref="member">CAN001_GetMOPndRegisterBitStatus</ref>(&amp;CAN001_Handle0,1)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a6daaddccea102728a1428ee9e2c59b68" kindref="member">CAN001_ClearMOPndRegisterBit</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>CAN<sp/>message<sp/>to<sp/>handle<sp/>CanRecMsgObj</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" kindref="member">CAN001_ReadMsgObj</ref>(&amp;CAN001_Handle0,&amp;CanRecMsgObj,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="1068" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/CAN001/CAN001.c" bodystart="940" bodyend="958"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_c_a_n001_8h_1a656157037066ae8795a39b7ddd3e243c" prot="public" static="no">
+        <name>CAN_Handle1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro function resets the INIT &amp; CCE bit of the CAN Node0 Control Register (NCR)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">NoneThis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>macro function resets the INIT &amp; CCE bit of the CAN Node1 Control Register (NCR)</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="1182" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="1182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n001_8h_1a1f4c736647443b75568385c70961f6a0" prot="public" static="no">
+        <name>CAN_Handle1_NODE</name>
+        <param></param>
+        <initializer>{\
+              WR_REG(CAN_NODE1-&gt;NCR, CAN_NODE_NCR_CCE_Msk, CAN_NODE_NCR_CCE_Pos, 0);\
+              WR_REG(CAN_NODE1-&gt;NCR, CAN_NODE_NCR_INIT_Msk, CAN_NODE_NCR_INIT_Pos, 0);\
+              }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="1186" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="1183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CAN001 App implementation header file. </para>    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2014 Infineon Technologies AG. All rights reserved.</para><para>Infineon Technologies AG (Infineon) is supplying this software for use with Infineon&apos;s microcontrollers. This file can be freely distributed within development tools that are supporting such microcontrollers.</para><para>THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;. NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER. <verbatim>                                                                       **
+                                                                       **
+</verbatim> PLATFORM : Infineon XMC4000 Series ** ** COMPILER : Compiler Independent ** ** AUTHOR : App Developer ** ** MAY BE CHANGED BY USER [yes/no]: Yes ** ** MODIFICATION DATE : Jan 20, 2014 ** ** </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">**<sp/>Initials<sp/><sp/><sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">**<sp/>NPJ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*<sp/>Version<sp/>History<sp/>:<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="comment">*<sp/>12<sp/>Dec<sp/>2012<sp/><sp/><sp/><sp/>v1.0.2<sp/><sp/><sp/>1.<sp/>Initial<sp/>revision<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="comment">*<sp/>30<sp/>May<sp/>2013<sp/><sp/><sp/><sp/>v1.0.4<sp/><sp/><sp/>1.<sp/>Fixes<sp/>concerned<sp/>with<sp/>DisableMOInterrupt<sp/>&amp;<sp/>EnableMOInterrupt<sp/>api&apos;s</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="comment">*<sp/>21<sp/>Jun<sp/>2013<sp/><sp/><sp/><sp/>v1.0.6<sp/><sp/><sp/>1.<sp/>Added<sp/>a<sp/>sample<sp/>reference<sp/>code<sp/>for<sp/>ALERT<sp/>interrupt<sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="comment">*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="comment">*<sp/>22<sp/>Aug<sp/>2013<sp/><sp/><sp/><sp/>v1.0.8<sp/><sp/><sp/>1.<sp/>Added<sp/>macros<sp/>which<sp/>makes<sp/>CAN<sp/>nodes<sp/>exit<sp/>from<sp/>the<sp/>INIT<sp/>state<sp/>to<sp/>NORAML<sp/>state.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">*<sp/>20<sp/>Jan<sp/>2014<sp/><sp/><sp/><sp/>v1.0.10<sp/><sp/>1.<sp/>C++<sp/>support<sp/>added</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Delay<sp/>in<sp/>app<sp/>instantiation<sp/>is<sp/>resolved.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">*/</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/>#ifndef<sp/>CAN001_H_</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/>#define<sp/>CAN001_H_</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Support<sp/>for<sp/>C++<sp/>codebase<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_a_n___types_8h" kindref="compound" tooltip="This file defines common enums and macros used by different CAN Apps.">CAN_Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="81" refid="_c_a_n001_8h_1aa57c6c45498a3c66e8d522d49a9fb772" refkind="member"><highlight class="preprocessor">#define<sp/>CAN001_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1U</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="83" refid="_c_a_n001_8h_1a0db285b7ec3ea188584f12d3f4078e21" refkind="member"><highlight class="preprocessor">#define<sp/>CAN001_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0U</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="101" refid="_c_a_n001_8h_1af9c5e73e6a44a6b66cc6cadda3e02a21" refkind="member"><highlight class="preprocessor">#define<sp/>EnableNodeInterrupt(Handle,Interrupt)<sp/>(Handle.CanNodeRegs-&gt;NCR<sp/>|=<sp/>Interrupt)</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="109" refid="_c_a_n001_8h_1aa82a63411a15d11d0aae5c6449d6a661" refkind="member"><highlight class="preprocessor">#define<sp/>DisableNodeInterrupt(Handle,Interrupt)<sp/>(Handle.CanNodeRegs-&gt;NCR<sp/>&amp;=<sp/>~(Interrupt))</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="118" refid="_c_a_n001_8h_1a44536097dee182603597ad75d5fd5aa0" refkind="member"><highlight class="preprocessor">#define<sp/>EnableMOInterrupt(Handle,Interrupt,MOnr)<sp/>\</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((CAN_MO_TypeDef<sp/>*)((uint32_t)(CAN_MO0_BASE)<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((Handle.FirstMOMapping+(MOnr-1))<sp/>*<sp/>0x0020)))-&gt;MOFCR<sp/>|=<sp/>Interrupt)</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="_c_a_n001_8h_1a01dc55392121e00e402349b7d9c83780" refkind="member"><highlight class="preprocessor">#define<sp/>DisableMOInterrupt(Handle,Interrupt,MOnr)<sp/>\</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((CAN_MO_TypeDef<sp/>*)((uint32_t)(CAN_MO0_BASE)<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((Handle.FirstMOMapping+(MOnr-1))<sp/>*<sp/>0x0020)))-&gt;MOFCR<sp/>&amp;=<sp/>~(Interrupt))</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="137"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="138"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Type<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="139"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" kindref="member">CAN001_NodeStatusType</ref>{</highlight></codeline>
+<codeline lineno="154" refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9bad51e54ff815920a35aac7cd51ea8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9bad51e54ff815920a35aac7cd51ea8b" kindref="member">CAN001_ALERT_STATUS</ref><sp/>=<sp/>32U,</highlight></codeline>
+<codeline lineno="158" refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9cd477140612350c94839d9b4ac97bc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9cd477140612350c94839d9b4ac97bc9" kindref="member">CAN001_ERROR_WARN_STATUS</ref><sp/>=<sp/>64U,</highlight></codeline>
+<codeline lineno="162" refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378ad2d3d22a0c1069ffc789089912a122c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378ad2d3d22a0c1069ffc789089912a122c0" kindref="member">CAN001_BUS_OFF_STATUS</ref><sp/>=<sp/>128U,</highlight></codeline>
+<codeline lineno="166" refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a55e99d97b77a0f98593bf9f0d7696364" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a55e99d97b77a0f98593bf9f0d7696364" kindref="member">CAN001_LIST_LENGTH_ERROR</ref><sp/>=<sp/>256U,</highlight></codeline>
+<codeline lineno="170" refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a5a958aec2d38088f6fdc42cba552a707" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a5a958aec2d38088f6fdc42cba552a707" kindref="member">CAN001_LIST_OBJECT_ERROR</ref><sp/>=<sp/>512U,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" kindref="member">CAN001_NodeStatusType</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7" kindref="member">CAN001_ErrorCodesType</ref><sp/>{</highlight></codeline>
+<codeline lineno="193" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a54845798de3d3fea7f51468df53e7891" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a54845798de3d3fea7f51468df53e7891" kindref="member">CAN001_MO_NOT_ACCEPTABLE</ref><sp/>=<sp/>1U,</highlight></codeline>
+<codeline lineno="203" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a34bfc2c1afefdabb22d1b86917f22944" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a34bfc2c1afefdabb22d1b86917f22944" kindref="member">CAN001_MO_NOT_FOUND</ref><sp/>=<sp/>2U,</highlight></codeline>
+<codeline lineno="213" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a9b25b7b797d89c1cdd008db73e64ca77" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a9b25b7b797d89c1cdd008db73e64ca77" kindref="member">CAN001_MSGOBJ_DISABLED</ref><sp/>=<sp/>3U,</highlight></codeline>
+<codeline lineno="223" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7ae74cf79d8534712871f6302397affb3f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7ae74cf79d8534712871f6302397affb3f" kindref="member">CAN001_MO_BUSY</ref><sp/>=<sp/>4U,</highlight></codeline>
+<codeline lineno="233" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7af4d5d5d683acd5ba9ce8edcf2ff80147" kindref="member">CAN001_ERROR</ref><sp/>=<sp/>5U,</highlight></codeline>
+<codeline lineno="243" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7ae02350131a2980c5c1781a0334d9300b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7ae02350131a2980c5c1781a0334d9300b" kindref="member">CAN001_INVALID_INPUT</ref><sp/>=<sp/>6U,</highlight></codeline>
+<codeline lineno="253" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a0298758c6c509749ec9441e2fb9b21a4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a0298758c6c509749ec9441e2fb9b21a4" kindref="member">CAN001_FUNCTION_ENTRY</ref><sp/>=<sp/>7U,</highlight></codeline>
+<codeline lineno="263" refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a4a5e67ce7a6e72c9c0c862ce855f4167" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7a4a5e67ce7a6e72c9c0c862ce855f4167" kindref="member">CAN001_FUNCTION_EXIT</ref><sp/>=<sp/>8U</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}<ref refid="_c_a_n001_8h_1a911022e2cacd2412c2f36c9c89453ab7" kindref="member">CAN001_ErrorCodesType</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="struct_c_a_n001___message_handle_type" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref></highlight></codeline>
+<codeline lineno="270"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274" refid="struct_c_a_n001___message_handle_type_1aaf7f5b0805c58511d90bcc2aec27ec1f" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_c_a_n001___message_handle_type_1aaf7f5b0805c58511d90bcc2aec27ec1f" kindref="member">Identifier</ref>;<sp/></highlight></codeline>
+<codeline lineno="278" refid="struct_c_a_n001___message_handle_type_1ac0ddaf1b43f4fbf9b5eb0bf00129a289" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_c_a_n001___message_handle_type_1ac0ddaf1b43f4fbf9b5eb0bf00129a289" kindref="member">IDMask</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="282" refid="struct_c_a_n001___message_handle_type_1a6647ab12f9419bdad35de0288d268dde" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___message_handle_type_1a6647ab12f9419bdad35de0288d268dde" kindref="member">IDExten</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="286" refid="struct_c_a_n001___message_handle_type_1a9fac8d157984b7967d152795a67e7894" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___message_handle_type_1a9fac8d157984b7967d152795a67e7894" kindref="member">IDEMask</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="290" refid="struct_c_a_n001___message_handle_type_1ac47fe7fa9902f1232f8bec52c840666c" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___message_handle_type_1ac47fe7fa9902f1232f8bec52c840666c" kindref="member">DataLength</ref>;<sp/></highlight></codeline>
+<codeline lineno="294" refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[8];<sp/></highlight></codeline>
+<codeline lineno="298" refid="struct_c_a_n001___message_handle_type_1aeb8a55dff97e577090d197939e21c0a5" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___message_handle_type_1aeb8a55dff97e577090d197939e21c0a5" kindref="member">MsgObjEN</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="302" refid="struct_c_a_n001___message_handle_type_1acc9aa2394ba4d8f72635b9cfe6a41f5e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78" kindref="member">CAN_MsgType</ref><sp/><ref refid="struct_c_a_n001___message_handle_type_1acc9aa2394ba4d8f72635b9cfe6a41f5e" kindref="member">MsgObjType</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}<ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref>;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="struct_c_a_n001___baud_rate_type" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_c_a_n001___baud_rate_type" kindref="compound">CAN001_BaudRateType</ref></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="313" refid="struct_c_a_n001___baud_rate_type_1a6df3c8aeea0fa6402c774fd66cf2623c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___baud_rate_type_1a6df3c8aeea0fa6402c774fd66cf2623c" kindref="member">BaudRatePresc</ref>;</highlight></codeline>
+<codeline lineno="317" refid="struct_c_a_n001___baud_rate_type_1accbe463421a5ec74349123283323f615" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___baud_rate_type_1accbe463421a5ec74349123283323f615" kindref="member">SyncJumpWidth</ref>;</highlight></codeline>
+<codeline lineno="321" refid="struct_c_a_n001___baud_rate_type_1a3457fbd3975bd364601a75011db1f0f6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___baud_rate_type_1a3457fbd3975bd364601a75011db1f0f6" kindref="member">TimeSEG1</ref>;</highlight></codeline>
+<codeline lineno="325" refid="struct_c_a_n001___baud_rate_type_1ad8735fe6ad4c40a16fd452c678482fde" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___baud_rate_type_1ad8735fe6ad4c40a16fd452c678482fde" kindref="member">TimeSEG2</ref>;</highlight></codeline>
+<codeline lineno="329" refid="struct_c_a_n001___baud_rate_type_1a6c095b9155183be48054c3ee536ec95a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___baud_rate_type_1a6c095b9155183be48054c3ee536ec95a" kindref="member">DIV8</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}<ref refid="struct_c_a_n001___baud_rate_type" kindref="compound">CAN001_BaudRateType</ref>;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="struct_c_a_n001___handle_type" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref></highlight></codeline>
+<codeline lineno="336"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="340" refid="struct_c_a_n001___handle_type_1a09e538a9a51361f86cb46ad2ac031d9e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_c_a_n001___baud_rate_type" kindref="compound">CAN001_BaudRateType</ref><sp/><ref refid="struct_c_a_n001___handle_type_1a09e538a9a51361f86cb46ad2ac031d9e" kindref="member">BaudRate</ref>;</highlight></codeline>
+<codeline lineno="344" refid="struct_c_a_n001___handle_type_1a0cf8964fb7868c66bac2df22f4a43b17" refkind="member"><highlight class="normal"><sp/><sp/>CAN_NODE_TypeDef*<sp/><ref refid="struct_c_a_n001___handle_type_1a0cf8964fb7868c66bac2df22f4a43b17" kindref="member">CanNodeRegs</ref>;</highlight></codeline>
+<codeline lineno="348" refid="struct_c_a_n001___handle_type_1ac4e6a73aa11347a618d4c513163f23b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___handle_type_1ac4e6a73aa11347a618d4c513163f23b4" kindref="member">NodeID</ref>;</highlight></codeline>
+<codeline lineno="352" refid="struct_c_a_n001___handle_type_1a447f305d32ce441c6c97f78b064c949c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___handle_type_1a447f305d32ce441c6c97f78b064c949c" kindref="member">LoopBackModeEn</ref>;</highlight></codeline>
+<codeline lineno="356" refid="struct_c_a_n001___handle_type_1aaab97e2c1318507e4321bcf90fa25717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___handle_type_1aaab97e2c1318507e4321bcf90fa25717" kindref="member">FirstMOMapping</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="360" refid="struct_c_a_n001___handle_type_1af14d78cef1a0e5b8eca3c32efbd22862" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_c_a_n001___handle_type_1af14d78cef1a0e5b8eca3c32efbd22862" kindref="member">NodeMONo</ref>;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal">}<ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="369"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Constant<sp/>Declarations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="370"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="374"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extern<sp/>Variables<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="375"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="379"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FUNCTION<sp/>PROTOTYPES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="380"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="410"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n001_8h_1a475ef2c34ceab6f92690100e4f437581" kindref="member">CAN001_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n001_8h_1aa5a37c13321cc60553c418c5828308b1" kindref="member">CAN001_NodeDeInit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" kindref="member">CAN001_ConfigMsgObj</ref></highlight></codeline>
+<codeline lineno="494"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref>*<sp/>SwMsgObjptr,</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/>uint8_t<sp/>MsgObjnr</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref></highlight></codeline>
+<codeline lineno="550"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/>uint8_t<sp/>MsgObjnr</highlight></codeline>
+<codeline lineno="553"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a2b63fea4f457401ffa4899f3dacfd6cc" kindref="member">CAN001_SendRemoteFrame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/>uint8_t<sp/>MsgObjnr);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" kindref="member">CAN001_ReadMsgObj</ref></highlight></codeline>
+<codeline lineno="659"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref>*<sp/>SwMsgObjptr,<sp/></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/>uint8_t<sp/>MsgObjnr</highlight></codeline>
+<codeline lineno="663"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref></highlight></codeline>
+<codeline lineno="713"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/>uint8_t<sp/>MsgObjnr,</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/>uint8_t<sp/>DataLength,<sp/></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>DataPtr</highlight></codeline>
+<codeline lineno="718"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="777"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a33cfce269fb266684be1431b7dc70933" kindref="member">CAN001_GetMOFlagStatus</ref></highlight></codeline>
+<codeline lineno="778"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/>uint8_t<sp/>MsgObjnr,</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" kindref="member">CAN_MsgStatusType</ref><sp/>NewMsgStatus</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="838"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a41cc6c91f9def74cd9db7d29e9b500b3" kindref="member">CAN001_GetNodeFlagStatus</ref></highlight></codeline>
+<codeline lineno="839"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="841"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" kindref="member">CAN001_NodeStatusType</ref><sp/>NewNodeStatus</highlight></codeline>
+<codeline lineno="842"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"></highlight></codeline>
+<codeline lineno="844"><highlight class="normal"></highlight></codeline>
+<codeline lineno="893"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1aea102a989fd23f0d96606b15b2bbe65e" kindref="member">CAN001_GetMOPndRegisterBitStatus</ref></highlight></codeline>
+<codeline lineno="894"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="895"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="896"><highlight class="normal"><sp/><sp/>uint8_t<sp/>MsgObjnr</highlight></codeline>
+<codeline lineno="897"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="898"><highlight class="normal"></highlight></codeline>
+<codeline lineno="955"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a3e8baab1eee0750a8d7310e58420bcaf" kindref="member">CAN001_ClearMOFlagStatus</ref></highlight></codeline>
+<codeline lineno="956"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="957"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="958"><highlight class="normal"><sp/><sp/>uint8_t<sp/>MsgObjnr,<sp/></highlight></codeline>
+<codeline lineno="959"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" kindref="member">CAN_MsgStatusType</ref><sp/>NewMsgStatus</highlight></codeline>
+<codeline lineno="960"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="961"><highlight class="normal"></highlight></codeline>
+<codeline lineno="962"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1012"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n001_8h_1aaa2383b3300ca5a8ab8501db8bd1effd" kindref="member">CAN001_ClearNodeFlagStatus</ref></highlight></codeline>
+<codeline lineno="1013"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/></highlight></codeline>
+<codeline lineno="1015"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378" kindref="member">CAN001_NodeStatusType</ref><sp/>NewNodeStatus</highlight></codeline>
+<codeline lineno="1016"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1068"><highlight class="normal">status_t<sp/><ref refid="_c_a_n001_8h_1a6daaddccea102728a1428ee9e2c59b68" kindref="member">CAN001_ClearMOPndRegisterBit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_c_a_n001___handle_type" kindref="compound">CAN001_HandleType</ref>*<sp/>Handle,<sp/>uint8_t<sp/>MsgObjnr);</highlight></codeline>
+<codeline lineno="1069"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1070"><highlight class="normal"></highlight><highlight class="comment">/*&lt;%*</highlight></codeline>
+<codeline lineno="1071"><highlight class="comment"><sp/>*<sp/>Interrupt<sp/>service<sp/>routine<sp/>to<sp/>handle<sp/>Alert<sp/>Interrupt<sp/>for<sp/>corresponding<sp/>CAN<sp/>node<sp/>Id.</highlight></codeline>
+<codeline lineno="1072"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1073"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1074"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/>None</highlight></codeline>
+<codeline lineno="1075"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1076"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/>void</highlight></codeline>
+<codeline lineno="1077"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1078"><highlight class="comment"><sp/>*<sp/>&lt;b&gt;Reentrant:<sp/>NO<sp/>&lt;/b&gt;&lt;BR&gt;</highlight></codeline>
+<codeline lineno="1079"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1080"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1081"><highlight class="comment"><sp/>*<sp/>&lt;BR&gt;&lt;P<sp/>ALIGN=&quot;LEFT&quot;&gt;&lt;B&gt;Example:&lt;/B&gt;</highlight></codeline>
+<codeline lineno="1082"><highlight class="comment"><sp/>*<sp/>@code</highlight></codeline>
+<codeline lineno="1083"><highlight class="comment"><sp/>*<sp/>#include<sp/>&lt;DAVE3.h&gt;</highlight></codeline>
+<codeline lineno="1084"><highlight class="comment"><sp/>*<sp/>void<sp/>CAN_viSRN0(void);</highlight></codeline>
+<codeline lineno="1085"><highlight class="comment"><sp/>*<sp/>void<sp/>CAN_viSRN0(void)</highlight></codeline>
+<codeline lineno="1086"><highlight class="comment"><sp/>*<sp/><sp/>{</highlight></codeline>
+<codeline lineno="1087"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>BEGIN<sp/></highlight></codeline>
+<codeline lineno="1088"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1089"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>END</highlight></codeline>
+<codeline lineno="1090"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/>-----------------------------------------------------------------------<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1091"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/>Interrupts<sp/>of<sp/>CAN<sp/>node<sp/>0</highlight></codeline>
+<codeline lineno="1092"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/>-----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="1093"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>SRN0NodeHandler<sp/>=<sp/>(CAN001_Handle0.CanNodeRegs-&gt;NSR);</highlight></codeline>
+<codeline lineno="1094"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1095"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>if(SRN0NodeHandler<sp/>&amp;<sp/>(uint32_t)CAN001_ALERT_STATUS)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>if<sp/>ALERT</highlight></codeline>
+<codeline lineno="1096"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1097"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(SRN0NodeHandler<sp/>&amp;<sp/>(uint32_t)CAN001_BUS_OFF_STATUS)<sp/><sp/>//<sp/>if<sp/>BOFF</highlight></codeline>
+<codeline lineno="1098"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1099"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Indicates<sp/>when<sp/>the<sp/>CAN<sp/>controller<sp/>is<sp/>in<sp/>bus<sp/>off<sp/>state.</highlight></codeline>
+<codeline lineno="1100"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>BEGIN<sp/></highlight></codeline>
+<codeline lineno="1101"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1102"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>END<sp/></highlight></codeline>
+<codeline lineno="1103"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SRN0NodeHandler<sp/>&amp;=<sp/>(uint32_t)(~CAN001_BUS_OFF_STATUS);<sp/><sp/>//<sp/>reset<sp/>BOFF</highlight></codeline>
+<codeline lineno="1104"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1105"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(SRN0NodeHandler<sp/>&amp;<sp/>(uint32_t)CAN001_ERROR_WARN_STATUS)<sp/><sp/>//<sp/>if<sp/>EWRN</highlight></codeline>
+<codeline lineno="1106"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1107"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>One<sp/>of<sp/>the<sp/>error<sp/>counters<sp/>REC<sp/>or<sp/>TEC<sp/>reached<sp/>the<sp/>warning<sp/>limit<sp/>of<sp/>96.</highlight></codeline>
+<codeline lineno="1108"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>BEGIN<sp/></highlight></codeline>
+<codeline lineno="1109"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1110"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>END</highlight></codeline>
+<codeline lineno="1111"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SRN0NodeHandler<sp/>&amp;=<sp/>(uint32_t)(~CAN001_ERROR_WARN_STATUS);<sp/><sp/>//<sp/>reset<sp/>EWRN</highlight></codeline>
+<codeline lineno="1112"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1113"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(SRN0NodeHandler<sp/>&amp;<sp/>(uint32_t)CAN001_LIST_LENGTH_ERROR)<sp/><sp/>//<sp/>if<sp/>LLE<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1114"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1115"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>A<sp/>list<sp/>length<sp/>error<sp/>has<sp/>been<sp/>detected<sp/>during<sp/>message<sp/>acceptance<sp/>filtering.<sp/>The<sp/>number<sp/>of<sp/>elements<sp/>in<sp/>the<sp/>list</highlight></codeline>
+<codeline lineno="1116"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>that<sp/>belongs<sp/>to<sp/>this<sp/>CAN<sp/>node<sp/>differs<sp/>from<sp/>the<sp/>list<sp/>SIZE<sp/>given<sp/>in<sp/>the<sp/>list<sp/>termination<sp/>pointer</highlight></codeline>
+<codeline lineno="1117"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>BEGIN<sp/></highlight></codeline>
+<codeline lineno="1118"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1119"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>END</highlight></codeline>
+<codeline lineno="1120"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SRN0NodeHandler<sp/>&amp;=<sp/>(uint32_t)(~CAN001_LIST_LENGTH_ERROR);<sp/><sp/><sp/>//<sp/>reset<sp/>LLE</highlight></codeline>
+<codeline lineno="1121"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1122"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(SRN0NodeHandler<sp/>&amp;<sp/>(uint32_t)CAN001_LIST_OBJECT_ERROR)<sp/><sp/>//<sp/>if<sp/>LOE</highlight></codeline>
+<codeline lineno="1123"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1124"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>A<sp/>list<sp/>object<sp/>error<sp/>has<sp/>been<sp/>detected<sp/>during<sp/>message<sp/>acceptance<sp/>filtering.<sp/>A<sp/>message<sp/>object<sp/>with<sp/>wrong<sp/>LIST<sp/></highlight></codeline>
+<codeline lineno="1125"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>index<sp/>entry<sp/>in<sp/>the<sp/>Message<sp/>Object<sp/>Control<sp/>Register<sp/>has<sp/>been<sp/>detected</highlight></codeline>
+<codeline lineno="1126"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>BEGIN<sp/></highlight></codeline>
+<codeline lineno="1127"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1128"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>USER<sp/>CODE<sp/>END</highlight></codeline>
+<codeline lineno="1129"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SRN0NodeHandler<sp/>&amp;=<sp/>(uint32_t)(~CAN001_LIST_OBJECT_ERROR);<sp/><sp/>//<sp/>reset<sp/>LOE</highlight></codeline>
+<codeline lineno="1130"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="1131"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SRN0NodeHandler<sp/>&amp;=<sp/>(uint32_t)(~CAN001_ALERT_STATUS);<sp/><sp/><sp/><sp/>//<sp/>reset<sp/>ALERT</highlight></codeline>
+<codeline lineno="1132"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1133"><highlight class="comment"><sp/>*<sp/><sp/>}<sp/>//<sp/><sp/>End<sp/>of<sp/>function<sp/>CAN_viSRN0</highlight></codeline>
+<codeline lineno="1134"><highlight class="comment"><sp/>*<sp/><sp/>int<sp/>main(void)</highlight></codeline>
+<codeline lineno="1135"><highlight class="comment"><sp/>*<sp/><sp/>{</highlight></codeline>
+<codeline lineno="1136"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>//<sp/>...<sp/>Initialises<sp/>Apps<sp/>configurations<sp/>...</highlight></codeline>
+<codeline lineno="1137"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline lineno="1138"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>while(1)</highlight></codeline>
+<codeline lineno="1139"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1140"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1141"><highlight class="comment"><sp/>*<sp/><sp/>}</highlight></codeline>
+<codeline lineno="1142"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1143"><highlight class="comment"><sp/>*<sp/>@endcode&lt;BR&gt;<sp/>&lt;/p&gt;<sp/></highlight></codeline>
+<codeline lineno="1144"><highlight class="comment"><sp/>%&gt;*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="1145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1150"><highlight class="comment">/*<sp/>Include<sp/>App<sp/>config<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1151"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_a_n001___conf_8h" kindref="compound" tooltip="CAN001 App Handle declaration based on UI selection.">CAN001_Conf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1162"><highlight class="comment">/*<sp/>NODE0<sp/>initialisation<sp/>mode<sp/>exit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1163"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CAN_NODE0_ENABLE</highlight></codeline>
+<codeline lineno="1164"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Macro<sp/>to<sp/>disable<sp/>re-definitions<sp/>of<sp/>CAN_Handle0_NODE<sp/>if<sp/>both<sp/>Non-RTOS<sp/>&amp;<sp/>RTOS<sp/>CAN<sp/>app<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1165"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CAN_Handle0</highlight></codeline>
+<codeline lineno="1166"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_Handle0</highlight></codeline>
+<codeline lineno="1167"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_Handle0_NODE()<sp/><sp/>{\</highlight></codeline>
+<codeline lineno="1168"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WR_REG(CAN_NODE0-&gt;NCR,<sp/>CAN_NODE_NCR_CCE_Msk,<sp/>CAN_NODE_NCR_CCE_Pos,<sp/>0);\</highlight></codeline>
+<codeline lineno="1169"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WR_REG(CAN_NODE0-&gt;NCR,<sp/>CAN_NODE_NCR_INIT_Msk,<sp/>CAN_NODE_NCR_INIT_Pos,<sp/>0);\</highlight></codeline>
+<codeline lineno="1170"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1171"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1172"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1173"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1178"><highlight class="comment">/*<sp/>NODE1<sp/>initialisation<sp/>mode<sp/>exit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1179"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CAN_NODE1_ENABLE</highlight></codeline>
+<codeline lineno="1180"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Macro<sp/>to<sp/>disable<sp/>re-definitions<sp/>of<sp/>CAN_Handle1_NODE<sp/>if<sp/>both<sp/>Non-RTOS<sp/>&amp;<sp/>RTOS<sp/>CAN<sp/>app<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1181"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CAN_Handle1</highlight></codeline>
+<codeline lineno="1182" refid="_c_a_n001_8h_1a656157037066ae8795a39b7ddd3e243c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_Handle1</highlight></codeline>
+<codeline lineno="1183"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_Handle1_NODE()<sp/><sp/>{\</highlight></codeline>
+<codeline lineno="1184"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WR_REG(CAN_NODE1-&gt;NCR,<sp/>CAN_NODE_NCR_CCE_Msk,<sp/>CAN_NODE_NCR_CCE_Pos,<sp/>0);\</highlight></codeline>
+<codeline lineno="1185"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WR_REG(CAN_NODE1-&gt;NCR,<sp/>CAN_NODE_NCR_INIT_Msk,<sp/>CAN_NODE_NCR_INIT_Pos,<sp/>0);\</highlight></codeline>
+<codeline lineno="1186"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1187"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1188"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1189"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1194"><highlight class="comment">/*<sp/>NODE2<sp/>initialisation<sp/>mode<sp/>exit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1195"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CAN_NODE2_ENABLE</highlight></codeline>
+<codeline lineno="1196"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Macro<sp/>to<sp/>disable<sp/>re-definitions<sp/>of<sp/>CAN_Handle2_NODE<sp/>if<sp/>both<sp/>Non-RTOS<sp/>&amp;<sp/>RTOS<sp/>CAN<sp/>app<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1197"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CAN_Handle2</highlight></codeline>
+<codeline lineno="1198"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_Handle2</highlight></codeline>
+<codeline lineno="1199"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_Handle2_NODE()<sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="1200"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WR_REG(CAN_NODE2-&gt;NCR,<sp/>CAN_NODE_NCR_CCE_Msk,<sp/>CAN_NODE_NCR_CCE_Pos,<sp/>0);\</highlight></codeline>
+<codeline lineno="1201"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WR_REG(CAN_NODE2-&gt;NCR,<sp/>CAN_NODE_NCR_INIT_Msk,<sp/>CAN_NODE_NCR_INIT_Pos,<sp/>0);\</highlight></codeline>
+<codeline lineno="1202"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1203"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1204"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1205"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1209"><highlight class="comment">/*<sp/>Support<sp/>for<sp/>C++<sp/>codebase<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1210"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="1211"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+<codeline lineno="1213"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1214"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CAN001_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1215"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1216"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h"/>
+  </compounddef>
+</doxygen>

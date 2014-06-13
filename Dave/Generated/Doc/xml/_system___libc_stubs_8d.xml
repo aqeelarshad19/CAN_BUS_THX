@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_system___libc_stubs_8d" kind="file">
+    <compoundname>System_LibcStubs.d</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">Lib/System_LibcStubs.d<sp/>Lib/System_LibcStubs.o:<sp/>../Lib/System_LibcStubs.c</highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/Lib/System_LibcStubs.d"/>
+  </compounddef>
+</doxygen>

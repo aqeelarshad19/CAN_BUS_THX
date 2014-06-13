@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_debug_log___g_u_i_configurable_type" kind="struct" prot="public">
+    <compoundname>DebugLog_GUIConfigurableType</compoundname>
+    <includes refid="_d_b_g001_8h" local="no">DBG001.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a943f29749f8607a8b356d2ed861dc6dd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DebugLog_GUIConfigurableType::ChannelGroupIDMask[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ChannelGroupIDMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gid bit mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="320" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a23e19929c605d8ca45175e135e619dfe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DebugLog_GUIConfigurableType::CircularBufferSize</definition>
+        <argsstring></argsstring>
+        <name>CircularBufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>circular buffer size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="330" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a7eada02bbe278fd9c7918533dfec2582" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_debug_log___command_from_host_type" kindref="compound">DebugLog_CommandFromHostType</ref></type>
+        <definition>DebugLog_CommandFromHostType DebugLog_GUIConfigurableType::CommandFromHost</definition>
+        <argsstring></argsstring>
+        <name>CommandFromHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="344" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1ade8b10db43ddfa215260a527ed643ade" prot="public" static="no" mutable="no">
+        <type>handle_t</type>
+        <definition>handle_t DebugLog_GUIConfigurableType::PeripheralHandle</definition>
+        <argsstring></argsstring>
+        <name>PeripheralHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Physical Interface Handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="336" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a44edb8c1843444c5fd566ba54364b6a4" prot="public" static="no" mutable="no">
+        <type><ref refid="group___debug_log__publicparam_1ga113848697538ee557f442c963c84a600" kindref="member">DebugLog_PhyicalInterfaceType</ref></type>
+        <definition>DebugLog_PhyicalInterfaceType DebugLog_GUIConfigurableType::PhysicalChannel</definition>
+        <argsstring></argsstring>
+        <name>PhysicalChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>physical channel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="334" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a35c0df1aaeb23b7a70088667d2b5b3dc" prot="public" static="no" mutable="no">
+        <type><ref refid="group___debug_log__appconfigdoc_1ga9c5d392fbc326b9c4d398f132ea2b687" kindref="member">PhyInterfaceInitFuncPtr</ref></type>
+        <definition>PhyInterfaceInitFuncPtr DebugLog_GUIConfigurableType::PhysicalInterfaceInit</definition>
+        <argsstring></argsstring>
+        <name>PhysicalInterfaceInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the physical Interface Init function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="339" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a8d7c818f16ff411230405f4a03ad2e2f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___debug_log__appconfigdoc_1ga9631d5be6590ed6b77c4297b7b74f535" kindref="member">PhyInterfaceWriteFuncPtr</ref></type>
+        <definition>PhyInterfaceWriteFuncPtr DebugLog_GUIConfigurableType::PhysicalInterfaceWrite</definition>
+        <argsstring></argsstring>
+        <name>PhysicalInterfaceWrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the Physical Interface Write function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="342" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1ab8148d484f1c947bc273b9eccba0b784" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DebugLog_GUIConfigurableType::RunTimeDynamicFilterSeverity</definition>
+        <argsstring></argsstring>
+        <name>RunTimeDynamicFilterSeverity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>severity level for dynamic filter, for static filtering - macro option </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="328" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1ab2d59a7722a6ee631b1bf5a22e08239a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___debug_log__publicparam_1gacfa98ed816c6632a2b81c8697e38a174" kindref="member">DebugLog_RuntimeFilterType</ref></type>
+        <definition>DebugLog_RuntimeFilterType DebugLog_GUIConfigurableType::RunTimeFilter</definition>
+        <argsstring></argsstring>
+        <name>RunTimeFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>static/dynamic </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="322" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a69d43e95997437dc6c1e7e41c4521dd2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___debug_log__publicparam_1ga20fe5347f57b020dbe0eb15a398f3d07" kindref="member">DebugLog_StaticFilterOptionsType</ref></type>
+        <definition>DebugLog_StaticFilterOptionsType DebugLog_GUIConfigurableType::RunTimeStaticFilter</definition>
+        <argsstring></argsstring>
+        <name>RunTimeStaticFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>empty/true/macro </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="324" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a79adf2d2ecedc258b29b6f6c25951cd3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DebugLog_GUIConfigurableType::SeverityToDump</definition>
+        <argsstring></argsstring>
+        <name>SeverityToDump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>debug message of this severity initiates the dump </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="332" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___g_u_i_configurable_type_1a1df64b2ede8dc97954566027e2c830f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DebugLog_GUIConfigurableType::StaticFilterMacroGroupID[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>StaticFilterMacroGroupID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gid for dynamic filtering </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="326" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GUI configurable elements for every channel. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>DebugLog_GUIConfigurableType</label>
+        <link refid="struct_debug_log___g_u_i_configurable_type"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>CommandFromHost</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>DebugLog_CommandFromHostType</label>
+        <link refid="struct_debug_log___command_from_host_type"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="318" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="317" bodyend="346"/>
+    <listofallmembers>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a943f29749f8607a8b356d2ed861dc6dd" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>ChannelGroupIDMask</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a23e19929c605d8ca45175e135e619dfe" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>CircularBufferSize</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a7eada02bbe278fd9c7918533dfec2582" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>CommandFromHost</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1ade8b10db43ddfa215260a527ed643ade" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>PeripheralHandle</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a44edb8c1843444c5fd566ba54364b6a4" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>PhysicalChannel</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a35c0df1aaeb23b7a70088667d2b5b3dc" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>PhysicalInterfaceInit</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a8d7c818f16ff411230405f4a03ad2e2f" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>PhysicalInterfaceWrite</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1ab8148d484f1c947bc273b9eccba0b784" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>RunTimeDynamicFilterSeverity</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1ab2d59a7722a6ee631b1bf5a22e08239a" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>RunTimeFilter</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a69d43e95997437dc6c1e7e41c4521dd2" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>RunTimeStaticFilter</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a79adf2d2ecedc258b29b6f6c25951cd3" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>SeverityToDump</name></member>
+      <member refid="struct_debug_log___g_u_i_configurable_type_1a1df64b2ede8dc97954566027e2c830f7" prot="public" virt="non-virtual"><scope>DebugLog_GUIConfigurableType</scope><name>StaticFilterMacroGroupID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_u_a_r_t001___pin_handle_type" kind="struct" prot="public">
+    <compoundname>UART001_PinHandleType</compoundname>
+    <includes refid="_u_a_r_t001_8h" local="no">UART001.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t001___pin_handle_type_1a8aa23346a225b946f523c24724af846e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t UART001_PinHandleType::RX_Pin</definition>
+        <argsstring></argsstring>
+        <name>RX_Pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX Pin Number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="329" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___pin_handle_type_1a4e24a1a21c5db2d4ed2f7df8a27710c5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def" kindref="compound">UART001_PORTS_TypeDef</ref> *</type>
+        <definition>UART001_PORTS_TypeDef* UART001_PinHandleType::RX_PortBase</definition>
+        <argsstring></argsstring>
+        <name>RX_PortBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX Port address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="328" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___pin_handle_type_1afb66e14c2001e93cac1db362ba4479d0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t UART001_PinHandleType::TX_Pin</definition>
+        <argsstring></argsstring>
+        <name>TX_Pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX Pin Number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="327" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___pin_handle_type_1a94edd5a72ab0249f526c069b084de614" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def" kindref="compound">UART001_PORTS_TypeDef</ref> *</type>
+        <definition>UART001_PORTS_TypeDef* UART001_PinHandleType::TX_PortBase</definition>
+        <argsstring></argsstring>
+        <name>TX_PortBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX Port address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="326" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This data type is to describe the UART Port pin&apos;s(TX &amp; RX) base address &amp; pin no. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="36">
+        <label>UART001_PORTS_TypeDef</label>
+        <link refid="struct_u_a_r_t001___p_o_r_t_s___type_def"/>
+      </node>
+      <node id="35">
+        <label>UART001_PinHandleType</label>
+        <link refid="struct_u_a_r_t001___pin_handle_type"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>RX_PortBase</edgelabel>
+          <edgelabel>TX_PortBase</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="325" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="325" bodyend="330"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t001___pin_handle_type_1a8aa23346a225b946f523c24724af846e" prot="public" virt="non-virtual"><scope>UART001_PinHandleType</scope><name>RX_Pin</name></member>
+      <member refid="struct_u_a_r_t001___pin_handle_type_1a4e24a1a21c5db2d4ed2f7df8a27710c5" prot="public" virt="non-virtual"><scope>UART001_PinHandleType</scope><name>RX_PortBase</name></member>
+      <member refid="struct_u_a_r_t001___pin_handle_type_1afb66e14c2001e93cac1db362ba4479d0" prot="public" virt="non-virtual"><scope>UART001_PinHandleType</scope><name>TX_Pin</name></member>
+      <member refid="struct_u_a_r_t001___pin_handle_type_1a94edd5a72ab0249f526c069b084de614" prot="public" virt="non-virtual"><scope>UART001_PinHandleType</scope><name>TX_PortBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_i_o004_8c" kind="file">
+    <compoundname>IO004.c</compoundname>
+    <includes refid="_d_a_v_e3_8h" local="no">DAVE3.h</includes>
+    <incdepgraph>
+      <node id="512">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="519">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="500">
+        <label>stdint.h</label>
+      </node>
+      <node id="516">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>stddef.h</label>
+      </node>
+      <node id="518">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="510">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="496">
+        <label>IO004.c</label>
+        <link refid="IO004.c"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="508">
+        <label>uc_id.h</label>
+      </node>
+      <node id="511">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="507">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO004_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>IO004_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inclusion of header file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" line="129" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" bodystart="128" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO004_DisableOutputDriver</definition>
+        <argsstring>(const IO004_HandleType *Handle, IO004_InputModeType Mode)</argsstring>
+        <name>IO004_DisableOutputDriver</name>
+        <param>
+          <type>const <ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" kindref="member">IO004_InputModeType</ref></type>
+          <declname>Mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The chosen portpin is configured as input. The following definitions for Mode are available:<linebreak/>
+ IO004_TRISTATE (no pull device connected)<linebreak/>
+ IO004_PULL_DOWN_DEVICE (pull-down device connected)<linebreak/>
+ IO004_PULL_UP_DEVICE (pull-up device connected)<linebreak/>
+ IO004_CONT_POLLING (Pn_OUTx continuously samples input value)<linebreak/>
+ IO004_INV_TRISTATE (Inverted no pull device connected)<linebreak/>
+ IO004_INV_PULL_DOWN_DEVICE (Inverted pull-down device connected)<linebreak/>
+ IO004_INV_IO004_PULL_UP_DEVICE(Inverted pull-up device connected)<linebreak/>
+ IO004_INV_CONT_POLLING (Pn_OUTx continuously samples input value)<linebreak/>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input selection(Pull-Down,Pull-Up,Inv-Pull-Down,Inv-Pull-Up) for chosen port pin</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1ad4c46db3c4ccadd98572342d796092df" kindref="member">IO004_DisableOutputDriver</ref>(&amp;IO004_Handle0,<ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ad43c37c60d8a862e7b6e2393793a3808" kindref="member">IO004_PULL_UP_DEVICE</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" line="168" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" bodystart="167" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO004_EnableOutputDriver</definition>
+        <argsstring>(const IO004_HandleType *Handle, IO004_OutputModeType Mode)</argsstring>
+        <name>IO004_EnableOutputDriver</name>
+        <param>
+          <type>const <ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" kindref="member">IO004_OutputModeType</ref></type>
+          <declname>Mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The chosen portpin is configured as output. The following definitions for Mode are available: IO004_PUSHPULL (push-pull mode) IO004_OPENDRAIN (open drain mode)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Output Characteristic(Push-Pull,Open-Drain)for chosen port Pin</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1a3410f235266c64c6b27c3bafd598bd72" kindref="member">IO004_EnableOutputDriver</ref>(&amp;IO004_Handle0,<ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03acd7ea64dc1674ab7d0830daec73e569e" kindref="member">IO004_OPENDRAIN</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" line="199" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" bodystart="198" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IO_Digital _IO004 App. </para>    </briefdescription>
+    <detaileddescription>
+<para>This app can be used to configure a IO Pin when the output shall be controlled by software or when it required just as a input I/O.IO002 App can be used in any case except when the output shall be controlled by software.</para><para>Note: The App GUI configures the Port Pin as GPIO in input mode by default. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>IO004<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.22<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*CODE_BLOCK_BEGIN[IO004.c]*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2012,<sp/>Infineon<sp/>Technologies<sp/>AG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>modification,are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>copyright<sp/>holders<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>**</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>specific<sp/>prior<sp/>written<sp/>permission.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>ARE<sp/><sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>LIABLE<sp/><sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/><sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>To<sp/>improve<sp/>the<sp/>quality<sp/>of<sp/>the<sp/>software,<sp/>users<sp/>are<sp/>encouraged<sp/>to<sp/>share<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>modifications,<sp/>enhancements<sp/>or<sp/>bug<sp/>fixes<sp/>with<sp/>Infineon<sp/>Technologies<sp/>AG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>dave@infineon.com).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000/XMC1000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">**<sp/>MAY<sp/>BE<sp/>CHANGED<sp/>BY<sp/>USER<sp/>[yes/no]:<sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">**<sp/>MODIFICATION<sp/>DATE<sp/>:<sp/>Mar<sp/>16,<sp/>2013<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">**<sp/>Initials<sp/><sp/><sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">**<sp/>PAE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">/*<sp/>Revision<sp/>History<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>01<sp/>Jan<sp/>2013<sp/><sp/>v1.0.12<sp/><sp/>Disabled<sp/>Pad<sp/>Class<sp/>&amp;<sp/>Pad<sp/>driver<sp/>configuration<sp/>for<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>XMC1000.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>16<sp/>Mar<sp/>2013<sp/><sp/>v1.0.14<sp/><sp/>Modified<sp/>OMR<sp/>register<sp/>configuration<sp/>(Direct<sp/>assignment<sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>without<sp/>reading)<sp/>to<sp/>upgrade<sp/>performance.</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>**<sp/>INCLUDE<sp/>FILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="91"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="92"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Type<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="96"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="99"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Function<sp/>Declarations:</highlight></codeline>
+<codeline lineno="100"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Constant<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Variable<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Constant<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>like<sp/>macro<sp/>definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="118"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Function<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="119"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="122"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Public<sp/>Function<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="123"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="128" refid="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1a28f5a6c6e2060ee071243b340db6a6c1" kindref="member">IO004_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_IO004_API_1&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configuration<sp/>of<sp/>1<sp/>Port<sp/>0<sp/>based<sp/>on<sp/>User<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>IO004_Handle0.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" kindref="member">OMR</ref><sp/>=<sp/>0U&lt;&lt;<sp/>0;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>IO004_Handle0.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" kindref="member">PDR0</ref><sp/><sp/><sp/>&amp;=<sp/>(uint32_t)(~(PORT1_PDR0_PD0_Msk));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>IO004_Handle0.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" kindref="member">PDR0</ref><sp/><sp/><sp/>|=<sp/>(uint32_t)((4UL<sp/>&lt;&lt;<sp/>PORT1_PDR0_PD0_Pos)<sp/>&amp;<sp/>\</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORT1_PDR0_PD0_Msk);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>IO004_Handle0.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/>|=<sp/>(0U<sp/>&lt;&lt;<sp/>3);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configuration<sp/>of<sp/>1<sp/>Port<sp/>14<sp/>based<sp/>on<sp/>User<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>IO004_Handle1.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" kindref="member">OMR</ref><sp/>=<sp/>0U&lt;&lt;<sp/>14;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>IO004_Handle1.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" kindref="member">PDR1</ref><sp/><sp/>&amp;=<sp/>(uint32_t)(~(PORT1_PDR1_PD14_Msk));</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>IO004_Handle1.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" kindref="member">PDR1</ref><sp/><sp/>|=<sp/>(uint32_t)((4UL<sp/>&lt;&lt;<sp/>PORT1_PDR1_PD14_Pos)<sp/>&amp;<sp/>\</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORT1_PDR1_PD14_Msk);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>IO004_Handle1.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/>|=<sp/>(0U<sp/>&lt;&lt;<sp/>19);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configuration<sp/>of<sp/>1<sp/>Port<sp/>1<sp/>based<sp/>on<sp/>User<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>IO004_Handle2.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" kindref="member">OMR</ref><sp/>=<sp/>0U&lt;&lt;<sp/>1;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>IO004_Handle2.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" kindref="member">PDR0</ref><sp/><sp/><sp/>&amp;=<sp/>(uint32_t)(~(PORT1_PDR0_PD1_Msk));</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>IO004_Handle2.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" kindref="member">PDR0</ref><sp/><sp/><sp/>|=<sp/>(uint32_t)((4UL<sp/>&lt;&lt;<sp/>PORT1_PDR0_PD1_Pos)<sp/>&amp;<sp/>\</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORT1_PDR0_PD1_Msk);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>IO004_Handle2.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/>|=<sp/>(0U<sp/>&lt;&lt;<sp/>11);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configuration<sp/>of<sp/>1<sp/>Port<sp/>15<sp/>based<sp/>on<sp/>User<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>IO004_Handle3.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" kindref="member">OMR</ref><sp/>=<sp/>0U&lt;&lt;<sp/>15;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>IO004_Handle3.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" kindref="member">PDR1</ref><sp/><sp/>&amp;=<sp/>(uint32_t)(~(PORT1_PDR1_PD15_Msk));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>IO004_Handle3.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" kindref="member">PDR1</ref><sp/><sp/>|=<sp/>(uint32_t)((4UL<sp/>&lt;&lt;<sp/>PORT1_PDR1_PD15_Pos)<sp/>&amp;<sp/>\</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORT1_PDR1_PD15_Msk);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>IO004_Handle3.<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/>|=<sp/>(0U<sp/>&lt;&lt;<sp/>27);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1ad4c46db3c4ccadd98572342d796092df" kindref="member">IO004_DisableOutputDriver</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref>*<sp/>Handle,<ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" kindref="member">IO004_InputModeType</ref><sp/>Mode)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>uint8_t<sp/>Pin<sp/>=<sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1a630c965da832175612b86ebc791666b8" kindref="member">PortPin</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_IO004_API_2&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Pin<sp/>&lt;<sp/>4U)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/>|=<sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((Pin<sp/>&gt;=<sp/>4U)<sp/>&amp;&amp;<sp/>(Pin<sp/>&lt;=<sp/>7U))</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>Pin<sp/>=<sp/>Pin<sp/>-<sp/>4U;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" kindref="member">IOCR4</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" kindref="member">IOCR4</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" kindref="member">IOCR4</ref><sp/>|=<sp/><sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((Pin<sp/>&gt;=<sp/>8U)<sp/>&amp;&amp;<sp/>(Pin<sp/>&lt;=<sp/>11U))</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>Pin<sp/>=<sp/>Pin<sp/>-<sp/>8U;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" kindref="member">IOCR8</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" kindref="member">IOCR8</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" kindref="member">IOCR8</ref><sp/>|=<sp/><sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((Pin<sp/>&gt;=<sp/>12U)<sp/>&amp;&amp;<sp/>(Pin<sp/>&lt;=<sp/>15U))</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>Pin<sp/>=<sp/>Pin<sp/>-<sp/>12U;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/>|=<sp/><sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Not<sp/>supposed<sp/>to<sp/>be<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1a3410f235266c64c6b27c3bafd598bd72" kindref="member">IO004_EnableOutputDriver</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref>*<sp/>Handle,<ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" kindref="member">IO004_OutputModeType</ref><sp/>Mode)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>uint8_t<sp/>Pin<sp/>=<sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1a630c965da832175612b86ebc791666b8" kindref="member">PortPin</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_IO004_API_2&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Pin<sp/>&lt;<sp/>4U)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref><sp/>|=<sp/><sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((Pin<sp/>&gt;=<sp/>4U)<sp/>&amp;&amp;<sp/>(Pin<sp/>&lt;=<sp/>7U))</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>Pin<sp/>=<sp/>Pin<sp/>-<sp/>4U;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" kindref="member">IOCR4</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" kindref="member">IOCR4</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" kindref="member">IOCR4</ref><sp/>|=<sp/><sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((Pin<sp/>&gt;=<sp/>8U)<sp/>&amp;&amp;<sp/>(Pin<sp/>&lt;=<sp/>11U))</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>Pin<sp/>=<sp/>Pin<sp/>-<sp/>8U;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" kindref="member">IOCR8</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" kindref="member">IOCR8</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" kindref="member">IOCR8</ref><sp/>|=<sp/><sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((Pin<sp/>&gt;=<sp/>12U)<sp/>&amp;&amp;<sp/>(Pin<sp/>&lt;=<sp/>15U))</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>Pin<sp/>=<sp/>Pin<sp/>-<sp/>12U;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/><sp/>=<sp/><sp/>(uint32_t)(Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/>&amp;<sp/>~(0x0000001FUL<sp/>&lt;&lt;<sp/>(3U+(Pin*8U))));</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>Handle-&gt;<ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>-&gt;<ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref><sp/>|=<sp/><sp/>(uint32_t)(((uint32_t)Mode<sp/>&amp;<sp/>0x1FUL)<sp/>&lt;&lt;<sp/>(3U+(Pin*8U)));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Not<sp/>supposed<sp/>to<sp/>be<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="comment">/*CODE_BLOCK_END*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c"/>
+  </compounddef>
+</doxygen>

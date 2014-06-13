@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_a02c3f6e4152c4f4314de194deae517c" kind="dir">
+    <compoundname>MOTORLIBS</compoundname>
+    <innerfile refid="_m_o_t_o_r_l_i_b_s_8h">MOTORLIBS.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/MOTORLIBS/"/>
+  </compounddef>
+</doxygen>

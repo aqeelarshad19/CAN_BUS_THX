@@ -1,0 +1,1510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_u_a_r_t001_8h" kind="file">
+    <compoundname>UART001.h</compoundname>
+    <includes refid="_usic_8h" local="yes">Usic.h</includes>
+    <includes refid="types_8h" local="yes">types.h</includes>
+    <includes refid="_u_a_r_t001___conf_8h" local="yes">UART001_Conf.h</includes>
+    <includes refid="_u_a_r_t001___extern_8h" local="yes">UART001_Extern.h</includes>
+    <includedby refid="_d_a_v_e3_8h" local="yes">DAVE3.h</includedby>
+    <includedby refid="_u_a_r_t001_8c" local="yes">UART001.c</includedby>
+    <includedby refid="_u_a_r_t001___conf_8c" local="yes">UART001_Conf.c</includedby>
+    <incdepgraph>
+      <node id="995">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="999">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="997">
+        <label>stdint.h</label>
+      </node>
+      <node id="998">
+        <label>stddef.h</label>
+      </node>
+      <node id="993">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="994" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="996">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="997" relation="include">
+        </childnode>
+        <childnode refid="998" relation="include">
+        </childnode>
+      </node>
+      <node id="994">
+        <label>uc_id.h</label>
+      </node>
+      <node id="992">
+        <label>UART001.h</label>
+        <link refid="UART001.h"/>
+        <childnode refid="993" relation="include">
+        </childnode>
+        <childnode refid="996" relation="include">
+        </childnode>
+        <childnode refid="999" relation="include">
+        </childnode>
+        <childnode refid="1000" relation="include">
+        </childnode>
+      </node>
+      <node id="1000">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1004">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="1003" relation="include">
+        </childnode>
+      </node>
+      <node id="1007">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="1008" relation="include">
+        </childnode>
+        <childnode refid="1009" relation="include">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>UART001.c</label>
+        <link refid="_u_a_r_t001_8c"/>
+      </node>
+      <node id="1009">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="1013">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1011">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="1019">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="1022">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="1015">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="1006">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1021">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="1018">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="1012">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1020">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="1005">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="1003" relation="include">
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>UART001_Conf.c</label>
+        <link refid="_u_a_r_t001___conf_8c"/>
+      </node>
+      <node id="1003">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1017">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="1014">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="1013" relation="include">
+        </childnode>
+      </node>
+      <node id="1002">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="1003" relation="include">
+        </childnode>
+        <childnode refid="1004" relation="include">
+        </childnode>
+        <childnode refid="1005" relation="include">
+        </childnode>
+        <childnode refid="1006" relation="include">
+        </childnode>
+        <childnode refid="1007" relation="include">
+        </childnode>
+        <childnode refid="1010" relation="include">
+        </childnode>
+        <childnode refid="1012" relation="include">
+        </childnode>
+        <childnode refid="1013" relation="include">
+        </childnode>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1016" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1018" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1009" relation="include">
+        </childnode>
+        <childnode refid="1011" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+      </node>
+      <node id="1001">
+        <label>UART001.h</label>
+        <link refid="UART001.h"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="1010">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="1008" relation="include">
+        </childnode>
+        <childnode refid="1011" relation="include">
+        </childnode>
+      </node>
+      <node id="1008">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_u_a_r_t001___handle_type" prot="public">UART001_HandleType</innerclass>
+    <innerclass refid="struct_u_a_r_t001___pin_handle_type" prot="public">UART001_PinHandleType</innerclass>
+    <innerclass refid="struct_u_a_r_t001___p_o_r_t_s___type_def" prot="public">UART001_PORTS_TypeDef</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_u_a_r_t001_8h_1a51dae16833604766fade9e5e616342b7" prot="public" static="no">
+        <name>UART001_WriteData</name>
+        <param><defname>Handle</defname></param>
+        <param><defname>Data</defname></param>
+        <initializer>(Handle.UartRegs-&gt;IN[0] = Data)</initializer>
+        <briefdescription>
+<para>Macro which writes a data word into the transmit FIFO buffer register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be transmitted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint16_t<sp/>data<sp/>=<sp/>0xAAAA;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>data<sp/>0xAAAA</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="_u_a_r_t001_8h_1a51dae16833604766fade9e5e616342b7" kindref="member" tooltip="Macro which writes a data word into the transmit FIFO buffer register.">UART001_WriteData</ref>(UART001_Handle0,data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="109" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_u_a_r_t001_8h_1a772c0f770e3b9850af3f1edecd529c83" prot="public" static="no">
+        <name>UART001_ReadData</name>
+        <param><defname>Handle</defname></param>
+        <initializer>((uint16_t)Handle.UartRegs-&gt;OUTR)</initializer>
+        <briefdescription>
+<para>Macro which reads a data word from the receive FIFO buffer register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">uint16_t<sp/>Readdata;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecvFifoHandler()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>Readdata<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a772c0f770e3b9850af3f1edecd529c83" kindref="member" tooltip="Macro which reads a data word from the receive FIFO buffer register.">UART001_ReadData</ref>(UART001_Handle0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="140" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="enum" id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49f" prot="public" static="no">
+        <name>UART001_StatusType</name>
+        <enumvalue id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa4ba7962009eb0fe254b00c6cf94da503" prot="public">
+          <name>UART001_RESET</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates Flag is not set</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MODULENAME</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001_RESET </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag is not set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49faf7efa6890500ca0bde8d20fefb82b37b" prot="public">
+          <name>UART001_SET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates Flag is set</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001_SET </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag is set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa9df0f56734f16fc34df819aec40595d0" prot="public">
+          <name>UART001_BUSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART Busy</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001_BUSY </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart channel busy </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fabf9797536ceb3f8eec9fdaaf6b44a50a" prot="public">
+          <name>UART001_INVALID_PARAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid parameter</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001_INVALID_PARAM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Invalid parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa7f214e950857a0d68f37e90dd862aa98" prot="public">
+          <name>UART001_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unknown error</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001_ERROR </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart Error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa15f528002974fd2ba601f56f7c492336" prot="public">
+          <name>UART001_FUN_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Function Entry</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING6</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001_FUN_ENTRY </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING6</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entered function %s </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa96ab067f30f13b9786762d6cde2c57d8" prot="public">
+          <name>UART001_FUN_EXIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Function Exit</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ERRCODESTRING7</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART001_FUN_EXIT </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>STRCODESTRING7</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exited function %s </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This data type describes the possible status values returned by functions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="160" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="159" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="enum" id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" prot="public" static="no">
+        <name>UART001_FlagStatusType</name>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a413d88705d222661159a89abf23e6b9d" prot="public">
+          <name>UART001_TXIDLE_FLAG</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transmission Idle </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a0c14cb52d68055902469471780f9e983" prot="public">
+          <name>UART001_RXIDLE_FLAG</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Reception Idle </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549ae6c9f6ce0ccea1afa2e3155257319b39" prot="public">
+          <name>UART001_RECV_NOISE_FLAG</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receiver Noise Detected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549aececce721df4b2341d8375e252d593d6" prot="public">
+          <name>UART001_FORMAT_ERR0_FLAG</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Format Error in Stop Bit 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a7f4792efa6f532811d6906d68e0c2314" prot="public">
+          <name>UART001_FORMAT_ERR1_FLAG</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Format Error in Stop Bit 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a8cf74c8a46c30bf9ad9276b5bef25222" prot="public">
+          <name>UART001_REC_FRAME_FIN_FLAG</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive Frame Finished </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a485db3adea5dd7ab0ebc6c4819bf940c" prot="public">
+          <name>UART001_TRANSMIT_FRAME_FIN_FLAG</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transmitter Frame Finished </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a0344ccf22fb1de16ffe0ac6c50adedff" prot="public">
+          <name>UART001_TRANSFER_STATUS_BUSY_FLAG</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transfer Status BUSY </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a65495ddba9cae97eaff484c37e2a91ac" prot="public">
+          <name>UART001_RECV_START_IND_FLAG</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receiver Start Indication Flag </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a88abffb566de57bf431b8521e3edcc99" prot="public">
+          <name>UART001_DATA_LOST_IND_FLAG</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data Lost Indication Flag </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549aed1c6cad7d0d9d56f169f4475f198511" prot="public">
+          <name>UART001_TRANS_SHIFT_IND_FLAG</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transmit Shift Indication Flag </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a87a0a9ec1f0bf3da3842deeb6034ee72" prot="public">
+          <name>UART001_TRANS_BUFFER_IND_FLAG</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transmit Buffer Indication Flag </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a6d7c5be029bbd56160eef84ff79ecae1" prot="public">
+          <name>UART001_RECV_IND_FLAG</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive Indication Flag </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a297fdf5fb6597d195e107d0b4c029e6e" prot="public">
+          <name>UART001_ALT_REC_IND_FLAG</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Alternative receive indication flag </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a38afd6d6f11eaac1aeeecab17f0a2f10" prot="public">
+          <name>UART001_FIFO_STD_RECV_BUF_FLAG</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FIFO Standard Receive Buffer Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549ae9a6992a9edae3abab829566e52b2951" prot="public">
+          <name>UART001_FIFO_RECV_BUF_ERR_FLAG</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FIFO Receive Buffer Error Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a4429abf74af401c43d75a94485b1f6fc" prot="public">
+          <name>UART001_FIFO_ALTRECV_BUF_FLAG</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FIFO Alternative Receive Buffer Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549acbe737b1bfacbb8daad93065cc76430d" prot="public">
+          <name>UART001_FIFO_STD_TRANSMIT_BUF_FLAG</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FIFO Standard Transmit Buffer Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a5519183d24f473b519d3ee1d180e4eb3" prot="public">
+          <name>UART001_FIFO_TRANSMIT_BUF_ERR_FLAG</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FIFO Transmit Buffer Error Event </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This data type describes the available UART Status flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="244" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="243" bodyend="283"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="_u_a_r_t001_8h_1a8b7f345b2f36c2ce54e21319196674a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UART001_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>UART001_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function initialises the App, based on User provided configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <bold>Sync/Async: Synchronous</bold> <linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters. <programlisting><codeline><highlight class="preprocessor"><sp/>#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initialises<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>UART001_Init()<sp/>will<sp/>be<sp/>called<sp/>inside<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="408" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="584" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1a6183750fd097791ba69205ed360e6537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UART001_DeInit</definition>
+        <argsstring>(const UART001_HandleType *Handle)</argsstring>
+        <name>UART001_DeInit</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+<para>This function de-initialises the USIC channel configurations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters. <programlisting><codeline><highlight class="preprocessor"><sp/>#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_u_a_r_t001_8h_1a6183750fd097791ba69205ed360e6537" kindref="member" tooltip="This function de-initialises the USIC channel configurations.">UART001_DeInit</ref>(&amp;UART001_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="437" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="658" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1ad82dcdca5a7770f4524e1527de95407b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t UART001_Configure</definition>
+        <argsstring>(const UART001_HandleType *Handle, uint32_t BaudRate, UART_ParityType Parity, UART_StopBitType Stopbit)</argsstring>
+        <name>UART001_Configure</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>BaudRate</declname>
+        </param>
+        <param>
+          <type><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" kindref="member">UART_ParityType</ref></type>
+          <declname>Parity</declname>
+        </param>
+        <param>
+          <type><ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" kindref="member">UART_StopBitType</ref></type>
+          <declname>Stopbit</declname>
+        </param>
+        <briefdescription>
+<para>Function which allows changing of baud rate, parity &amp; stop bit configuration at run time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">BaudRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired Baud Rate in Bauds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Parity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired Parity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Stopbit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired no of Stop bit(s)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <linebreak/>
+ DAVEApp_SUCCESS : for success.<linebreak/>
+ UART001_ERROR : for failure case.<linebreak/>
+ UART001_BUSY : UART channel is busy.<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa7f214e950857a0d68f37e90dd862aa98" kindref="member">UART001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>Initialises<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1ad82dcdca5a7770f4524e1527de95407b" kindref="member" tooltip="Function which allows changing of baud rate, parity &amp;amp; stop bit configuration at run time...">UART001_Configure</ref>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&amp;UART001_Handle0,19200,<ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead908a637b1dd23f93b149dd2d8bdfdb8" kindref="member">UART_PARITY_EVEN</ref>,<ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56aefa59a66582bfd03fc2e8ab588d0c8fb" kindref="member">UART_ONE_STOPBIT</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Uart<sp/>channel<sp/>reconfiguration<sp/>successful<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="489" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="682" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1acf8ad779c2b8cdcf5e55dabff2e6ce04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t UART001_ReadDataMultiple</definition>
+        <argsstring>(const UART001_HandleType *Handle, uint16_t *DataPtr, uint32_t Count)</argsstring>
+        <name>UART001_ReadDataMultiple</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>DataPtr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Count</declname>
+        </param>
+        <briefdescription>
+<para>When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, word by word, until there is no data in the FIFO buffer and the &quot;Count&quot; value is greater than &quot;0&quot;. But when receive FIFO buffer is disabled, it reads a word from standard receive buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">DataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total no of words to be read.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t Number of data read from FIFO/standard receive buffer <linebreak/>
+</para></simplesect>
+<emphasis>Imp Note:</emphasis> Return Count will be always &apos;1&apos;, if data is read from the standard buffer.</para><para><bold>Reentrant: NO </bold><linebreak/>
+</para><para><bold>Note</bold>: FIFO trigger limit should be adjusted manually in the UI based on the number of data&apos;s to be buffered.</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters (additional FIFO buffer enabled). <linebreak/>
+<emphasis><bold>UART001_Handle1</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters (additional FIFO buffer disabled). <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">uint16_t<sp/>FifoReaddata[11];</highlight></codeline>
+<codeline><highlight class="normal">uint16_t<sp/>StdReaddata[11];</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Read<sp/>data<sp/>from<sp/>FIFO<sp/>buffer<sp/>when<sp/>FIFO<sp/>is<sp/>enabled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecvFifoHandler()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_u_a_r_t001_8h_1acf8ad779c2b8cdcf5e55dabff2e6ce04" kindref="member" tooltip="When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, word by word...">UART001_ReadDataMultiple</ref>(&amp;UART001_Handle0,FifoReaddata,11);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Read<sp/>data<sp/>byte<sp/>from<sp/>standard<sp/>buffer<sp/>when<sp/>FIFO<sp/>is<sp/>disabled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecvStdBuffHandler()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>count;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1acf8ad779c2b8cdcf5e55dabff2e6ce04" kindref="member" tooltip="When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, word by word...">UART001_ReadDataMultiple</ref>(&amp;UART001_Handle1,&amp;StdReaddata[count],1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>count++;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="550" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="771" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1a190d4530caf26cdf2c6be3567299050f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t UART001_ReadDataBytes</definition>
+        <argsstring>(const UART001_HandleType *Handle, uint8_t *DataPtr, uint32_t Count)</argsstring>
+        <name>UART001_ReadDataBytes</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>DataPtr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Count</declname>
+        </param>
+        <briefdescription>
+<para>When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, byte by byte, until there is no data in the FIFO buffer and the &quot;Count&quot; value is greater than &quot;0&quot;. But when receive FIFO buffer is disabled, it reads a byte from standard receive buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">DataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total no of bytes to be read.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t Number of data read from FIFO/standard receive buffer <linebreak/>
+</para></simplesect>
+<emphasis>Imp Note:</emphasis> Return Count will be always &apos;1&apos;, if data is read from the standard buffer.</para><para><bold>Reentrant: NO </bold><linebreak/>
+</para><para><bold>Note</bold>: FIFO trigger limit should be adjusted manually in the UI based on the number of data&apos;s to be buffered.</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters (additional FIFO buffer enabled). <linebreak/>
+<emphasis><bold>UART001_Handle1</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters (additional FIFO buffer disabled). <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/>FifoReaddata[11];</highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/>StdReaddata[11];</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Read<sp/>data<sp/>from<sp/>FIFO<sp/>buffer<sp/>when<sp/>FIFO<sp/>is<sp/>enabled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecvFifoHandler()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_u_a_r_t001_8h_1a190d4530caf26cdf2c6be3567299050f" kindref="member" tooltip="When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, byte by byte...">UART001_ReadDataBytes</ref>(&amp;UART001_Handle0,FifoReaddata,11);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Read<sp/>data<sp/>byte<sp/>from<sp/>standard<sp/>buffer<sp/>when<sp/>FIFO<sp/>is<sp/>disabled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecvStdBuffHandler()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>count;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a190d4530caf26cdf2c6be3567299050f" kindref="member" tooltip="When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, byte by byte...">UART001_ReadDataBytes</ref>(&amp;UART001_Handle1,&amp;StdReaddata[count],1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>count++;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="611" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="823" bodyend="850"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1a61fdfc06efab866a051222c2b20d1431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t UART001_WriteDataMultiple</definition>
+        <argsstring>(const UART001_HandleType *Handle, uint16_t *DataPtr, uint32_t Count)</argsstring>
+        <name>UART001_WriteDataMultiple</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>DataPtr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Count</declname>
+        </param>
+        <briefdescription>
+<para>When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, word by word, until the FIFO buffer is full and the &quot;Count&quot; value is greater than &quot;0&quot;. But when transmit FIFO is disabled, it writes a word to the standard transmit buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reentrant : No</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">DataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total no of words to be transmitted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t Number of data written to buffer <linebreak/>
+</para></simplesect>
+<emphasis>Imp Note:</emphasis> Return Count will be always &apos;1&apos;, if data is written to the standard buffer.</para><para><bold>Reentrant: NO </bold><linebreak/>
+</para><para><bold>Note</bold>: FIFO trigger limit should be adjusted manually in the UI based on the number of data&apos;s to be buffered.</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters (additional FIFO buffer enabled). <linebreak/>
+<emphasis><bold>UART001_Handle1</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters (additional FIFO buffer disabled). <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint32_t<sp/>status<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint32_t<sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint8_t<sp/>data[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;H<sp/>E<sp/>L<sp/>L<sp/>O<sp/><sp/><sp/>W<sp/>O<sp/>R<sp/>L<sp/>D&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint8_t<sp/>data1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;h<sp/>e<sp/>l<sp/>l<sp/>o<sp/><sp/>w<sp/>o<sp/>r<sp/>l<sp/>d&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>hello<sp/>world<sp/>to<sp/>PC<sp/>hyper<sp/>terminal</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a61fdfc06efab866a051222c2b20d1431" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, word by word, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a word to the standard transmit buffer.">UART001_WriteDataMultiple</ref>(&amp;UART001_Handle0,<sp/>(uint16_t*)&amp;data[0],<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(uint32_t)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data)/2);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>==<sp/>11)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//data<sp/>transmitted</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//Send<sp/>&quot;hello<sp/>world&quot;<sp/>to<sp/>PC<sp/>hyper<sp/>terminal<sp/>using<sp/>Tx<sp/>standard<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(count=0;<sp/>count&lt;11;<sp/>count++)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<ref refid="_u_a_r_t001_8h_1a61fdfc06efab866a051222c2b20d1431" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, word by word, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a word to the standard transmit buffer.">UART001_WriteDataMultiple</ref>(&amp;UART001_Handle1,<sp/>&amp;data1[count],<sp/>1));</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="673" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="877" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t UART001_WriteDataBytes</definition>
+        <argsstring>(const UART001_HandleType *Handle, const uint8_t *DataPtr, uint32_t Count)</argsstring>
+        <name>UART001_WriteDataBytes</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>DataPtr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Count</declname>
+        </param>
+        <briefdescription>
+<para>When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &quot;Count&quot; value is greater than &quot;0&quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reentrant : No</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">DataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total no of words to be transmitted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t Number of data written to buffer <linebreak/>
+</para></simplesect>
+<emphasis>Imp Note:</emphasis> Return Count will be always &apos;1&apos;, if data is written to the standard buffer.</para><para><bold>Reentrant: NO </bold><linebreak/>
+</para><para><bold>Note</bold>: FIFO trigger limit should be adjusted manually in the UI based on the number of data&apos;s to be buffered.</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters(additional FIFO buffer enabled). <linebreak/>
+<emphasis><bold>UART001_Handle1</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters(additional FIFO buffer disabled). <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint32_t<sp/>status<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint32_t<sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint8_t<sp/>data[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;HELLO<sp/>WORLD&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>uint8_t<sp/>data1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;hello<sp/>world&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>&quot;HELLO<sp/>WORLD&quot;<sp/>to<sp/>PC<sp/>hyper<sp/>terminal<sp/>using<sp/>Tx<sp/>FIFO<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>&amp;data[0],<sp/>11);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>==<sp/>11)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//data<sp/>transmitted</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>}<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//Send<sp/>&quot;hello<sp/>world&quot;<sp/>to<sp/>PC<sp/>hyper<sp/>terminal<sp/>using<sp/>Tx<sp/>standard<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(count=0;<sp/>count&lt;11;<sp/>count++)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle1,<sp/>&amp;data1[count],<sp/>1));</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="735" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="934" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1a1f522695783cf883fb6139028b844116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t UART001_GetFlagStatus</definition>
+        <argsstring>(const UART001_HandleType *Handle, UART001_FlagStatusType Flag)</argsstring>
+        <name>UART001_GetFlagStatus</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" kindref="member">UART001_FlagStatusType</ref></type>
+          <declname>Flag</declname>
+        </param>
+        <briefdescription>
+<para>The function is used to get the event flag status specified. It returns UART_SET if the corresponding flag is set else otherwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART Flag which needs to be checked</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t <linebreak/>
+ UART_SET : indicates Flag is set.<linebreak/>
+ UART_RESET : indicates Flag is reset.<linebreak/>
+</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa7f214e950857a0d68f37e90dd862aa98" kindref="member">UART001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>uint16_t<sp/>Data;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialises<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1ad82dcdca5a7770f4524e1527de95407b" kindref="member" tooltip="Function which allows changing of baud rate, parity &amp;amp; stop bit configuration at run time...">UART001_Configure</ref>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&amp;UART001_Handle0,19200,<ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead908a637b1dd23f93b149dd2d8bdfdb8" kindref="member">UART_PARITY_EVEN</ref>,<ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56aefa59a66582bfd03fc2e8ab588d0c8fb" kindref="member">UART_ONE_STOPBIT</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Uart<sp/>channel<sp/>reconfiguration<sp/>successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>standard<sp/>receive<sp/>buffer<sp/>event<sp/>is<sp/>occurred</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((<ref refid="_u_a_r_t001_8h_1a1f522695783cf883fb6139028b844116" kindref="member" tooltip="The function is used to get the event flag status specified. It returns UART_SET if the corresponding...">UART001_GetFlagStatus</ref>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&amp;UART001_Handle0,<ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a38afd6d6f11eaac1aeeecab17f0a2f10" kindref="member">UART001_FIFO_STD_RECV_BUF_FLAG</ref>))!=<ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49faf7efa6890500ca0bde8d20fefb82b37b" kindref="member">UART001_SET</ref>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Read<sp/>Receive<sp/>FIFO<sp/>buffer<sp/>till<sp/>the<sp/>buffer<sp/>is<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Data<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a772c0f770e3b9850af3f1edecd529c83" kindref="member" tooltip="Macro which reads a data word from the receive FIFO buffer register.">UART001_ReadData</ref>(UART001_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_a_r_t001_8h_1a35321989a23a4463d1343b664a21ae5f" kindref="member" tooltip="This function clears the specified event flag status.">UART001_ClearFlag</ref>(&amp;UART001_Handle0,<ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a38afd6d6f11eaac1aeeecab17f0a2f10" kindref="member">UART001_FIFO_STD_RECV_BUF_FLAG</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Data<sp/>==<sp/>0x43)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Checking<sp/>the<sp/>data<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="796" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="984" bodyend="1018"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_a_r_t001_8h_1a35321989a23a4463d1343b664a21ae5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UART001_ClearFlag</definition>
+        <argsstring>(const UART001_HandleType *Handle, UART001_FlagStatusType Flag)</argsstring>
+        <name>UART001_ClearFlag</name>
+        <param>
+          <type>const <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" kindref="member">UART001_FlagStatusType</ref></type>
+          <declname>Flag</declname>
+        </param>
+        <briefdescription>
+<para>This function clears the specified event flag status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USIC device handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UART Flag which needs to be cleared</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <linebreak/>
+<emphasis><bold>UART001_Handle0</bold></emphasis> is a global structure of type <ref refid="struct_u_a_r_t001___handle_type" kindref="compound">UART001_HandleType</ref> which will be configured in <ref refid="_u_a_r_t001___conf_8c" kindref="compound">UART001_Conf.c</ref> file using UI parameters. <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>uint32_t<sp/>Status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa7f214e950857a0d68f37e90dd862aa98" kindref="member">UART001_ERROR</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>uint16_t<sp/>Data;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialises<sp/>Apps<sp/>configurations<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Status<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1ad82dcdca5a7770f4524e1527de95407b" kindref="member" tooltip="Function which allows changing of baud rate, parity &amp;amp; stop bit configuration at run time...">UART001_Configure</ref>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&amp;UART001_Handle0,19200,<ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead908a637b1dd23f93b149dd2d8bdfdb8" kindref="member">UART_PARITY_EVEN</ref>,<ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56aefa59a66582bfd03fc2e8ab588d0c8fb" kindref="member">UART_ONE_STOPBIT</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Uart<sp/>channel<sp/>reconfiguration<sp/>successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>standard<sp/>receive<sp/>buffer<sp/>event<sp/>is<sp/>occurred</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((<ref refid="_u_a_r_t001_8h_1a1f522695783cf883fb6139028b844116" kindref="member" tooltip="The function is used to get the event flag status specified. It returns UART_SET if the corresponding...">UART001_GetFlagStatus</ref>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&amp;UART001_Handle0,<ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a38afd6d6f11eaac1aeeecab17f0a2f10" kindref="member">UART001_FIFO_STD_RECV_BUF_FLAG</ref>))!=<ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49faf7efa6890500ca0bde8d20fefb82b37b" kindref="member">UART001_SET</ref>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Read<sp/>Receive<sp/>FIFO<sp/>buffer<sp/>till<sp/>the<sp/>buffer<sp/>is<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Data<sp/>=<sp/><ref refid="_u_a_r_t001_8h_1a772c0f770e3b9850af3f1edecd529c83" kindref="member" tooltip="Macro which reads a data word from the receive FIFO buffer register.">UART001_ReadData</ref>(UART001_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_a_r_t001_8h_1a35321989a23a4463d1343b664a21ae5f" kindref="member" tooltip="This function clears the specified event flag status.">UART001_ClearFlag</ref>(&amp;UART001_Handle0,<ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a38afd6d6f11eaac1aeeecab17f0a2f10" kindref="member">UART001_FIFO_STD_RECV_BUF_FLAG</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Data<sp/>==<sp/>0x43)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Checking<sp/>the<sp/>data<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="854" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/UART001/UART001.c" bodystart="1033" bodyend="1058"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file for UART001 App. Provides API prototypes, enumerations, constants and data structure declarations needed by the users of the app. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>Copyright<sp/>(C)<sp/>2014<sp/>Infineon<sp/>Technologies<sp/>AG.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Infineon<sp/>Technologies<sp/>AG<sp/>(Infineon)<sp/>is<sp/>supplying<sp/>this<sp/>software<sp/>for<sp/>use<sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/>with<sp/>Infineon&apos;s<sp/>microcontrollers.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>This<sp/>file<sp/>can<sp/>be<sp/>freely<sp/>distributed<sp/>within<sp/>development<sp/>tools<sp/>that<sp/>are<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>supporting<sp/>such<sp/>microcontrollers.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">**<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;.<sp/><sp/>NO<sp/>WARRANTIES,<sp/>WHETHER<sp/>EXPRESS,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">**<sp/>IMPLIED<sp/>OR<sp/>STATUTORY,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">**<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>APPLY<sp/>TO<sp/>THIS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">**<sp/>SOFTWARE.<sp/>INFINEON<sp/>SHALL<sp/>NOT,<sp/>IN<sp/>ANY<sp/>CIRCUMSTANCES,<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>SPECIAL,<sp/>**<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">**<sp/>INCIDENTAL,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>FOR<sp/>ANY<sp/>REASON<sp/>WHATSOEVER.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000/XMC1000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">**<sp/>NOTE<sp/><sp/><sp/><sp/><sp/>:<sp/>Any<sp/>Changes<sp/>made<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/>overwritten<sp/>during<sp/>Code<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Generation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">**<sp/>VERSION<sp/>HISTORY:</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">**<sp/>04<sp/>Dec<sp/>2012<sp/>v1.0.4<sp/><sp/>Changes<sp/>from<sp/>1.0.2<sp/>are</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Modified<sp/>as<sp/>per<sp/>coding<sp/>guidelines<sp/>and<sp/>MISRA<sp/>checks</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">**<sp/>26<sp/>Mar<sp/>2013<sp/>v1.0.10<sp/>1.<sp/>Updated<sp/>for<sp/>the<sp/>example<sp/>code<sp/>for</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART001_GetFlagStatus()<sp/>API.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Added<sp/>file<sp/>revision<sp/>history.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>Updated<sp/>to<sp/>support<sp/>XMC1000<sp/>devices.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4.<sp/>Updated<sp/>examples<sp/>for<sp/>UART001_WriteData()<sp/>and</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART001_ReadData()<sp/>macros.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5.<sp/>Modified<sp/>the<sp/>structure<sp/>UART001_HandleType<sp/>to<sp/>add<sp/>baud</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parameters<sp/>for<sp/>the<sp/>baud<sp/>rate.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">**<sp/>13<sp/>Jun<sp/>2013<sp/>v1.0.16<sp/>1.<sp/>Modified<sp/>the<sp/>input<sp/>parameter<sp/>of<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART001_WriteDataMultiple()<sp/>from<sp/>const<sp/>uint16_t*<sp/>to<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t*<sp/>to<sp/>maintain<sp/>backward<sp/>compatibility.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">**<sp/>04<sp/>Feb<sp/>2014<sp/>v1.0.22<sp/>1.<sp/>Removed<sp/>DAVE3.h<sp/>inclusion<sp/>to<sp/>fix<sp/>the<sp/>MISR<sp/>warning<sp/>for</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>multiple<sp/>includes.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Added<sp/>types.h<sp/>&amp;<sp/>UART001_Conf.h<sp/>inclusion<sp/>to<sp/>get<sp/>the<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>macro<sp/>definitions<sp/>&amp;<sp/>type<sp/>definitions<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>Added<sp/>prototypes<sp/>and<sp/>example<sp/>code<sp/>for<sp/>new<sp/>Apis<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;UART001_ReadDataBytes&quot;<sp/>&amp;<sp/>&quot;UART001_WriteDataBytes&quot;.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="comment">**<sp/>11<sp/>Apr<sp/>2014<sp/>v1.0.24<sp/>1.<sp/>API<sp/>(UART001_ReadDataMultiple,<sp/>UART001_ReadDataBytes,<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART001_WriteDataMultiple<sp/>&amp;<sp/>UART001_WriteDataBytes)<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document<sp/>&amp;<sp/>example<sp/>corrections.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor">#ifndef<sp/>UART001_H_</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UART001_H_</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_usic_8h" kindref="compound" tooltip="Header file for USIC defines. It provides enumerations, constants and data structure declarations req...">Usic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound" tooltip="This file contains types defs.">types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_a_r_t001___conf_8h" kindref="compound" tooltip="Configuration file generated based on UI settings of UART001 App.">UART001_Conf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">#ifdef<sp/>UART001_TXFIFO_ENABLE</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="109" refid="_u_a_r_t001_8h_1a51dae16833604766fade9e5e616342b7" refkind="member"><highlight class="preprocessor">#define<sp/>UART001_WriteData(Handle,Data)<sp/>(Handle.UartRegs-&gt;IN[0]<sp/>=<sp/>Data)</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UART001_RXFIFO_ENABLE</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="140" refid="_u_a_r_t001_8h_1a772c0f770e3b9850af3f1edecd529c83" refkind="member"><highlight class="preprocessor">#define<sp/>UART001_ReadData(Handle)<sp/><sp/>((uint16_t)Handle.UartRegs-&gt;OUTR)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="146"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Type<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49f" kindref="member" tooltip="This data type describes the possible status values returned by functions.">UART001_StatusType</ref></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa4ba7962009eb0fe254b00c6cf94da503" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa4ba7962009eb0fe254b00c6cf94da503" kindref="member">UART001_RESET</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="185" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49faf7efa6890500ca0bde8d20fefb82b37b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49faf7efa6890500ca0bde8d20fefb82b37b" kindref="member">UART001_SET</ref>,</highlight></codeline>
+<codeline lineno="195" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa9df0f56734f16fc34df819aec40595d0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa9df0f56734f16fc34df819aec40595d0" kindref="member">UART001_BUSY</ref>,</highlight></codeline>
+<codeline lineno="205" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fabf9797536ceb3f8eec9fdaaf6b44a50a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fabf9797536ceb3f8eec9fdaaf6b44a50a" kindref="member">UART001_INVALID_PARAM</ref>,</highlight></codeline>
+<codeline lineno="215" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa7f214e950857a0d68f37e90dd862aa98" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa7f214e950857a0d68f37e90dd862aa98" kindref="member">UART001_ERROR</ref>,</highlight></codeline>
+<codeline lineno="225" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa15f528002974fd2ba601f56f7c492336" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa15f528002974fd2ba601f56f7c492336" kindref="member">UART001_FUN_ENTRY</ref>,</highlight></codeline>
+<codeline lineno="235" refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa96ab067f30f13b9786762d6cde2c57d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49fa96ab067f30f13b9786762d6cde2c57d8" kindref="member">UART001_FUN_EXIT</ref></highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}<ref refid="_u_a_r_t001_8h_1a85909755dedf914d02f1449641d3a49f" kindref="member" tooltip="This data type describes the possible status values returned by functions.">UART001_StatusType</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" kindref="member" tooltip="This data type describes the available UART Status flags.">UART001_FlagStatusType</ref></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a413d88705d222661159a89abf23e6b9d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a413d88705d222661159a89abf23e6b9d" kindref="member">UART001_TXIDLE_FLAG</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="248" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a0c14cb52d68055902469471780f9e983" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a0c14cb52d68055902469471780f9e983" kindref="member">UART001_RXIDLE_FLAG</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="250" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549ae6c9f6ce0ccea1afa2e3155257319b39" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549ae6c9f6ce0ccea1afa2e3155257319b39" kindref="member">UART001_RECV_NOISE_FLAG</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="252" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549aececce721df4b2341d8375e252d593d6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549aececce721df4b2341d8375e252d593d6" kindref="member">UART001_FORMAT_ERR0_FLAG</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="254" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a7f4792efa6f532811d6906d68e0c2314" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a7f4792efa6f532811d6906d68e0c2314" kindref="member">UART001_FORMAT_ERR1_FLAG</ref><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="256" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a8cf74c8a46c30bf9ad9276b5bef25222" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a8cf74c8a46c30bf9ad9276b5bef25222" kindref="member">UART001_REC_FRAME_FIN_FLAG</ref><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="258" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a485db3adea5dd7ab0ebc6c4819bf940c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a485db3adea5dd7ab0ebc6c4819bf940c" kindref="member">UART001_TRANSMIT_FRAME_FIN_FLAG</ref><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="260" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a0344ccf22fb1de16ffe0ac6c50adedff" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a0344ccf22fb1de16ffe0ac6c50adedff" kindref="member">UART001_TRANSFER_STATUS_BUSY_FLAG</ref><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="262" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a65495ddba9cae97eaff484c37e2a91ac" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a65495ddba9cae97eaff484c37e2a91ac" kindref="member">UART001_RECV_START_IND_FLAG</ref><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="264" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a88abffb566de57bf431b8521e3edcc99" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a88abffb566de57bf431b8521e3edcc99" kindref="member">UART001_DATA_LOST_IND_FLAG</ref><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="266" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549aed1c6cad7d0d9d56f169f4475f198511" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549aed1c6cad7d0d9d56f169f4475f198511" kindref="member">UART001_TRANS_SHIFT_IND_FLAG</ref><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="268" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a87a0a9ec1f0bf3da3842deeb6034ee72" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a87a0a9ec1f0bf3da3842deeb6034ee72" kindref="member">UART001_TRANS_BUFFER_IND_FLAG</ref><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="270" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a6d7c5be029bbd56160eef84ff79ecae1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a6d7c5be029bbd56160eef84ff79ecae1" kindref="member">UART001_RECV_IND_FLAG</ref><sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="272" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a297fdf5fb6597d195e107d0b4c029e6e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a297fdf5fb6597d195e107d0b4c029e6e" kindref="member">UART001_ALT_REC_IND_FLAG</ref><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="274" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a38afd6d6f11eaac1aeeecab17f0a2f10" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a38afd6d6f11eaac1aeeecab17f0a2f10" kindref="member">UART001_FIFO_STD_RECV_BUF_FLAG</ref><sp/>=<sp/>16,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="276" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549ae9a6992a9edae3abab829566e52b2951" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549ae9a6992a9edae3abab829566e52b2951" kindref="member">UART001_FIFO_RECV_BUF_ERR_FLAG</ref><sp/>=<sp/>17,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="278" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a4429abf74af401c43d75a94485b1f6fc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a4429abf74af401c43d75a94485b1f6fc" kindref="member">UART001_FIFO_ALTRECV_BUF_FLAG</ref><sp/>=<sp/>18,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="280" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549acbe737b1bfacbb8daad93065cc76430d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549acbe737b1bfacbb8daad93065cc76430d" kindref="member">UART001_FIFO_STD_TRANSMIT_BUF_FLAG</ref><sp/>=<sp/>19,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="282" refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a5519183d24f473b519d3ee1d180e4eb3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549a5519183d24f473b519d3ee1d180e4eb3" kindref="member">UART001_FIFO_TRANSMIT_BUF_ERR_FLAG</ref><sp/>=<sp/>20<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}<ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" kindref="member" tooltip="This data type describes the available UART Status flags.">UART001_FlagStatusType</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="struct_u_a_r_t001___p_o_r_t_s___type_def" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1ab36f17dce7e0c26414835f5839ecf65f" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1ab36f17dce7e0c26414835f5839ecf65f" kindref="member">OUT</ref>;<sp/></highlight></codeline>
+<codeline lineno="297" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1aa02e36818b1a0bc49acbf38d01129202" refkind="member"><highlight class="normal">__O<sp/><sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1aa02e36818b1a0bc49acbf38d01129202" kindref="member">OMR</ref>;<sp/></highlight></codeline>
+<codeline lineno="298"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED1[2];</highlight></codeline>
+<codeline lineno="299" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a2fa83564d7873461c1671ff960d364b3" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/>IOCR0;<sp/></highlight></codeline>
+<codeline lineno="301" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a85ca1c0d423511c4d233a6038e384d06" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/>IOCR4;<sp/></highlight></codeline>
+<codeline lineno="303" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a53e75fadefdf5b0eab92098731c608c2" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/>IOCR8;<sp/></highlight></codeline>
+<codeline lineno="305" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1ac92fce82274276615dbcf84f8ce2cb29" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/>IOCR12;<sp/><sp/></highlight></codeline>
+<codeline lineno="307"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED2[1];</highlight></codeline>
+<codeline lineno="308" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1af43106e01cd75fe5d548347d290e0768" refkind="member"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1af43106e01cd75fe5d548347d290e0768" kindref="member">IN</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED3[6];</highlight></codeline>
+<codeline lineno="310" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a80f7e66228475f65facbe06f70bbcd34" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a80f7e66228475f65facbe06f70bbcd34" kindref="member">PDR0</ref>;<sp/></highlight></codeline>
+<codeline lineno="311" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8328e7814e1b6571842c03c0f19d9492" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8328e7814e1b6571842c03c0f19d9492" kindref="member">PDR1</ref>;<sp/></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED4[6];</highlight></codeline>
+<codeline lineno="313" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a196c1d91f6146e7de9dab360b6ca2438" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/>PDISC;<sp/></highlight></codeline>
+<codeline lineno="315"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED5[3];</highlight></codeline>
+<codeline lineno="316" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8d9f26dfa71475a972bb997bad043e75" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8d9f26dfa71475a972bb997bad043e75" kindref="member">PPS</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="317" refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a14a27fbcef692821ba1818af2ffb3e0c" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/>HWSEL;<sp/></highlight></codeline>
+<codeline lineno="319"><highlight class="normal">}<ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def" kindref="compound" tooltip="This data type is to describe the I/O Port registers.">UART001_PORTS_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="struct_u_a_r_t001___pin_handle_type" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_a_r_t001___pin_handle_type" kindref="compound" tooltip="This data type is to describe the UART Port pin&amp;#39;s(TX &amp;amp; RX) base address &amp;amp; pin no.">UART001_PinHandleType</ref>{</highlight></codeline>
+<codeline lineno="326" refid="struct_u_a_r_t001___pin_handle_type_1a94edd5a72ab0249f526c069b084de614" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def" kindref="compound" tooltip="This data type is to describe the I/O Port registers.">UART001_PORTS_TypeDef</ref>*<sp/><ref refid="struct_u_a_r_t001___pin_handle_type_1a94edd5a72ab0249f526c069b084de614" kindref="member">TX_PortBase</ref>;</highlight></codeline>
+<codeline lineno="327" refid="struct_u_a_r_t001___pin_handle_type_1afb66e14c2001e93cac1db362ba4479d0" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t001___pin_handle_type_1afb66e14c2001e93cac1db362ba4479d0" kindref="member">TX_Pin</ref>;<sp/></highlight></codeline>
+<codeline lineno="328" refid="struct_u_a_r_t001___pin_handle_type_1a4e24a1a21c5db2d4ed2f7df8a27710c5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_u_a_r_t001___p_o_r_t_s___type_def" kindref="compound" tooltip="This data type is to describe the I/O Port registers.">UART001_PORTS_TypeDef</ref>*<sp/><ref refid="struct_u_a_r_t001___pin_handle_type_1a4e24a1a21c5db2d4ed2f7df8a27710c5" kindref="member">RX_PortBase</ref>;<sp/></highlight></codeline>
+<codeline lineno="329" refid="struct_u_a_r_t001___pin_handle_type_1a8aa23346a225b946f523c24724af846e" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t001___pin_handle_type_1a8aa23346a225b946f523c24724af846e" kindref="member">RX_Pin</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}<ref refid="struct_u_a_r_t001___pin_handle_type" kindref="compound" tooltip="This data type is to describe the UART Port pin&amp;#39;s(TX &amp;amp; RX) base address &amp;amp; pin no.">UART001_PinHandleType</ref>;</highlight></codeline>
+<codeline lineno="334" refid="struct_u_a_r_t001___handle_type" refkind="compound"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref></highlight></codeline>
+<codeline lineno="335"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/>USIC_CH_TypeDef*<sp/>UartRegs;</highlight></codeline>
+<codeline lineno="337" refid="struct_u_a_r_t001___handle_type_1a18c2cdb7562aaf6c4de9f340b0e751e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_u_a_r_t001___pin_handle_type" kindref="compound" tooltip="This data type is to describe the UART Port pin&amp;#39;s(TX &amp;amp; RX) base address &amp;amp; pin no.">UART001_PinHandleType</ref><sp/><ref refid="struct_u_a_r_t001___handle_type_1a18c2cdb7562aaf6c4de9f340b0e751e7" kindref="member">PinHandle</ref>;<sp/></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339af" kindref="member">UART_ModeType</ref><sp/>Mode;</highlight></codeline>
+<codeline lineno="339" refid="struct_u_a_r_t001___handle_type_1ab1a8e3f5073126ec319313a558e9e2d9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" kindref="member">UART_StopBitType</ref><sp/><ref refid="struct_u_a_r_t001___handle_type_1ab1a8e3f5073126ec319313a558e9e2d9" kindref="member">StopBit</ref>;<sp/></highlight></codeline>
+<codeline lineno="340" refid="struct_u_a_r_t001___handle_type_1a82e2292c52c3e8b3dbba54f4feb26488" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" kindref="member">UART_ParityType</ref><sp/><ref refid="struct_u_a_r_t001___handle_type_1a82e2292c52c3e8b3dbba54f4feb26488" kindref="member">Parity</ref>;</highlight></codeline>
+<codeline lineno="341" refid="struct_u_a_r_t001___handle_type_1ac585a5baf6a676cbc0365f0f63066363" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1ac585a5baf6a676cbc0365f0f63066363" kindref="member">BaudRate</ref>;<sp/></highlight></codeline>
+<codeline lineno="342" refid="struct_u_a_r_t001___handle_type_1abb333776089ef3698bb907975231a75e" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1abb333776089ef3698bb907975231a75e" kindref="member">DataBits</ref>;</highlight></codeline>
+<codeline lineno="343" refid="struct_u_a_r_t001___handle_type_1a04b207f688b852e1a1b5a7c90feba7b6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type_1a04b207f688b852e1a1b5a7c90feba7b6" kindref="member">TxFifoEn</ref>;<sp/></highlight></codeline>
+<codeline lineno="344" refid="struct_u_a_r_t001___handle_type_1aefdd2621c625112fff2d76fbd7689b0e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type_1aefdd2621c625112fff2d76fbd7689b0e" kindref="member">RxFifoEn</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="345" refid="struct_u_a_r_t001___handle_type_1a57aa7bb66b9939637ce605dd749881c9" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1a57aa7bb66b9939637ce605dd749881c9" kindref="member">TxLimit</ref>;</highlight></codeline>
+<codeline lineno="346" refid="struct_u_a_r_t001___handle_type_1a50971e23469e8644b0d71f5ac88c0072" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1a50971e23469e8644b0d71f5ac88c0072" kindref="member">RxLimit</ref>;<sp/></highlight></codeline>
+<codeline lineno="347" refid="struct_u_a_r_t001___handle_type_1a404b41ac0091aa09eaa3acbd174b899d" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1a404b41ac0091aa09eaa3acbd174b899d" kindref="member">TxFifoSize</ref>;<sp/></highlight></codeline>
+<codeline lineno="348" refid="struct_u_a_r_t001___handle_type_1a54875495b112f3ee1d8c2907696ea094" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1a54875495b112f3ee1d8c2907696ea094" kindref="member">RxFifoSize</ref>;</highlight></codeline>
+<codeline lineno="349" refid="struct_u_a_r_t001___handle_type_1a2c67b1724416edf2a3c1a6a27106f159" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type_1a2c67b1724416edf2a3c1a6a27106f159" kindref="member">RecvNoiseEn</ref>;</highlight></codeline>
+<codeline lineno="350" refid="struct_u_a_r_t001___handle_type_1a54fe3f2a17cb7da435025ab55aabb83b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type_1a54fe3f2a17cb7da435025ab55aabb83b" kindref="member">FormatErrEn</ref>;</highlight></codeline>
+<codeline lineno="351" refid="struct_u_a_r_t001___handle_type_1a427b72cf94342b79dd7ed4e0433253cf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type_1a427b72cf94342b79dd7ed4e0433253cf" kindref="member">FrameFinEn</ref>;</highlight></codeline>
+<codeline lineno="352" refid="struct_u_a_r_t001___handle_type_1ac47cd9d918fba2c6a924ed5fd07ac6de" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1ac47cd9d918fba2c6a924ed5fd07ac6de" kindref="member">BGR_STEP</ref>;</highlight></codeline>
+<codeline lineno="353" refid="struct_u_a_r_t001___handle_type_1a87965e713d462e32622a9fa35789ee1f" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1a87965e713d462e32622a9fa35789ee1f" kindref="member">BGR_PDIV</ref>;</highlight></codeline>
+<codeline lineno="354" refid="struct_u_a_r_t001___handle_type_1a70dc05524555b2b61c53195981cd2eae" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1a70dc05524555b2b61c53195981cd2eae" kindref="member">BGR_DCTQ</ref>;</highlight></codeline>
+<codeline lineno="355" refid="struct_u_a_r_t001___handle_type_1aa56089da3861e34362e747ef5021edef" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1aa56089da3861e34362e747ef5021edef" kindref="member">BGR_SP</ref>;</highlight></codeline>
+<codeline lineno="357" refid="struct_u_a_r_t001___handle_type_1a69fc02be001af93d31ac5ce68a5b8778" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_u_a_r_t001___handle_type_1a69fc02be001af93d31ac5ce68a5b8778" kindref="member">BGR_PCTQ</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}<ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="365"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Constant<sp/>Declarations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="366"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="370"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extern<sp/>Variables<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="371"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="377"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="378"><highlight class="comment">**<sp/>FUNCTION<sp/>PROTOTYPES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="379"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a8b7f345b2f36c2ce54e21319196674a8" kindref="member" tooltip="This function initialises the App, based on User provided configuration.">UART001_Init</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a6183750fd097791ba69205ed360e6537" kindref="member" tooltip="This function de-initialises the USIC channel configurations.">UART001_DeInit</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal">status_t<sp/><sp/><ref refid="_u_a_r_t001_8h_1ad82dcdca5a7770f4524e1527de95407b" kindref="member" tooltip="Function which allows changing of baud rate, parity &amp;amp; stop bit configuration at run time...">UART001_Configure</ref></highlight></codeline>
+<codeline lineno="484"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle,</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/>uint32_t<sp/>BaudRate,</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" kindref="member">UART_ParityType</ref><sp/>Parity,</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" kindref="member">UART_StopBitType</ref><sp/>Stopbit</highlight></codeline>
+<codeline lineno="489"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal">uint32_t<sp/><ref refid="_u_a_r_t001_8h_1acf8ad779c2b8cdcf5e55dabff2e6ce04" kindref="member" tooltip="When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, word by word...">UART001_ReadDataMultiple</ref>(</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle,</highlight></codeline>
+<codeline lineno="549"><highlight class="normal">uint16_t*<sp/>DataPtr,</highlight></codeline>
+<codeline lineno="550"><highlight class="normal">uint32_t<sp/>Count);</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal">uint32_t<sp/><ref refid="_u_a_r_t001_8h_1a190d4530caf26cdf2c6be3567299050f" kindref="member" tooltip="When receive FIFO is enabled, this function reads the USIC receive FIFO Buffer, byte by byte...">UART001_ReadDataBytes</ref></highlight></codeline>
+<codeline lineno="608"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle,</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/>uint8_t*<sp/>DataPtr,</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/>uint32_t<sp/>Count);</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal">uint32_t<sp/><ref refid="_u_a_r_t001_8h_1a61fdfc06efab866a051222c2b20d1431" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, word by word, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a word to the standard transmit buffer.">UART001_WriteDataMultiple</ref>(</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle,</highlight></codeline>
+<codeline lineno="672"><highlight class="normal">uint16_t*<sp/>DataPtr,</highlight></codeline>
+<codeline lineno="673"><highlight class="normal">uint32_t<sp/>Count);</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight></codeline>
+<codeline lineno="731"><highlight class="normal">uint32_t<sp/><ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref></highlight></codeline>
+<codeline lineno="732"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle,</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>DataPtr,</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/>uint32_t<sp/>Count);</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"></highlight></codeline>
+<codeline lineno="793"><highlight class="normal">status_t<sp/><ref refid="_u_a_r_t001_8h_1a1f522695783cf883fb6139028b844116" kindref="member" tooltip="The function is used to get the event flag status specified. It returns UART_SET if the corresponding...">UART001_GetFlagStatus</ref></highlight></codeline>
+<codeline lineno="794"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle,</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" kindref="member" tooltip="This data type describes the available UART Status flags.">UART001_FlagStatusType</ref><sp/>Flag);</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"></highlight></codeline>
+<codeline lineno="850"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_u_a_r_t001_8h_1a35321989a23a4463d1343b664a21ae5f" kindref="member" tooltip="This function clears the specified event flag status.">UART001_ClearFlag</ref></highlight></codeline>
+<codeline lineno="851"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_a_r_t001___handle_type" kindref="compound" tooltip="This data type describes UART App instance handle details.">UART001_HandleType</ref>*<sp/>Handle,</highlight></codeline>
+<codeline lineno="853"><highlight class="normal"><sp/><sp/><ref refid="_u_a_r_t001_8h_1a028c459f44e4a2d1d2895ecb7b857549" kindref="member" tooltip="This data type describes the available UART Status flags.">UART001_FlagStatusType</ref><sp/>Flag</highlight></codeline>
+<codeline lineno="854"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"></highlight></codeline>
+<codeline lineno="860"><highlight class="comment">/*<sp/>Include<sp/>App<sp/>extern<sp/>declaration<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="861"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_a_r_t001___extern_8h" kindref="compound" tooltip="This file contains extern declarations of UART001.">UART001_Extern.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="863"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="864"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="865"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+<codeline lineno="866"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="867"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>UART001_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_21f689c4edf2f86eed174277ad89186b" kind="dir">
+    <compoundname>inc</compoundname>
+    <innerdir refid="dir_36a69ce3f20d4dbab045c9baa09d6786">CAN001</innerdir>
+    <innerdir refid="dir_fb8a841c04a2b7da4eff31f6a7d2e329">CANGLOBAL</innerdir>
+    <innerdir refid="dir_e8bbdc7231bb31f5b604a7121ab8ea86">CLK001</innerdir>
+    <innerdir refid="dir_29af2c1e7b7f0f3e0668ef4e343c7c03">DAVESupport</innerdir>
+    <innerdir refid="dir_e550e39def2650751bacdc6149c843c5">DBG001</innerdir>
+    <innerdir refid="dir_dae8877ae5c9cbf19834b04f0ce23c9b">IO004</innerdir>
+    <innerdir refid="dir_7c95addc80bc730ebd435420afebfc8e">LIBS</innerdir>
+    <innerdir refid="dir_a02c3f6e4152c4f4314de194deae517c">MOTORLIBS</innerdir>
+    <innerdir refid="dir_2baba6f3b09b6f882a7ebc3847310009">NVIC002</innerdir>
+    <innerdir refid="dir_e23ee94689a1cdc2edb5cf0694734bf2">RESET001</innerdir>
+    <innerdir refid="dir_563db3b102197bbed33c93b43afa6aef">UART001</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/"/>
+  </compounddef>
+</doxygen>

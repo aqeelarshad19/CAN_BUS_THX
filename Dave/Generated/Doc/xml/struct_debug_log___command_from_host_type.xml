@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_debug_log___command_from_host_type" kind="struct" prot="public">
+    <compoundname>DebugLog_CommandFromHostType</compoundname>
+    <includes refid="_d_b_g001_8h" local="no">DBG001.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_debug_log___command_from_host_type_1a8f06f5de3d7e0987ae7ce6721d4747d0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DebugLog_CommandFromHostType::Counter</definition>
+        <argsstring></argsstring>
+        <name>Counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Counter: wrap around counter used for detecting the loss of messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="295" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___command_from_host_type_1a69b9f15925e3ada1f9ac3bade6892651" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DebugLog_CommandFromHostType::GroupID</definition>
+        <argsstring></argsstring>
+        <name>GroupID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Group ID: ID of the application for which the command is intended for </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="293" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___command_from_host_type_1ad9a37cd592f9f85f177422880408ed3d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DebugLog_CommandFromHostType::Message[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>Message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message: Actual Message (LSByte First) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="299" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_debug_log___command_from_host_type_1a3ce3dbabebe019c14f8dd861f73de1d1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DebugLog_CommandFromHostType::MessageLen</definition>
+        <argsstring></argsstring>
+        <name>MessageLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message Length: Length of the command message which will follow </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="297" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Format of Command sent by the Host. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="291" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="290" bodyend="300"/>
+    <listofallmembers>
+      <member refid="struct_debug_log___command_from_host_type_1a8f06f5de3d7e0987ae7ce6721d4747d0" prot="public" virt="non-virtual"><scope>DebugLog_CommandFromHostType</scope><name>Counter</name></member>
+      <member refid="struct_debug_log___command_from_host_type_1a69b9f15925e3ada1f9ac3bade6892651" prot="public" virt="non-virtual"><scope>DebugLog_CommandFromHostType</scope><name>GroupID</name></member>
+      <member refid="struct_debug_log___command_from_host_type_1ad9a37cd592f9f85f177422880408ed3d" prot="public" virt="non-virtual"><scope>DebugLog_CommandFromHostType</scope><name>Message</name></member>
+      <member refid="struct_debug_log___command_from_host_type_1a3ce3dbabebe019c14f8dd861f73de1d1" prot="public" virt="non-virtual"><scope>DebugLog_CommandFromHostType</scope><name>MessageLen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_u_a_r_t001___conf_8h" kind="file">
+    <compoundname>UART001_Conf.h</compoundname>
+    <includedby refid="_u_a_r_t001_8h" local="yes">UART001.h</includedby>
+    <invincdepgraph>
+      <node id="1043">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="1042" relation="include">
+        </childnode>
+      </node>
+      <node id="1046">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>UART001_Conf.h</label>
+        <link refid="UART001_Conf.h"/>
+        <childnode refid="1040" relation="include">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>UART001.c</label>
+        <link refid="_u_a_r_t001_8c"/>
+      </node>
+      <node id="1048">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="1052">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="1058">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="1061">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="1054">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="1045">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+      <node id="1060">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="1057">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="1051">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+      <node id="1059">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="1044">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="1042" relation="include">
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>UART001_Conf.c</label>
+        <link refid="_u_a_r_t001___conf_8c"/>
+      </node>
+      <node id="1042">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="1053">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="1052" relation="include">
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+        <childnode refid="1049" relation="include">
+        </childnode>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="1049">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_u_a_r_t001___conf_8h_1aa068d141500474d5e8f601a7c0e1f821" prot="public" static="no">
+        <name>UART001_0_USIC</name>
+        <initializer>USIC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" line="65" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_u_a_r_t001___conf_8h_1adfe5a2043a8f518a26c3c18bc6b26c1c" prot="public" static="no">
+        <name>UART001_0_USIC_CH</name>
+        <initializer>USIC0_CH0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" line="67" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_u_a_r_t001___conf_8h_1afea2bfe4ac18ffb98c75084f5fa71900" prot="public" static="no">
+        <name>UART001_CLOCK</name>
+        <initializer>120.0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" line="63" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_u_a_r_t001___conf_8h_1acf9b2f656e7ddced4ce1255d7ce04092" prot="public" static="no">
+        <name>UART001_NUM_HANDLES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" line="75" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_u_a_r_t001___conf_8h_1a56abd0db1d66a5c75424516691afd3d0" prot="public" static="no">
+        <name>UART001_PER0_USIC0_ENABLED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" line="69" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_u_a_r_t001___conf_8h_1a541eb7b475a8964c704b3e67a286d721" prot="public" static="no">
+        <name>UART001_RXFIFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" line="73" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_u_a_r_t001___conf_8h_1a244bbcf373ca63851fabb0ea24d840a4" prot="public" static="no">
+        <name>UART001_TXFIFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" line="71" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration file generated based on UI settings of UART001 App. </para>    </briefdescription>
+    <detaileddescription>
+<para>Version UART001 &lt;1.0.24&gt; </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>UART001<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.24<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*CODE_BLOCK_BEGIN[UART001_Conf.h]*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">**<sp/>Copyright<sp/>(C)<sp/>2013<sp/>Infineon<sp/>Technologies<sp/>AG.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">**<sp/>Infineon<sp/>Technologies<sp/>AG<sp/>(Infineon)<sp/>is<sp/>supplying<sp/>this<sp/>software<sp/>for<sp/>use<sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">**<sp/>with<sp/>Infineon&apos;s<sp/>microcontrollers.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">**<sp/>This<sp/>file<sp/>can<sp/>be<sp/>freely<sp/>distributed<sp/>within<sp/>development<sp/>tools<sp/>that<sp/>are<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">**<sp/>supporting<sp/>such<sp/>microcontrollers.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">**<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;.<sp/><sp/>NO<sp/>WARRANTIES,<sp/>WHETHER<sp/>EXPRESS,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">**<sp/>IMPLIED<sp/>OR<sp/>STATUTORY,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>**</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">**<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>APPLY<sp/>TO<sp/>THIS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">**<sp/>SOFTWARE.<sp/>INFINEON<sp/>SHALL<sp/>NOT,<sp/>IN<sp/>ANY<sp/>CIRCUMSTANCES,<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>SPECIAL,<sp/>**<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="comment">**<sp/>INCIDENTAL,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>FOR<sp/>ANY<sp/>REASON<sp/>WHATSOEVER.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000/XMC1000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/>NOTE<sp/><sp/><sp/><sp/><sp/>:<sp/>Any<sp/>Changes<sp/>made<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/>overwritten<sp/>during<sp/>Code<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Generation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**<sp/>VERSION<sp/>HISTORY:</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">**<sp/>29<sp/>Nov<sp/>2013<sp/>v1.0.20<sp/><sp/>1.<sp/>Added<sp/>global<sp/>macro<sp/>definitions<sp/>required<sp/>by<sp/>UART001<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Removed<sp/>DAVE3.h<sp/>inclusion<sp/>to<sp/>fix<sp/>the<sp/>MISR<sp/>warning<sp/>for</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>multiple<sp/>includes.<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">#ifndef<sp/>_CONF_UART001_H_</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CONF_UART001_H_</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">**<sp/>@Defines</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*System<sp/>Core<sp/>clock<sp/>frequency<sp/>in<sp/>MHz<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART001_CLOCK<sp/><sp/><sp/><sp/>120.0F<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="comment">/*Base<sp/>Address<sp/>of<sp/>mapped<sp/>USIC<sp/>Module<sp/>for<sp/>App<sp/>Instance<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART001_0_USIC<sp/><sp/><sp/><sp/>USIC0</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="comment">/*Base<sp/>Address<sp/>of<sp/>mapped<sp/>USIC<sp/>Channel<sp/>for<sp/>App<sp/>Instance<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART001_0_USIC_CH<sp/><sp/>USIC0_CH0</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="comment">/*USIC0<sp/>peripheral<sp/>module<sp/>has<sp/>been<sp/>configured<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART001_PER0_USIC0_ENABLED</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="comment">/*Macro<sp/>specifying<sp/>the<sp/>transmit<sp/>FIFO<sp/>buffer<sp/>has<sp/>been<sp/>enabled<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART001_TXFIFO_ENABLE<sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="comment">/*Macro<sp/>specifying<sp/>the<sp/>receive<sp/>FIFO<sp/>buffer<sp/>has<sp/>been<sp/>enabled<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART001_RXFIFO_ENABLE<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="comment">/*Macro<sp/>specifying<sp/>the<sp/>number<sp/>of<sp/>UART001<sp/>handles<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART001_NUM_HANDLES<sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>End<sp/>of<sp/>_CONF_UART001_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="comment">/*CODE_BLOCK_END*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001_Conf.h"/>
+  </compounddef>
+</doxygen>

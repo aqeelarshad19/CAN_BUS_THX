@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_i_o004___handle_type" kind="struct" prot="public">
+    <compoundname>IO004_HandleType</compoundname>
+    <includes refid="_i_o004_8h" local="no">IO004.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i_o004___handle_type_1a8c4e8c6e8e7540f8334af7ae47269bea" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IO004_HandleType::PortNr</definition>
+        <argsstring></argsstring>
+        <name>PortNr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="110" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___handle_type_1a630c965da832175612b86ebc791666b8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IO004_HandleType::PortPin</definition>
+        <argsstring></argsstring>
+        <name>PortPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port pins </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="112" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" compoundref="_i_o004_8c" startline="167" endline="196">IO004_DisableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" compoundref="_i_o004_8c" startline="198" endline="227">IO004_EnableOutputDriver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_i_o004___p_o_r_t_s___type_def" kindref="compound">IO004_PORTS_TypeDef</ref> *</type>
+        <definition>IO004_PORTS_TypeDef* IO004_HandleType::PortRegs</definition>
+        <argsstring></argsstring>
+        <name>PortRegs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Regs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="114" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" compoundref="_i_o004_8c" startline="167" endline="196">IO004_DisableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" compoundref="_i_o004_8c" startline="198" endline="227">IO004_EnableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" compoundref="_i_o004_8c" startline="128" endline="165">IO004_Init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>*This data type describes the App Handle </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="20">
+        <label>IO004_HandleType</label>
+        <link refid="struct_i_o004___handle_type"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>PortRegs</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>IO004_PORTS_TypeDef</label>
+        <link refid="struct_i_o004___p_o_r_t_s___type_def"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="108" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="107" bodyend="115"/>
+    <listofallmembers>
+      <member refid="struct_i_o004___handle_type_1a8c4e8c6e8e7540f8334af7ae47269bea" prot="public" virt="non-virtual"><scope>IO004_HandleType</scope><name>PortNr</name></member>
+      <member refid="struct_i_o004___handle_type_1a630c965da832175612b86ebc791666b8" prot="public" virt="non-virtual"><scope>IO004_HandleType</scope><name>PortPin</name></member>
+      <member refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" prot="public" virt="non-virtual"><scope>IO004_HandleType</scope><name>PortRegs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

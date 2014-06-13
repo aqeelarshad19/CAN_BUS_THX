@@ -1,0 +1,11 @@
+<0>0xB0,0x19,0xA0,0x01 Mode 0 PID 20
+<0>0x98,0x3B,0xA0,0x13 Mode 0 PID 00
+<0>0x54,0x60,0x00,0x00 Mode 9 PID 00 
+CAL0=x13,I,,,4,G,0
+CAL1=4,0,1,Q, ,0,0,
+CAL2=0,2,B,D,A,K,<0>
+
+VIN0=x14,I,,,W,A,U,
+VIN1=Z,Z,Z,4,G,5,D,
+VIN2=N,0,6,9,4,6,0,
+

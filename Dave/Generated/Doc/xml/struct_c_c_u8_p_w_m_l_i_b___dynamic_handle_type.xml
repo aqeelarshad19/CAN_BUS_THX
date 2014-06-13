@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_c_c_u8_p_w_m_l_i_b___dynamic_handle_type" kind="struct" prot="public">
+    <compoundname>CCU8PWMLIB_DynamicHandleType</compoundname>
+    <includes refid="_c_c_u8_p_w_m_l_i_b_8h" local="no">CCU8PWMLIB.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___dynamic_handle_type_1a2999cea16769dd48117df61912a1f9e7" prot="public" static="no" mutable="no">
+        <type><ref refid="_c_c_u8_p_w_m_l_i_b_8h_1ab5c8e8ebbb1163a3b9f33b4bfa7045f7" kindref="member">CCU8PWMLIB_StateType</ref></type>
+        <definition>CCU8PWMLIB_StateType CCU8PWMLIB_DynamicHandleType::State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the state of the app. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="399" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure will hold the configuration parameters which change at run time. </para>    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="394" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="393" bodyend="400"/>
+    <listofallmembers>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___dynamic_handle_type_1a2999cea16769dd48117df61912a1f9e7" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_DynamicHandleType</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_u_a_r_t001___p_o_r_t_s___type_def" kind="struct" prot="public">
+    <compoundname>UART001_PORTS_TypeDef</compoundname>
+    <includes refid="_u_a_r_t001_8h" local="no">UART001.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a14a27fbcef692821ba1818af2ffb3e0c" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::HWSEL</definition>
+        <argsstring></argsstring>
+        <name>HWSEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Pin Hardware Select Register Offset 0x00000074 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="318" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1af43106e01cd75fe5d548347d290e0768" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t UART001_PORTS_TypeDef::IN</definition>
+        <argsstring></argsstring>
+        <name>IN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Input Register Offset 0x00000024 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="308" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a2fa83564d7873461c1671ff960d364b3" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::IOCR0</definition>
+        <argsstring></argsstring>
+        <name>IOCR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Input/Output Control Register 0 Offset 0x00000010 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="300" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1ac92fce82274276615dbcf84f8ce2cb29" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::IOCR12</definition>
+        <argsstring></argsstring>
+        <name>IOCR12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Input/Output Control Register 12 Offset 0x0000001C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="306" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a85ca1c0d423511c4d233a6038e384d06" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::IOCR4</definition>
+        <argsstring></argsstring>
+        <name>IOCR4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Input/Output Control Register 4 Offset 0x00000014 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="302" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a53e75fadefdf5b0eab92098731c608c2" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::IOCR8</definition>
+        <argsstring></argsstring>
+        <name>IOCR8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Input/Output Control Register 8 Offset 0x00000018 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="304" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1aa02e36818b1a0bc49acbf38d01129202" prot="public" static="no" mutable="no">
+        <type>__O uint32_t</type>
+        <definition>__O uint32_t UART001_PORTS_TypeDef::OMR</definition>
+        <argsstring></argsstring>
+        <name>OMR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Output Modification Register Offset 0x00000004 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="297" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1ab36f17dce7e0c26414835f5839ecf65f" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::OUT</definition>
+        <argsstring></argsstring>
+        <name>OUT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Output Register Offset 0x00000000 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="296" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a196c1d91f6146e7de9dab360b6ca2438" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::PDISC</definition>
+        <argsstring></argsstring>
+        <name>PDISC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Pin Function Decision Control Register Offset 0x00000060 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="314" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a80f7e66228475f65facbe06f70bbcd34" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::PDR0</definition>
+        <argsstring></argsstring>
+        <name>PDR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Pad Driver Mode 0 Register Offset 0x00000040 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="310" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8328e7814e1b6571842c03c0f19d9492" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::PDR1</definition>
+        <argsstring></argsstring>
+        <name>PDR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Pad Driver Mode 1 Register Offset 0x00000044 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="311" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8d9f26dfa71475a972bb997bad043e75" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t UART001_PORTS_TypeDef::PPS</definition>
+        <argsstring></argsstring>
+        <name>PPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Pin Power Safe Register Offset 0x00000070 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="316" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1ab47fced49a1b5241ceca924fde8d8fb5" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t UART001_PORTS_TypeDef::RESERVED1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="298" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1ac22296f697f39d8352c2b46d13b81884" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t UART001_PORTS_TypeDef::RESERVED2[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="307" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a08fb8d175af62dbe1348b16b6135320b" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t UART001_PORTS_TypeDef::RESERVED3[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="309" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a6bff841d8b61ea6bbdc4930adf27f31a" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t UART001_PORTS_TypeDef::RESERVED4[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="312" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___p_o_r_t_s___type_def_1a0ac5d0ea2a3c5183d7224a25c46e309e" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t UART001_PORTS_TypeDef::RESERVED5[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="315" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This data type is to describe the I/O Port registers. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="295" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="295" bodyend="319"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a14a27fbcef692821ba1818af2ffb3e0c" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>HWSEL</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1af43106e01cd75fe5d548347d290e0768" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>IN</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a2fa83564d7873461c1671ff960d364b3" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>IOCR0</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1ac92fce82274276615dbcf84f8ce2cb29" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>IOCR12</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a85ca1c0d423511c4d233a6038e384d06" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>IOCR4</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a53e75fadefdf5b0eab92098731c608c2" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>IOCR8</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1aa02e36818b1a0bc49acbf38d01129202" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>OMR</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1ab36f17dce7e0c26414835f5839ecf65f" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>OUT</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a196c1d91f6146e7de9dab360b6ca2438" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>PDISC</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a80f7e66228475f65facbe06f70bbcd34" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>PDR0</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8328e7814e1b6571842c03c0f19d9492" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>PDR1</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a8d9f26dfa71475a972bb997bad043e75" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>PPS</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1ab47fced49a1b5241ceca924fde8d8fb5" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1ac22296f697f39d8352c2b46d13b81884" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a08fb8d175af62dbe1348b16b6135320b" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a6bff841d8b61ea6bbdc4930adf27f31a" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_u_a_r_t001___p_o_r_t_s___type_def_1a0ac5d0ea2a3c5183d7224a25c46e309e" prot="public" virt="non-virtual"><scope>UART001_PORTS_TypeDef</scope><name>RESERVED5</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

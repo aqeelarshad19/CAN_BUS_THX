@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_211bbb5765fcfe0715d8c3fd2adcb642" kind="dir">
+    <compoundname>CAN001</compoundname>
+    <innerfile refid="_c_a_n001_8d">CAN001.d</innerfile>
+    <innerfile refid="_c_a_n001___conf_8d">CAN001_Conf.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/Dave/Generated/src/CAN001/"/>
+  </compounddef>
+</doxygen>

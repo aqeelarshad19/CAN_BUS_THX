@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_c_c_u8_p_w_m_l_i_b___handle_type" kind="struct" prot="public">
+    <compoundname>CCU8PWMLIB_HandleType</compoundname>
+    <includes refid="_c_c_u8_p_w_m_l_i_b_8h" local="no">CCU8PWMLIB.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1adae229261924a801df73c9d26549b4a3" prot="public" static="no" mutable="no">
+        <type>CCU8_GLOBAL_TypeDef *const</type>
+        <definition>CCU8_GLOBAL_TypeDef* const CCU8PWMLIB_HandleType::CC8yKernRegsPtr</definition>
+        <argsstring></argsstring>
+        <name>CC8yKernRegsPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is pointer to the CMSIS CCU8 kernel register structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="535" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aad1ae0e2a4661d6f51f2881244c12f7d" prot="public" static="no" mutable="no">
+        <type>CCU8_CC8_TypeDef *const</type>
+        <definition>CCU8_CC8_TypeDef* const CCU8PWMLIB_HandleType::CC8yRegs1Ptr</definition>
+        <argsstring></argsstring>
+        <name>CC8yRegs1Ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is pointer to the CMSIS CCU8 slice register structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="543" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a4772395a712b2f9fdf601c98c9ed4585" prot="public" static="no" mutable="no">
+        <type>CCU8_CC8_TypeDef *const</type>
+        <definition>CCU8_CC8_TypeDef* const CCU8PWMLIB_HandleType::CC8yRegsPtr</definition>
+        <argsstring></argsstring>
+        <name>CC8yRegsPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is pointer to the CMSIS CCU8 slice register structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="539" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ab22f49bd4aecc455092ff2c0d91726f8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1ab0d60b09cde73e1c667bbfe56259b6db" kindref="member">CCU8PWMLIB_CompareModeType</ref></type>
+        <definition>const CCU8PWMLIB_CompareModeType CCU8PWMLIB_HandleType::CompareMode</definition>
+        <argsstring></argsstring>
+        <name>CompareMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the compare mode of the timer - symmetric/asymmetric </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="563" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a2a1a2b6592fbfb0d84f11c3ebd45cd04" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1aa3791cf49ae71b8680f652e050c7485e" kindref="member">CCU8PWMLIB_CountingModeType</ref></type>
+        <definition>const CCU8PWMLIB_CountingModeType CCU8PWMLIB_HandleType::CountingMode</definition>
+        <argsstring></argsstring>
+        <name>CountingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the counting mode of the timer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="551" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a362357b3c515139b701257ff6c5007ac" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1a0e7fc093de614fe487063333bdbcff5c" kindref="member">CCU8PWMLIB_DeadTimeConfType</ref></type>
+        <definition>const CCU8PWMLIB_DeadTimeConfType CCU8PWMLIB_HandleType::DeadTimeConf</definition>
+        <argsstring></argsstring>
+        <name>DeadTimeConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the dead time configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="559" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ae4bf491628a7979947be2dfbb09eda45" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_c_c_u8_p_w_m_l_i_b___dynamic_handle_type" kindref="compound">CCU8PWMLIB_DynamicHandleType</ref> *const</type>
+        <definition>CCU8PWMLIB_DynamicHandleType* const CCU8PWMLIB_HandleType::DynamicHandleType</definition>
+        <argsstring></argsstring>
+        <name>DynamicHandleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the ointer to the dynamic handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="547" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a44441a6cdcb71a949f103ce9b569c2f1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1a13da50eddcbe653998dbc896a3138679" kindref="member">CCU8PWMLIB_ExtStartConfigType</ref></type>
+        <definition>const CCU8PWMLIB_ExtStartConfigType CCU8PWMLIB_HandleType::ExtStartConfig</definition>
+        <argsstring></argsstring>
+        <name>ExtStartConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the functionality of the external stop </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="567" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a43c0486de2e000795452c14d7cb5415c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1a5583b3b1760a97eee8ab1d73ce1ec05e" kindref="member">CCU8PWMLIB_ExtStopConfigType</ref></type>
+        <definition>const CCU8PWMLIB_ExtStopConfigType CCU8PWMLIB_HandleType::ExtStopConfig</definition>
+        <argsstring></argsstring>
+        <name>ExtStopConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the functionality of the external stop </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="555" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a3dcd09bc9be5ba476eb4fc991299713a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1a487499fd3f6cf8afbfdeb2ac44faf389" kindref="member">CCU8PWMLIB_CCUInUseType</ref></type>
+        <definition>const CCU8PWMLIB_CCUInUseType CCU8PWMLIB_HandleType::FirstSlice</definition>
+        <argsstring></argsstring>
+        <name>FirstSlice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This saves the slice number of the first slice. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="571" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a1c3d82b9c4c6fba9ffe54fb56e43bca4" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CCU8PWMLIB_HandleType::InterruptControl</definition>
+        <argsstring></argsstring>
+        <name>InterruptControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This decides whether to enable interrupts at initialization time. This stores the information in a format of 32-bit register (INTE) with a bit-field for each interrupt. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="588" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a8c4b9667a21b04b93252d183f7520baa" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CCU8PWMLIB_HandleType::kCCUPrescalar</definition>
+        <argsstring></argsstring>
+        <name>kCCUPrescalar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the prescalar divider value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="519" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ab752a3fa2fedde91ddd21731fa668afa" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CCU8PWMLIB_HandleType::kCompareValue1</definition>
+        <argsstring></argsstring>
+        <name>kCompareValue1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the compare register value of channel 1 which corresponds to initial duty cycle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="510" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a6c3f0ce3b071e7c3181fcc15789b3554" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CCU8PWMLIB_HandleType::kCompareValue2</definition>
+        <argsstring></argsstring>
+        <name>kCompareValue2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the compare register value of channel 2 which corresponds to initial duty cycle. This will be used in case of asymmetric PWM mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="515" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ad3f1a291e815f2b1705247158ca970d6" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kDeadTimePrescalar</definition>
+        <argsstring></argsstring>
+        <name>kDeadTimePrescalar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the dead time prescalar divider value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="473" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a3c2ad8e22c31f9f18ef0e9955f8226b9" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kDitherCompare</definition>
+        <argsstring></argsstring>
+        <name>kDitherCompare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter saves the dither compare value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="469" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aa53828b375290b8d2d2836dfd5914010" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kDitherSetting</definition>
+        <argsstring></argsstring>
+        <name>kDitherSetting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter configures dither mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="477" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a51eca5dd957531e9be2101f1cd0e6ad6" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kExtStartTrig</definition>
+        <argsstring></argsstring>
+        <name>kExtStartTrig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter tells whether to start the CCU8_CCy slice with external trigger or by SW trigger </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="413" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1abe3d4f46d66af2ded5e05287c5fe12a5" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kExtStopTrig</definition>
+        <argsstring></argsstring>
+        <name>kExtStopTrig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter tells whether to stop the CCU8_CCy slice with external trigger or by SW trigger </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="418" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a25c14a83b1928f9d081b77cc02a26962" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t CCU8PWMLIB_HandleType::kFallingDeadTime</definition>
+        <argsstring></argsstring>
+        <name>kFallingDeadTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the the falling dead time value for channel 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="495" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a42dfc88a7cf88045c2b27d9846148ff7" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kPassiveLevel0</definition>
+        <argsstring></argsstring>
+        <name>kPassiveLevel0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter selects the passive level for output 0 - Active High or Active Low </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="433" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a45f6f4a8d5f4825cb7c4b5d39d8e23c2" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kPassiveLevel1</definition>
+        <argsstring></argsstring>
+        <name>kPassiveLevel1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter selects the passive level for output 1 - Active High or Active Low </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="438" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1afff3ae5bc87f51e78bc6827d757c3e37" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kPassiveState0</definition>
+        <argsstring></argsstring>
+        <name>kPassiveState0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter tells whether direct output CCST will be connected to output pin 0 or inverted status output is connected to Out 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="423" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a51a863d9b66ff92bdb448afbb57daf09" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kPassiveState1</definition>
+        <argsstring></argsstring>
+        <name>kPassiveState1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter tells whether direct output CCST will be connected to output pin 1 or inverted status output is connected to Out 1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="428" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aa5d7643ac31c7ff3520a95d90639c497" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CCU8PWMLIB_HandleType::kPeriodVal</definition>
+        <argsstring></argsstring>
+        <name>kPeriodVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Period value computed as per counting mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="531" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a6337571a008830b2b4486853b0cf1497" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float CCU8PWMLIB_HandleType::kResolution</definition>
+        <argsstring></argsstring>
+        <name>kResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the resolution of the CCU8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="504" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a2abf3fbeb7dcb75ef9d652be1edc89b0" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t CCU8PWMLIB_HandleType::kRisingDeadTime</definition>
+        <argsstring></argsstring>
+        <name>kRisingDeadTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the the rising dead time value for channel 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="499" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aee2f891a5a2197aee5a5131757229f44" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1a4fa2c5be55f10596656729f75ec486fd" kindref="member">CCU8PWMLIB_EdgeTriggerType</ref></type>
+        <definition>const CCU8PWMLIB_EdgeTriggerType CCU8PWMLIB_HandleType::kStartEdge</definition>
+        <argsstring></argsstring>
+        <name>kStartEdge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter gives the active edge of the external start signal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="523" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a9c779c5f3f6e2c241906777babd650cd" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1a4fa2c5be55f10596656729f75ec486fd" kindref="member">CCU8PWMLIB_EdgeTriggerType</ref></type>
+        <definition>const CCU8PWMLIB_EdgeTriggerType CCU8PWMLIB_HandleType::kStopEdge</definition>
+        <argsstring></argsstring>
+        <name>kStopEdge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter gives the active edge of the external stop signal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="527" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1af3d0baf8d72c6e4d06151a20e5c7cf28" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kTimerConcatenation</definition>
+        <argsstring></argsstring>
+        <name>kTimerConcatenation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter tells whether timer concatenation is required or not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="447" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aba9e296787aebab711ed212e00949d0b" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kTimerMode</definition>
+        <argsstring></argsstring>
+        <name>kTimerMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter is used to store whether CCU8_CCy slice is in single shot mode or in periodic mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="443" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a7a5bdc6991d42febde1eb083d02b8f37" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kTrapEnable</definition>
+        <argsstring></argsstring>
+        <name>kTrapEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This indicates whether TRAP signal will have an effect on output signal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="451" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a3cd2a400df5899d50b84a9e8f7e89612" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kTrapExitControl</definition>
+        <argsstring></argsstring>
+        <name>kTrapExitControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This indicates whether to exit from TRAP state automatically when TRAP condition is removed or SW trigger is required to exit from the TRAP state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="465" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a8f17297f13474a43f91e0d852a8e923a" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kTrapLevel</definition>
+        <argsstring></argsstring>
+        <name>kTrapLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter gives the active level of the Trap signal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="460" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a52151b61c43174186ad7f9dd2e029956" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::kTrapSync</definition>
+        <argsstring></argsstring>
+        <name>kTrapSync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This configures the synchronization with the PWM signal is required or not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="456" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a6fe0b5d2d1d41e3ed18a5aab5f8edab2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_c_c_u8_p_w_m_l_i_b_8h_1a487499fd3f6cf8afbfdeb2ac44faf389" kindref="member">CCU8PWMLIB_CCUInUseType</ref></type>
+        <definition>const CCU8PWMLIB_CCUInUseType CCU8PWMLIB_HandleType::SecondSlice</definition>
+        <argsstring></argsstring>
+        <name>SecondSlice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This saves the slice number od the second slice in case of timer concatenation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="575" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a108cd7112d78540b9281aa3e8b5de553" prot="public" static="no" mutable="no">
+        <type>CCU8PWMLIB_SetCompareFuncionPtr</type>
+        <definition>CCU8PWMLIB_SetCompareFuncionPtr CCU8PWMLIB_HandleType::SetCompareFuncPtr</definition>
+        <argsstring></argsstring>
+        <name>SetCompareFuncPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the function pointer for the SetCompare function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="592" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1add29949dd310df83817c191ff2dca109" prot="public" static="no" mutable="no">
+        <type>CCU8PWMLIB_SetDutyFunctionPtr</type>
+        <definition>CCU8PWMLIB_SetDutyFunctionPtr CCU8PWMLIB_HandleType::SetDutyFuncPtr</definition>
+        <argsstring></argsstring>
+        <name>SetDutyFuncPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the function pointer for the SetDutyCycle function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="596" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a06e92c3c9f06d03674dca35d0d11b70d" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::ShadowTransfer</definition>
+        <argsstring></argsstring>
+        <name>ShadowTransfer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This tells whether to enable shadow transfer in this App or it will be taken care by some other app </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="482" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aa0d52ec870d8331904c24bde352a927b" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CCU8PWMLIB_HandleType::ShadowTransferMask</definition>
+        <argsstring></argsstring>
+        <name>ShadowTransferMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bitmask for shadow transfer as per slice number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="579" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a2feeedc6d83a56a7feefa9472132f233" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::Start</definition>
+        <argsstring></argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This tells whether to clear IDLE mode in this App or it will be taken care by some other app </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="487" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a615caab4d5dd01607d7ad74caef0f76d" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CCU8PWMLIB_HandleType::StartControl</definition>
+        <argsstring></argsstring>
+        <name>StartControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This decides whether to start the app after initialization </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="491" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a307c9c1cdbe70fc8997a1fa0747c76e5" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CCU8PWMLIB_HandleType::StartMask</definition>
+        <argsstring></argsstring>
+        <name>StartMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bitmask for clearing IDLE mask as per slice used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="583" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure holds all the static configuration parameters for the Single Phase PWM with Dead Time APP. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>CCU8PWMLIB_DynamicHandleType</label>
+        <link refid="struct_c_c_u8_p_w_m_l_i_b___dynamic_handle_type"/>
+      </node>
+      <node id="10">
+        <label>CCU8PWMLIB_HandleType</label>
+        <link refid="struct_c_c_u8_p_w_m_l_i_b___handle_type"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>DynamicHandleType</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="408" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="407" bodyend="597"/>
+    <listofallmembers>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1adae229261924a801df73c9d26549b4a3" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>CC8yKernRegsPtr</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aad1ae0e2a4661d6f51f2881244c12f7d" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>CC8yRegs1Ptr</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a4772395a712b2f9fdf601c98c9ed4585" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>CC8yRegsPtr</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ab22f49bd4aecc455092ff2c0d91726f8" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>CompareMode</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a2a1a2b6592fbfb0d84f11c3ebd45cd04" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>CountingMode</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a362357b3c515139b701257ff6c5007ac" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>DeadTimeConf</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ae4bf491628a7979947be2dfbb09eda45" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>DynamicHandleType</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a44441a6cdcb71a949f103ce9b569c2f1" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>ExtStartConfig</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a43c0486de2e000795452c14d7cb5415c" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>ExtStopConfig</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a3dcd09bc9be5ba476eb4fc991299713a" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>FirstSlice</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a1c3d82b9c4c6fba9ffe54fb56e43bca4" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>InterruptControl</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a8c4b9667a21b04b93252d183f7520baa" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kCCUPrescalar</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ab752a3fa2fedde91ddd21731fa668afa" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kCompareValue1</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a6c3f0ce3b071e7c3181fcc15789b3554" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kCompareValue2</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1ad3f1a291e815f2b1705247158ca970d6" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kDeadTimePrescalar</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a3c2ad8e22c31f9f18ef0e9955f8226b9" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kDitherCompare</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aa53828b375290b8d2d2836dfd5914010" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kDitherSetting</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a51eca5dd957531e9be2101f1cd0e6ad6" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kExtStartTrig</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1abe3d4f46d66af2ded5e05287c5fe12a5" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kExtStopTrig</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a25c14a83b1928f9d081b77cc02a26962" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kFallingDeadTime</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a42dfc88a7cf88045c2b27d9846148ff7" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kPassiveLevel0</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a45f6f4a8d5f4825cb7c4b5d39d8e23c2" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kPassiveLevel1</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1afff3ae5bc87f51e78bc6827d757c3e37" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kPassiveState0</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a51a863d9b66ff92bdb448afbb57daf09" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kPassiveState1</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aa5d7643ac31c7ff3520a95d90639c497" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kPeriodVal</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a6337571a008830b2b4486853b0cf1497" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kResolution</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a2abf3fbeb7dcb75ef9d652be1edc89b0" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kRisingDeadTime</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aee2f891a5a2197aee5a5131757229f44" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kStartEdge</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a9c779c5f3f6e2c241906777babd650cd" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kStopEdge</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1af3d0baf8d72c6e4d06151a20e5c7cf28" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kTimerConcatenation</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aba9e296787aebab711ed212e00949d0b" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kTimerMode</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a7a5bdc6991d42febde1eb083d02b8f37" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kTrapEnable</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a3cd2a400df5899d50b84a9e8f7e89612" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kTrapExitControl</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a8f17297f13474a43f91e0d852a8e923a" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kTrapLevel</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a52151b61c43174186ad7f9dd2e029956" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>kTrapSync</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a6fe0b5d2d1d41e3ed18a5aab5f8edab2" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>SecondSlice</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a108cd7112d78540b9281aa3e8b5de553" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>SetCompareFuncPtr</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1add29949dd310df83817c191ff2dca109" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>SetDutyFuncPtr</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a06e92c3c9f06d03674dca35d0d11b70d" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>ShadowTransfer</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1aa0d52ec870d8331904c24bde352a927b" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>ShadowTransferMask</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a2feeedc6d83a56a7feefa9472132f233" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>Start</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a615caab4d5dd01607d7ad74caef0f76d" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>StartControl</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___handle_type_1a307c9c1cdbe70fc8997a1fa0747c76e5" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_HandleType</scope><name>StartMask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

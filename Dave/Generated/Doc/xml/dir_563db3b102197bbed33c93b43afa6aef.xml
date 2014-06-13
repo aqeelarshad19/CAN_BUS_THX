@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_563db3b102197bbed33c93b43afa6aef" kind="dir">
+    <compoundname>UART001</compoundname>
+    <innerfile refid="_u_a_r_t001_8h">UART001.h</innerfile>
+    <innerfile refid="_u_a_r_t001___conf_8h">UART001_Conf.h</innerfile>
+    <innerfile refid="_u_a_r_t001___extern_8h">UART001_Extern.h</innerfile>
+    <innerfile refid="_usic_8h">Usic.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/"/>
+  </compounddef>
+</doxygen>

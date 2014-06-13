@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_m_o_t_o_r_l_i_b_8c" kind="file">
+    <compoundname>MOTORLIB.c</compoundname>
+    <includes refid="_d_a_v_e3_8h" local="no">DAVE3.h</includes>
+    <includes refid="_m_o_t_o_r_l_i_b_8h" local="yes">../../inc/LIBS/MOTORLIB.h</includes>
+    <incdepgraph>
+      <node id="735">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="727">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="721">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="742">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="723">
+        <label>stdint.h</label>
+      </node>
+      <node id="739">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="737">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+      </node>
+      <node id="724">
+        <label>stddef.h</label>
+      </node>
+      <node id="741">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="719">
+        <label>MOTORLIB.c</label>
+        <link refid="MOTORLIB.c"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="728" relation="include">
+        </childnode>
+      </node>
+      <node id="722">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="724" relation="include">
+        </childnode>
+      </node>
+      <node id="732">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="725">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="733">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="729">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="736">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="731">
+        <label>uc_id.h</label>
+      </node>
+      <node id="734">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="738">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="720">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="721" relation="include">
+        </childnode>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="725" relation="include">
+        </childnode>
+        <childnode refid="726" relation="include">
+        </childnode>
+        <childnode refid="729" relation="include">
+        </childnode>
+        <childnode refid="730" relation="include">
+        </childnode>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="741" relation="include">
+        </childnode>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+      </node>
+      <node id="743">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="730">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="728">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="726">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="727" relation="include">
+        </childnode>
+        <childnode refid="728" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>This file contains implementations of all Public and Private functions of Motor control library. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>LIBS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.28<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*CODE_BLOCK_BEGIN[MOTORLIB.c]*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2011,<sp/>Infineon<sp/>Technologies<sp/>AG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>modification,are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>copyright<sp/>holders<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>**</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>specific<sp/>prior<sp/>written<sp/>permission.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>ARE<sp/><sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>LIABLE<sp/><sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/><sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>To<sp/>improve<sp/>the<sp/>quality<sp/>of<sp/>the<sp/>software,<sp/>users<sp/>are<sp/>encouraged<sp/>to<sp/>share<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>modifications,<sp/>enhancements<sp/>or<sp/>bug<sp/>fixes<sp/>with<sp/>Infineon<sp/>Technologies<sp/>AG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>dave@infineon.com).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000<sp/>Series<sp/>/XMC1000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">**<sp/>MAY<sp/>BE<sp/>CHANGED<sp/>BY<sp/>USER<sp/>[yes/no]:<sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">**<sp/>MODIFICATION<sp/>DATE<sp/>:<sp/>27<sp/>Sept,<sp/>2013<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">**<sp/>Initials<sp/><sp/><sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">**<sp/>PA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Dave<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>Revision<sp/>History</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>03<sp/>Apr<sp/>2013<sp/><sp/><sp/>v1.0.0<sp/><sp/><sp/><sp/>Initial<sp/>version</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>25<sp/>Apr<sp/>2013<sp/><sp/><sp/>v1.0.2<sp/><sp/><sp/><sp/>Added<sp/>support<sp/>for<sp/>XMC1302</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/>29<sp/><sp/>May<sp/>2013<sp/><sp/>v1.0.12<sp/><sp/><sp/>Added<sp/>FOC<sp/>support<sp/>for<sp/>XMC1302</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>21<sp/>June<sp/>2013<sp/><sp/>v1.0.14<sp/><sp/><sp/>Added<sp/>support<sp/>for<sp/>XMC4400<sp/>and<sp/>XMC4200<sp/>device</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>24<sp/>Jul<sp/>2013<sp/><sp/><sp/>v1.0.18<sp/><sp/><sp/>Added<sp/>FOC<sp/>support<sp/>for<sp/>XMC4400<sp/>device</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>27<sp/>Sept<sp/>2013<sp/><sp/>v1.0.21<sp/><sp/><sp/>Added<sp/>FOC<sp/>support<sp/>for<sp/>XMC45<sp/>&amp;<sp/>XMC42<sp/>device</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../inc/LIBS/MOTORLIB.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor">#ifdef<sp/>USE_MOTORLIBS<sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Type<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="98"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Function<sp/>declarations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*****************************************************************************/</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Imported<sp/>Global<sp/>Variables<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Constant<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Variable<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>e[23]<sp/>=<sp/>{0x20000000,<sp/>0x12E4051D,<sp/>0x9FB385B,<sp/>0x51111D4,<sp/>0x28B0D43,<sp/>0x145D7E1,<sp/>0xA2F61E,<sp/>0x517C55,<sp/>0x28BE53,<sp/>0x145F2E,<sp/>0xA2F98,<sp/>0x517CC,<sp/>0x28BE6,<sp/>0x145F3,<sp/>0xA2F9,<sp/>0x517C,<sp/>0x28BE,<sp/>0x145F,<sp/>0xA2F,<sp/>0x517,<sp/>0x28B,<sp/>0x145,<sp/>0xA2};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="118"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Constant<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="119"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="122"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>like<sp/>macro<sp/>definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="123"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Function<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="127"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Public<sp/>Function<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="130"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">uint32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1aa86f50f9f5f4adfdb99e106f43947c25" kindref="member" tooltip="This function is the implementation cartesian to polar transform. Amlpitude = K * SQRT(x*x+y*y); wher...">MOTORLIBS_Car2Pol</ref>(int32_t<sp/>x,int32_t<sp/>y,<sp/>int16_t<sp/>*Angle)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>uint8_t<sp/>CordicCount;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>int32_t<sp/>dx,flag<sp/>=<sp/>0,<sp/>tempAngle<sp/>=<sp/>0,CORDX<sp/>=x,CORDY=y;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CORDX<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDX<sp/>=<sp/>-CORDX;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(CordicCount<sp/>=<sp/>0;<sp/>CordicCount<sp/>&lt;<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a9561ecc357470c34d80b92f95773bd65" kindref="member">CORDIC_ITERATIONS</ref>;<sp/>CordicCount++)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>dx<sp/>=<sp/><sp/>CORDX<sp/>&gt;&gt;<sp/>CordicCount;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>CORDY<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDX<sp/>+=<sp/>CORDY<sp/>&gt;&gt;<sp/>CordicCount;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDY<sp/>-=<sp/>dx;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tempAngle<sp/>-=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDX<sp/>-=<sp/>CORDY<sp/>&gt;&gt;<sp/>CordicCount;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDY<sp/>+=<sp/>dx;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>tempAngle<sp/>+=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>*Angle<sp/>=<sp/>(int16_t)(((flag)<sp/>?<sp/><sp/>tempAngle<sp/>+<sp/>0x80000000:<sp/>-tempAngle)&gt;&gt;16);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(CORDX&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a46fb97b2dc7b57bb60e4f38cacca80c9" kindref="member">MOTORLIBS_MPS_DIVBY1</ref>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1ab8095b4ab1829b14c138fbc88a92d221" kindref="member" tooltip="This function is the implementation polar to cartesian transform. X = K * Amplitude* cos(Angle); wher...">MOTORLIBS_Pol2Car</ref>(int16_t<sp/>Angle,uint32_t<sp/>Amplitude,<sp/>int32_t<sp/>*x)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>uint8_t<sp/>CordicCount,<sp/>flag=0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>int32_t<sp/>dx,CORDX<sp/>=Amplitude,CORDY=0,tempAngle<sp/>=<sp/>Angle&lt;&lt;16;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_m_o_t_o_r_l_i_b_8h_1acff93c902bdac8932697de6476164221" kindref="member">MOTORLIBS_ABS</ref>(tempAngle)<sp/>&gt;<sp/>0x40000000U)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>tempAngle<sp/>=<sp/>0x80000000<sp/>-<sp/>tempAngle;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDX<sp/>=<sp/>-CORDX;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(CordicCount<sp/>=<sp/>0;<sp/>CordicCount<sp/>&lt;<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a9561ecc357470c34d80b92f95773bd65" kindref="member">CORDIC_ITERATIONS</ref>;<sp/>CordicCount++)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>dx<sp/>=<sp/>CORDX&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tempAngle<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDX<sp/>-=<sp/>CORDY&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDY<sp/>+=<sp/>dx;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tempAngle<sp/>-=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDX<sp/>+=<sp/>CORDY&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDY<sp/>-=<sp/>dx;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tempAngle<sp/>+=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>*x<sp/>=<sp/>CORDX&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a46fb97b2dc7b57bb60e4f38cacca80c9" kindref="member">MOTORLIBS_MPS_DIVBY1</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(flag?<sp/>-CORDY&gt;&gt;MOTORLIBS_MPS_DIVBY1:<sp/>CORDY&gt;&gt;MOTORLIBS_MPS_DIVBY1);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1ac282d85d437bf843ddcdbe0ae2d416a1" kindref="member" tooltip="This function is the implementation of park transform. Id =k*(Ialpha*cos(Anlge)+Ibeta*sin(Angle))/2 ;...">MOTORLIBS_ParkTransform</ref>(int32_t<sp/>Ialpha,int32_t<sp/>Ibeta,int16_t<sp/>Angle,int32_t<sp/>*Iq)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>uint8_t<sp/>CordicCount,<sp/>flag=0;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>int32_t<sp/>dx,CORDX<sp/>=Ibeta,CORDY=Ialpha,tempAngle<sp/>=<sp/>Angle&lt;&lt;16;;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1acff93c902bdac8932697de6476164221" kindref="member">MOTORLIBS_ABS</ref>(tempAngle)<sp/>&gt;<sp/>0x40000000U)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>tempAngle<sp/>=<sp/>0x80000000<sp/>-<sp/>tempAngle;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDX<sp/>=<sp/>-CORDX;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(CordicCount<sp/>=<sp/>0;<sp/>CordicCount<sp/>&lt;<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a9561ecc357470c34d80b92f95773bd65" kindref="member">CORDIC_ITERATIONS</ref>;<sp/>CordicCount++)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>dx<sp/>=<sp/>CORDX&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tempAngle<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDX<sp/>-=<sp/>CORDY&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDY<sp/>+=<sp/>dx;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tempAngle<sp/>-=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDX<sp/>+=<sp/>CORDY&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDY<sp/>-=<sp/>dx;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tempAngle<sp/>+=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>*Iq<sp/>=<sp/>CORDX&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858adc3bda3c9429c4d77b032a2489ca0cfd" kindref="member">MOTORLIBS_MPS_DIVBY2</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(flag?<sp/>-CORDY&gt;&gt;MOTORLIBS_MPS_DIVBY2:<sp/>CORDY&gt;&gt;MOTORLIBS_MPS_DIVBY2);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a502bf3f902efda19425bc91ccc53f38c" kindref="member" tooltip="This function is the implementation of inverse park transform. Valpha = k*(Vd*cos(Anlge)- Vq*sin(Angl...">MOTORLIBS_IParkTransform</ref>(int32_t<sp/>Vd,int32_t<sp/>Vq,int16_t<sp/>Angle,int32_t<sp/>*Vbeta)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>uint8_t<sp/>CordicCount,<sp/>flag=0;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>int32_t<sp/>dx,CORDX<sp/>=Vd,CORDY=Vq,tempAngle<sp/>=<sp/>Angle&lt;&lt;16;;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1acff93c902bdac8932697de6476164221" kindref="member">MOTORLIBS_ABS</ref>(tempAngle)<sp/>&gt;<sp/>0x40000000U)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>tempAngle<sp/>=<sp/>0x80000000<sp/>-<sp/>tempAngle;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>CORDX<sp/>=<sp/>-CORDX;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(CordicCount<sp/>=<sp/>0;<sp/>CordicCount<sp/>&lt;<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a9561ecc357470c34d80b92f95773bd65" kindref="member">CORDIC_ITERATIONS</ref>;<sp/>CordicCount++)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>dx<sp/>=<sp/>CORDX&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tempAngle<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDX<sp/>-=<sp/>CORDY&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDY<sp/>+=<sp/>dx;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tempAngle<sp/>-=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDX<sp/>+=<sp/>CORDY&gt;&gt;CordicCount;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORDY<sp/>-=<sp/>dx;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tempAngle<sp/>+=<sp/>e[CordicCount];</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/>*Vbeta<sp/>=flag?<sp/>-CORDY&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a80cbca220625e55f6a5429c4f1ae8b7f" kindref="member">MOTORLIBS_MPS_DIVBY4</ref>:<sp/>CORDY&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a80cbca220625e55f6a5429c4f1ae8b7f" kindref="member">MOTORLIBS_MPS_DIVBY4</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>CORDX&gt;&gt;MOTORLIBS_MPS_DIVBY4);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1aeb09868b53110700e0864c3a0715d7bc" kindref="member" tooltip="This function is the implementation of clark transform. Ialpha = Phase_A/2 Ibeta = (Phase_A+2*Phase_B...">MOTORLIBS_ClarkTransform</ref>(int32_t<sp/>Phase_A,<sp/>int32_t<sp/>Phase_B,<sp/>int32_t<sp/>*Ialpha)</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>*Ialpha<sp/><sp/>=<sp/>(int32_t)(Phase_A<sp/>&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a4a3d08f54bb1c23acd9f5afbfb6473e6" kindref="member">MOTORLIBS_CLARKESCALE</ref>);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>(int32_t)(((Phase_A<sp/>+<sp/>2*Phase_B)*(<ref refid="_m_o_t_o_r_l_i_b_8h_1a52d950961d257cf6dc73c7f9398c9e5e" kindref="member">MOTORLIBS_INVSQRT3</ref>))&gt;&gt;(15+<ref refid="_m_o_t_o_r_l_i_b_8h_1a4a3d08f54bb1c23acd9f5afbfb6473e6" kindref="member">MOTORLIBS_CLARKESCALE</ref>));</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a46461be76b7ad34b881a2351134f5695" kindref="member" tooltip="This function is the implementation of clark transform. Ialpha = Phase_A/2 Ibeta = (Phase_B-Phase_C)/...">MOTORLIBS_ClarkTransform2</ref>(int32_t<sp/>Phase_A,<sp/>int32_t<sp/>Phase_B,<sp/>int32_t<sp/>Phase_C,<sp/>int32_t<sp/>*Ialpha<sp/>)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>*Ialpha<sp/><sp/>=<sp/>(int32_t)(Phase_A<sp/>&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a4a3d08f54bb1c23acd9f5afbfb6473e6" kindref="member">MOTORLIBS_CLARKESCALE</ref>);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)(((Phase_B-Phase_C)*(<ref refid="_m_o_t_o_r_l_i_b_8h_1a52d950961d257cf6dc73c7f9398c9e5e" kindref="member">MOTORLIBS_INVSQRT3</ref>))&gt;&gt;(15+<ref refid="_m_o_t_o_r_l_i_b_8h_1a4a3d08f54bb1c23acd9f5afbfb6473e6" kindref="member">MOTORLIBS_CLARKESCALE</ref>));</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a051223cf07443bb318f57d8978dfc808" kindref="member" tooltip="This function is the implementation of PI controller. PI Output = kp*error + Ki * integral of error...">MOTORLIBS_PIController</ref></highlight></codeline>
+<codeline lineno="293"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" kindref="compound">MOTORLIBS_PIHandleType</ref>*<sp/>HdlPtr,</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>RefValue,</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ActValue</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/>int32_t<sp/>Output=0;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>yn(k+1)=<sp/>yn(k)<sp/><sp/><sp/>+<sp/>ki<sp/>*<sp/>e(k)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ad1a73a2640ec4b231950b2ed227b7f9b" kindref="member">Ibuf</ref><sp/>+=<sp/>(int32_t)<sp/>((int32_t)HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1a9b845b50f6db3f230477cbfc2b5fefa0" kindref="member">Ki</ref>)<sp/>*<sp/>(RefValue-ActValue);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Checking<sp/>the<sp/>buffer<sp/>limits<sp/>in<sp/>the<sp/>range<sp/>of<sp/>Yimin<sp/>to<sp/>Yimax<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ad1a73a2640ec4b231950b2ed227b7f9b" kindref="member">Ibuf</ref><sp/>=<sp/>MOTORLIBS_MIN_MAX_LIMIT(((int32_t)HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ad1a73a2640ec4b231950b2ed227b7f9b" kindref="member">Ibuf</ref>),((int32_t)HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1aa95afc8973bb6613e72b013178ea46eb" kindref="member">Yimax</ref>),((int32_t)HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1a35860db05b84edba00305a20ee4429ae" kindref="member">Yimin</ref>));</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>y(k+1)<sp/>=<sp/>yn(k+1)<sp/>+<sp/>kp<sp/>*<sp/>e(k)<sp/>*<sp/>64<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>Output=<sp/><sp/>((int32_t)<sp/>((int32_t)HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ab910d3b2e8e091bb0593cc916da75be6" kindref="member">Kp</ref>)<sp/>*<sp/>(RefValue-ActValue));</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>Output<sp/><sp/>=<sp/><sp/>(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ad1a73a2640ec4b231950b2ed227b7f9b" kindref="member">Ibuf</ref>&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1ae76ba1dde996d8a5cc7a210f13b022dc" kindref="member">MOTORLIBS_PI_KISCALE</ref>)<sp/>+(Output&gt;&gt;<ref refid="_m_o_t_o_r_l_i_b_8h_1a7f4dd55f4dc16d12378812a79977bef2" kindref="member">MOTORLIBS_PI_KPSCALE</ref>);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Checking<sp/>the<sp/>buffer<sp/>limits<sp/>in<sp/>the<sp/>range<sp/>of<sp/>Ymin<sp/>to<sp/>Ymax<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1aa6e38849f60fac4e55ed0c74edc37545" kindref="member">PiOutVal</ref>=<sp/>MOTORLIBS_MIN_MAX_LIMIT(((int32_t)(Output)),((int32_t)HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1af198395a7a5aecd2269c61addc8d9858" kindref="member">Ymax</ref>),((int32_t)HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ab0ff8a76b4df1daab4a2023665a72092" kindref="member">Ymin</ref>));</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="318"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a5d59b9d37857996c90e4f5ebacc3ac0b" kindref="member" tooltip="This function is the implementation of PT1 filter. Yn[3,2,1,0] =Yn-1[3,2,1,0] +Z1*(Xn -Yn-1[3...">MOTORLIBS_PT1Controller</ref></highlight></codeline>
+<codeline lineno="319"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref>*<sp/>HdlPtr,</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/>int32_t<sp/>ActValue</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/>int32_t<sp/>TempBuff;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>yn+1=yn<sp/>+<sp/>z1*(x<sp/>-<sp/>yn)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/>TempBuff<sp/>=<sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref><sp/>+<sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a86cadd023142bf7d64e958145205c592" kindref="member">Z1</ref>*(ActValue<sp/>-<sp/>(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref>&gt;&gt;16));</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Checking<sp/>the<sp/>buffer<sp/>limits<sp/>in<sp/>the<sp/>range<sp/>of<sp/>Ymin<sp/>to<sp/>Ymax<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref><sp/>=<sp/>MOTORLIBS_MIN_MAX_LIMIT((TempBuff),(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a04481f5a772c3e90e315721b75e8bcde" kindref="member">Ymax</ref>),(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a977edf0c6e32518991f2ffbebd4d0109" kindref="member">Ymin</ref>));</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a2f1ee07c13acca0b5babf1714ec64409" kindref="member">PT1OutVal</ref><sp/>=<sp/>(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref>&gt;&gt;16);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="334"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a33c8fe57d22575eddf39de768a658389" kindref="member" tooltip="This function is the implementation of PT12 filter. Yn[3,2,1,0] =Yn-1[3,2,1,0] +(Z1*Xn -Z2*Yn-1[3...">MOTORLIBS_PT12Controller</ref></highlight></codeline>
+<codeline lineno="335"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref>*<sp/>HdlPtr,</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/>int32_t<sp/>ActValue</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>int32_t<sp/>TempBuff;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>yn+1=yn<sp/>+<sp/>z1*x<sp/>-<sp/>z2*yn;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/>TempBuff<sp/>=<sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref><sp/>+<sp/>(<sp/>(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a86cadd023142bf7d64e958145205c592" kindref="member">Z1</ref>*<sp/>ActValue)<sp/>-<sp/>(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1ac07643a93470b9ed6fc9cc601c4035c1" kindref="member">Z2</ref>*(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref>&gt;&gt;16)));</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Checking<sp/>the<sp/>buffer<sp/>limits<sp/>in<sp/>the<sp/>range<sp/>of<sp/>Ymin<sp/>to<sp/>Ymax<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref><sp/>=<sp/>MOTORLIBS_MIN_MAX_LIMIT((TempBuff),(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a04481f5a772c3e90e315721b75e8bcde" kindref="member">Ymax</ref>),(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a977edf0c6e32518991f2ffbebd4d0109" kindref="member">Ymin</ref>));</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a2f1ee07c13acca0b5babf1714ec64409" kindref="member">PT1OutVal</ref><sp/>=<sp/>(HdlPtr-&gt;<ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref>&gt;&gt;16);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="348"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+<codeline lineno="351"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="355"><highlight class="comment">/*CODE_BLOCK_END*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/LIBS/MOTORLIB.c"/>
+  </compounddef>
+</doxygen>

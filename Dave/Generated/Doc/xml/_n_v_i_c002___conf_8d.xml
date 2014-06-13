@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_n_v_i_c002___conf_8d" kind="file">
+    <compoundname>NVIC002_Conf.d</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">Dave/Generated/src/NVIC002/NVIC002_Conf.d<sp/>Dave/Generated/src/NVIC002/NVIC002_Conf.o:<sp/>\</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/>../Dave/Generated/src/NVIC002/NVIC002_Conf.c<sp/>\</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/>../Dave/Generated/src/NVIC002/../../inc/NVIC002/NVIC002.h<sp/>\
+<sp/>C:\DAVE-3.1.10\eclipse\/../CMSIS/Infineon/Include/uc_id.h<sp/>\
+<sp/>C:\DAVE-3.1.10\eclipse\/../CMSIS/Infineon/XMC4500_series/Include/XMC4500.h<sp/>\
+<sp/>C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cm4.h<sp/>\
+<sp/>C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cmInstr.h<sp/>\
+<sp/>C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cmFunc.h<sp/>\
+<sp/>C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cm4_simd.h<sp/>\
+<sp/>C:\DAVE-3.1.10\eclipse\/../CMSIS/Infineon/XMC4500_series/Include/system_XMC4500.h<sp/>\</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/>../Dave/Generated/src/NVIC002/../../inc/NVIC002/NVIC002_Conf.h<sp/>\</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/>../Dave/Generated/src/NVIC002/../../inc/NVIC002/NVIC002_Extern.h</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">../Dave/Generated/src/NVIC002/../../inc/NVIC002/NVIC002.h:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">C:\DAVE-3.1.10\eclipse\/../CMSIS/Infineon/Include/uc_id.h:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">C:\DAVE-3.1.10\eclipse\/../CMSIS/Infineon/XMC4500_series/Include/XMC4500.h:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cm4.h:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cmInstr.h:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cmFunc.h:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">C:\DAVE-3.1.10\eclipse\/../CMSIS/Include/core_cm4_simd.h:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">C:\DAVE-3.1.10\eclipse\/../CMSIS/Infineon/XMC4500_series/Include/system_XMC4500.h:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">../Dave/Generated/src/NVIC002/../../inc/NVIC002/NVIC002_Conf.h:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">../Dave/Generated/src/NVIC002/../../inc/NVIC002/NVIC002_Extern.h:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/Dave/Generated/src/NVIC002/NVIC002_Conf.d"/>
+  </compounddef>
+</doxygen>

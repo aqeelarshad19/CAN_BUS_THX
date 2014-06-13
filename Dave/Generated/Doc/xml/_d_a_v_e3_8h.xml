@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_d_a_v_e3_8h" kind="file">
+    <compoundname>DAVE3.h</compoundname>
+    <includes local="no">XMC4500.h</includes>
+    <includes refid="types_8h" local="yes">../../inc/LIBS/types.h</includes>
+    <includes refid="_m_u_l_t_i_p_l_e_x_e_r_8h" local="yes">../../inc/DAVESupport/MULTIPLEXER.h</includes>
+    <includes refid="_l_i_b_s_8h" local="yes">../../inc/LIBS/LIBS.h</includes>
+    <includes refid="_d_b_g001_8h" local="yes">../../inc/DBG001/DBG001.h</includes>
+    <includes refid="_r_e_s_e_t001_8h" local="yes">../../inc/RESET001/RESET001.h</includes>
+    <includes refid="_c_l_k001_8h" local="yes">../../inc/CLK001/CLK001.h</includes>
+    <includes refid="_c_a_n_g_l_o_b_a_l_8h" local="yes">../../inc/CANGLOBAL/CANGLOBAL.h</includes>
+    <includes refid="_c_a_n001_8h" local="yes">../../inc/CAN001/CAN001.h</includes>
+    <includes refid="_i_o004_8h" local="yes">../../inc/IO004/IO004.h</includes>
+    <includes refid="_n_v_i_c002_8h" local="yes">../../inc/NVIC002/NVIC002.h</includes>
+    <includes refid="_u_a_r_t001_8h" local="yes">../../inc/UART001/UART001.h</includes>
+    <includedby refid="_c_a_n001_8h" local="no">CAN001.h</includedby>
+    <includedby refid="_c_a_n___types_8h" local="no">CAN_Types.h</includedby>
+    <includedby refid="_c_a_n001___conf_8h" local="no">CAN001_Conf.h</includedby>
+    <includedby refid="_c_a_n_g_l_o_b_a_l_8h" local="no">CANGLOBAL.h</includedby>
+    <includedby refid="_c_c_u8_p_w_m_l_i_b_8h" local="no">CCU8PWMLIB.h</includedby>
+    <includedby refid="_m_o_t_o_r_l_i_b_8h" local="no">MOTORLIB.h</includedby>
+    <includedby refid="_d_b_g001_8h" local="no">DBG001.h</includedby>
+    <includedby refid="_i_o004_8h" local="no">IO004.h</includedby>
+    <includedby refid="_i_o004___conf_8h" local="no">IO004_Conf.h</includedby>
+    <includedby refid="_c_a_n001_8c" local="no">CAN001.c</includedby>
+    <includedby refid="_c_a_n001___conf_8c" local="no">CAN001_Conf.c</includedby>
+    <includedby refid="_c_a_n_g_l_o_b_a_l_8c" local="no">CANGLOBAL.c</includedby>
+    <includedby refid="_d_a_v_e3_8c" local="yes">DAVE3.c</includedby>
+    <includedby refid="_m_u_l_t_i_p_l_e_x_e_r_8c" local="yes">MULTIPLEXER.c</includedby>
+    <includedby refid="_i_o004_8c" local="no">IO004.c</includedby>
+    <includedby refid="_i_o004___conf_8c" local="no">IO004_Conf.c</includedby>
+    <includedby refid="_c_c_u8_p_w_m_l_i_b_8c" local="no">CCU8PWMLIB.c</includedby>
+    <includedby refid="_m_o_t_o_r_l_i_b_8c" local="no">MOTORLIB.c</includedby>
+    <includedby refid="_main_8c" local="no">Main.c</includedby>
+    <incdepgraph>
+      <node id="419">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="426">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="407">
+        <label>stdint.h</label>
+      </node>
+      <node id="423">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>stddef.h</label>
+      </node>
+      <node id="425">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="417">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>uc_id.h</label>
+      </node>
+      <node id="418">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>DAVE3.h</label>
+        <link refid="DAVE3.h"/>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="414">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="430">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="435">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="439">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="445">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="448">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="441">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="432">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="444">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="438">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="431">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="440">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="439" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>DAVE3.h</label>
+        <link refid="DAVE3.h"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="436">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_a_v_e3_8h_1ae5e91f32821f291f73162fdaffb9de18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DAVE_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>DAVE_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/DAVE3.h" line="57" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/DAVESupport/DAVE3.c" bodystart="82" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_a_v_e3_8h_1afd4d11f5ab7725092411d4c4e9b3ff88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SystemInit_DAVE3</definition>
+        <argsstring>(void)</argsstring>
+        <name>SystemInit_DAVE3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/DAVE3.h" line="59" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/DAVESupport/DAVE3.c" bodystart="128" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all public data structures,enums and function prototypes. </para>    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2011 Infineon Technologies AG. All rights reserved.</para><para>Infineon Technologies AG (Infineon) is supplying this software for use with Infineon&apos;s microcontrollers. This file can be freely distributed within development tools that are supporting such microcontrollers.</para><para>THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;. NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER. <verbatim>                                                                       **
+                                                                       **
+</verbatim> PLATFORM : Infineon &lt;Microcontroller name, step&gt; ** ** COMPILER : Compiler Independent ** ** MODIFICATION DATE : Jan 22, 2014 ** **</para><para>Revision History 26 June 2013 v1.0.32 Initial Version. 22 Jan 2014 v1.0.40 C++ macro inserted. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>DAVESupport<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.44<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor">#ifndef<sp/>_DAVE3_H_</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_DAVE3_H_</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@Prototypes<sp/>Of<sp/>Global<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DAVE_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SystemInit_DAVE3(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@Project<sp/>Includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;XMC4500.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../inc/LIBS/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../inc/DAVESupport/MULTIPLEXER.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>APP<sp/>HEADER<sp/>FILES.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/LIBS/LIBS.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/DBG001/DBG001.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/RESET001/RESET001.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/CLK001/CLK001.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/CANGLOBAL/CANGLOBAL.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/CAN001/CAN001.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/IO004/IO004.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/NVIC002/NVIC002.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;../../inc/UART001/UART001.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/DAVE3.h"/>
+  </compounddef>
+</doxygen>

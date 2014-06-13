@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_ccce4f5c4d42da3aae9df9987f897d56" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_fbdc06c227c073a5c1a6901a516f8234">CAN001</innerdir>
+    <innerdir refid="dir_14df97559269530c79830e33e2b8e15c">CANGLOBAL</innerdir>
+    <innerdir refid="dir_938f71bdac738bd06ab25841aa8c8513">CLK001</innerdir>
+    <innerdir refid="dir_c703125789edd7d8fc9ec5ceb8918e7d">DAVESupport</innerdir>
+    <innerdir refid="dir_3500dd3a973d0ffcc9b6b041b63ed61b">IO004</innerdir>
+    <innerdir refid="dir_1a2d18209ea89ca8be92497b8fa2b48f">LIBS</innerdir>
+    <innerdir refid="dir_25cf2ce33f492060e276000bee612b56">NVIC002</innerdir>
+    <innerdir refid="dir_a45100fb0db635cd3ef5a18dd2a3755f">RESET001</innerdir>
+    <innerdir refid="dir_fc5e0b1fd041eabd9362d666740b2e72">UART001</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/"/>
+  </compounddef>
+</doxygen>

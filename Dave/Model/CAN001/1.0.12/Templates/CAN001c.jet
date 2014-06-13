@@ -1,0 +1,1014 @@
+<%@ jet package="CodeGenerator" class="can001c_template"
+imports="java.util.* com.ifx.davex.appjetinteract.App2JetInterface" %>
+<% App2JetInterface app = (App2JetInterface) argument; %>
+<% String AppBaseuri = "app/can001/";%>
+/*CODE_BLOCK_BEGIN[CAN001.c]*/
+/*******************************************************************************
+ Copyright (c) 2014, Infineon Technologies AG                                 **
+ All rights reserved.                                                         **
+                                                                              **
+ Redistribution and use in source and binary forms, with or without           **
+ modification,are permitted provided that the following conditions are met:   **
+                                                                              **
+ *Redistributions of source code must retain the above copyright notice,      **
+ this list of conditions and the following disclaimer.                        **
+ *Redistributions in binary form must reproduce the above copyright notice,   **
+ this list of conditions and the following disclaimer in the documentation    **
+ and/or other materials provided with the distribution.                       **
+ *Neither the name of the copyright holders nor the names of its contributors **
+ may be used to endorse or promote products derived from this software without** 
+ specific prior written permission.                                           **
+                                                                              **
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"  **
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE    **
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE   **
+ ARE  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE   **
+ LIABLE  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR         **
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF         **
+ SUBSTITUTE GOODS OR  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS    **
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN      **
+ CONTRACT, STRICT LIABILITY,OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)       **
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE   **
+ POSSIBILITY OF SUCH DAMAGE.                                                  **
+                                                                              **
+ To improve the quality of the software, users are encouraged to share        **
+ modifications, enhancements or bug fixes with Infineon Technologies AG       **
+ dave@infineon.com).                                                          **
+                                                                              **
+********************************************************************************
+**                                                                            **
+**                                                                            **
+** PLATFORM : Infineon XMC4000 Series   			                          **
+**                                                                            **
+** COMPILER : Compiler Independent                                            **
+**                                                                            **
+** AUTHOR   : App Developer                                                   **
+**                                                                            **
+** MAY BE CHANGED BY USER [yes/no]: Yes                                       **
+**                                                                            **
+** MODIFICATION DATE : Jan 20, 2014                                           **
+**                                                                            **
+*******************************************************************************/
+/*******************************************************************************
+**                      Author(s) Identity                                    **
+********************************************************************************
+**                                                                            **
+** Initials     Name                                                          **
+** ---------------------------------------------------------------------------**
+** NPJ        App Developer                                                   **
+**                                                                            **
+*******************************************************************************/
+/*
+* Version History : 
+* 12 Dec 2012	 v1.0.2	  1. Initial revision		  								 
+*                                                                          
+* 30 May 2013	 v1.0.4	  1. MISRA fixes.
+*                         2. Fixes concerned with the Rx pin(14.3) manual configuration issue. 
+*   
+* 21 Jun 2013    v1.0.6   1. Reset of INIT & CCE bit has been removed as it shall be handled in   
+*                            MULTIPLEXER.c file of DaveSupport app.
+*                         2. Removed the code concerned with PORTx_PDRx & PORTx_IOCRx register modification
+* 22 Aug 2013    v1.0.8   1. Fixes w.r.t incorrect code generation of the CAN NodeId due to multiple 
+*                            reference created by the data model to a proxy register
+* 20 Jan 2014    v1.0.10   1. C++ support added.
+*                          2. Delay in app instantiation is resolved.
+*                          3. DBG002 App changes are taken care
+*/
+/**
+ * @file   CAN001.c
+ * 
+ * @App Version CAN001 <<%= app.getAppVersion(AppBaseuri)%>>
+ *
+ * @brief  CAN_Basic_CAN001 App provides non reentrant API's to configure the 
+ *         CAN Nodes which can be used in a non RTOS environment. It provides 
+ *         simple APIs to Configure CAN Nodes and to Send /Receive CAN Message 
+ *         objects.
+ *
+ */
+/*******************************************************************************
+ ** INCLUDE FILES                                                             **
+ ******************************************************************************/
+
+/** Inclusion of header file */
+#include <DAVE3.h>
+
+<% String TempApps = null;
+   String MyAppName = null;
+   ArrayList<String> apps;
+   String TempLowerApps = null; 
+   boolean DBGApp = false;   
+   apps=(ArrayList<String>)(app.getApps());
+        for (int k = 0; k < apps.size(); k++) {
+              TempApps = apps.get(k);
+//            if(app.isAppInitProvider(apps.get(k)) == true) {
+              MyAppName = TempApps.substring(TempApps.indexOf("/app/") + 5, TempApps.lastIndexOf("/"));
+              TempLowerApps = MyAppName.toLowerCase();
+              if (TempLowerApps.equalsIgnoreCase("dbg002")) {DBGApp = true;}   
+//   }  
+  } %>
+
+<% if (!DBGApp) { %>  
+/*****************************************************************************
+              DUMMY DEFINTIONS OF DEBUG LOG MACROS
+*****************************************************************************/
+/*****************************************************************************
+              DUMMY DEFINTIONS OF DEBUG LOG MACROS
+*****************************************************************************/
+/*These definitions are included here to avoid compilation errors,
+ since the DBG002 app is not part of the project. All the macros are defined
+ as empty*/ 
+#ifndef _DBG002_H_
+
+#define DBG002_MESSAGEID_LITERAL
+#define DBG002_RegisterCallBack(A,B,C)
+#define DBG002_I(e) 
+#define DBG002_IG(e,g) 
+#define DBG002_IH(e,h) 
+#define DBG002_IP(e,p) 
+#define DBG002_IGH(e,g,h) 
+#define DBG002_IGP(e,g,p) 
+#define DBG002_IHP(e,h,p) 
+#define DBG002_IGHP(e,g,h,p) 
+#define DBG002_N(e) 
+#define DBG002_NG(e,g) 
+#define DBG002_NH(e,h) 
+#define DBG002_NP(e,p) 
+#define DBG002_NGH(e,g,h) 
+#define DBG002_NGP(e,g,p) 
+#define DBG002_NHP(e,h,p) 
+#define DBG002_NGHP(e,g,h,p) 
+#define DBG002_ID(e) 
+#define DBG002_IS(e) 
+#define DBG002_ISG(e,g) 
+#define DBG002_SAFETY_CRITICAL(groupid,messageid,length,value)
+#define DBG002_CRITICAL(groupid,messageid,length,value)
+#define DBG002_ERROR(groupid,messageid,length,value)
+#define DBG002_WARNING(groupid,messageid,length,value)
+#define DBG002_INFO(groupid,messageid,length,value)
+#define DBG002_TRACE(groupid,messageid,length,value)
+#define DBG002_FUNCTION_ENTRY(GID, Status) 
+#define DBG002_FUNCTION_EXIT(GID, Status) 
+
+#endif/* End of defintions of dummy Debug Log macros*/
+<% } %>                  
+
+
+/*******************************************************************************
+**                      Private Macro Definitions                             **
+*******************************************************************************/
+#define APP_GID DBG002_GID_CAN001
+
+/* message objects status mask */
+#define CAN001_CLEAR_MO_STATUS_MASK    (0x0000001BU)
+/* Node Status mask */
+#define CAN001_CLEAR_NODE_STATUS_MASK  (0x000003E0U)
+/* Macro to Enable */
+#define CAN001_LIST_BEGIN_BITMASK (0x000000FFU)
+/* Panel command for dynamic MO allocation */
+#define CAN001_PANCMD_STATIC_MO_ALLOC (0x00000002U)
+/* Panel command for MO deallocation */
+#define CAN001_PANCMD_DYN_MO_DEALLOC (0x00000004U)
+
+
+/*******************************************************************************
+**                      Private Type Definitions                              **
+*******************************************************************************/
+
+
+/*******************************************************************************
+**                 Private Function Declarations:
+*******************************************************************************/
+/**
+ * @ingroup CAN001_privatefunc
+ * @{
+ */
+ 
+/**
+ * @brief      Function to allocate message object from free list to node list
+ *              
+ * @param[in]  List Node list no
+ * @param[in]  MsgObjnr Message object number to be allocated to node list
+ *
+ * @return     status_t 
+ *             MO number allocated
+ * <b>Reentrant: NO </b><BR>
+ * <b>Sync/Async:  Synchronous</b>
+ *
+ */
+static void CAN001_lAllocateMOtoNodeList(uint8_t List,uint8_t MsgObjnr);
+
+/**
+ * @brief      Function to deallocate MO from Node list to free list
+ *              
+ * @param[inout]  MsgObjnr Message object number to be deallocated to free list
+ *
+ * @return     void
+ *            
+ * <b>Reentrant: NO </b><BR>
+ * <b>Sync/Async:  Synchronous</b>
+ *
+ */
+static void CAN001_lDeallocateMsgObj(uint32_t MsgObjnr);
+
+/**
+ * @brief      Function to configure message object registers
+ *              
+ * @param[in]  MsgObjptr Pointer to message object data structure
+ * @param[in]  MsgObjnr Actual message object number
+ *
+ * @return     void
+ *            
+ * <b>Reentrant: NO </b><BR>
+ * <b>Sync/Async:  Synchronous</b>
+ *
+ */
+static void CAN001_lConfigMORegs
+(
+  const CAN001_MessageHandleType* MsgObjptr,
+  uint8_t MsgObjnr
+);
+
+
+/**
+ * @brief      Function to initialize node as per UI configuration
+ *              
+ * @param[in] Handle Node configuration structure
+ *
+ * @return     void
+ *            
+ * <b>Reentrant: NO </b><BR>
+ * <b>Sync/Async:  Synchronous</b>
+ *
+ */
+static void CAN001_lNodeInit(const CAN001_HandleType* Handle);
+/**
+ *@}
+ */
+
+/*******************************************************************************
+**                      Global Constant Definitions                           **
+*******************************************************************************/
+
+/*******************************************************************************
+**                      Global Variable Definitions                           **
+*******************************************************************************/
+
+/*******************************************************************************
+**                      Private Constant Definitions                          **
+*******************************************************************************/
+
+/*******************************************************************************
+**                 Function like macro definitions                            **
+*******************************************************************************/
+/*******************************************************************************
+**                      Private Function Definitions                          **
+*******************************************************************************/
+
+
+/* Function to allocate message object from free list to node list */
+static void CAN001_lAllocateMOtoNodeList(uint8_t List, uint8_t MsgObjnr)
+{
+  /* <<<DD_CAN001_nonAPI_1>>> */
+  /* Panel Command for dynamic allocation of MO to node list */
+  CAN->PANCTR = ((((uint32_t)List + 1U) << CAN_PANCTR_PANAR2_Pos)| \
+		                   ((uint32_t)MsgObjnr << CAN_PANCTR_PANAR1_Pos) | \
+                           (CAN001_PANCMD_STATIC_MO_ALLOC));
+  /* wait until panel as done the command */
+  while ( (CAN->PANCTR & CAN_PANCTR_BUSY_Msk))
+  {}
+}
+
+
+/* Function to deallocate MO from Node list to free list */ 
+static void CAN001_lDeallocateMsgObj(uint32_t MsgObjnr)
+{ 
+	uint32_t FirstMoInList0 = 0U;
+  /* <<<DD_CAN001_nonAPI_2>>> */
+  FirstMoInList0 = (CAN->LIST[0] & CAN001_LIST_BEGIN_BITMASK);
+  /* Panel Command for deallocation of MO from Node List */
+  CAN->PANCTR = ((FirstMoInList0 << CAN_PANCTR_PANAR2_Pos)| \
+                           ((uint32_t)MsgObjnr << CAN_PANCTR_PANAR1_Pos) | \
+                           (CAN001_PANCMD_DYN_MO_DEALLOC));
+    /* wait until panel as done the command */
+   while ( (CAN->PANCTR & CAN_PANCTR_BUSY_Msk))
+    {}
+}
+
+/* Function to configure message object registers */
+static void CAN001_lConfigMORegs(const CAN001_MessageHandleType* MsgObjptr, uint8_t MsgObjnr)
+{ 
+    CAN_MO_TypeDef* CAN_MOxRegs = GET_MO_OFFSET(MsgObjnr);
+	  uint32_t Count = 0U;
+	  /* <<<DD_CAN001_nonAPI_3>>> */  
+    /* Disable Message object */
+    CAN_MOxRegs->MOCTR = CAN_MO_MOCTR_RESMSGVAL_Msk;   
+    if ((CAN_FrameType)MsgObjptr->IDExten == STANDARDTYPE)
+    {
+      /* Configure standard identifier and identifier mask*/
+      CAN_MOxRegs->MOAR = ((((uint32_t)2UL << CAN_MO_MOAR_PRI_Pos) & \
+                           (uint32_t)CAN_MO_MOAR_PRI_Msk) | \
+                           ((uint32_t)(MsgObjptr->Identifier << CAN_MO_MOAR_STDID_Pos) \
+                           & (uint32_t)CAN_MO_MOAR_STDID_Msk));
+      if(MsgObjptr->IDEMask == 1U)
+      {
+        CAN_MOxRegs->MOAMR = ((((uint32_t)1UL << CAN_MO_MOAMR_MIDE_Pos) & \
+        		             (uint32_t)CAN_MO_MOAMR_MIDE_Msk) | \
+                            ((uint32_t)(MsgObjptr->IDMask << CAN_MO_MOAR_STDID_Pos) \
+                            & (uint32_t)CAN_MO_MOAR_STDID_Msk));
+      }
+      else
+      {
+        CAN_MOxRegs->MOAMR = ((((uint32_t)0UL << CAN_MO_MOAMR_MIDE_Pos) & \
+        		           (uint32_t)CAN_MO_MOAMR_MIDE_Msk) | \
+                            ((uint32_t)CAN_MO_MOAMR_AM_Msk & (uint32_t)MsgObjptr->IDMask));
+      }                      
+    } /* if (MsgObjptr->IDExten == STANDARDTYPE) */
+    else
+    {
+        /* Configure Extended identifier and identifier mask*/
+      CAN_MOxRegs->MOAR = ((((uint32_t)2UL << CAN_MO_MOAR_PRI_Pos) & \
+    		                (uint32_t)CAN_MO_MOAR_PRI_Msk) | \
+                           ((uint32_t)(CAN_MO_MOAR_ID_Msk & MsgObjptr->Identifier)) | \
+                            (((uint32_t)1UL << CAN_MO_MOAR_IDE_Pos ) & \
+                            		(uint32_t)CAN_MO_MOAR_IDE_Msk));
+      CAN_MOxRegs->MOAMR = (((uint32_t)((uint32_t)MsgObjptr->IDEMask << CAN_MO_MOAMR_MIDE_Pos) & \
+    		  (uint32_t)CAN_MO_MOAMR_MIDE_Msk) | \
+    		  (uint32_t)(CAN_MO_MOAMR_AM_Msk & MsgObjptr->IDMask));
+    }
+      /* Check whether message object is transmit message object */
+      /*<<<DD_CAN001_API_3_2>>>*/
+    if (MsgObjptr->MsgObjType == TRANSMSGOBJ)
+  
+    {
+      /* Configure data length */
+      WR_REG(CAN_MOxRegs->MOFCR, (uint32_t)CAN_MO_MOFCR_DLC_Msk, \
+                            CAN_MO_MOFCR_DLC_Pos, (uint32_t)MsgObjptr->DataLength);
+      /* Configure Data registers*/
+      for(Count = 0U; Count < MsgObjptr->DataLength; Count++) 
+      {
+        if(Count < 4U)
+        {
+          WR_REG(CAN_MOxRegs->MODATAL, (uint32_t)((uint32_t)CAN_MO_MODATAL_DB0_Msk << (Count*8U)), \
+                                        (Count*8U),(uint32_t)MsgObjptr->data[Count]);
+        }
+        else
+        {
+          WR_REG(CAN_MOxRegs->MODATAH, (uint32_t)(CAN_MO_MODATAL_DB0_Msk << ((Count-4U)*8U)), \
+                                    ((Count-4U)*8U), (uint32_t)MsgObjptr->data[Count]);
+        } /* if(Count < 4) */
+      }  /* for(Count = 0; Count < MsgObjptr->DataLength; Count++) */
+      /* Set MO as Transmit message object and set NEWDAT bit */
+      CAN_MOxRegs->MOCTR = (CAN_MO_MOCTR_SETDIR_Msk | \
+                                                   CAN_MO_MOCTR_SETNEWDAT_Msk);
+    }/*if (MsgType == TRANSMSGOBJ)*/
+    /*<<<DD_CAN001_API_3_3>>>*/
+    else
+    { 
+      /* Set MO as Receive message object and set RXEN bit */
+      CAN_MOxRegs->MOCTR = CAN_MO_MOCTR_RESDIR_Msk;
+    } /*if(MsgType == RECMSGOBJ)*/
+    /* Reset RTSEL and Set MSGVAL ,TXEN0 and TXEN1 bits */
+  CAN_MOxRegs->MOCTR = (CAN_MO_MOCTR_SETTXEN0_Msk | \
+                        CAN_MO_MOCTR_SETTXEN1_Msk | \
+                        CAN_MO_MOCTR_SETRXEN_Msk | \
+                        CAN_MO_MOCTR_SETMSGVAL_Msk );
+}
+
+/* This function will initialize node with the given handle */                 
+static void CAN001_lNodeInit(const CAN001_HandleType* Handle)
+ {
+  uint32_t Count  = 0U;
+  uint8_t MsgNo;
+  CAN_MO_TypeDef* CAN_MOxRegs = CAN_MO0;
+  /* <<<DD_CAN001_nonAPI_4>>> */
+  /* Map to node register offset as per node ID */
+  CAN_NODE_TypeDef* CAN_NodexRegs = Handle->CanNodeRegs;
+ 
+  /* wait until panel has finished initialization */
+  while ( (CAN->PANCTR & CAN_PANCTR_BUSY_Msk))
+	{}
+  /* set CCE and INIT bit NCR for node configuration */
+   /* Enable Alert and last error code interrupt */
+  CAN_NodexRegs->NCR |= ((uint32_t)CAN_NODE_NCR_INIT_Msk | (uint32_t)CAN_NODE_NCR_CCE_Msk);
+  /* Configure bit timing register */
+  CAN_NodexRegs->NBTR = ((uint32_t)Handle->BaudRate.DIV8 << \
+                                          CAN_NODE_NBTR_DIV8_Pos) | \
+                         ((uint32_t)Handle->BaudRate.TimeSEG2 << \
+                                          CAN_NODE_NBTR_TSEG2_Pos) | \
+                         ((uint32_t)Handle->BaudRate.TimeSEG1 << \
+                                          CAN_NODE_NBTR_TSEG1_Pos) | \
+                         ((uint32_t)Handle->BaudRate.SyncJumpWidth << \
+                                            CAN_NODE_NBTR_SJW_Pos) | \
+                         (uint32_t)Handle->BaudRate.BaudRatePresc;
+  /* Check whether loop back mode is to be enabled */
+  if ( Handle->LoopBackModeEn == CAN001_ENABLE)
+  {
+    SET_BIT(CAN_NodexRegs->NPCR, CAN_NODE_NPCR_LBM_Pos);
+  }
+  /* Allocate required number of message object to node list 
+    * and configure message object */
+  for(Count = 0U; Count < Handle->NodeMONo; Count++)
+  {
+    CAN001_lAllocateMOtoNodeList(Handle->NodeID, (uint8_t)(Handle->FirstMOMapping + Count));
+    MsgNo = (uint8_t)(Handle->FirstMOMapping + Count);
+    CAN_MOxRegs = GET_MO_OFFSET(MsgNo);
+	 /* Configure MPN */
+    CAN_MOxRegs->MOIPR = (((uint32_t)Handle->NodeID << \
+                          (CAN_MO_MOIPR_MPN_Pos + 5)) | \
+                          (Count << CAN_MO_MOIPR_MPN_Pos));
+  }
+
+}
+ 
+/*******************************************************************************
+**                      Public Function Definitions                           **
+*******************************************************************************/
+
+
+/** @ingroup CAN001_publicfunc
+ * @{
+ */
+
+
+/* This function will initialize node with the given handle */                 
+void CAN001_Init(void)
+{
+   /* Calling CANGLOBAL App Initialization */
+   CANGLOBAL_Init();
+<% String P = "http://www.infineon.com/0.1.28/port/p/"; %>
+<% String MappedUri = null; %>
+<% String nodeInst = null; %>
+<% String appInst  = null; %>
+
+<% ArrayList<String> appsList = (ArrayList<String>)(app.getApps("app/can001/"));
+ for (String appIns : appsList ) {
+ appInst = appIns.substring(appIns.lastIndexOf("/")+1);%>
+<% MappedUri = app.getMappedUri(AppBaseuri + appInst + "/node"); %>
+<% if((MappedUri != null) && (MappedUri != "")) { %>
+<% nodeInst = MappedUri.substring(MappedUri.lastIndexOf("/")+1).trim(); %>
+   /* Node<%= nodeInst%> initialization */
+   CAN001_lNodeInit(&CAN001_Handle<%= appInst%>);
+<% int AlertIntr = app.getIntegerValue(AppBaseuri + appInst +"/node/ncr/alie"); %>
+<% if (AlertIntr == 1) {%>
+   /* Enable Node Alert interrupt */
+   EnableNodeInterrupt(CAN001_Handle<%= appInst%>,(uint32_t)CAN_ALERT_INTERRUPT);
+<% } %>
+<% } %>
+<% else { %>
+// NODE IS NOT MAPPED
+<% } %>
+<% int mono = app.getIntegerValue(AppBaseuri + appInst + "/can001_irwnodenomsgobjs"); %>
+<% for (int Msg=1; Msg<=mono; Msg++) { %>
+<% MappedUri = app.getMappedUri(AppBaseuri + appInst +"/message" + Msg + "/mofcr"); %>
+<% if((MappedUri != null) && (MappedUri != "")) { %>
+   /* LMO<%=Msg %> Initialization */
+   (void)CAN001_ConfigMsgObj(&CAN001_Handle<%= appInst%>,&CAN001_MessageHandle<%= appInst%>_<%=Msg %>,<%=Msg %>U);
+<% int TxIntr = app.getIntegerValue(AppBaseuri + appInst +"/message" + Msg + "/mofcr/txie"); %>
+<% if (TxIntr == 1) {%>
+   /* Enable transmit interrupt */
+   EnableMOInterrupt(CAN001_Handle<%= appInst%>,(uint32_t)CAN_MO_TRANSMIT_INTERRUPT,<%=Msg %>);
+<% } %>
+<% int RxIntr = app.getIntegerValue(AppBaseuri + appInst +"/message" + Msg + "/mofcr/rxie"); %>
+<% if (RxIntr == 1) {%>
+   /* Enable receive interrupt */
+   EnableMOInterrupt(CAN001_Handle<%= appInst%>,(uint32_t)CAN_MO_RECEIVE_INTERRUPT,<%=Msg %>);
+<% } %>
+<% } %>
+<% else { %>
+// MESSAGE<%=Msg%> IS NOT MAPPED
+<% } %>
+<%} %>
+<%} %>
+  
+}
+  
+       
+  
+/* This function will deinitialize node with the given handle */
+/*<<<DD_CAN001_API_2>>>*/ 
+void CAN001_NodeDeInit(const CAN001_HandleType* Handle)
+{
+  int32_t Count = 0;
+  uint8_t MsgNo;
+  uint32_t*	MsgPndRegOffset = 0;
+  CAN_MO_TypeDef* CAN_MOxRegs = CAN_MO0;
+  /* Map to node register offser as per node ID */
+  CAN_NODE_TypeDef* CAN_NodexRegs = Handle->CanNodeRegs;
+
+  /* Reset all message object registers and deallocate to free list */
+  for(Count = (int32_t)(Handle->NodeMONo)-1; Count >= 0; Count--)
+  {
+	MsgNo = (uint8_t)(Handle->FirstMOMapping+(uint32_t)Count);
+    /* Mapping to message object offset value*/
+    CAN_MOxRegs = GET_MO_OFFSET(MsgNo);
+    /* Reset all message objects registers */
+    CAN_MOxRegs->MOFCR =  (0x00000000U);			 		
+    CAN_MOxRegs->MOIPR &= (0x000000FFU);			 
+    CAN_MOxRegs->MOAMR = (0x3FFFFFFFU);			 
+    CAN_MOxRegs->MODATAL = (0x00000000U);	
+    CAN_MOxRegs->MODATAH = (0x00000000U);	
+    CAN_MOxRegs->MOAR = (0x00000000U);   
+    CAN_MOxRegs->MOCTR = (0x00000FFFU);
+    CAN001_lDeallocateMsgObj(Handle->FirstMOMapping+(uint32_t)Count);
+  }
+  /* set CCE and INIT bit NCR for disconnecting the node */
+  CAN_NodexRegs->NCR = (0x00000041U);
+  /* reset all node registers */
+  CAN_NodexRegs->NSR = (0x00000000U);
+  CAN_NodexRegs->NPCR &= (0x0000000FU);
+  CAN_NodexRegs->NECNT = (0x00600000U);
+  CAN_NodexRegs->NFCR = (0x00000000U);
+  CAN_NodexRegs->NBTR = (0x00000000U);
+  MsgPndRegOffset = GET_MSGPND_OFFSET(Handle->NodeID);
+  (*MsgPndRegOffset) = (0x00000000U);
+  
+}    
+ /* 		
+ *  			 This function is will configure message object as per the message handle
+ *  passed to the function. Function will either Enable or Disable as per
+ *  input parameter
+ */
+
+status_t CAN001_ConfigMsgObj
+(
+  const CAN001_HandleType* Handle, 
+  const CAN001_MessageHandleType* SwMsgObjptr,
+  uint8_t MsgObjnr
+ )
+{
+  uint32_t Error = (uint32_t)CAN001_MO_NOT_FOUND;
+  uint8_t MsgNo = (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U));
+	/* Mapping to message object offset value*/
+  CAN_MO_TypeDef* CAN_MOxRegs = \
+                      GET_MO_OFFSET(MsgNo);
+                      
+  DBG002_N((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo));
+    
+  if (((SwMsgObjptr->IDExten != (uint8_t)STANDARDTYPE) && \
+                                        (SwMsgObjptr->IDExten != (uint8_t)EXTENDEDTYPE))
+    ||((SwMsgObjptr->MsgObjEN != CAN001_ENABLE) && (SwMsgObjptr->MsgObjEN != CAN001_DISABLE))
+    ||((SwMsgObjptr->MsgObjType != RECMSGOBJ) && (SwMsgObjptr->MsgObjType != TRANSMSGOBJ)))
+  {
+    Error =  (uint32_t)CAN001_INVALID_INPUT;
+    ERROR(DBG002_GID_CAN001,Error, 0, NULL);
+  }
+  /* check if message object is to be disabled */
+  /*<<<DD_CAN001_API_3_1>>>*/
+  else if (SwMsgObjptr->MsgObjEN == CAN001_DISABLE)
+  {
+    /* Reset MSGVAL bit */
+    CAN_MOxRegs->MOCTR = CAN_MO_MOCTR_RESMSGVAL_Msk;
+    Error = (uint32_t)DAVEApp_SUCCESS;
+  } /* if (SwMsgObjptr->MsgObjEN == CAN001_DISABLE) */
+  else
+  {
+    CAN001_lConfigMORegs(SwMsgObjptr, (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U)));
+    Error = (uint32_t)DAVEApp_SUCCESS;
+  } /*if (SwMsgObjptr->MsgObjEN == CAN001_ENABLE)*/
+  
+  return Error;
+}
+	
+
+ /*
+ *	This function is will put a transmit request to transmit message object 
+ *  for sending data frame
+ */
+
+ 
+status_t CAN001_SendDataFrame(const CAN001_HandleType* Handle, uint8_t MsgObjnr)
+{
+  uint32_t Error = (uint32_t)CAN001_ERROR;
+  uint8_t MsgNo = (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U));
+  /* Mapping to message object offset value*/
+  CAN_MO_TypeDef* CAN_MOxRegs = \
+                  GET_MO_OFFSET(MsgNo);
+  
+  DBG002_N((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo));
+  /* check if message object is not a transmit message object */
+  /*<<<DD_CAN001_API_4_1>>>*/
+  if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_DIR_Msk, \
+                                        CAN_MO_MOSTAT_DIR_Pos) != (uint32_t)TRANSMSGOBJ)
+  {
+    Error = (uint32_t)CAN001_MO_NOT_ACCEPTABLE;
+    DBG002_ERROR(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error); 
+  }
+  /* check if message is disabled */
+  else if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_MSGVAL_Msk, \
+                                              CAN_MO_MOSTAT_MSGVAL_Pos) == 0U)    
+  {
+    Error = (uint32_t)CAN001_MSGOBJ_DISABLED;
+    DBG002_INFO(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error);
+  }
+  /* check if transmission is ongoing on message object */
+  /*<<<DD_CAN001_API_4_2>>>*/
+  else if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_TXRQ_Msk, \
+                                                 CAN_MO_MOSTAT_TXRQ_Pos) == 1U)  
+  {
+    Error = (uint32_t)CAN001_MO_BUSY;
+    DBG002_INFO(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error);
+  }
+  else
+  {
+    /* set TXRQ bit */
+    /*<<<DD_CAN001_API_4_3>>>*/
+    CAN_MOxRegs->MOCTR = CAN_MO_MOCTR_SETTXRQ_Msk;
+    Error = (uint32_t)DAVEApp_SUCCESS;
+  }
+ 
+  return Error;
+}
+		
+/*
+ *	This function is will put a transmit request to receive message object     
+ *  for sending remote frame
+ */
+
+status_t CAN001_SendRemoteFrame(const CAN001_HandleType* Handle, uint8_t MsgObjnr)
+{
+  uint32_t Error = 0U;
+  uint8_t MsgNo = (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U));
+  /* Mapping to message object offset value*/
+  CAN_MO_TypeDef* CAN_MOxRegs = \
+                  GET_MO_OFFSET(MsgNo);
+ 
+  DBG002_N ((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo));
+  /* check if message object is a receive message object */
+  /*<<<DD_CAN001_API_5_1>>>*/
+  if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_DIR_Msk, \
+                                        CAN_MO_MOSTAT_DIR_Pos) != (uint32_t)RECMSGOBJ)
+  {
+    Error = (uint32_t)CAN001_MO_NOT_ACCEPTABLE;
+    DBG002_ERROR(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error); 
+  }
+  /* check if message is disabled */
+  else if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_MSGVAL_Msk, \
+                                              CAN_MO_MOSTAT_MSGVAL_Pos) == 0U)    		
+  {
+    Error = (uint32_t)CAN001_MSGOBJ_DISABLED;
+    DBG002_INFO(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error);
+  }
+  /* check if transmission is ongoing on message object */
+  /*<<<DD_CAN001_API_5_2>>>*/
+  else if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_TXRQ_Msk, \
+                                                CAN_MO_MOSTAT_TXRQ_Pos) == 1U)  
+  {
+    Error = (uint32_t)CAN001_MO_BUSY;
+    DBG002_INFO(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error);
+  }
+  else
+  {
+    /* Put transmit request to message object */
+    /*<<<DD_CAN001_API_5_3>>>*/
+    CAN_MOxRegs->MOCTR = CAN_MO_MOCTR_SETTXRQ_Msk;
+    Error = (uint32_t)DAVEApp_SUCCESS;
+  }
+ 
+  return Error;
+}
+
+/*
+ *	This function is will read the message object data bytes 
+ *  into message pointer passed as input parameter
+ */
+
+status_t CAN001_ReadMsgObj
+(
+ const CAN001_HandleType* Handle,
+ CAN001_MessageHandleType* SwMsgObjptr,
+ uint8_t MsgObjnr
+)
+{
+  uint32_t Error = (uint32_t)CAN001_ERROR;
+  uint32_t Count = 0U;
+  bool RxPnd = 0U;
+  bool NewData = 0U;
+  uint8_t MsgNo = (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U));
+  /* Mapping to message object offset value*/
+  CAN_MO_TypeDef* CAN_MOxRegs = \
+                 GET_MO_OFFSET(MsgNo);
+  
+  DBG002_N((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo));
+  /* check if message object is a receive message object */
+  /*<<<DD_CAN001_API_6_1>>>*/
+  if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_DIR_Msk, \
+                                   CAN_MO_MOSTAT_DIR_Pos) != (uint32_t)RECMSGOBJ)
+  {
+    Error = (uint32_t)CAN001_MO_NOT_ACCEPTABLE;
+    DBG002_ERROR(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error); 
+  }
+  /* check if reception is ongoing on message object */
+  /*<<<DD_CAN001_API_6_2>>>*/
+  else if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_RXUPD_Msk, \
+                                         CAN_MO_MOSTAT_RXUPD_Pos) == 1U)
+  {
+    Error = (uint32_t)CAN001_MO_BUSY;
+    DBG002_ERROR(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error); 
+  }
+  else
+  {
+    /* read message parameters */
+    /*<<<DD_CAN001_API_6_3>>>*/
+    do
+    {
+      CAN_MOxRegs->MOCTR = CAN_MO_MOCTR_RESNEWDAT_Msk;
+      if((RD_REG(CAN_MOxRegs->MOAR, CAN_MO_MOAR_IDE_Msk , \
+                         CAN_MO_MOAR_IDE_Pos)) == 0U)
+      {
+        SwMsgObjptr->IDExten = (uint8_t)STANDARDTYPE;
+        SwMsgObjptr->Identifier = (CAN_MOxRegs->MOAR & (uint32_t)CAN_MO_MOAR_STDID_Msk) >> \
+                                                    CAN_MO_MOAR_STDID_Pos;
+        SwMsgObjptr->IDEMask = (uint8_t)((uint32_t)(CAN_MOxRegs->MOAMR & (uint32_t)CAN_MO_MOAMR_MIDE_Msk) >> \
+                             CAN_MO_MOAMR_MIDE_Pos);
+        if(SwMsgObjptr->IDEMask == 1U)
+        {
+          SwMsgObjptr->IDMask = (CAN_MOxRegs->MOAMR & (uint32_t)CAN_MO_MOAR_STDID_Msk) >> \
+     	                                             CAN_MO_MOAR_STDID_Pos;
+        }
+        else
+        {
+     	   SwMsgObjptr->IDMask = CAN_MOxRegs->MOAMR & (uint32_t)CAN_MO_MOAMR_AM_Msk;
+        }
+      }
+      else
+      {
+        SwMsgObjptr->IDExten = (uint8_t)EXTENDEDTYPE;
+        SwMsgObjptr->Identifier = CAN_MOxRegs->MOAR & (uint32_t)CAN_MO_MOAR_ID_Msk;
+        SwMsgObjptr->IDMask = CAN_MOxRegs->MOAMR & (uint32_t)CAN_MO_MOAMR_AM_Msk;
+        SwMsgObjptr->IDEMask = (uint8_t)((uint32_t)(CAN_MOxRegs->MOAMR & (uint32_t)CAN_MO_MOAMR_MIDE_Msk) >> \
+                                    CAN_MO_MOAMR_MIDE_Pos);
+      }
+      SwMsgObjptr->DataLength = (uint8_t)RD_REG(CAN_MOxRegs->MOFCR, \
+                             CAN_MO_MOFCR_DLC_Msk, CAN_MO_MOFCR_DLC_Pos);
+      for(Count = 0U; Count < SwMsgObjptr->DataLength; Count++)
+      {
+        if(Count < 4U)
+        {
+          SwMsgObjptr->data[Count] = (uint8_t)RD_REG(CAN_MOxRegs->MODATAL, \
+                                  (CAN_MO_MODATAL_DB0_Msk << (Count*8U)), \
+                                                            (Count*8U));
+        }
+        else
+        {
+          SwMsgObjptr->data[Count] = (uint8_t)RD_REG(CAN_MOxRegs->MODATAH, \
+                                   (CAN_MO_MODATAL_DB0_Msk << ((Count-4U)*8U)) ,\
+                                                            ((Count-4U)*8U));
+        }
+      }
+      RxPnd = (bool)CHECK_RXPND_BIT();
+      NewData = (bool)CHECK_NEWDATA_BIT();
+    } while((RxPnd != 0U) && (NewData != 0U));
+     SwMsgObjptr->MsgObjType = RECMSGOBJ;
+     Error = (uint32_t)DAVEApp_SUCCESS;
+  }
+ 
+  return Error;
+}
+
+
+/*  This function updates data registers of given message 
+ *  object
+ */
+status_t CAN001_UpdateMODataRegisters
+(
+  const CAN001_HandleType* Handle, 
+  uint8_t MsgObjnr,
+  uint8_t DataLength, 
+  const uint8_t* DataPtr
+)
+{
+  uint32_t Error = (uint32_t)CAN001_ERROR;
+  uint32_t Count = 0U;
+  uint8_t MsgNo = (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U));
+  /* Mapping to message object offset value*/
+  CAN_MO_TypeDef* CAN_MOxRegs = \
+                  GET_MO_OFFSET(MsgNo);
+  
+  
+  DBG002_N((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo));
+  if (DataLength > 8U)
+  {
+    Error = (uint32_t)CAN001_INVALID_INPUT;
+    DBG002_ERROR(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error); 
+  }
+  /* check if message object is not a transmit message object */
+  else if( RD_REG(CAN_MOxRegs->MOSTAT, CAN_MO_MOSTAT_DIR_Msk, \
+                                        CAN_MO_MOSTAT_DIR_Pos) != (uint32_t)TRANSMSGOBJ)
+  {
+    Error = (uint32_t)CAN001_MO_NOT_ACCEPTABLE;
+    DBG002_ERROR(APP_GID, DBG002_MESSAGEID_LITERAL, sizeof(Error), &Error); 
+  }
+  else
+  {
+    CAN_MOxRegs->MOCTR = CAN_MO_MOCTR_RESMSGVAL_Msk;   
+    /* Configure data length */
+    WR_REG(CAN_MOxRegs->MOFCR, (uint32_t)CAN_MO_MOFCR_DLC_Msk, \
+                              CAN_MO_MOFCR_DLC_Pos, (uint32_t)DataLength);
+    for(Count = 0U; Count < DataLength; Count++) 
+    {
+      if(Count < 4U)
+      {
+        WR_REG(CAN_MOxRegs->MODATAL, (uint32_t)(CAN_MO_MODATAL_DB0_Msk << (Count*8U)) , \
+                                        (Count*8U), (uint32_t)(*(DataPtr + Count)));
+      }
+      else
+      {
+        WR_REG(CAN_MOxRegs->MODATAH, (uint32_t)(CAN_MO_MODATAL_DB0_Msk << ((Count-4U)*8U)), \
+                                   ((Count-4U)*8U), (uint32_t)(*(DataPtr + Count)));
+      }
+    }
+    /* Reset RTSEL and Set MSGVAL ,TXEN0 and TXEN1, NEWDATA and RXEN */
+    CAN_MOxRegs->MOCTR = (CAN_MO_MOCTR_SETTXEN0_Msk | \
+                        CAN_MO_MOCTR_SETTXEN1_Msk | \
+                        CAN_MO_MOCTR_SETRXEN_Msk | \
+                        CAN_MO_MOCTR_SETMSGVAL_Msk | \
+                        CAN_MO_MOCTR_SETNEWDAT_Msk | \
+                        CAN_MO_MOCTR_SETRXEN_Msk | \
+                        CAN_MO_MOCTR_RESRTSEL_Msk);
+    Error = (uint32_t)DAVEApp_SUCCESS;
+  }
+ 
+  return Error;
+}
+
+
+    
+/*
+ *  This function is used to return the status of the message object specified. 
+ *  The flag value to be returned should be passed as input parameter of 
+ *   type MsgStatus 
+ */
+
+status_t CAN001_GetMOFlagStatus
+(
+  const CAN001_HandleType* Handle, 
+  uint8_t MsgObjnr, 
+  CAN_MsgStatusType NewMsgStatus
+ )
+{
+  status_t Status = (uint32_t)CAN001_ERROR;
+  uint8_t MsgNo = (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U));
+	/* Mapping to message object offset value*/
+  CAN_MO_TypeDef* CAN_MOxRegs = \
+                  GET_MO_OFFSET(MsgNo);
+   
+  do
+  {
+    DBG002_N((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo));
+    DBG002_N((NewMsgStatus != RECEIVE_PENDING) && (NewMsgStatus != TRANSMIT_PENDING) \
+      && (NewMsgStatus != NEW_DATA) && (NewMsgStatus != MESSAGE_LOST));
+
+    /* Check message object status */
+    if((CAN_MOxRegs->MOSTAT & (uint32_t)NewMsgStatus) != 0U)
+    {
+      Status = (uint32_t)CAN_SET;
+    }
+    else
+    {
+      Status = (uint32_t)CAN_RESET;
+    }
+  }while(0);
+
+  return Status;
+}
+
+/*  This function is used to return the status of the node specified.
+ *   The flag value to be returned should be passed as input parameter 
+ *   of type MsgStatusType.
+ */
+
+status_t CAN001_GetNodeFlagStatus
+(
+  const CAN001_HandleType* Handle, 
+  CAN001_NodeStatusType NewNodeStatus
+)
+{
+  status_t Status = (uint32_t)CAN001_ERROR;
+  /* Mapping to Node Register offset value*/  
+  CAN_NODE_TypeDef* CAN_NodexRegs = Handle->CanNodeRegs;
+ 
+  DBG002_N((NewNodeStatus != CAN001_ALERT_STATUS) && (NewNodeStatus != CAN001_ERROR_WARN_STATUS) \
+     && (NewNodeStatus != CAN001_BUS_OFF_STATUS) && (NewNodeStatus  != CAN001_LIST_LENGTH_ERROR)\
+     && (NewNodeStatus != CAN001_LIST_OBJECT_ERROR));
+
+  /* Check Node status */
+  if ((CAN_NodexRegs->NSR & (uint32_t)NewNodeStatus) != 0U)
+  {
+    Status = (uint32_t)CAN_SET;
+  }
+  else 
+  {
+    Status = (uint32_t)CAN_RESET;
+  }          
+
+  return Status;
+}
+
+
+
+/*  This function will return the message object's message 
+ *  pending register bit value
+ */
+
+status_t CAN001_GetMOPndRegisterBitStatus
+(
+  const CAN001_HandleType* Handle, 
+  uint8_t MsgObjnr
+)
+{
+  status_t Status = (uint32_t)CAN001_ERROR;
+  uint32_t* MsgPndRegOffset;
+  
+  DBG002_N((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo));
+  MsgPndRegOffset = GET_MSGPND_OFFSET(Handle->NodeID);
+  Status = RD_REG((*MsgPndRegOffset), (CAN_MSPND_PND_Msk << (MsgObjnr-1U)), \
+                                                                  (MsgObjnr-1U));
+ 
+  return Status;
+}
+
+
+/*  This function is used to clear the status bits of message object
+ *  register MOSTATx. The input parameter can be a combination of 
+ *  enum type MsgStatus
+ */
+
+status_t CAN001_ClearMOFlagStatus
+(
+  const CAN001_HandleType* Handle, 
+  uint8_t MsgObjnr, 
+  CAN_MsgStatusType NewMsgStatus
+)
+{
+  status_t Status = (uint32_t)CAN001_ERROR;
+  uint8_t MsgNo = (uint8_t)(Handle->FirstMOMapping+(MsgObjnr-1U));
+  /* Mapping to message object offset value*/
+  CAN_MO_TypeDef* CAN_MOxRegs = \
+                  GET_MO_OFFSET(MsgNo);
+  
+  if ((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo))
+  {
+    Status = (uint32_t)CAN001_MO_NOT_FOUND;
+    ERROR(DBG002_GID_CAN001,Status, 0, NULL);
+  }
+  else
+  {
+    CAN_MOxRegs->MOCTR = CAN001_CLEAR_MO_STATUS_MASK & (uint32_t)NewMsgStatus;
+    Status = (uint32_t)DAVEApp_SUCCESS;
+  }
+ 
+  return Status;
+}	
+
+/*  This function is used to clear the status bits of Node 
+ *   register NSRx. The input parameter can be a combination
+ *   of enum type NodeStatus  
+ */
+
+void CAN001_ClearNodeFlagStatus
+(
+  const CAN001_HandleType* Handle, 
+  CAN001_NodeStatusType NewNodeStatus
+)
+{
+  /* Mapping to Node Register offset value*/  
+  CAN_NODE_TypeDef* CAN_NodexRegs = Handle->CanNodeRegs;
+ 
+  CAN_NodexRegs->NSR &= ~((uint32_t)NewNodeStatus & \
+                                              CAN001_CLEAR_NODE_STATUS_MASK); 	
+ 
+}
+
+
+
+
+/*  These function is used to clear message pending register bit
+ *  of specific message object.
+ */
+
+status_t CAN001_ClearMOPndRegisterBit(const CAN001_HandleType* Handle, uint8_t MsgObjnr)
+{
+  status_t Status = (uint32_t)CAN001_ERROR;
+  uint32_t* MsgPndRegOffset = 0;
+  
+  if ((MsgObjnr == 0U)||(MsgObjnr > Handle->NodeMONo))
+  {
+    Status = (uint32_t)CAN001_MO_NOT_FOUND;
+    ERROR(DBG002_GID_CAN001,Status, 0, NULL);
+  }
+  else
+  {
+    MsgPndRegOffset = GET_MSGPND_OFFSET(Handle->NodeID);
+    CLR_BIT((*MsgPndRegOffset), (MsgObjnr-1U));
+    Status = (uint32_t)DAVEApp_SUCCESS;
+  }
+ 
+  return Status;
+}
+
+/**
+ *@}
+ */
+
+/*CODE_BLOCK_END*/ 
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ifx.davex.uimodel:UIDataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ifx.davex.uimodel="com.ifx.davex.uimodel">
+  <controls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="DefaultPage" displayName="CAN Clock" className="IfxGroupBox" controlId="1324629290828">
+    <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+    <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/canglobal/0/canglobal_erwCANClkDivider" displayName="CAN Clock Divider" className="EnumerationType" paramName="app/canglobal/0/canglobal_erwCANClkDivider:CAN Clock Divider" controlId="1326964123390">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+    </subControls>
+    <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group92" displayName="MultiCAN Clock Settings" className="IfxGroupBox" controlId="1333025479536">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/canglobal/0/canglobal_iroclock" displayName="Peripheral Clock" readonly="true" className="IntegerType" paramName="app/canglobal/0/canglobal_iroclock:Peripheral Clock" controlId="1333025498615" defaultType="MHz" customControl="true">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+        <conversionType>MHz</conversionType>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/canglobal/0/canglobal_irwdesiredfreqcan" displayName="Desired MultiCAN Frequency" className="IntegerType" paramName="app/canglobal/0/canglobal_irwdesiredfreqcan:Desired MultiCAN Frequency" controlId="1333025502693" defaultType="MHz" customControl="true">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+        <conversionType>MHz</conversionType>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/canglobal/0/canglobal_iroActualFreqCAN" displayName="Actual MultiCAN Frequency" readonly="true" className="IntegerType" paramName="app/canglobal/0/canglobal_iroActualFreqCAN:Actual MultiCAN Frequency" controlId="1333025505959" defaultType="MHz" customControl="true">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+        <conversionType>MHz</conversionType>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/canglobal/0/canglobal_irwStepCAN" displayName="Step Value" readonly="true" className="IntegerType" paramName="app/canglobal/0/canglobal_irwStepCAN:Step Value" controlId="1333025508646">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+        <conversionType>dec</conversionType>
+      </subControls>
+      <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+    </subControls>
+    <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+  </controls>
+</com.ifx.davex.uimodel:UIDataModel>

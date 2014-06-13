@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_9f7b2e8bdd9012fef42a4c28cf890e60" kind="dir">
+    <compoundname>IO004</compoundname>
+    <innerfile refid="_i_o004_8d">IO004.d</innerfile>
+    <innerfile refid="_i_o004___conf_8d">IO004_Conf.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/Dave/Generated/src/IO004/"/>
+  </compounddef>
+</doxygen>

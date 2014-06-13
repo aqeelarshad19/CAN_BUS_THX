@@ -1,0 +1,635 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_r_e_s_e_t001_8c" kind="file">
+    <compoundname>RESET001.c</compoundname>
+    <includes refid="_r_e_s_e_t001_8h" local="yes">../../inc/RESET001/RESET001.h</includes>
+    <incdepgraph>
+      <node id="902">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="900">
+        <label>stdint.h</label>
+      </node>
+      <node id="901">
+        <label>stddef.h</label>
+      </node>
+      <node id="899">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="900" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+      </node>
+      <node id="896">
+        <label>RESET001.c</label>
+        <link refid="RESET001.c"/>
+        <childnode refid="897" relation="include">
+        </childnode>
+      </node>
+      <node id="898">
+        <label>uc_id.h</label>
+      </node>
+      <node id="897">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_r_e_s_e_t001_8c_1a0a7bcd2a24f0ba77f0eb1f101160e380" prot="public" static="no">
+        <name>RESET001_BITMASK</name>
+        <initializer>0x0FFFFFFFU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset BitMask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="87" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="87" bodyend="-1"/>
+        <referencedby refid="_r_e_s_e_t001_8c_1a7b523833b7aad579893660bc85606a9d" compoundref="_r_e_s_e_t001_8c" startline="117" endline="143">RESET001_AssertReset</referencedby>
+        <referencedby refid="_r_e_s_e_t001_8c_1a9151e10e7a68dd3626edf8410569b42a" compoundref="_r_e_s_e_t001_8c" startline="162" endline="187">RESET001_DeassertReset</referencedby>
+        <referencedby refid="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" compoundref="_r_e_s_e_t001_8c" startline="236" endline="279">RESET001_GetStatus</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_e_s_e_t001_8c_1ad6dc56d33c3409662993803b55ba87b2" prot="public" static="no">
+        <name>RESET001_CLEAR_BITMASK</name>
+        <initializer>0xF0000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear BitMask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="85" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="85" bodyend="-1"/>
+        <referencedby refid="_r_e_s_e_t001_8c_1a7b523833b7aad579893660bc85606a9d" compoundref="_r_e_s_e_t001_8c" startline="117" endline="143">RESET001_AssertReset</referencedby>
+        <referencedby refid="_r_e_s_e_t001_8c_1a9151e10e7a68dd3626edf8410569b42a" compoundref="_r_e_s_e_t001_8c" startline="162" endline="187">RESET001_DeassertReset</referencedby>
+        <referencedby refid="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" compoundref="_r_e_s_e_t001_8c" startline="236" endline="279">RESET001_GetStatus</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_e_s_e_t001_8c_1aec244ae2c875ec96ed07c3d0aae1c9f6" prot="public" static="no">
+        <name>RESET001_PERIPHERAL_ADDR_SHIFT</name>
+        <initializer>0x0000000CU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="91" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_e_s_e_t001_8c_1a010a463c29f493c7e76f7a2f0e442fe3" prot="public" static="no">
+        <name>RESET001_RCU_INVALID_INPUT</name>
+        <initializer>0x0000000FU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inclusion of header file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="79" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="79" bodyend="-1"/>
+        <referencedby refid="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" compoundref="_r_e_s_e_t001_8c" startline="236" endline="279">RESET001_GetStatus</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_e_s_e_t001_8c_1aaca629408c0b9d734a1e4f5d122b2fbf" prot="public" static="no">
+        <name>RESET001_RCU_RESET</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To check bit value is 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="83" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="83" bodyend="-1"/>
+        <referencedby refid="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" compoundref="_r_e_s_e_t001_8c" startline="236" endline="279">RESET001_GetStatus</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_e_s_e_t001_8c_1a9c2fb8177e46ed0076aaff11e9ee8864" prot="public" static="no">
+        <name>RESET001_RCU_SET</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To check bit value is 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="81" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="81" bodyend="-1"/>
+        <referencedby refid="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" compoundref="_r_e_s_e_t001_8c" startline="236" endline="279">RESET001_GetStatus</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_e_s_e_t001_8c_1a4b8732da05a0fbda4334d038aed8e8ef" prot="public" static="no">
+        <name>RESET001_SHIFT_RIGHT_MASK</name>
+        <initializer>28U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shift Right Mask for moving MSB position Nibble to LSB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="89" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="89" bodyend="-1"/>
+        <referencedby refid="_r_e_s_e_t001_8c_1a7b523833b7aad579893660bc85606a9d" compoundref="_r_e_s_e_t001_8c" startline="117" endline="143">RESET001_AssertReset</referencedby>
+        <referencedby refid="_r_e_s_e_t001_8c_1a9151e10e7a68dd3626edf8410569b42a" compoundref="_r_e_s_e_t001_8c" startline="162" endline="187">RESET001_DeassertReset</referencedby>
+        <referencedby refid="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" compoundref="_r_e_s_e_t001_8c" startline="236" endline="279">RESET001_GetStatus</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_r_e_s_e_t001_8c_1a7b523833b7aad579893660bc85606a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RESET001_AssertReset</definition>
+        <argsstring>(RESET001_ResetnType Resetn)</argsstring>
+        <name>RESET001_AssertReset</name>
+        <param>
+          <type><ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref></type>
+          <declname>Resetn</declname>
+        </param>
+        <briefdescription>
+<para>This function is to enable reset of peripheral by software. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Resetn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Peripheral ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>status<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a7b523833b7aad579893660bc85606a9d" kindref="member" tooltip="This function is to enable reset of peripheral by software.">RESET001_AssertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>status<sp/><sp/>of<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_r_e_s_e_t001_8h_1a8575aa5f4525c4a0e6f5bc304ea74e39" kindref="member" tooltip="This API is used to get the current reset status of the peripheral.">RESET001_GetStatus</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>==<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>De-assert<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a9151e10e7a68dd3626edf8410569b42a" kindref="member" tooltip="This function is used to clear the Reset of the desired peripheral ( de-assert reset).">RESET001_DeassertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="96" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="117" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="_r_e_s_e_t001_8c_1a8d4e42f9a61beb05bc9369c20262a680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RESET001_ClearResetInfo</definition>
+        <argsstring>(void)</argsstring>
+        <name>RESET001_ClearResetInfo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>API to clear the status of last reset. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>the<sp/>status<sp/>of<sp/>last<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a8d4e42f9a61beb05bc9369c20262a680" kindref="member" tooltip="API to clear the status of last reset.">RESET001_ClearResetInfo</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="100" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="296" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="_r_e_s_e_t001_8c_1a9151e10e7a68dd3626edf8410569b42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RESET001_DeassertReset</definition>
+        <argsstring>(RESET001_ResetnType Resetn)</argsstring>
+        <name>RESET001_DeassertReset</name>
+        <param>
+          <type><ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref></type>
+          <declname>Resetn</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to clear the Reset of the desired peripheral ( de-assert reset). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Resetn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Peripheral ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>status<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a7b523833b7aad579893660bc85606a9d" kindref="member" tooltip="This function is to enable reset of peripheral by software.">RESET001_AssertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>status<sp/><sp/>of<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_r_e_s_e_t001_8h_1a8575aa5f4525c4a0e6f5bc304ea74e39" kindref="member" tooltip="This API is used to get the current reset status of the peripheral.">RESET001_GetStatus</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>==<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>De-assert<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a9151e10e7a68dd3626edf8410569b42a" kindref="member" tooltip="This function is used to clear the Reset of the desired peripheral ( de-assert reset).">RESET001_DeassertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="97" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="162" bodyend="187"/>
+        <referencedby refid="_c_a_n_g_l_o_b_a_l_8c_1a2a63e2e9c03562d237bbfca3bd8052fd" compoundref="_c_a_n_g_l_o_b_a_l_8c" startline="128" endline="145">CANGLOBAL_Init</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1a8b7f345b2f36c2ce54e21319196674a8" compoundref="_u_a_r_t001_8c" startline="584" endline="647">UART001_Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_r_e_s_e_t001_8c_1a89e50fa88049052c960f130b1f1a8077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_r_e_s_e_t001_8h_1a622dcf95a8a23ed8b337573c6956c0a1" kindref="member">RESET001_InfoType</ref></type>
+        <definition>RESET001_InfoType RESET001_GetResetInfo</definition>
+        <argsstring>(void)</argsstring>
+        <name>RESET001_GetResetInfo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>API to get the reason of last reset. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>RESET001_InfoType enum value</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a622dcf95a8a23ed8b337573c6956c0a1" kindref="member">RESET001_InfoType</ref><sp/>ResetInfo;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>Information<sp/>about<sp/>last<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>ResetInfo<sp/>=<sp/><ref refid="_r_e_s_e_t001_8h_1a89e50fa88049052c960f130b1f1a8077" kindref="member" tooltip="API to get the reason of last reset.">RESET001_GetResetInfo</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="98" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="204" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t RESET001_GetStatus</definition>
+        <argsstring>(RESET001_ResetnType Resetn)</argsstring>
+        <name>RESET001_GetStatus</name>
+        <param>
+          <type><ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref></type>
+          <declname>Resetn</declname>
+        </param>
+        <briefdescription>
+<para>This API is used to get the current reset status of the peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Resetn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Peripheral ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+ <linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/>status<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a7b523833b7aad579893660bc85606a9d" kindref="member" tooltip="This function is to enable reset of peripheral by software.">RESET001_AssertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>status<sp/><sp/>of<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_r_e_s_e_t001_8h_1a8575aa5f4525c4a0e6f5bc304ea74e39" kindref="member" tooltip="This API is used to get the current reset status of the peripheral.">RESET001_GetStatus</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>==<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>De-assert<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a9151e10e7a68dd3626edf8410569b42a" kindref="member" tooltip="This function is used to clear the Reset of the desired peripheral ( de-assert reset).">RESET001_DeassertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcda535382cb0fe39bb5ac0abaf02860a59e" kindref="member">PER0_ERU1</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" line="99" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c" bodystart="236" bodyend="279"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reset App implementation Source File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2013,<sp/>Infineon<sp/>Technologies<sp/>AG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>modification,are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>copyright<sp/>holders<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>**</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without**<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>specific<sp/>prior<sp/>written<sp/>permission.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/><sp/>**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>ARE<sp/><sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>LIABLE<sp/><sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/><sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>To<sp/>improve<sp/>the<sp/>quality<sp/>of<sp/>the<sp/>software,<sp/>users<sp/>are<sp/>encouraged<sp/>to<sp/>share<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>modifications,<sp/>enhancements<sp/>or<sp/>bug<sp/>fixes<sp/>with<sp/>Infineon<sp/>Technologies<sp/>AG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>dave@infineon.com).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/>MAY<sp/>BE<sp/>CHANGED<sp/>BY<sp/>USER<sp/>[yes/no]:<sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">**<sp/>MODIFICATION<sp/>DATE<sp/>:<sp/>Nov<sp/>18,<sp/>2013<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">**<sp/>Version<sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/>Comments<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">**<sp/>V0.0.1<sp/><sp/><sp/><sp/>JBT<sp/><sp/><sp/><sp/><sp/>Initial<sp/>Version<sp/>Updated<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">**<sp/>V0.0.2<sp/><sp/><sp/><sp/>JBT<sp/><sp/><sp/><sp/><sp/>Updated<sp/>for<sp/>template<sp/>changes<sp/>from<sp/>.jet<sp/>to<sp/>hdt<sp/>and<sp/>fixed<sp/><sp/>**</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>functionality<sp/>and<sp/>updates<sp/>as<sp/>per<sp/>Coding<sp/>Guidelines**<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="comment">**<sp/>V1.0.0<sp/><sp/><sp/><sp/>JBT<sp/><sp/><sp/><sp/><sp/>Updated<sp/>after<sp/>review<sp/>completion<sp/>(ID<sp/>-<sp/>REV_004865)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Additional<sp/>API<sp/>added,<sp/>RESET001_ClearResetInfo()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>**<sp/>INCLUDE<sp/>FILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor">#include<sp/>&quot;../../inc/RESET001/RESET001.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Private<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Invalid<sp/>Input<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_r_e_s_e_t001_8c_1a010a463c29f493c7e76f7a2f0e442fe3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RESET001_RCU_INVALID_INPUT<sp/><sp/><sp/><sp/><sp/><sp/>0x0000000FU</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="81" refid="_r_e_s_e_t001_8c_1a9c2fb8177e46ed0076aaff11e9ee8864" refkind="member"><highlight class="preprocessor">#define<sp/>RESET001_RCU_SET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1U</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="83" refid="_r_e_s_e_t001_8c_1aaca629408c0b9d734a1e4f5d122b2fbf" refkind="member"><highlight class="preprocessor">#define<sp/>RESET001_RCU_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0U</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="85" refid="_r_e_s_e_t001_8c_1ad6dc56d33c3409662993803b55ba87b2" refkind="member"><highlight class="preprocessor">#define<sp/>RESET001_CLEAR_BITMASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF0000000U</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="87" refid="_r_e_s_e_t001_8c_1a0a7bcd2a24f0ba77f0eb1f101160e380" refkind="member"><highlight class="preprocessor">#define<sp/>RESET001_BITMASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0FFFFFFFU</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="89" refid="_r_e_s_e_t001_8c_1a4b8732da05a0fbda4334d038aed8e8ef" refkind="member"><highlight class="preprocessor">#define<sp/>RESET001_SHIFT_RIGHT_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>28U</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Linear<sp/>Address<sp/>shift<sp/>offset<sp/>from<sp/>one<sp/>peripheral<sp/>to<sp/>other*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RESET001_PERIPHERAL_ADDR_SHIFT<sp/><sp/>0x0000000CU</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="94"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Public<sp/>Function<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_r_e_s_e_t001_8h_1a7b523833b7aad579893660bc85606a9d" kindref="member" tooltip="This function is to enable reset of peripheral by software.">RESET001_AssertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref><sp/>Resetn);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_r_e_s_e_t001_8h_1a9151e10e7a68dd3626edf8410569b42a" kindref="member" tooltip="This function is used to clear the Reset of the desired peripheral ( de-assert reset).">RESET001_DeassertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref><sp/>Resetn);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="_r_e_s_e_t001_8h_1a622dcf95a8a23ed8b337573c6956c0a1" kindref="member">RESET001_InfoType</ref><sp/><ref refid="_r_e_s_e_t001_8h_1a89e50fa88049052c960f130b1f1a8077" kindref="member" tooltip="API to get the reason of last reset.">RESET001_GetResetInfo</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">status_t<sp/><ref refid="_r_e_s_e_t001_8h_1a8575aa5f4525c4a0e6f5bc304ea74e39" kindref="member" tooltip="This API is used to get the current reset status of the peripheral.">RESET001_GetStatus</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref><sp/>Resetn);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_r_e_s_e_t001_8h_1a8d4e42f9a61beb05bc9369c20262a680" kindref="member" tooltip="API to clear the status of last reset.">RESET001_ClearResetInfo</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="102"><highlight class="comment">**<sp/>Syntax<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>void<sp/>RESET001_AssertReset(RESET001_ResetnType<sp/>Resetn)<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">**<sp/>Sync<sp/>/Async<sp/><sp/><sp/><sp/><sp/>:<sp/>Synchronous<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">**<sp/>Reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Non<sp/>reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">**<sp/>Parameters(IN)<sp/><sp/>:<sp/>Resetn<sp/><sp/>:<sp/>Reset<sp/>Number<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="109"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">**<sp/>Parameters(OUT)<sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">**<sp/>Return<sp/>value<sp/><sp/><sp/><sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">**<sp/>Description<sp/><sp/><sp/><sp/><sp/>:<sp/>This<sp/>function<sp/>is<sp/>to<sp/>enable<sp/>reset<sp/>of<sp/>peripheral<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>software<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="_r_e_s_e_t001_8c_1a7b523833b7aad579893660bc85606a9d" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_r_e_s_e_t001_8h_1a7b523833b7aad579893660bc85606a9d" kindref="member" tooltip="This function is to enable reset of peripheral by software.">RESET001_AssertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref><sp/>Resetn)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>uint32_t*<sp/>RCUControlReg;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/>PeripheralInfo;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>PeripheralInfo<sp/>=<sp/>0U;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>RCUControlReg<sp/>=<sp/>0U;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_RESET001_API_1&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>SCU_RESET_TypeDef*<sp/>RCUCtrlReg<sp/>=<sp/>SCU_RESET;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extract<sp/>the<sp/>MSB<sp/>to<sp/>identify<sp/>the<sp/>peripheral<sp/>in<sp/>which<sp/>the<sp/>module<sp/>is<sp/>residing.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/>*<sp/>Shift<sp/>the<sp/>MSB<sp/>to<sp/>LSB<sp/>position<sp/>and<sp/>store<sp/>it<sp/>in<sp/>a<sp/>local<sp/>variable<sp/>Temp<sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>PeripheralInfo<sp/>=<sp/>(((uint32_t)Resetn<sp/>&amp;<sp/><ref refid="_r_e_s_e_t001_8c_1ad6dc56d33c3409662993803b55ba87b2" kindref="member">RESET001_CLEAR_BITMASK</ref><sp/>)<sp/>&gt;&gt;<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8c_1a4b8732da05a0fbda4334d038aed8e8ef" kindref="member">RESET001_SHIFT_RIGHT_MASK</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Multiply<sp/>the<sp/>peripheral<sp/>info<sp/>stored<sp/>in<sp/>Temp<sp/>variable<sp/>with<sp/>the<sp/>corresponding</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/>*<sp/><sp/>address<sp/>shift<sp/>value<sp/>to<sp/>get<sp/>the<sp/>offset<sp/>address<sp/>of<sp/>RCU<sp/>register.</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/>*<sp/><sp/>Add<sp/>the<sp/>offset<sp/>address<sp/>with<sp/>base<sp/>PRSET<sp/>peripheral<sp/>address<sp/>to<sp/>get<sp/>the<sp/>actual<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/><sp/>*<sp/><sp/>RCU<sp/>PRSET<sp/>register<sp/>address<sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>RCUControlReg<sp/>=<sp/>(uint32_t*)((uint32_t)(&amp;RCUCtrlReg-&gt;PRSET0)<sp/>+<sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>RESET001_PERIPHERAL_ADDR_SHIFT<sp/>*<sp/>PeripheralInfo));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Load<sp/>the<sp/>PRSET<sp/>register<sp/>with<sp/>the<sp/>reset<sp/>value<sp/>after<sp/>ignoring<sp/>the<sp/>Most<sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Significant<sp/>Nibble.<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>*RCUControlReg<sp/>=<sp/>((uint32_t)Resetn<sp/>&amp;<sp/><ref refid="_r_e_s_e_t001_8c_1a0a7bcd2a24f0ba77f0eb1f101160e380" kindref="member">RESET001_BITMASK</ref><sp/>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">**<sp/>Syntax<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>void<sp/>RESET001_DeassertReset(RESET001_ResetnType<sp/>Resetn)<sp/><sp/>**</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">**<sp/>Sync<sp/>/Async<sp/><sp/><sp/><sp/><sp/>:<sp/>Synchronous<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">**<sp/>Reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Non<sp/>reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="153"><highlight class="comment">**<sp/>Parameters(IN)<sp/><sp/>:<sp/>Resetn<sp/><sp/>:<sp/>Reset<sp/>Number<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="154"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">**<sp/>Parameters(OUT)<sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="157"><highlight class="comment">**<sp/>Return<sp/>value<sp/><sp/><sp/><sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="158"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="159"><highlight class="comment">**<sp/>Description<sp/><sp/><sp/><sp/><sp/>:<sp/>This<sp/>function<sp/>is<sp/>to<sp/>Deassert<sp/>the<sp/>reset<sp/>of<sp/>peripheral<sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="160"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>by<sp/>software<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="161"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="_r_e_s_e_t001_8c_1a9151e10e7a68dd3626edf8410569b42a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_r_e_s_e_t001_8h_1a9151e10e7a68dd3626edf8410569b42a" kindref="member" tooltip="This function is used to clear the Reset of the desired peripheral ( de-assert reset).">RESET001_DeassertReset</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref><sp/>Resetn)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>uint32_t*<sp/>RCUControlReg;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/>PeripheralInfo;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>PeripheralInfo<sp/><sp/><sp/>=<sp/>0U;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>RCUControlReg<sp/><sp/><sp/><sp/>=<sp/>0U;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_RESET001_API_2&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>SCU_RESET_TypeDef*<sp/>RCUCtrlReg<sp/>=<sp/>SCU_RESET;<sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extract<sp/>the<sp/>MSB<sp/>to<sp/>identify<sp/>the<sp/>peripheral<sp/>in<sp/>which<sp/>the<sp/>module<sp/>is<sp/>residing.</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Shift<sp/>the<sp/>MSB<sp/>to<sp/>LSB<sp/>position<sp/>and<sp/>store<sp/>it<sp/>in<sp/>a<sp/>local<sp/>variable<sp/>Temp<sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>PeripheralInfo<sp/>=<sp/>(((uint32_t)Resetn<sp/>&amp;<sp/><ref refid="_r_e_s_e_t001_8c_1ad6dc56d33c3409662993803b55ba87b2" kindref="member">RESET001_CLEAR_BITMASK</ref>)<sp/>&gt;&gt;<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8c_1a4b8732da05a0fbda4334d038aed8e8ef" kindref="member">RESET001_SHIFT_RIGHT_MASK</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Multiply<sp/>the<sp/>peripheral<sp/>info<sp/>stored<sp/>in<sp/>Temp<sp/>variable<sp/>with<sp/>the<sp/>corresponding</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/><sp/>*<sp/>address<sp/>shift<sp/>value<sp/>to<sp/>get<sp/>the<sp/>offset<sp/>address<sp/>of<sp/>RCU<sp/>register.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/>*<sp/><sp/>Add<sp/>the<sp/>offset<sp/>address<sp/>with<sp/>base<sp/>PRCLR<sp/>peripheral<sp/>address<sp/>to<sp/>get<sp/>the<sp/>actual<sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/><sp/>*<sp/><sp/>RCU<sp/>PRCLR<sp/>register<sp/>address<sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>RCUControlReg<sp/>=<sp/>(uint32_t*)((uint32_t)(&amp;RCUCtrlReg-&gt;PRCLR0)<sp/>+<sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>RESET001_PERIPHERAL_ADDR_SHIFT<sp/>*<sp/>PeripheralInfo));</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Load<sp/>the<sp/>PRCLR<sp/>register<sp/>with<sp/>the<sp/>reset<sp/>value<sp/>after<sp/>ignoring<sp/>the<sp/>Most<sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Significant<sp/>Nibble.<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>*RCUControlReg<sp/>=<sp/>((uint32_t)Resetn<sp/>&amp;<sp/><ref refid="_r_e_s_e_t001_8c_1a0a7bcd2a24f0ba77f0eb1f101160e380" kindref="member">RESET001_BITMASK</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="190"><highlight class="comment">**<sp/>Syntax<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>RESET001_InfoType<sp/>RESET001_GetResetInfo(void)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="191"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="192"><highlight class="comment">**<sp/>Sync<sp/>/Async<sp/><sp/><sp/><sp/><sp/>:<sp/>Synchronous<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="193"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="194"><highlight class="comment">**<sp/>Reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Non<sp/>reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="195"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="196"><highlight class="comment">**<sp/>Parameters(IN)<sp/><sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">**<sp/>Parameters(OUT)<sp/>:<sp/>Reset<sp/>Info<sp/>Status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="200"><highlight class="comment">**<sp/>Return<sp/>value<sp/><sp/><sp/><sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="201"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">**<sp/>Description<sp/><sp/><sp/><sp/><sp/>:<sp/>This<sp/>API<sp/>is<sp/>to<sp/>get<sp/>the<sp/><sp/>reason<sp/>of<sp/>last<sp/>reset<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204" refid="_r_e_s_e_t001_8c_1a89e50fa88049052c960f130b1f1a8077" refkind="member"><highlight class="normal"><ref refid="_r_e_s_e_t001_8h_1a622dcf95a8a23ed8b337573c6956c0a1" kindref="member">RESET001_InfoType</ref><sp/><ref refid="_r_e_s_e_t001_8h_1a89e50fa88049052c960f130b1f1a8077" kindref="member" tooltip="API to get the reason of last reset.">RESET001_GetResetInfo</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>SCU_RESET_TypeDef*<sp/>RCUCtrlReg;<sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><ref refid="_r_e_s_e_t001_8h_1a622dcf95a8a23ed8b337573c6956c0a1" kindref="member">RESET001_InfoType</ref><sp/>ResetInfo;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>RCUCtrlReg<sp/>=<sp/>SCU_RESET;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>ResetInfo<sp/><sp/>=<sp/>(<ref refid="_r_e_s_e_t001_8h_1a622dcf95a8a23ed8b337573c6956c0a1" kindref="member">RESET001_InfoType</ref>)0x00000000;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_RESET001_API_4&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>the<sp/>Last<sp/>reset<sp/>status<sp/>info<sp/>from<sp/>RSTSTAT<sp/>register*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>ResetInfo<sp/>=<sp/>(<ref refid="_r_e_s_e_t001_8h_1a622dcf95a8a23ed8b337573c6956c0a1" kindref="member">RESET001_InfoType</ref>)(RCUCtrlReg-&gt;RSTSTAT<sp/>&amp;<sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SCU_RESET_RSTSTAT_RSTSTAT_Msk);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ResetInfo;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="221"><highlight class="comment">**<sp/>Syntax<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>status_t<sp/>RESET001_GetStatus(RESET001_ResetnType<sp/>Resetn)<sp/><sp/>**</highlight></codeline>
+<codeline lineno="222"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="223"><highlight class="comment">**<sp/>Sync<sp/>/Async<sp/><sp/><sp/><sp/><sp/>:<sp/>Synchronous<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="224"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="225"><highlight class="comment">**<sp/>Reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Non<sp/>reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="226"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="227"><highlight class="comment">**<sp/>Parameters(IN)<sp/><sp/>:<sp/>Resetn<sp/><sp/>:<sp/>Reset<sp/>Number<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="228"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="229"><highlight class="comment">**<sp/>Parameters(OUT)<sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="230"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="231"><highlight class="comment">**<sp/>Return<sp/>value<sp/><sp/><sp/><sp/>:<sp/>status_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="232"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="233"><highlight class="comment">**<sp/>Description<sp/><sp/><sp/><sp/><sp/>:<sp/>This<sp/>API<sp/>is<sp/>to<sp/>get<sp/>the<sp/>reset<sp/>status<sp/>of<sp/>the<sp/>peripheral<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="234"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="_r_e_s_e_t001_8c_1a8575aa5f4525c4a0e6f5bc304ea74e39" refkind="member"><highlight class="normal">status_t<sp/><ref refid="_r_e_s_e_t001_8h_1a8575aa5f4525c4a0e6f5bc304ea74e39" kindref="member" tooltip="This API is used to get the current reset status of the peripheral.">RESET001_GetStatus</ref>(<ref refid="_r_e_s_e_t001_8h_1aa90ed04b053382064226c16284f66fcd" kindref="member">RESET001_ResetnType</ref><sp/>Resetn)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/>status<sp/>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>uint32_t*<sp/>RCUControlReg;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/>PeripheralInfo;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/>Getstatus;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_r_e_s_e_t001_8c_1a010a463c29f493c7e76f7a2f0e442fe3" kindref="member">RESET001_RCU_INVALID_INPUT</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>PeripheralInfo=<sp/>0U;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>RCUControlReg<sp/>=<sp/>0U;<sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>Getstatus<sp/><sp/><sp/><sp/><sp/>=<sp/>0U;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_RESET001_API_3&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>SCU_RESET_TypeDef*<sp/>RCUCtrlReg<sp/>=<sp/>SCU_RESET;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extract<sp/>the<sp/>MSB<sp/>to<sp/>identify<sp/>the<sp/>peripheral<sp/>in<sp/>which<sp/>the<sp/>module<sp/>is<sp/>residing.</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Shift<sp/>the<sp/>MSB<sp/>to<sp/>LSB<sp/>position<sp/>and<sp/>store<sp/>it<sp/>in<sp/>a<sp/>local<sp/>variable<sp/>Temp<sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>PeripheralInfo<sp/>=<sp/>(((uint32_t)Resetn<sp/>&amp;<sp/><ref refid="_r_e_s_e_t001_8c_1ad6dc56d33c3409662993803b55ba87b2" kindref="member">RESET001_CLEAR_BITMASK</ref>)<sp/>&gt;&gt;<sp/></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_r_e_s_e_t001_8c_1a4b8732da05a0fbda4334d038aed8e8ef" kindref="member">RESET001_SHIFT_RIGHT_MASK</ref>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Multiply<sp/>the<sp/>peripheral<sp/>info<sp/>stored<sp/>in<sp/>Temp<sp/>variable<sp/>with<sp/>the<sp/>corresponding</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/><sp/>*<sp/>address<sp/>shift<sp/>value<sp/>to<sp/>get<sp/>the<sp/>offset<sp/>address<sp/>of<sp/>RCU<sp/>register.</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/><sp/>*<sp/><sp/>Add<sp/>the<sp/>offset<sp/>address<sp/>with<sp/>base<sp/>PRSTAT<sp/>peripheral<sp/>address<sp/>to<sp/>get<sp/>actual<sp/></highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/><sp/>*<sp/><sp/>RCU<sp/>PRSTAT<sp/>register<sp/>address<sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>RCUControlReg<sp/>=<sp/>(uint32_t*)((uint32_t)(&amp;RCUCtrlReg-&gt;PRSTAT0)<sp/>+<sp/></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>RESET001_PERIPHERAL_ADDR_SHIFT<sp/>*<sp/>PeripheralInfo));</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>the<sp/>PRCLR<sp/>register<sp/>with<sp/>the<sp/>masked<sp/>reset<sp/>value<sp/>after<sp/>ignoring<sp/>the<sp/>Most<sp/></highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Significant<sp/>Nibble.<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>Getstatus<sp/><sp/>=<sp/>(uint32_t)((*RCUControlReg)<sp/>&amp;<sp/></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(uint32_t)Resetn<sp/>&amp;<sp/><ref refid="_r_e_s_e_t001_8c_1a0a7bcd2a24f0ba77f0eb1f101160e380" kindref="member">RESET001_BITMASK</ref>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>the<sp/>register<sp/>return<sp/>value<sp/>is<sp/>set<sp/>then<sp/>return<sp/>SET<sp/>else<sp/>return<sp/>RESET<sp/></highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/><sp/><sp/>*<sp/>status<sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0U<sp/>!=<sp/>Getstatus)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_r_e_s_e_t001_8c_1a9c2fb8177e46ed0076aaff11e9ee8864" kindref="member">RESET001_RCU_SET</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_r_e_s_e_t001_8c_1aaca629408c0b9d734a1e4f5d122b2fbf" kindref="member">RESET001_RCU_RESET</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="282"><highlight class="comment">**<sp/>Syntax<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>void<sp/>RESET001_ClearResetInfo(void)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="283"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="284"><highlight class="comment">**<sp/>Sync<sp/>/Async<sp/><sp/><sp/><sp/><sp/>:<sp/>Synchronous<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="285"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="286"><highlight class="comment">**<sp/>Reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Non<sp/>reentrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="287"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="288"><highlight class="comment">**<sp/>Parameters(IN)<sp/><sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="289"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="290"><highlight class="comment">**<sp/>Parameters(OUT)<sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="291"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="292"><highlight class="comment">**<sp/>Return<sp/>value<sp/><sp/><sp/><sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="293"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="294"><highlight class="comment">**<sp/>Description<sp/><sp/><sp/><sp/><sp/>:<sp/>This<sp/>API<sp/>is<sp/>to<sp/>clear<sp/>the<sp/><sp/>reset<sp/>info<sp/>status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="295"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="_r_e_s_e_t001_8c_1a8d4e42f9a61beb05bc9369c20262a680" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_r_e_s_e_t001_8h_1a8d4e42f9a61beb05bc9369c20262a680" kindref="member" tooltip="API to clear the status of last reset.">RESET001_ClearResetInfo</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/>SCU_RESET_TypeDef*<sp/>RCUCtrlReg;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/>RCUCtrlReg<sp/>=<sp/>SCU_RESET;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_RESET001_API_5&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>last<sp/>reset<sp/>status<sp/>info<sp/>by<sp/>setting<sp/>RSCLR<sp/>bit<sp/>in<sp/>RSTCLR<sp/>register*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/>RCUCtrlReg-&gt;RSTCLR<sp/>|=<sp/><sp/>(uint32_t)(SCU_RESET_RSTCLR_RSCLR_Msk);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">/*CODE_BLOCK_END*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/RESET001.c"/>
+  </compounddef>
+</doxygen>

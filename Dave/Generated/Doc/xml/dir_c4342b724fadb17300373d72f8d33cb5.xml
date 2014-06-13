@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_c4342b724fadb17300373d72f8d33cb5" kind="dir">
+    <compoundname>Generated</compoundname>
+    <innerdir refid="dir_fdaebff503e85bd718ec87c208d63f02">src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/Dave/Generated/"/>
+  </compounddef>
+</doxygen>

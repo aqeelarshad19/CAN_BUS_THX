@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_c_a_n001___message_handle_type" kind="struct" prot="public">
+    <compoundname>CAN001_MessageHandleType</compoundname>
+    <includes refid="_c_a_n001_8h" local="no">CAN001.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_MessageHandleType::data[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>8 bytes of message data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="294" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="294" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1ac47fe7fa9902f1232f8bec52c840666c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_MessageHandleType::DataLength</definition>
+        <argsstring></argsstring>
+        <name>DataLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message data length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="290" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="290" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1a9fac8d157984b7967d152795a67e7894" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_MessageHandleType::IDEMask</definition>
+        <argsstring></argsstring>
+        <name>IDEMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IDE Mask value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="286" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="286" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1aaf7f5b0805c58511d90bcc2aec27ec1f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN001_MessageHandleType::Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>standard ( 11 bit) / Extended (29 bit) message identifier </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="274" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="274" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1a6647ab12f9419bdad35de0288d268dde" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_MessageHandleType::IDExten</definition>
+        <argsstring></argsstring>
+        <name>IDExten</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard/Extended identifier support </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="282" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="282" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1ac0ddaf1b43f4fbf9b5eb0bf00129a289" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN001_MessageHandleType::IDMask</definition>
+        <argsstring></argsstring>
+        <name>IDMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>standard ( 11 bit) / Extended (29 bit) message identifier mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="278" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="278" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1aeb8a55dff97e577090d197939e21c0a5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_MessageHandleType::MsgObjEN</definition>
+        <argsstring></argsstring>
+        <name>MsgObjEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable/Disable Message object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="298" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="298" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___message_handle_type_1acc9aa2394ba4d8f72635b9cfe6a41f5e" prot="public" static="no" mutable="no">
+        <type><ref refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78" kindref="member">CAN_MsgType</ref></type>
+        <definition>CAN_MsgType CAN001_MessageHandleType::MsgObjType</definition>
+        <argsstring></argsstring>
+        <name>MsgObjType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message Type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="302" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="302" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the data structure which contains CAN message elements </para>    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="270" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="269" bodyend="303"/>
+    <listofallmembers>
+      <member refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>data</name></member>
+      <member refid="struct_c_a_n001___message_handle_type_1ac47fe7fa9902f1232f8bec52c840666c" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>DataLength</name></member>
+      <member refid="struct_c_a_n001___message_handle_type_1a9fac8d157984b7967d152795a67e7894" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>IDEMask</name></member>
+      <member refid="struct_c_a_n001___message_handle_type_1aaf7f5b0805c58511d90bcc2aec27ec1f" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>Identifier</name></member>
+      <member refid="struct_c_a_n001___message_handle_type_1a6647ab12f9419bdad35de0288d268dde" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>IDExten</name></member>
+      <member refid="struct_c_a_n001___message_handle_type_1ac0ddaf1b43f4fbf9b5eb0bf00129a289" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>IDMask</name></member>
+      <member refid="struct_c_a_n001___message_handle_type_1aeb8a55dff97e577090d197939e21c0a5" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>MsgObjEN</name></member>
+      <member refid="struct_c_a_n001___message_handle_type_1acc9aa2394ba4d8f72635b9cfe6a41f5e" prot="public" virt="non-virtual"><scope>CAN001_MessageHandleType</scope><name>MsgObjType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

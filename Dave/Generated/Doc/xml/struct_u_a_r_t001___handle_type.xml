@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_u_a_r_t001___handle_type" kind="struct" prot="public">
+    <compoundname>UART001_HandleType</compoundname>
+    <includes refid="_u_a_r_t001_8h" local="no">UART001.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1ac585a5baf6a676cbc0365f0f63066363" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t UART001_HandleType::BaudRate</definition>
+        <argsstring></argsstring>
+        <name>BaudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parity selected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="341" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a70dc05524555b2b61c53195981cd2eae" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UART001_HandleType::BGR_DCTQ</definition>
+        <argsstring></argsstring>
+        <name>BGR_DCTQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculated pdiv value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="354" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="354" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a69fc02be001af93d31ac5ce68a5b8778" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t UART001_HandleType::BGR_PCTQ</definition>
+        <argsstring></argsstring>
+        <name>BGR_PCTQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculated sampling point value [SP = (((1+dctq)/2)+1)] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="357" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="357" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a87965e713d462e32622a9fa35789ee1f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UART001_HandleType::BGR_PDIV</definition>
+        <argsstring></argsstring>
+        <name>BGR_PDIV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculated step value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="353" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="353" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1aa56089da3861e34362e747ef5021edef" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UART001_HandleType::BGR_SP</definition>
+        <argsstring></argsstring>
+        <name>BGR_SP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculated dctq value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="355" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="355" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1ac47cd9d918fba2c6a924ed5fd07ac6de" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UART001_HandleType::BGR_STEP</definition>
+        <argsstring></argsstring>
+        <name>BGR_STEP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Frame Finished Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="352" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="352" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1abb333776089ef3698bb907975231a75e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UART001_HandleType::DataBits</definition>
+        <argsstring></argsstring>
+        <name>DataBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Desired baud rate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="342" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="342" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a54fe3f2a17cb7da435025ab55aabb83b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UART001_HandleType::FormatErrEn</definition>
+        <argsstring></argsstring>
+        <name>FormatErrEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Receiver Noise Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="350" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="350" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a427b72cf94342b79dd7ed4e0433253cf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UART001_HandleType::FrameFinEn</definition>
+        <argsstring></argsstring>
+        <name>FrameFinEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Format Error Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="351" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="351" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a648c541fbdcc0cf866a3ee86f71fe997" prot="public" static="no" mutable="no">
+        <type><ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339af" kindref="member">UART_ModeType</ref></type>
+        <definition>UART_ModeType UART001_HandleType::Mode</definition>
+        <argsstring></argsstring>
+        <name>Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="338" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a82e2292c52c3e8b3dbba54f4feb26488" prot="public" static="no" mutable="no">
+        <type><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" kindref="member">UART_ParityType</ref></type>
+        <definition>UART_ParityType UART001_HandleType::Parity</definition>
+        <argsstring></argsstring>
+        <name>Parity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No of stopbit selected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="340" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="340" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a18c2cdb7562aaf6c4de9f340b0e751e7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_a_r_t001___pin_handle_type" kindref="compound">UART001_PinHandleType</ref></type>
+        <definition>UART001_PinHandleType UART001_HandleType::PinHandle</definition>
+        <argsstring></argsstring>
+        <name>PinHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMSIS defined structure for USIC module User selected TX &amp; RX Port pins </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="337" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a2c67b1724416edf2a3c1a6a27106f159" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UART001_HandleType::RecvNoiseEn</definition>
+        <argsstring></argsstring>
+        <name>RecvNoiseEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rx FIFO Size value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="349" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="349" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1aefdd2621c625112fff2d76fbd7689b0e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UART001_HandleType::RxFifoEn</definition>
+        <argsstring></argsstring>
+        <name>RxFifoEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable additional Transmit FIFO buffer capability </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="344" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="344" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1a190d4530caf26cdf2c6be3567299050f" compoundref="_u_a_r_t001_8c" startline="823" endline="850">UART001_ReadDataBytes</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1acf8ad779c2b8cdcf5e55dabff2e6ce04" compoundref="_u_a_r_t001_8c" startline="771" endline="798">UART001_ReadDataMultiple</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a54875495b112f3ee1d8c2907696ea094" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t UART001_HandleType::RxFifoSize</definition>
+        <argsstring></argsstring>
+        <name>RxFifoSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tx FIFO Size value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="348" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a50971e23469e8644b0d71f5ac88c0072" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t UART001_HandleType::RxLimit</definition>
+        <argsstring></argsstring>
+        <name>RxLimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX FIFO Trigger value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="346" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="346" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1ab1a8e3f5073126ec319313a558e9e2d9" prot="public" static="no" mutable="no">
+        <type><ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" kindref="member">UART_StopBitType</ref></type>
+        <definition>UART_StopBitType UART001_HandleType::StopBit</definition>
+        <argsstring></argsstring>
+        <name>StopBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>USIC Operation mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="339" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="339" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a04b207f688b852e1a1b5a7c90feba7b6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UART001_HandleType::TxFifoEn</definition>
+        <argsstring></argsstring>
+        <name>TxFifoEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Word Length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="343" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="343" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1a8f18b90baea892eaeb3a6bb7aa74d5db" compoundref="_u_a_r_t001_8c" startline="934" endline="965">UART001_WriteDataBytes</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1a61fdfc06efab866a051222c2b20d1431" compoundref="_u_a_r_t001_8c" startline="877" endline="907">UART001_WriteDataMultiple</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a404b41ac0091aa09eaa3acbd174b899d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t UART001_HandleType::TxFifoSize</definition>
+        <argsstring></argsstring>
+        <name>TxFifoSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX FIFO Triger value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="347" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1a57aa7bb66b9939637ce605dd749881c9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t UART001_HandleType::TxLimit</definition>
+        <argsstring></argsstring>
+        <name>TxLimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable additional Receive FIFO buffer capability </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="345" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="345" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t001___handle_type_1aeca4649b1720e8191f1892ee39af9e22" prot="public" static="no" mutable="no">
+        <type>USIC_CH_TypeDef *</type>
+        <definition>USIC_CH_TypeDef* UART001_HandleType::UartRegs</definition>
+        <argsstring></argsstring>
+        <name>UartRegs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="336" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This data type describes UART App instance handle details. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="31">
+        <label>UART001_HandleType</label>
+        <link refid="struct_u_a_r_t001___handle_type"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>PinHandle</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>UART001_PORTS_TypeDef</label>
+        <link refid="struct_u_a_r_t001___p_o_r_t_s___type_def"/>
+      </node>
+      <node id="32">
+        <label>UART001_PinHandleType</label>
+        <link refid="struct_u_a_r_t001___pin_handle_type"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>RX_PortBase</edgelabel>
+          <edgelabel>TX_PortBase</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" line="335" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/UART001.h" bodystart="334" bodyend="358"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t001___handle_type_1ac585a5baf6a676cbc0365f0f63066363" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>BaudRate</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a70dc05524555b2b61c53195981cd2eae" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>BGR_DCTQ</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a69fc02be001af93d31ac5ce68a5b8778" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>BGR_PCTQ</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a87965e713d462e32622a9fa35789ee1f" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>BGR_PDIV</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1aa56089da3861e34362e747ef5021edef" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>BGR_SP</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1ac47cd9d918fba2c6a924ed5fd07ac6de" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>BGR_STEP</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1abb333776089ef3698bb907975231a75e" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>DataBits</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a54fe3f2a17cb7da435025ab55aabb83b" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>FormatErrEn</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a427b72cf94342b79dd7ed4e0433253cf" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>FrameFinEn</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a648c541fbdcc0cf866a3ee86f71fe997" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>Mode</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a82e2292c52c3e8b3dbba54f4feb26488" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>Parity</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a18c2cdb7562aaf6c4de9f340b0e751e7" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>PinHandle</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a2c67b1724416edf2a3c1a6a27106f159" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>RecvNoiseEn</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1aefdd2621c625112fff2d76fbd7689b0e" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>RxFifoEn</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a54875495b112f3ee1d8c2907696ea094" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>RxFifoSize</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a50971e23469e8644b0d71f5ac88c0072" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>RxLimit</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1ab1a8e3f5073126ec319313a558e9e2d9" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>StopBit</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a04b207f688b852e1a1b5a7c90feba7b6" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>TxFifoEn</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a404b41ac0091aa09eaa3acbd174b899d" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>TxFifoSize</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1a57aa7bb66b9939637ce605dd749881c9" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>TxLimit</name></member>
+      <member refid="struct_u_a_r_t001___handle_type_1aeca4649b1720e8191f1892ee39af9e22" prot="public" virt="non-virtual"><scope>UART001_HandleType</scope><name>UartRegs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

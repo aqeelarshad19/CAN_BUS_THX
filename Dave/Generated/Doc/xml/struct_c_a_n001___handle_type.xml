@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_c_a_n001___handle_type" kind="struct" prot="public">
+    <compoundname>CAN001_HandleType</compoundname>
+    <includes refid="_c_a_n001_8h" local="no">CAN001.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_a_n001___handle_type_1a09e538a9a51361f86cb46ad2ac031d9e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_c_a_n001___baud_rate_type" kindref="compound">CAN001_BaudRateType</ref></type>
+        <definition>CAN001_BaudRateType CAN001_HandleType::BaudRate</definition>
+        <argsstring></argsstring>
+        <name>BaudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Node baud rate structure </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="340" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___handle_type_1a0cf8964fb7868c66bac2df22f4a43b17" prot="public" static="no" mutable="no">
+        <type>CAN_NODE_TypeDef *</type>
+        <definition>CAN_NODE_TypeDef* CAN001_HandleType::CanNodeRegs</definition>
+        <argsstring></argsstring>
+        <name>CanNodeRegs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN Node Registers offset value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="344" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="344" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1aaa2383b3300ca5a8ab8501db8bd1effd" compoundref="_c_a_n001_8c" startline="920" endline="931">CAN001_ClearNodeFlagStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a41cc6c91f9def74cd9db7d29e9b500b3" compoundref="_c_a_n001_8c" startline="832" endline="856">CAN001_GetNodeFlagStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aa5a37c13321cc60553c418c5828308b1" compoundref="_c_a_n001_8c" startline="440" endline="476">CAN001_NodeDeInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___handle_type_1aaab97e2c1318507e4321bcf90fa25717" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_HandleType::FirstMOMapping</definition>
+        <argsstring></argsstring>
+        <name>FirstMOMapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>First message object no allocated to the node list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="356" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="356" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a3e8baab1eee0750a8d7310e58420bcaf" compoundref="_c_a_n001_8c" startline="888" endline="912">CAN001_ClearMOFlagStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a33cfce269fb266684be1431b7dc70933" compoundref="_c_a_n001_8c" startline="794" endline="824">CAN001_GetMOFlagStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aa5a37c13321cc60553c418c5828308b1" compoundref="_c_a_n001_8c" startline="440" endline="476">CAN001_NodeDeInit</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a7d87336df18913baaac93a9776c47e6e" compoundref="_c_a_n001_8c" startline="530" endline="571">CAN001_SendDataFrame</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a2b63fea4f457401ffa4899f3dacfd6cc" compoundref="_c_a_n001_8c" startline="578" endline="619">CAN001_SendRemoteFrame</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a68a886b4fc31200314a08ba112d063f8" compoundref="_c_a_n001_8c" startline="724" endline="783">CAN001_UpdateMODataRegisters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___handle_type_1a447f305d32ce441c6c97f78b064c949c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_HandleType::LoopBackModeEn</definition>
+        <argsstring></argsstring>
+        <name>LoopBackModeEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Loop back mode selection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="352" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___handle_type_1ac4e6a73aa11347a618d4c513163f23b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_HandleType::NodeID</definition>
+        <argsstring></argsstring>
+        <name>NodeID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current node No </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="348" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="348" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a6daaddccea102728a1428ee9e2c59b68" compoundref="_c_a_n001_8c" startline="940" endline="958">CAN001_ClearMOPndRegisterBit</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aea102a989fd23f0d96606b15b2bbe65e" compoundref="_c_a_n001_8c" startline="865" endline="879">CAN001_GetMOPndRegisterBitStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aa5a37c13321cc60553c418c5828308b1" compoundref="_c_a_n001_8c" startline="440" endline="476">CAN001_NodeDeInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n001___handle_type_1af14d78cef1a0e5b8eca3c32efbd22862" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN001_HandleType::NodeMONo</definition>
+        <argsstring></argsstring>
+        <name>NodeMONo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total message object allocated to node list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="360" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="360" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a3e8baab1eee0750a8d7310e58420bcaf" compoundref="_c_a_n001_8c" startline="888" endline="912">CAN001_ClearMOFlagStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a6daaddccea102728a1428ee9e2c59b68" compoundref="_c_a_n001_8c" startline="940" endline="958">CAN001_ClearMOPndRegisterBit</referencedby>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a33cfce269fb266684be1431b7dc70933" compoundref="_c_a_n001_8c" startline="794" endline="824">CAN001_GetMOFlagStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aea102a989fd23f0d96606b15b2bbe65e" compoundref="_c_a_n001_8c" startline="865" endline="879">CAN001_GetMOPndRegisterBitStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aa5a37c13321cc60553c418c5828308b1" compoundref="_c_a_n001_8c" startline="440" endline="476">CAN001_NodeDeInit</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a7d87336df18913baaac93a9776c47e6e" compoundref="_c_a_n001_8c" startline="530" endline="571">CAN001_SendDataFrame</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a2b63fea4f457401ffa4899f3dacfd6cc" compoundref="_c_a_n001_8c" startline="578" endline="619">CAN001_SendRemoteFrame</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a68a886b4fc31200314a08ba112d063f8" compoundref="_c_a_n001_8c" startline="724" endline="783">CAN001_UpdateMODataRegisters</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the data structure which contains node configuration parameters </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>CAN001_HandleType</label>
+        <link refid="struct_c_a_n001___handle_type"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>BaudRate</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CAN001_BaudRateType</label>
+        <link refid="struct_c_a_n001___baud_rate_type"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" line="336" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN001.h" bodystart="335" bodyend="361"/>
+    <listofallmembers>
+      <member refid="struct_c_a_n001___handle_type_1a09e538a9a51361f86cb46ad2ac031d9e" prot="public" virt="non-virtual"><scope>CAN001_HandleType</scope><name>BaudRate</name></member>
+      <member refid="struct_c_a_n001___handle_type_1a0cf8964fb7868c66bac2df22f4a43b17" prot="public" virt="non-virtual"><scope>CAN001_HandleType</scope><name>CanNodeRegs</name></member>
+      <member refid="struct_c_a_n001___handle_type_1aaab97e2c1318507e4321bcf90fa25717" prot="public" virt="non-virtual"><scope>CAN001_HandleType</scope><name>FirstMOMapping</name></member>
+      <member refid="struct_c_a_n001___handle_type_1a447f305d32ce441c6c97f78b064c949c" prot="public" virt="non-virtual"><scope>CAN001_HandleType</scope><name>LoopBackModeEn</name></member>
+      <member refid="struct_c_a_n001___handle_type_1ac4e6a73aa11347a618d4c513163f23b4" prot="public" virt="non-virtual"><scope>CAN001_HandleType</scope><name>NodeID</name></member>
+      <member refid="struct_c_a_n001___handle_type_1af14d78cef1a0e5b8eca3c32efbd22862" prot="public" virt="non-virtual"><scope>CAN001_HandleType</scope><name>NodeMONo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

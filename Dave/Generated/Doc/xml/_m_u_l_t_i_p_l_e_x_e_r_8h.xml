@@ -1,0 +1,2710 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_m_u_l_t_i_p_l_e_x_e_r_8h" kind="file">
+    <compoundname>MULTIPLEXER.h</compoundname>
+    <includedby refid="_d_a_v_e3_8h" local="yes">DAVE3.h</includedby>
+    <invincdepgraph>
+      <node id="826">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="825" relation="include">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="830" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="831">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="835">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="833">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="841">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="844">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="837">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="823">
+        <label>MULTIPLEXER.h</label>
+        <link refid="MULTIPLEXER.h"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="828">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="843">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="840">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="834">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="842">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="827">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="825" relation="include">
+        </childnode>
+      </node>
+      <node id="825">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="839">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="836">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="835" relation="include">
+        </childnode>
+      </node>
+      <node id="824">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="825" relation="include">
+        </childnode>
+        <childnode refid="826" relation="include">
+        </childnode>
+        <childnode refid="827" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="832" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="841" relation="include">
+        </childnode>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="844" relation="include">
+        </childnode>
+      </node>
+      <node id="838">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="832">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="830" relation="include">
+        </childnode>
+        <childnode refid="833" relation="include">
+        </childnode>
+      </node>
+      <node id="830">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa9ec062aeee485c342c324e5e2bc876c" prot="public" static="no">
+        <name>CCU4xINyA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="215" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a993467617cad74c4228098eee91196c6" prot="public" static="no">
+        <name>CCU4xINyB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="216" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac90110b8bf3e10220bb4eea780898254" prot="public" static="no">
+        <name>CCU4xINyC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="217" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab68f88007f0ebf813d9d8626d27bf2e7" prot="public" static="no">
+        <name>CCU4xINyD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="218" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a39824a600d7c2b73a7fed90767e5d09c" prot="public" static="no">
+        <name>CCU4xINyE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="219" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a23d3463b3db084eed2657e88c328c190" prot="public" static="no">
+        <name>CCU4xINyF</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="220" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a092974a7cf59359e8bd90eca0571c0f1" prot="public" static="no">
+        <name>CCU4xINyG</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="221" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a14b9cf12e360d6eeee2298162fe21f9a" prot="public" static="no">
+        <name>CCU4xINyH</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="222" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a58e1db255341ea5e5cd976d277241e32" prot="public" static="no">
+        <name>CCU4xINyI</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="223" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a6876e13c94a6e8d77de1390fc410dec6" prot="public" static="no">
+        <name>CCU4xINyJ</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="224" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac4b57cd93366329546102972aab387f4" prot="public" static="no">
+        <name>CCU4xINyK</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="225" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ad077b80ad53f31e426958e2c0ba96631" prot="public" static="no">
+        <name>CCU4xINyL</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="226" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a256a18f570917e2e910827233ccf4280" prot="public" static="no">
+        <name>CCU4xINyM</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="227" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a884da84f15c257fd07df356d7d46201d" prot="public" static="no">
+        <name>CCU4xINyN</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="228" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a3fd0f2fc92ae5febc8e2c2d770e50bdb" prot="public" static="no">
+        <name>CCU4xINyO</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="229" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae4cc1a051db5b154b0c90612f23279a8" prot="public" static="no">
+        <name>CCU4xINyP</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="230" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa11b0251fe73a2eecb2fad203383e24b" prot="public" static="no">
+        <name>CCU8xINyA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="234" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aca84e6b10a7c4b65ba0a50750114eb54" prot="public" static="no">
+        <name>CCU8xINyB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="235" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a4f294e551a339fcf6f2e1dd478962997" prot="public" static="no">
+        <name>CCU8xINyC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="236" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab2c19a66df0bcb21808ff4059f5238d8" prot="public" static="no">
+        <name>CCU8xINyD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="237" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a7e7930fc8c139d0f9555ce4468f1c7f5" prot="public" static="no">
+        <name>CCU8xINyE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="238" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a81fa13999ddd75e589a81cf28a70e584" prot="public" static="no">
+        <name>CCU8xINyF</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="239" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ade77e5717bbf489a841a1bf10cc02eef" prot="public" static="no">
+        <name>CCU8xINyG</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="240" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab4d7f0359a3121e20cba537d4a5a6cc1" prot="public" static="no">
+        <name>CCU8xINyH</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="241" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a87fbd1ec3155e05f5b5327d8382a1d47" prot="public" static="no">
+        <name>CCU8xINyI</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="242" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a28422030200af14fc01eca6ad083e37f" prot="public" static="no">
+        <name>CCU8xINyJ</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="243" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab62d37a2e3d98023d01c8e9b02a9d5f2" prot="public" static="no">
+        <name>CCU8xINyK</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="244" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a01849be9c74069b78df7bbf4a837b8d8" prot="public" static="no">
+        <name>CCU8xINyL</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="245" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a06314344958e72c85b919606597baff0" prot="public" static="no">
+        <name>CCU8xINyM</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="246" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae3cfc87143db1f9c9c3425170232c997" prot="public" static="no">
+        <name>CCU8xINyN</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="247" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab7925977d645aafa9f1d0dcc78f28818" prot="public" static="no">
+        <name>CCU8xINyO</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="248" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a7737845e2a18e48635396ba054eee632" prot="public" static="no">
+        <name>CCU8xINyP</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="249" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a7dda0b0915b622a764bea360d2127186" prot="public" static="no">
+        <name>CCU_SR0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="252" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a63d7954847401c201ae287f7d7aa843a" prot="public" static="no">
+        <name>CCU_SR1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="253" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a4ebf7d1837f2b5c108e084bca6b4e268" prot="public" static="no">
+        <name>CCU_SR2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="254" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac2ca891c66293373a0bf156825cb2218" prot="public" static="no">
+        <name>CCU_SR3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="255" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac8c4519c551b31b06955754dab4ffc00" prot="public" static="no">
+        <name>DINxA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="319" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0208dae0a93ce3835d3ac34350a8bb66" prot="public" static="no">
+        <name>DINxB</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="320" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1abafebca76fd34fb3553007ee1d2739d2" prot="public" static="no">
+        <name>DSD_CH_DICFG_DSRCSEL_Msk</name>
+        <initializer>(0x00000007U  &lt;&lt; DSD_CH_DICFG_DSRCSEL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="312" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a001b4a6d7270ebdcc37265e1e46c9f08" prot="public" static="no">
+        <name>DSD_CH_DICFG_DSRCSEL_Pos</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="311" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9b6f1d441009213effde3aeac6263772" prot="public" static="no">
+        <name>DSD_CH_DICFG_DSWC_DSRCSEL_Msk</name>
+        <initializer>(0x0000008FU  &lt;&lt; DSD_CH_DICFG_DSRC_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="314" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0477800aab675d24cf7e4f3a4b24a5e3" prot="public" static="no">
+        <name>DSD_CH_DICFG_SCWC_STROBE_CSRC_Msk</name>
+        <initializer>(0x000080FFU  &lt;&lt; DSD_CH_DICFG_CSRC_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="315" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0baafb6b0fce4154bd90327d2a68d0b5" prot="public" static="no">
+        <name>DSD_CH_DICFG_TRWC_TRSEL_Msk</name>
+        <initializer>(0x000000FFU  &lt;&lt; DSD_CH_DICFG_ITRMODE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="316" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0c3fc8f590ac9e0249620adb9d86f778" prot="public" static="no">
+        <name>ETH_CLK_TXA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="289" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1afb8d3cbd6ebbf4863e9c9356f02c7966" prot="public" static="no">
+        <name>ETH_CLK_TXB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="290" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a33012e887950783b438cec00ac198564" prot="public" static="no">
+        <name>ETH_CLK_TXC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="291" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ade368bfc48e1a179184e5ccb0e1d8601" prot="public" static="no">
+        <name>ETH_CLK_TXD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="292" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a7790e6c7e82706022a1b195a2f8ef405" prot="public" static="no">
+        <name>ETH_COLA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="284" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a4b4a43bc6aba06cf42a15acd181b7b7c" prot="public" static="no">
+        <name>ETH_COLB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="285" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa7813c182b913e6bddea807818ba9bb9" prot="public" static="no">
+        <name>ETH_COLC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="286" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a188c3114c878d686f97cdbc0838c5a91" prot="public" static="no">
+        <name>ETH_COLD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="287" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a8c2257871593fba32a2099ea59a47124" prot="public" static="no">
+        <name>ETH_CRS_DVA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="269" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a00af8a114a24c61fb1ac13a5e0ec92a0" prot="public" static="no">
+        <name>ETH_CRS_DVB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="270" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1afecff3176b962db98c2dfe2c181c8151" prot="public" static="no">
+        <name>ETH_CRS_DVC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="271" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a3b83295f20caeefca77fdefa004b3809" prot="public" static="no">
+        <name>ETH_CRS_DVD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="272" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a5768834d2bb2849828e292ae5d1669bf" prot="public" static="no">
+        <name>ETH_CRSA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="274" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a6603750ca76695fada99b6970538dacc" prot="public" static="no">
+        <name>ETH_CRSB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="275" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a7a422c6a004c7f43451e2ea9e4abfa90" prot="public" static="no">
+        <name>ETH_CRSC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="276" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa301bb1a00cdbdb6a4e3f7686729daf8" prot="public" static="no">
+        <name>ETH_CRSD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="277" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa052043b61fd6d7cbd02ed4d1ee38c80" prot="public" static="no">
+        <name>ETH_MDIOA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="294" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a2f4a38e00daa5c24fb451a1ac850fed5" prot="public" static="no">
+        <name>ETH_MDIOB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="295" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae527807dbc1cf455d44531f6329ff8f9" prot="public" static="no">
+        <name>ETH_MDIOC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="296" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1af3a45d87630b515d2b757f574aa2a5f3" prot="public" static="no">
+        <name>ETH_MDIOD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="297" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1af12d3a122c1f3b8e1243d7f25a3b7930" prot="public" static="no">
+        <name>ETH_RMIIA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="264" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a1ade7448f548c48ddcf6223d576d00fd" prot="public" static="no">
+        <name>ETH_RMIIB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="265" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0eca440b19be0ef330e0e5caad214e26" prot="public" static="no">
+        <name>ETH_RMIIC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="266" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a78f7bb7ed135a0313df0c8c638ffb3b8" prot="public" static="no">
+        <name>ETH_RMIID</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="267" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1afb98923cc260afd23266fc7477bb3e05" prot="public" static="no">
+        <name>ETH_RXDxA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="259" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab8c47a93492d0709d744fc5aa948fcc0" prot="public" static="no">
+        <name>ETH_RXDxB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="260" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab95276173fff238cf8dce6902b433d8d" prot="public" static="no">
+        <name>ETH_RXDxC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="261" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a526516955c95a124a2cd123e6b317b3b" prot="public" static="no">
+        <name>ETH_RXDxD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="262" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ad2b344a8389eb575a89eb22ef1875fc6" prot="public" static="no">
+        <name>ETH_RXERA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="279" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a83f370069a701b9c683f720ae67e55f0" prot="public" static="no">
+        <name>ETH_RXERB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="280" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae1023851d936255a688070c951d56684" prot="public" static="no">
+        <name>ETH_RXERC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="281" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a72487401ed5bc2e50c4598ed01d0e0d8" prot="public" static="no">
+        <name>ETH_RXERD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="282" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a01ce832f65ee0668a32103d6f005b187" prot="public" static="no">
+        <name>INSIGNAL0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="202" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a728d4dbf28ef372f8f03eb01bf7aa5b0" prot="public" static="no">
+        <name>INSIGNAL1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="203" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1afbb728c61fbf783e8d6f27b19c3ab75b" prot="public" static="no">
+        <name>INSIGNAL2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="204" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a257f448be1e38e79b7a0a0070840a745" prot="public" static="no">
+        <name>INSIGNAL3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="205" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a34a5c7c912e6250d9410d233e5fa6e3f" prot="public" static="no">
+        <name>INSIGNAL4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="206" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a2ba915aac62bf26000348d72689da4fe" prot="public" static="no">
+        <name>INSIGNAL5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="207" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a46eeb7c691e92dba7e0da49774bc8ce0" prot="public" static="no">
+        <name>ITRxA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="325" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9d905de73feb920c4de54d9f1427d963" prot="public" static="no">
+        <name>ITRxB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="326" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a14d160c5772fab99484c95c86bcc448d" prot="public" static="no">
+        <name>ITRxC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="327" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aae020a5ce79548846aa80121237477e6" prot="public" static="no">
+        <name>ITRxD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="328" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab7e4cda3e857ba9da97d9ebccba7f745" prot="public" static="no">
+        <name>MCLKxA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="322" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac2085c3cd867b20a9ff6f581fee961fc" prot="public" static="no">
+        <name>MCLKxB</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="323" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a59ff81f46f8d771bcb26d4615da83c09" prot="public" static="no">
+        <name>MCLKxINTERNAL</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="324" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac0bb12817b3b5f1c19e298483adfbed8" prot="public" static="no">
+        <name>PORT_HWSEL_HW0</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="165" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa35ddf3087b104dae0d468e4cb42a85d" prot="public" static="no">
+        <name>PORT_HWSEL_HW1</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="166" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a3e4f0617619c31d21a0c659e5b7033cb" prot="public" static="no">
+        <name>PORT_HWSEL_SW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="164" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a4b4a796a4714dc9521dcb3222c33f02a" prot="public" static="no">
+        <name>PORT_IOCR_OE0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="150" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aab484cf511dd3a459c91a6f5c82c2f35" prot="public" static="no">
+        <name>PORT_IOCR_OE1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="151" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab633ab6fd32ee9404fb9d13e4f47376a" prot="public" static="no">
+        <name>PORT_IOCR_PC0_OE_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC0_OE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="119" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab7561f51cac68b32f99cdd127ba152da" prot="public" static="no">
+        <name>PORT_IOCR_PC0_OE_Pos</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="118" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae7e31068dfc2a520c6bb428e89d101ba" prot="public" static="no">
+        <name>PORT_IOCR_PC0_PCR_Msk</name>
+        <initializer>(0x00000007U  &lt;&lt; PORT_IOCR_PC0_PCR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="113" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aaf3bb19e98f7883afbf54caa00bbf275" prot="public" static="no">
+        <name>PORT_IOCR_PC0_PCR_Pos</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="112" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a1d1d70bc8f00533941e5027609071b74" prot="public" static="no">
+        <name>PORT_IOCR_PC0_PO_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC0_PO_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="116" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab2f004a2617d38bbe91a8087f39e8c39" prot="public" static="no">
+        <name>PORT_IOCR_PC0_PO_Pos</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="115" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a1f2bba7987cd947a04cba844c715ea92" prot="public" static="no">
+        <name>PORT_IOCR_PC1_OE_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC1_OE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="128" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae558b8093861573a5b59ea209fae40d9" prot="public" static="no">
+        <name>PORT_IOCR_PC1_OE_Pos</name>
+        <initializer>(15U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="127" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab0f605fcb4b6fbe8bddac3eb9e6d901c" prot="public" static="no">
+        <name>PORT_IOCR_PC1_PCR_Msk</name>
+        <initializer>(0x00000007U  &lt;&lt; PORT_IOCR_PC1_PCR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="122" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a5147d5c6e81292d4f3ef410cc5722624" prot="public" static="no">
+        <name>PORT_IOCR_PC1_PCR_Pos</name>
+        <initializer>(11U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="121" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a73343351aa9940b81770837d7303f8f6" prot="public" static="no">
+        <name>PORT_IOCR_PC1_PO_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC1_PO_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="125" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1abc4967925720be5b056ab057f4a5eeec" prot="public" static="no">
+        <name>PORT_IOCR_PC1_PO_Pos</name>
+        <initializer>(14U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="124" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ad6ef10c8872a37893b019551eb2eeeaf" prot="public" static="no">
+        <name>PORT_IOCR_PC2_OE_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC2_OE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="137" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1acbd5939b89d83403d7aa346f2ae2e17b" prot="public" static="no">
+        <name>PORT_IOCR_PC2_OE_Pos</name>
+        <initializer>(23U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="136" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a5008270d44b6a61f66988be8b655c9c8" prot="public" static="no">
+        <name>PORT_IOCR_PC2_PCR_Msk</name>
+        <initializer>(0x00000007U  &lt;&lt; PORT_IOCR_PC2_PCR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="131" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0cafceb8ff8bca09e78f85ce188b9ced" prot="public" static="no">
+        <name>PORT_IOCR_PC2_PCR_Pos</name>
+        <initializer>(19U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="130" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a91120ad54f08cb46568f5f8b0464b105" prot="public" static="no">
+        <name>PORT_IOCR_PC2_PO_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC2_PO_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="134" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a6c775f226e2e0eea544efc11a402b00b" prot="public" static="no">
+        <name>PORT_IOCR_PC2_PO_Pos</name>
+        <initializer>(22U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="133" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a05722f49dd925e22809813307bc4209a" prot="public" static="no">
+        <name>PORT_IOCR_PC3_OE_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC3_OE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="146" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1abc1bf7b77d6a365033f18d8c6d432f1a" prot="public" static="no">
+        <name>PORT_IOCR_PC3_OE_Pos</name>
+        <initializer>(31U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="145" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae10563ba0c1d3106d4c7170f2ce524be" prot="public" static="no">
+        <name>PORT_IOCR_PC3_PCR_Msk</name>
+        <initializer>(0x00000007U  &lt;&lt; PORT_IOCR_PC3_PCR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="140" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1af0133ddd6fbb978b8eaf4583402701f6" prot="public" static="no">
+        <name>PORT_IOCR_PC3_PCR_Pos</name>
+        <initializer>(27U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="139" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ad0a45759199c8e532176db17b21c035e" prot="public" static="no">
+        <name>PORT_IOCR_PC3_PO_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; PORT_IOCR_PC3_PO_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="143" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9ea01762135c776bae5e1e878838a2be" prot="public" static="no">
+        <name>PORT_IOCR_PC3_PO_Pos</name>
+        <initializer>(30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="142" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a55af6f6d44c6276f4454f718598c83e1" prot="public" static="no">
+        <name>PORT_IOCR_PCR0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="154" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a537ff6ba16d313d58df0b0c5b41d5d6a" prot="public" static="no">
+        <name>PORT_IOCR_PCR1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="155" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a6debdd2c1ec382d30a466275e0b87fb3" prot="public" static="no">
+        <name>PORT_IOCR_PCR2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="156" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a90978940462c53b9893c4281efb30c61" prot="public" static="no">
+        <name>PORT_IOCR_PCR3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="157" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a34fbc86ec4b6d7f6b17dc2b63a2d9421" prot="public" static="no">
+        <name>PORT_IOCR_PCR4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="158" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1af18a894eaeb60a627ec45e48942f1677" prot="public" static="no">
+        <name>PORT_IOCR_PCR5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="159" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae60a16f831ed2ec3aa2034e17e8b7625" prot="public" static="no">
+        <name>PORT_IOCR_PCR6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="160" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1af161074946079e62ee1ed966583a3d4f" prot="public" static="no">
+        <name>PORT_IOCR_PCR7</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="161" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac1c7a6b296a94b928c0ff89e1d774ed5" prot="public" static="no">
+        <name>PORT_PDISC_PDIS0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="169" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9703df1ac104ade7a0e502af59b3461f" prot="public" static="no">
+        <name>PORT_PDISC_PDIS1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="170" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae7542e269b5b900dcdb8493a904dde85" prot="public" static="no">
+        <name>RXD_SIGNAL0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="186" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a37d82e88ccbe7f1aba075096adc07fe4" prot="public" static="no">
+        <name>RXD_SIGNAL1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="187" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ad9117ae4cd14ff3aba4cebd9ed86f841" prot="public" static="no">
+        <name>RXD_SIGNAL2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="188" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa48d5a4c4fa529db91f8a72901e2cfda" prot="public" static="no">
+        <name>RXD_SIGNAL3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="189" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aaf3a7dc905a206662807b4ba748133fa" prot="public" static="no">
+        <name>RXD_SIGNAL4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="190" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa6261bb29e265fae20f4f635b0d6cab3" prot="public" static="no">
+        <name>RXD_SIGNAL5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="191" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa001b589ed00f1f9a5545e90a6a11a27" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO0SEL_OE_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; SCU_HIBERNATE_HDCR_HIBIO0SEL_OE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="177" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a83582a4c70d69920a634a127dc4ebc42" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO0SEL_OE_Pos</name>
+        <initializer>(19U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="176" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab6030e1145e6c8f7109637bf142bfb37" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO0SEL_PCR_Msk</name>
+        <initializer>(0x00000007U  &lt;&lt; SCU_HIBERNATE_HDCR_HIBIO0SEL_PCR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="174" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ad8018dfc04b5415ede0e106c2bfc8a2a" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO0SEL_PCR_Pos</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="173" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a1697b73ab2ed9dd483099e9402c3a107" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO1SEL_OE_Msk</name>
+        <initializer>(0x00000001U  &lt;&lt; SCU_HIBERNATE_HDCR_HIBIO1SEL_OE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="183" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a797da9904fb587e88b41897c99960216" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO1SEL_OE_Pos</name>
+        <initializer>(23U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="182" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a19a7fa6c0a925bca3310c0cd7bd9a90e" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO1SEL_PCR_Msk</name>
+        <initializer>(0x00000007U  &lt;&lt; SCU_HIBERNATE_HDCR_HIBIO1SEL_PCR_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="180" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a1cfb914764f6da4cbbfd334b0ac71e1c" prot="public" static="no">
+        <name>SCU_HIBERNATE_HDCR_HIBIO1SEL_PCR_Pos</name>
+        <initializer>(20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="179" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a452fd6aea95917c0a23809e8743f7a91" prot="public" static="no">
+        <name>SET_0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="209" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9bc2f6f10cae15842def89ea8127ea4e" prot="public" static="no">
+        <name>SET_1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="208" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a5692cc53322862813c4f54e2ab7413f9" prot="public" static="no">
+        <name>SIGNAL_ERS_ETL_FL0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="94" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a14f0e22bfa004a337aea783a6cbe4ae9" prot="public" static="no">
+        <name>SIGNAL_ERS_ETL_FL1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="95" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9c20b67087978ceaa545e9924a22b294" prot="public" static="no">
+        <name>SIGNAL_ERS_ETL_FL2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="96" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac4e68f7208a568994c2d0997583fa2cd" prot="public" static="no">
+        <name>SIGNAL_ERS_ETL_FL3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="97" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a87f76b80c51564c33cca4400ba236a16" prot="public" static="no">
+        <name>SIGNAL_ERU_OGU_y0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="100" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1abf6e98e1dd512f30026b8c0c010a63f1" prot="public" static="no">
+        <name>SIGNAL_ERU_OGU_y1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="101" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a2462f55bb3bc10658cdabb4431e1adf6" prot="public" static="no">
+        <name>SIGNAL_ERU_OGU_y2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="102" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a28d57078dea6c7ce2b43dba11a5f9a45" prot="public" static="no">
+        <name>SIGNAL_ERU_OGU_y3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="103" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a8ab87ae8fe1316ed2b12272caf7eaf43" prot="public" static="no">
+        <name>SIGNAL_ERU_xA0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="72" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1acc839551acb43948793e1360db2c2871" prot="public" static="no">
+        <name>SIGNAL_ERU_xA1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="73" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ac5664c98712c1f2f54609b8142141493" prot="public" static="no">
+        <name>SIGNAL_ERU_xA2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="74" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab89f694432a3dae8f0bda323a120f7d9" prot="public" static="no">
+        <name>SIGNAL_ERU_xA3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="75" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a75b64f2c2526e9ae55be6c74cb119a9c" prot="public" static="no">
+        <name>SIGNAL_ERU_xB0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="78" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a054108f2f4c75b7fc79d166236fd9d19" prot="public" static="no">
+        <name>SIGNAL_ERU_xB1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="79" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0d24fc8457fab3c9e87d315ac5f8da8d" prot="public" static="no">
+        <name>SIGNAL_ERU_xB2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="80" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1af1fe09b8568364e97fb2704768d7e4c5" prot="public" static="no">
+        <name>SIGNAL_ERU_xB3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="81" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a575554d553af7664425f8335029dc443" prot="public" static="no">
+        <name>SIGNAL_TR0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="84" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a172781947946e286cb16f6af640cf962" prot="public" static="no">
+        <name>SIGNAL_TR1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="85" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a7cb4e9e2221af743b545ffaafb77636d" prot="public" static="no">
+        <name>SIGNAL_TRx0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="88" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a537792c1ce47ced6dcddb51973e8e8eb" prot="public" static="no">
+        <name>SIGNAL_TRx1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="89" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a0a188d34e9949c65ba5a14bdf9d8df38" prot="public" static="no">
+        <name>SIGNAL_TRx2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="90" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a68b99bd15e37b35873c78e6c2e82d5c7" prot="public" static="no">
+        <name>SIGNAL_TRx3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="91" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a183bfd0ac4db8bf4a0a13b62f9017301" prot="public" static="no">
+        <name>SR0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="210" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9cb2b1c1a90b2a4338d83e15fc63b238" prot="public" static="no">
+        <name>SR1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="211" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1acd146e27b6a2b5d3bb92676f1043ac7d" prot="public" static="no">
+        <name>SRN0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="192" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a6a3700efaa94601411874c16a9a26ae9" prot="public" static="no">
+        <name>SRN1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="193" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae45d6bf1b7b7547541cbc06983ee3777" prot="public" static="no">
+        <name>SRN2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="194" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a20493df4730fd856b1d43cc16b0f3a58" prot="public" static="no">
+        <name>SRN3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="195" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a4474618ec3ca760f5a4c4341c4b45e66" prot="public" static="no">
+        <name>SRN4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="196" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1accc1340d732d6380f7d763ee1a86585d" prot="public" static="no">
+        <name>SRN5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="197" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a8516cff9752a55903f3f7a132c0bbd19" prot="public" static="no">
+        <name>SRN6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="198" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a5b9e7dd20548ef50c94b3f9388e40d61" prot="public" static="no">
+        <name>SRN7</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="199" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a40e3d2720de520fe819004f0343ff95f" prot="public" static="no">
+        <name>SSRC0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="331" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a91997d3bd6d98c31f22e8c5b85de1abd" prot="public" static="no">
+        <name>SSRC1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="332" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1abd451972ead1304df0a8debcd6f996fa" prot="public" static="no">
+        <name>SSRC2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="333" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a264ec16b2b01da26d7c78b8c32101b66" prot="public" static="no">
+        <name>SSRC3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="334" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a14695dd2d7f05b882a6df4d2c2a180c2" prot="public" static="no">
+        <name>USIC_CH_RBCTR_DPTRSIZE_Msk</name>
+        <initializer>(0x0700003FU &lt;&lt; USIC_CH_RBCTR_DPTRSIZE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="341" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a74df3242bdd4de1761b875eb72c6d344" prot="public" static="no">
+        <name>USIC_CH_RBCTR_DPTRSIZE_Pos</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="340" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ae5601a00928cae1d2fc545d339d3936c" prot="public" static="no">
+        <name>USIC_CH_TBCTR_DPTRSIZE_Msk</name>
+        <initializer>(0x0700003FU &lt;&lt; USIC_CH_TBCTR_DPTRSIZE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="338" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a20d76f738689df72967dd852903d99bd" prot="public" static="no">
+        <name>USIC_CH_TBCTR_DPTRSIZE_Pos</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="337" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aec852ea2463ab2345c619c46ccca67de" prot="public" static="no">
+        <name>VADC_BRSCTRL_GTWC_GTSEL_Msk</name>
+        <initializer>(0x0000008FU  &lt;&lt; VADC_BRSCTRL_GTSEL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="305" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a92df67a9cb94b5df50d0c97415187b57" prot="public" static="no">
+        <name>VADC_BRSCTRL_XTWC_XTSEL_Msk</name>
+        <initializer>(0x000000EFU  &lt;&lt; VADC_BRSCTRL_XTSEL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="304" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a3bb85d0f81149f9427f3b9e19791f442" prot="public" static="no">
+        <name>VADC_G_ASCTRL_GTWC_GTSEL_Msk</name>
+        <initializer>(0x0000008FU  &lt;&lt; VADC_G_ASCTRL_GTSEL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="303" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa83d87e54dc466f2e838548b710a37a3" prot="public" static="no">
+        <name>VADC_G_ASCTRL_XTWC_XTSEL_Msk</name>
+        <initializer>(0x000000EFU  &lt;&lt; VADC_G_ASCTRL_XTSEL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="302" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a067b5748d281eb33bb8d672a63e15d8a" prot="public" static="no">
+        <name>VADC_G_QCTRL0_GTWC_GTSEL_Msk</name>
+        <initializer>(0x0000008FU  &lt;&lt; VADC_G_QCTRL0_GTSEL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="301" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a1248a3d6316a1d65878f416fdbbd6112" prot="public" static="no">
+        <name>VADC_G_QCTRL0_XTWC_XTSEL_Msk</name>
+        <initializer>(0x000000EFU  &lt;&lt; VADC_G_QCTRL0_XTSEL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="300" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a92fa867309ebd28e81a08db9a0d0053d" prot="public" static="no">
+        <name>VALUE0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="62" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a7263ab7b75721300b928c30da7073e26" prot="public" static="no">
+        <name>VALUE1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="63" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a778259e2f2571dcffc2550af833f4aec" prot="public" static="no">
+        <name>VALUE2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="64" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a42f7787bdad0367730a393645de58c60" prot="public" static="no">
+        <name>VALUE3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="65" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a3e59e986aa98853b41d7b1fee9f37a1e" prot="public" static="no">
+        <name>VALUE4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="66" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1abfe1774f67407b7f815030609c8a5753" prot="public" static="no">
+        <name>VALUE5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="67" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a53b0276734d455768e00d541e81f68b8" prot="public" static="no">
+        <name>VALUE6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="68" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1aa9fe1c07bc3886f7390c8a55877c54de" prot="public" static="no">
+        <name>VALUE7</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="69" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9e4f9766cf3710e2b3db17c5a9542ba2" prot="public" static="no">
+        <name>WR_REGHIB</name>
+        <param><defname>reg</defname></param>
+        <param><defname>mask</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>val</defname></param>
+        <param><defname>pollmask</defname></param>
+        <initializer>{  \
+           while (SCU_GENERAL-&gt;MIRRSTS &amp; (uint32_t)pollmask){}; \
+	       reg = (((uint32_t)val &lt;&lt; (uint32_t)pos) &amp; (uint32_t)mask) | \
+	       (reg &amp; ((uint32_t)~((uint32_t)mask))); \
+	    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to write new value to the bits in Hibernate domain register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="58" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1a1c5aa667052873e4947ab947c579ce2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DAVE_MUX_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>DAVE_MUX_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="346" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/DAVESupport/MULTIPLEXER.c" bodystart="88" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_u_l_t_i_p_l_e_x_e_r_8h_1ab552418b1436d65a768c8f2ec90c5f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DAVE_MUX_PreInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>DAVE_MUX_PreInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h" line="347" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/DAVESupport/MULTIPLEXER.c" bodystart="193" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all public data structures,enums and function prototypes. 06 sep 2013 v1.0.36 Initial Version Mirror Register Status check statements are updated. 22 Jan 2014 v1.0.40 C++ macro inserted. </para>    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2011 Infineon Technologies AG. All rights reserved.</para><para>Infineon Technologies AG (Infineon) is supplying this software for use with Infineon&apos;s microcontrollers. This file can be freely distributed within development tools that are supporting such microcontrollers.</para><para>THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;. NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER. <verbatim>                                                                       **
+                                                                       **
+</verbatim> PLATFORM : Infineon &lt;Microcontroller name, step&gt; ** ** COMPILER : Compiler Independent ** ** MODIFICATION DATE : Jan 22, 2014 ** ** </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>DAVESupport<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.44<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor">#ifndef<sp/>_MULTIPLEXER_H_</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_MULTIPLEXER_H_</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Defines<sp/><sp/>*/</highlight></codeline>
+<codeline lineno="54" refid="_m_u_l_t_i_p_l_e_x_e_r_8h_1a9e4f9766cf3710e2b3db17c5a9542ba2" refkind="member"><highlight class="preprocessor">#define<sp/>WR_REGHIB(reg,<sp/>mask,<sp/>pos,<sp/>val,<sp/>pollmask)<sp/>{<sp/><sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>while<sp/>(SCU_GENERAL-&gt;MIRRSTS<sp/>&amp;<sp/>(uint32_t)pollmask){};<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reg<sp/>=<sp/>(((uint32_t)val<sp/>&lt;&lt;<sp/>(uint32_t)pos)<sp/>&amp;<sp/>(uint32_t)mask)<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(reg<sp/>&amp;<sp/>((uint32_t)~((uint32_t)mask)));<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>VALUE<sp/>:<sp/>ON<sp/>/<sp/>OFF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VALUE0<sp/>0</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VALUE1<sp/>1</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VALUE2<sp/>2</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VALUE3<sp/>3</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VALUE4<sp/>4</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VALUE5<sp/>5</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VALUE6<sp/>6</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VALUE7<sp/>7</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ERU<sp/>:<sp/>ERU_xA<sp/>signals<sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xA0<sp/>0</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xA1<sp/>1</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xA2<sp/>2</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xA3<sp/>3</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ERU<sp/>:<sp/>ERU_xB<sp/>signals<sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xB0<sp/>0</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xB1<sp/>1</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xB2<sp/>2</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_xB3<sp/>3</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ERU<sp/>:<sp/>TR<sp/>signals<sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_TR0<sp/>0</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_TR1<sp/>1</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ERU<sp/>:<sp/>TRx<sp/>signals<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_TRx0<sp/>0</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_TRx1<sp/>1</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_TRx2<sp/>2</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_TRx3<sp/>3</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ERU<sp/>:<sp/>ERS_ETL_FL<sp/>signals<sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERS_ETL_FL0<sp/>0</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERS_ETL_FL1<sp/>1</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERS_ETL_FL2<sp/>2</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERS_ETL_FL3<sp/>3</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ERU<sp/>:<sp/>ERU_OGU_y<sp/>signals<sp/><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_OGU_y0<sp/>0</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_OGU_y1<sp/>1</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_OGU_y2<sp/>2</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_ERU_OGU_y3<sp/>3</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************************</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*<sp/><sp/>PORTS<sp/>:<sp/>The<sp/>IOCR<sp/>Register<sp/>bit<sp/>field<sp/>PC<sp/>split<sp/>into<sp/>3<sp/>bit<sp/>fields<sp/>namely</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/><sp/>PCx_PCR,<sp/>PCx_PO,<sp/>PCx_PCR<sp/>to<sp/>support<sp/>the<sp/>Mux/User<sp/>configuration<sp/>based<sp/>on<sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>functionality<sp/>of<sp/>the<sp/>bit<sp/>fields.<sp/>For<sp/>more<sp/>details<sp/>please<sp/>refer<sp/>the<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/><sp/>Port<sp/>visio<sp/>file<sp/>prepared<sp/>by<sp/>Infineon<sp/>Technologies.</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>****************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>PORT_IOCR<sp/><sp/>=<sp/><sp/>Port<sp/>x<sp/>Input/Output<sp/>Control<sp/>Register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC0_PCR_Pos<sp/><sp/><sp/><sp/><sp/>(3U)</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC0_PCR_Msk<sp/><sp/><sp/><sp/><sp/>(0x00000007U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC0_PCR_Pos)</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC0_PO_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(6U)</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC0_PO_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC0_PO_Pos)</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC0_OE_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(7U)</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC0_OE_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC0_OE_Pos)</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC1_PCR_Pos<sp/><sp/><sp/><sp/><sp/>(11U)</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC1_PCR_Msk<sp/><sp/><sp/><sp/><sp/>(0x00000007U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC1_PCR_Pos)</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC1_PO_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(14U)</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC1_PO_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC1_PO_Pos)</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC1_OE_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(15U)</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC1_OE_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC1_OE_Pos)</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC2_PCR_Pos<sp/><sp/><sp/><sp/><sp/>(19U)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC2_PCR_Msk<sp/><sp/><sp/><sp/><sp/>(0x00000007U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC2_PCR_Pos)</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC2_PO_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(22U)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC2_PO_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC2_PO_Pos)</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC2_OE_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(23U)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC2_OE_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC2_OE_Pos)</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC3_PCR_Pos<sp/><sp/><sp/><sp/><sp/>(27U)</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC3_PCR_Msk<sp/><sp/><sp/><sp/><sp/>(0x00000007U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC3_PCR_Pos)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC3_PO_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(30U)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC3_PO_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC3_PO_Pos)</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC3_OE_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(31U)</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PORT_IOCR_PC3_OE_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>PORT_IOCR_PC3_OE_Pos)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IOCR_OE<sp/>:<sp/>INPUT<sp/>/<sp/>OUTPUT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_OE0<sp/>0</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_OE1<sp/>1</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IOCR_PCR<sp/>:<sp/>PULLUP/PULLDOWN<sp/>/<sp/>ALT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR0<sp/>0</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR1<sp/>1</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR2<sp/>2</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR3<sp/>3</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR4<sp/>4</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR5<sp/>5</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR6<sp/>6</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_IOCR_PCR7<sp/>7</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>HWSEL_HW<sp/>:<sp/>HW0<sp/>/<sp/>HW1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORT_HWSEL_SW<sp/>0</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_HWSEL_HW0<sp/>1</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_HWSEL_HW1<sp/>2</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PDISC_PDIS<sp/>:<sp/>PDIS0<sp/>/<sp/>PDIS1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORT_PDISC_PDIS0<sp/>0</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_PDISC_PDIS1<sp/>1</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//<sp/>HCU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO0SEL_PCR_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(16U)</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO0SEL_PCR_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000007U<sp/><sp/>&lt;&lt;<sp/>SCU_HIBERNATE_HDCR_HIBIO0SEL_PCR_Pos)</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO0SEL_OE_Pos<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(19U)</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO0SEL_OE_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>SCU_HIBERNATE_HDCR_HIBIO0SEL_OE_Pos)</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO1SEL_PCR_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(20U)</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO1SEL_PCR_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000007U<sp/><sp/>&lt;&lt;<sp/>SCU_HIBERNATE_HDCR_HIBIO1SEL_PCR_Pos)</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO1SEL_OE_Pos<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(23U)</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>SCU_HIBERNATE_HDCR_HIBIO1SEL_OE_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000001U<sp/><sp/>&lt;&lt;<sp/>SCU_HIBERNATE_HDCR_HIBIO1SEL_OE_Pos)</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//CAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RXD_SIGNAL0<sp/>0<sp/>//RXDxA</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RXD_SIGNAL1<sp/>1<sp/>//RXDxB</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RXD_SIGNAL2<sp/>2<sp/>//RXDxC</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RXD_SIGNAL3<sp/>3<sp/>//RXDxD</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RXD_SIGNAL4<sp/>4<sp/>//RXDxE</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RXD_SIGNAL5<sp/>5<sp/>//RXDxF</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN0<sp/>0</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN1<sp/>1</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN2<sp/>2</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN3<sp/>3</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN4<sp/>4</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN5<sp/>5</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN6<sp/>6</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRN7<sp/>7</highlight></codeline>
+<codeline lineno="200"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//POSIF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INSIGNAL0<sp/>0<sp/>//INxA</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INSIGNAL1<sp/>1<sp/>//INxB</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INSIGNAL2<sp/>2<sp/>//INxC</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INSIGNAL3<sp/>3<sp/>//INxD</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INSIGNAL4<sp/>4<sp/>//INxE</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INSIGNAL5<sp/>5<sp/>//INxF</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_1<sp/>1<sp/>//enable</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_0<sp/>0<sp/>//disable</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SR0<sp/>0</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SR1<sp/>1</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CCU4<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CC4yINS<sp/>Input<sp/>Selector<sp/>Configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyA<sp/><sp/>0<sp/>//<sp/>CCU4xINy[A]</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyB<sp/><sp/>1<sp/>//<sp/>CCU4xINy[B]</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyC<sp/><sp/>2<sp/>//<sp/>CCU4xINy[C]</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyD<sp/><sp/>3<sp/>//<sp/>CCU4xINy[D]</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyE<sp/><sp/>4<sp/>//<sp/>CCU4xINy[E]</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyF<sp/><sp/>5<sp/>//<sp/>CCU4xINy[F]</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyG<sp/><sp/>6<sp/>//<sp/>CCU4xINy[G]</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyH<sp/><sp/>7<sp/>//<sp/>CCU4xINy[H]</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyI<sp/><sp/>8<sp/>//<sp/>CCU4xINy[I]</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyJ<sp/><sp/>9<sp/>//<sp/>CCU4xINy[J]</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyK<sp/><sp/>10<sp/>//<sp/>CCU4xINy[K]</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyL<sp/><sp/>11<sp/>//<sp/>CCU4xINy[L]</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyM<sp/><sp/>12<sp/>//<sp/>CCU4xINy[M]</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyN<sp/><sp/>13<sp/>//<sp/>CCU4xINy[N]</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyO<sp/><sp/>14<sp/>//<sp/>CCU4xINy[O]</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU4xINyP<sp/><sp/>15<sp/>//<sp/>CCU4xINy[P]</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CCU8<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CC8yINS<sp/>Input<sp/>Selector<sp/>Configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyA<sp/><sp/>0<sp/>//<sp/>CCU8xINy[A]</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyB<sp/><sp/>1<sp/>//<sp/>CCU8xINy[B]</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyC<sp/><sp/>2<sp/>//<sp/>CCU8xINy[C]</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyD<sp/><sp/>3<sp/>//<sp/>CCU8xINy[D]</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyE<sp/><sp/>4<sp/>//<sp/>CCU8xINy[E]</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyF<sp/><sp/>5<sp/>//<sp/>CCU8xINy[F]</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyG<sp/><sp/>6<sp/>//<sp/>CCU8xINy[G]</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyH<sp/><sp/>7<sp/>//<sp/>CCU8xINy[H]</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyI<sp/><sp/>8<sp/>//<sp/>CCU8xINy[I]</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyJ<sp/><sp/>9<sp/>//<sp/>CCU8xINy[J]</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyK<sp/><sp/>10<sp/>//<sp/>CCU8xINy[K]</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyL<sp/><sp/>11<sp/>//<sp/>CCU8xINy[L]</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyM<sp/><sp/>12<sp/>//<sp/>CCU8xST0</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyN<sp/><sp/>13<sp/>//<sp/>CCU8xST1</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyO<sp/><sp/>14<sp/>//<sp/>CCU8xST2</highlight></codeline>
+<codeline lineno="249"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU8xINyP<sp/><sp/>15<sp/>//<sp/>CCU8xST3</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CCUySRS<sp/>Service<sp/>Request<sp/>Selector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CCU_SR0<sp/><sp/>0<sp/>//<sp/>CCU_SR0</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU_SR1<sp/><sp/>1<sp/>//<sp/>CCU_SR1</highlight></codeline>
+<codeline lineno="254"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU_SR2<sp/><sp/>2<sp/>//<sp/>CCU_SR2</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CCU_SR3<sp/><sp/>3<sp/>//<sp/>CCU_SR3</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ethernet<sp/>MAC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXDxA<sp/>0<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH0_RXDxA</highlight></codeline>
+<codeline lineno="260"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXDxB<sp/>1<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH0_RXDxB</highlight></codeline>
+<codeline lineno="261"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXDxC<sp/>2<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH0_RXDxC</highlight></codeline>
+<codeline lineno="262"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXDxD<sp/>3<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH0_RXDxD</highlight></codeline>
+<codeline lineno="263"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_RMIIA<sp/>0<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RMIIA</highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RMIIB<sp/>1<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RMIIB</highlight></codeline>
+<codeline lineno="266"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RMIIC<sp/>2<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RMIIC</highlight></codeline>
+<codeline lineno="267"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RMIID<sp/>3<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RMIID</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRS_DVA<sp/>0<sp/><sp/><sp/>//<sp/>ETH_CRS_DVA</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRS_DVB<sp/>1<sp/><sp/><sp/>//<sp/>ETH_CRS_DVB</highlight></codeline>
+<codeline lineno="271"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRS_DVC<sp/>2<sp/><sp/><sp/>//<sp/>ETH_CRS_DVC</highlight></codeline>
+<codeline lineno="272"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRS_DVD<sp/>3<sp/><sp/><sp/>//<sp/>ETH_CRS_DVD</highlight></codeline>
+<codeline lineno="273"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRSA<sp/>0<sp/><sp/>//<sp/>ETH_CRSA</highlight></codeline>
+<codeline lineno="275"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRSB<sp/>1<sp/><sp/>//<sp/>ETH_CRSB</highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRSC<sp/>2<sp/><sp/>//<sp/>ETH_CRSC</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CRSD<sp/>3<sp/><sp/>//<sp/>ETH_CRSD</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXERA<sp/>0<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RXERA</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXERB<sp/>1<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RXERB</highlight></codeline>
+<codeline lineno="281"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXERC<sp/>2<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RXERC</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_RXERD<sp/>3<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_RXERD</highlight></codeline>
+<codeline lineno="283"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_COLA<sp/>0<sp/><sp/>//<sp/>ETH_COLA</highlight></codeline>
+<codeline lineno="285"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_COLB<sp/>1<sp/><sp/>//<sp/>ETH_COLB</highlight></codeline>
+<codeline lineno="286"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_COLC<sp/>2<sp/><sp/>//<sp/>ETH_COLC</highlight></codeline>
+<codeline lineno="287"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_COLD<sp/>3<sp/><sp/>//<sp/>ETH_COLD</highlight></codeline>
+<codeline lineno="288"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_CLK_TXA<sp/>0<sp/><sp/><sp/>//<sp/>ETH_CLK_TXA</highlight></codeline>
+<codeline lineno="290"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CLK_TXB<sp/>1<sp/><sp/><sp/>//<sp/>ETH_CLK_TXB</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CLK_TXC<sp/>2<sp/><sp/><sp/>//<sp/>ETH_CLK_TXC</highlight></codeline>
+<codeline lineno="292"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_CLK_TXD<sp/>3<sp/><sp/><sp/>//<sp/>ETH_CLK_TXD</highlight></codeline>
+<codeline lineno="293"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_MDIOA<sp/>0<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_MDIOA</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_MDIOB<sp/>1<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_MDIOB</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_MDIOC<sp/>2<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_MDIOC</highlight></codeline>
+<codeline lineno="297"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_MDIOD<sp/>3<sp/><sp/><sp/><sp/><sp/>//<sp/>ETH_MDIOD</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="comment">//<sp/>VADC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VADC_G_QCTRL0_XTWC_XTSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x000000EFU<sp/><sp/>&lt;&lt;<sp/>VADC_G_QCTRL0_XTSEL_Pos)</highlight></codeline>
+<codeline lineno="301"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VADC_G_QCTRL0_GTWC_GTSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0000008FU<sp/><sp/>&lt;&lt;<sp/>VADC_G_QCTRL0_GTSEL_Pos)</highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VADC_G_ASCTRL_XTWC_XTSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x000000EFU<sp/><sp/>&lt;&lt;<sp/>VADC_G_ASCTRL_XTSEL_Pos)</highlight></codeline>
+<codeline lineno="303"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VADC_G_ASCTRL_GTWC_GTSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0000008FU<sp/><sp/>&lt;&lt;<sp/>VADC_G_ASCTRL_GTSEL_Pos)</highlight></codeline>
+<codeline lineno="304"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VADC_BRSCTRL_XTWC_XTSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x000000EFU<sp/><sp/>&lt;&lt;<sp/>VADC_BRSCTRL_XTSEL_Pos)</highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VADC_BRSCTRL_GTWC_GTSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0000008FU<sp/><sp/>&lt;&lt;<sp/>VADC_BRSCTRL_GTSEL_Pos)</highlight></codeline>
+<codeline lineno="306"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Delta-Sigma<sp/>Demodulator<sp/>(DSD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>DSD_CH_DICFGx<sp/><sp/>=<sp/><sp/>Demodulator<sp/>Input<sp/>Configuration<sp/>Register<sp/>0*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>DSD_CH_DICFG_DSRCSEL_Pos<sp/><sp/><sp/><sp/><sp/><sp/>(1U)</highlight></codeline>
+<codeline lineno="312"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>DSD_CH_DICFG_DSRCSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x00000007U<sp/><sp/>&lt;&lt;<sp/>DSD_CH_DICFG_DSRCSEL_Pos)</highlight></codeline>
+<codeline lineno="313"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DSD_CH_DICFG_DSWC_DSRCSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/>(0x0000008FU<sp/><sp/>&lt;&lt;<sp/>DSD_CH_DICFG_DSRC_Pos)</highlight></codeline>
+<codeline lineno="315"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DSD_CH_DICFG_SCWC_STROBE_CSRC_Msk<sp/><sp/>(0x000080FFU<sp/><sp/>&lt;&lt;<sp/>DSD_CH_DICFG_CSRC_Pos)</highlight></codeline>
+<codeline lineno="316"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DSD_CH_DICFG_TRWC_TRSEL_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x000000FFU<sp/><sp/>&lt;&lt;<sp/>DSD_CH_DICFG_ITRMODE_Pos)</highlight></codeline>
+<codeline lineno="317"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Demodulator<sp/>Input<sp/>Configuration<sp/>Register<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DINxA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>//<sp/>input<sp/>A</highlight></codeline>
+<codeline lineno="320"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DINxB<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/>//<sp/>input<sp/>B</highlight></codeline>
+<codeline lineno="321"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCLKxA<sp/>1<sp/><sp/>//<sp/>MCLKxA</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MCLKxB<sp/>2<sp/><sp/>//<sp/>MCLKxB</highlight></codeline>
+<codeline lineno="324"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MCLKxINTERNAL<sp/>15<sp/><sp/>//<sp/>MCLK_INTERNAL</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITRxA<sp/><sp/>0<sp/>//<sp/>Integration<sp/>trigger,<sp/>channel<sp/>x,<sp/>input<sp/>A</highlight></codeline>
+<codeline lineno="326"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITRxB<sp/><sp/>1<sp/>//<sp/>Integration<sp/>trigger,<sp/>channel<sp/>x,<sp/>input<sp/>B</highlight></codeline>
+<codeline lineno="327"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITRxC<sp/><sp/>2<sp/>//<sp/>Integration<sp/>trigger,<sp/>channel<sp/>x,<sp/>input<sp/>C</highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITRxD<sp/><sp/>3<sp/>//<sp/>Integration<sp/>trigger,<sp/>channel<sp/>x,<sp/>input<sp/>D</highlight></codeline>
+<codeline lineno="329"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Rectification<sp/>Configuration<sp/>Register<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSRC0<sp/><sp/>0<sp/>//<sp/>SSRC0</highlight></codeline>
+<codeline lineno="332"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SSRC1<sp/><sp/>1<sp/>//<sp/>SSRC1</highlight></codeline>
+<codeline lineno="333"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SSRC2<sp/><sp/>2<sp/>//<sp/>SSRC2</highlight></codeline>
+<codeline lineno="334"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SSRC3<sp/><sp/>3<sp/>//<sp/>SSRC3</highlight></codeline>
+<codeline lineno="335"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USIC<sp/>:<sp/>FIFO<sp/>DPTR<sp/>&amp;<sp/>SIZE<sp/>MASK<sp/>and<sp/>POS<sp/>Values<sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>USIC_CH_TBCTR_DPTRSIZE_Pos<sp/><sp/><sp/><sp/>(0U)</highlight></codeline>
+<codeline lineno="338"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>USIC_CH_TBCTR_DPTRSIZE_Msk<sp/><sp/><sp/><sp/>(0x0700003FU<sp/>&lt;&lt;<sp/>USIC_CH_TBCTR_DPTRSIZE_Pos)</highlight></codeline>
+<codeline lineno="339"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>USIC_CH_RBCTR_DPTRSIZE_Pos<sp/><sp/><sp/><sp/>(0U)</highlight></codeline>
+<codeline lineno="341"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>USIC_CH_RBCTR_DPTRSIZE_Msk<sp/><sp/><sp/><sp/>(0x0700003FU<sp/>&lt;&lt;<sp/>USIC_CH_RBCTR_DPTRSIZE_Pos)</highlight></codeline>
+<codeline lineno="342"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Initializes<sp/>Multiplexer<sp/>configurations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DAVE_MUX_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DAVE_MUX_PreInit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="350"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="352"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>ifndef<sp/>_MULTIPLEXER_H_</highlight></codeline>
+<codeline lineno="354"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DAVESupport/MULTIPLEXER.h"/>
+  </compounddef>
+</doxygen>

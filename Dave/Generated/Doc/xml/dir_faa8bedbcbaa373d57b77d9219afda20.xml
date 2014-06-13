@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_faa8bedbcbaa373d57b77d9219afda20" kind="dir">
+    <compoundname>Debug</compoundname>
+    <innerdir refid="dir_d3a790c8c037196a35630230fe841167">Dave</innerdir>
+    <innerdir refid="dir_34ca6c2187a5c1647e006a45f58014af">Lib</innerdir>
+    <innerdir refid="dir_04bb63c45cc2b9706f39cc737f87a793">Startup</innerdir>
+    <innerfile refid="_main_8d">Main.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/"/>
+  </compounddef>
+</doxygen>

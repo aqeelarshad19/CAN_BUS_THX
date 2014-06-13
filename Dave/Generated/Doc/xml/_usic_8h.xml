@@ -1,0 +1,940 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_usic_8h" kind="file">
+    <compoundname>Usic.h</compoundname>
+    <includes local="no">uc_id.h</includes>
+    <includes local="no">XMC4500.h</includes>
+    <includedby refid="_u_a_r_t001_8h" local="yes">UART001.h</includedby>
+    <incdepgraph>
+      <node id="1092">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="1090">
+        <label>Usic.h</label>
+        <link refid="Usic.h"/>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+      </node>
+      <node id="1091">
+        <label>uc_id.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1097">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>UART001.c</label>
+        <link refid="_u_a_r_t001_8c"/>
+      </node>
+      <node id="1102">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="1106">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1093">
+        <label>Usic.h</label>
+        <link refid="Usic.h"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="1112">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="1115">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="1108">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="1099">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="1111">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="1105">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="1098">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>UART001_Conf.c</label>
+        <link refid="_u_a_r_t001___conf_8c"/>
+      </node>
+      <node id="1096">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="1107">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="1103">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_usic_8h_1a02e35cc57fd9dd6573138c6508f85b70" prot="public" static="no">
+        <name>USIC_NORMAL_DIV_SEL</name>
+        <initializer>(0x01U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inclusion of Platform specific file Normal divider mode selected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="90" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1aaa92e48f62f9bc7c4d23ae554d389363" prot="public" static="no">
+        <name>USIC_SCTR_FLE</name>
+        <initializer>(0x07U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frame length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="92" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1ab046532539777aeaeb52e0487a1ac126" prot="public" static="no">
+        <name>USIC_SCTR_WLE</name>
+        <initializer>(0x07U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Word length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="94" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a794fb7a8eb5cedf5f04f137a2c76ceeb" prot="public" static="no">
+        <name>USIC_FRACTIONAL_DIV_SEL</name>
+        <initializer>(0x02U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fractional divider mode selected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="96" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a513ddf1faa308193621a5ee5d4ccb814" prot="public" static="no">
+        <name>USIC_TBCTR_SIZE</name>
+        <initializer>(0x04U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX FIFO buffer contains 16 entries </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="98" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a9c4aea9f652c5edfcbefed4ae327b1dc" prot="public" static="no">
+        <name>USIC_RBCTR_SIZE</name>
+        <initializer>(0x04U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX FIFO buffer contains 16 entries </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="100" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a5183cb98e82b4a9a7ccaec20fffb58fe" prot="public" static="no">
+        <name>USIC_TBCTR_CH0DPTR</name>
+        <initializer>(0x00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX FIFO Data Pointer for Channel 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="102" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a7be2a649694758a3bde31d7c3ffee218" prot="public" static="no">
+        <name>USIC_RBCTR_CH0DPTR</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX FIFO Data Pointer for Channel 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="104" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a6bafe67587600c4e2660a74955b69dc9" prot="public" static="no">
+        <name>USIC_TBCTR_CH1DPTR</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX FIFO Data Pointer for Channel 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="107" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a6e680d1cc06ab17e32b178fcbfc679c1" prot="public" static="no">
+        <name>USIC_RBCTR_CH1DPTR</name>
+        <initializer>(0x30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX FIFO Data Pointer for Channel 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="109" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a86a3f3f504a1eea1da32ddc0a0c67276" prot="public" static="no">
+        <name>USIC_REG_RESET</name>
+        <initializer>(0x00000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset value of USIC Registers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="112" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a4da1d569d1fc1c15a0fb4805c4770450" prot="public" static="no">
+        <name>USIC_REG_CLEAR</name>
+        <initializer>(0xFFFFFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear value of USIC Registers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="114" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a9f02f155fe7687588dc672699f7b4124" prot="public" static="no">
+        <name>USIC_SPI_MODE</name>
+        <initializer>(0x01U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set USIC Channel in SSC mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="117" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1ab2b881cf2de94fa3dc22df0f07300b87" prot="public" static="no">
+        <name>UART_MODE</name>
+        <initializer>(0x02U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set USIC Channel in UART mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="119" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1ad82dcdca5a7770f4524e1527de95407b" compoundref="_u_a_r_t001_8c" startline="682" endline="746">UART001_Configure</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1a9b0034e6b6d6d69c6fa7b06546d8cb6f" compoundref="_u_a_r_t001_8c" startline="215" endline="335">UART001_lInit</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1afebcb3d498a2606cae3869271b98c3ca" prot="public" static="no">
+        <name>I2S_MODE</name>
+        <initializer>(0x03U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set USIC Channel in IIS mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="121" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a5cd01756030509b764d43a2b8c94fce8" prot="public" static="no">
+        <name>I2C_MODE</name>
+        <initializer>(0x04U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set USIC Channel in I2C mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="123" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a173a2b62b2182dc92f789a8edf9424bb" prot="public" static="no">
+        <name>USIC_CEILING_PRIORITY</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ceiling Priority for App </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="125" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_usic_8h_1a41fe8869b0dca2e97265b99ad6c1aee6" prot="public" static="no">
+        <name>USIC_IsRxFIFObusy</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_RBUS_Msk, \
+                               USIC_CH_TRBSR_RBUS_Pos )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to get the status whether the receive buffer is currently updated by FIFO handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="138" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1addee7d44538750f1d00a5ea6343ee453" prot="public" static="no">
+        <name>USIC_IsTxFIFObusy</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_TBUS_Msk, \
+                               USIC_CH_TRBSR_TBUS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to get the status whether the transmit buffer is currently updated by FIFO handler. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="143" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a243967f31e0f07a7dd796b0f146afa1f" prot="public" static="no">
+        <name>USIC_IsRxFIFOfull</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_RFULL_Msk , \
+                               USIC_CH_TRBSR_RFULL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to check if Rx FIFO is full. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="146" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a0a4a40f1195c0a4a52daf86fce971ae7" prot="public" static="no">
+        <name>USIC_IsTxFIFOfull</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_TFULL_Msk, \
+                               USIC_CH_TRBSR_TFULL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to check if Tx FIFO is full. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="150" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a8f18b90baea892eaeb3a6bb7aa74d5db" compoundref="_u_a_r_t001_8c" startline="934" endline="965">UART001_WriteDataBytes</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1a61fdfc06efab866a051222c2b20d1431" compoundref="_u_a_r_t001_8c" startline="877" endline="907">UART001_WriteDataMultiple</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1ae9f2bb705f8023a76e8ba21162e942ff" prot="public" static="no">
+        <name>USIC_ubIsRxFIFOempty</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_REMPTY_Msk, \
+                               USIC_CH_TRBSR_REMPTY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to check if Rx FIFO is empty. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="154" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="153" bodyend="-1"/>
+        <referencedby refid="_u_a_r_t001_8c_1a190d4530caf26cdf2c6be3567299050f" compoundref="_u_a_r_t001_8c" startline="823" endline="850">UART001_ReadDataBytes</referencedby>
+        <referencedby refid="_u_a_r_t001_8c_1acf8ad779c2b8cdcf5e55dabff2e6ce04" compoundref="_u_a_r_t001_8c" startline="771" endline="798">UART001_ReadDataMultiple</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1aef090efee65dfa84a1885a5d6e67897e" prot="public" static="no">
+        <name>USIC_IsTxFIFOempty</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_TEMPTY_Msk, \
+                               USIC_CH_TRBSR_TEMPTY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to check if Tx FIFO is empty. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="158" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a380bdbc9fb2e94b38df21af5c7dde168" prot="public" static="no">
+        <name>USIC_GetRxFIFOFillingLevel</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,\
+                                        USIC_CH_TRBSR_RBFLVL_Msk, \
+                                        USIC_CH_TRBSR_RBFLVL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to get Rx FIFO filling level. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="163" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a19688cb772225609344587a95dceba29" prot="public" static="no">
+        <name>USIC_GetTxFIFOFillingLevel</name>
+        <param><defname>Ch</defname></param>
+        <initializer>RD_REG(Ch-&gt;TRBSR,\
+                                         USIC_CH_TRBSR_TBFLVL_Msk, \
+                                         USIC_CH_TRBSR_TBFLVL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to get Tx FIFO filling level. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="168" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a8fd55de2873aa495180d8edd4fd2325a" prot="public" static="no">
+        <name>USIC_FlushRxFIFO</name>
+        <param><defname>Ch</defname></param>
+        <initializer>SET_BIT(Ch-&gt;TRBSCR,USIC_CH_TRBSCR_FLUSHRB_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to Flush Rx FIFO </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="171" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_usic_8h_1a65503f0aae044fba4920418cce301b29" prot="public" static="no">
+        <name>USIC_FlushTxFIFO</name>
+        <param><defname>Ch</defname></param>
+        <initializer>SET_BIT(Ch-&gt;TRBSCR,USIC_CH_TRBSCR_FLUSHTB_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to Flush Tx FIFO </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="174" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="enum" id="_usic_8h_1aace034603afb99f890b4655a6aec7c70" prot="public" static="no">
+        <name>USIC_ChannelType</name>
+        <enumvalue id="_usic_8h_1aace034603afb99f890b4655a6aec7c70a9dc3ba03a8ddde6b459969b2a1298eba" prot="public">
+          <name>USIC_U0C0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USIC 0 Channel 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1aace034603afb99f890b4655a6aec7c70ad095eff02bd376a867fe41b49da9754b" prot="public">
+          <name>USIC_U0C1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USIC 0 Channel 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1aace034603afb99f890b4655a6aec7c70a6b5e9fc96f2be23689a42cc9ed5099f7" prot="public">
+          <name>USIC_U1C0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USIC 1 Channel 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1aace034603afb99f890b4655a6aec7c70aad3742080f5ccd6a02754c5e810db43f" prot="public">
+          <name>USIC_U1C1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USIC 1 Channel 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1aace034603afb99f890b4655a6aec7c70ad14c53c91f8f69308e77be3321dee05b" prot="public">
+          <name>USIC_U2C0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USIC 2 Channel 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1aace034603afb99f890b4655a6aec7c70a55e7dbbd6efc50466b818fc4e852eafe" prot="public">
+          <name>USIC_U2C1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USIC 2 Channel 1 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This type defines the available USIC channels. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="195" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="194" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="enum" id="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96" prot="public" static="no">
+        <name>USIC_SRType</name>
+        <enumvalue id="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a5a7ccd4ffb33d8659df7dfc87b56c12f" prot="public">
+          <name>USIC_LOGICAL_SR0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Logical SR 0 selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a28bb090c78022c8281f9e39e45baa7c6" prot="public">
+          <name>USIC_LOGICAL_SR1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Logical SR 1 selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a9e06c23482044437de0aaaafbab19e17" prot="public">
+          <name>USIC_LOGICAL_SR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Logical SR 2 selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96ab1047ec65f587b639866408bb26f835b" prot="public">
+          <name>USIC_LOGICAL_SR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Logical SR 3 selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96af1d1933f2cbab7e95a7785735d2f58c8" prot="public">
+          <name>USIC_LOGICAL_SR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Logical SR 4 selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a6a112f8db95b226cff3952e8733ddf47" prot="public">
+          <name>USIC_LOGICAL_SR5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Logical SR 5 selected </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This data type describes the Interrupt Service Request selected. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="215" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="214" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="enum" id="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" prot="public" static="no">
+        <name>UART_ParityType</name>
+        <enumvalue id="_usic_8h_1a133d537c1f7e5042967df4115c53dcbeaa80d2d8ea61454045ebe71d155e85b3d" prot="public">
+          <name>UART_PARITY_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No parity selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead908a637b1dd23f93b149dd2d8bdfdb8" prot="public">
+          <name>UART_PARITY_EVEN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Even parity selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead90cc425f5ba447773a44a75be6593e2" prot="public">
+          <name>UART_PARITY_ODD</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Odd parity selected </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This data type is used to describe the Uart Parity type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="235" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="234" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="enum" id="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" prot="public" static="no">
+        <name>UART_StopBitType</name>
+        <enumvalue id="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56aefa59a66582bfd03fc2e8ab588d0c8fb" prot="public">
+          <name>UART_ONE_STOPBIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>One stop bit selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56a165df68f856515f3bd3c19fd5de6c3d7" prot="public">
+          <name>UART_TWO_STOPBIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two stop bit selected </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This data type is used to describe the Uart Stop bit type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="248" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="247" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="enum" id="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339af" prot="public" static="no">
+        <name>UART_ModeType</name>
+        <enumvalue id="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afac4497e1f2bbf3bf37b20442b60a75cfd" prot="public">
+          <name>UART_FULLDUPLEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full Duplex mode selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afa4b820379fe57d1aafa992f7125a47c51" prot="public">
+          <name>UART_HALFDUPLEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Half Duplex mode selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afa2f86fac4035ecbdab6c783fd4e641550" prot="public">
+          <name>UART_LOOPBACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LoopBack mode selected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afae2a6c50e6280a1bafc85318b134b24fc" prot="public">
+          <name>UART_IRDA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IrDA mode selected </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This data type is used to describe the Uart Mode section </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" line="259" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h" bodystart="258" bodyend="268"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file for USIC defines. It provides enumerations, constants and data structure declarations required for the different USIC Modes. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>Copyright<sp/>(C)<sp/>2013<sp/>Infineon<sp/>Technologies<sp/>AG.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Infineon<sp/>Technologies<sp/>AG<sp/>(Infineon)<sp/>is<sp/>supplying<sp/>this<sp/>software<sp/>for<sp/>use<sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/>with<sp/>Infineon&apos;s<sp/>microcontrollers.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>This<sp/>file<sp/>can<sp/>be<sp/>freely<sp/>distributed<sp/>within<sp/>development<sp/>tools<sp/>that<sp/>are<sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>supporting<sp/>such<sp/>microcontrollers.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">**<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;.<sp/><sp/>NO<sp/>WARRANTIES,<sp/>WHETHER<sp/>EXPRESS,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">**<sp/>IMPLIED<sp/>OR<sp/>STATUTORY,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">**<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>APPLY<sp/>TO<sp/>THIS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">**<sp/>SOFTWARE.<sp/>INFINEON<sp/>SHALL<sp/>NOT,<sp/>IN<sp/>ANY<sp/>CIRCUMSTANCES,<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>SPECIAL,<sp/>**<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">**<sp/>INCIDENTAL,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>FOR<sp/>ANY<sp/>REASON<sp/>WHATSOEVER.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000/XMC1000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**<sp/>NOTE<sp/><sp/><sp/><sp/><sp/>:<sp/>Any<sp/>Changes<sp/>made<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/>overwritten<sp/>during<sp/>Code<sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Generation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">**<sp/>VERSION<sp/>HISTORY:</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**<sp/>26<sp/>Mar<sp/>2013<sp/>V1.0.10<sp/><sp/>Changes<sp/>from<sp/>v1.0.4<sp/>are<sp/>as<sp/>follows</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>Updated<sp/>to<sp/>support<sp/>XMC1000<sp/>devices.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Added<sp/>file<sp/>revision<sp/>history</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>Updated<sp/>for<sp/>the<sp/>Macro<sp/>USIC_FlushRxFIFO()<sp/>and</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_FlushTxFIFO()<sp/>as<sp/>per<sp/>the<sp/>UTP<sp/>MCSW300000618.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">**<sp/>30<sp/>May<sp/>2013<sp/>V1.0.16<sp/><sp/>Parity<sp/>configuration<sp/>defect<sp/>fix.<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**<sp/>29<sp/>Nov<sp/>2013<sp/>V1.0.22<sp/><sp/>1.<sp/>Removed<sp/>DAVE3.h<sp/>inclusion<sp/>to<sp/>fix<sp/>the<sp/>MISR<sp/>warning<sp/>for</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>multiple<sp/>includes.<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Added<sp/>device<sp/>header<sp/>file<sp/>inclusion<sp/>&amp;<sp/>uc_id.h<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inclusion<sp/>in<sp/>the<sp/>Usic.h<sp/>file<sp/>to<sp/>get<sp/>the<sp/>device<sp/>specific</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defines.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>Added<sp/>doxygen<sp/>tags.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4.<sp/>File<sp/>Header<sp/>alignment<sp/>modified.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5.<sp/>Fixes<sp/>for<sp/>MISRA<sp/>compliance.<sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor">#ifndef<sp/>USIC_H_</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USIC_H_</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#include<sp/>&lt;uc_id.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(__TARGET_DEVICE__<sp/>==<sp/>XMC45)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;XMC4500.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>(__TARGET_DEVICE__<sp/>==<sp/>XMC44)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;XMC4400.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>((__TARGET_DEVICE__<sp/>==<sp/>XMC42)||(__TARGET_DEVICE__<sp/>==<sp/>XMC41))</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;XMC4200.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>(__TARGET_DEVICE__<sp/>==<sp/>XMC13)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;XMC1300.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>(__TARGET_DEVICE__<sp/>==<sp/>XMC12)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;XMC1200.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>(__TARGET_DEVICE__<sp/>==<sp/>XMC11)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;XMC1100.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_usic_8h_1a02e35cc57fd9dd6573138c6508f85b70" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_NORMAL_DIV_SEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01U)</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="92" refid="_usic_8h_1aaa92e48f62f9bc7c4d23ae554d389363" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_SCTR_FLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x07U)</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="94" refid="_usic_8h_1ab046532539777aeaeb52e0487a1ac126" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_SCTR_WLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x07U)</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="96" refid="_usic_8h_1a794fb7a8eb5cedf5f04f137a2c76ceeb" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_FRACTIONAL_DIV_SEL<sp/><sp/><sp/><sp/><sp/>(0x02U)<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="98" refid="_usic_8h_1a513ddf1faa308193621a5ee5d4ccb814" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_TBCTR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04U)</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="100" refid="_usic_8h_1a9c4aea9f652c5edfcbefed4ae327b1dc" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_RBCTR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04U)</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="102" refid="_usic_8h_1a5183cb98e82b4a9a7ccaec20fffb58fe" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_TBCTR_CH0DPTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00U)</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="104" refid="_usic_8h_1a7be2a649694758a3bde31d7c3ffee218" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_RBCTR_CH0DPTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x10U)</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="107" refid="_usic_8h_1a6bafe67587600c4e2660a74955b69dc9" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_TBCTR_CH1DPTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x20U)</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="109" refid="_usic_8h_1a6e680d1cc06ab17e32b178fcbfc679c1" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_RBCTR_CH1DPTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x30U)</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="112" refid="_usic_8h_1a86a3f3f504a1eea1da32ddc0a0c67276" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_REG_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00000000U)</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="114" refid="_usic_8h_1a4da1d569d1fc1c15a0fb4805c4770450" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_REG_CLEAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFFFFFFFFU)</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="117" refid="_usic_8h_1a9f02f155fe7687588dc672699f7b4124" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_SPI_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01U)</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="119" refid="_usic_8h_1ab2b881cf2de94fa3dc22df0f07300b87" refkind="member"><highlight class="preprocessor">#define<sp/>UART_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02U)</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="121" refid="_usic_8h_1afebcb3d498a2606cae3869271b98c3ca" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x03U)</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="123" refid="_usic_8h_1a5cd01756030509b764d43a2b8c94fce8" refkind="member"><highlight class="preprocessor">#define<sp/>I2C_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04U)</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="125" refid="_usic_8h_1a173a2b62b2182dc92f789a8edf9424bb" refkind="member"><highlight class="preprocessor">#define<sp/>USIC_CEILING_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2U)<sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_1&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="_usic_8h_1a41fe8869b0dca2e97265b99ad6c1aee6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_IsRxFIFObusy(Ch)<sp/>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_RBUS_Msk,<sp/>\</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_RBUS_Pos<sp/>)</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_2&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="_usic_8h_1addee7d44538750f1d00a5ea6343ee453" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_IsTxFIFObusy(Ch)<sp/>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_TBUS_Msk,<sp/>\</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_TBUS_Pos)</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_3&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="_usic_8h_1a243967f31e0f07a7dd796b0f146afa1f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_IsRxFIFOfull(Ch)<sp/>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_RFULL_Msk<sp/>,<sp/>\</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_RFULL_Pos)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_4&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="_usic_8h_1a0a4a40f1195c0a4a52daf86fce971ae7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_IsTxFIFOfull(Ch)<sp/>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_TFULL_Msk,<sp/>\</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_TFULL_Pos)</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_5&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="_usic_8h_1ae9f2bb705f8023a76e8ba21162e942ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_ubIsRxFIFOempty(Ch)<sp/>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_REMPTY_Msk,<sp/>\</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_REMPTY_Pos)</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_6&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="_usic_8h_1aef090efee65dfa84a1885a5d6e67897e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_IsTxFIFOempty(Ch)<sp/>RD_REG(Ch-&gt;TRBSR,USIC_CH_TRBSR_TEMPTY_Msk,<sp/>\</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_TEMPTY_Pos)</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_7&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="_usic_8h_1a380bdbc9fb2e94b38df21af5c7dde168" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_GetRxFIFOFillingLevel(Ch)<sp/>RD_REG(Ch-&gt;TRBSR,\</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_RBFLVL_Msk,<sp/>\</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_RBFLVL_Pos)</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_8&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="_usic_8h_1a19688cb772225609344587a95dceba29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_GetTxFIFOFillingLevel(Ch)<sp/><sp/>RD_REG(Ch-&gt;TRBSR,\</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_TBFLVL_Msk,<sp/>\</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USIC_CH_TRBSR_TBFLVL_Pos)</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_9&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="_usic_8h_1a8fd55de2873aa495180d8edd4fd2325a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_FlushRxFIFO(Ch)<sp/>SET_BIT(Ch-&gt;TRBSCR,USIC_CH_TRBSCR_FLUSHRB_Pos)</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_USIC_MACRO_10&gt;&gt;&gt;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="_usic_8h_1a65503f0aae044fba4920418cce301b29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USIC_FlushTxFIFO(Ch)<sp/>SET_BIT(Ch-&gt;TRBSCR,USIC_CH_TRBSCR_FLUSHTB_Pos)</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Type<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="184"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70" kindref="member">USIC_ChannelType</ref></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197" refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70a9dc3ba03a8ddde6b459969b2a1298eba" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70a9dc3ba03a8ddde6b459969b2a1298eba" kindref="member">USIC_U0C0</ref>,</highlight></codeline>
+<codeline lineno="199" refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70ad095eff02bd376a867fe41b49da9754b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70ad095eff02bd376a867fe41b49da9754b" kindref="member">USIC_U0C1</ref>,</highlight></codeline>
+<codeline lineno="201" refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70a6b5e9fc96f2be23689a42cc9ed5099f7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70a6b5e9fc96f2be23689a42cc9ed5099f7" kindref="member">USIC_U1C0</ref>,</highlight></codeline>
+<codeline lineno="203" refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70aad3742080f5ccd6a02754c5e810db43f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70aad3742080f5ccd6a02754c5e810db43f" kindref="member">USIC_U1C1</ref>,</highlight></codeline>
+<codeline lineno="205" refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70ad14c53c91f8f69308e77be3321dee05b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70ad14c53c91f8f69308e77be3321dee05b" kindref="member">USIC_U2C0</ref>,</highlight></codeline>
+<codeline lineno="207" refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70a55e7dbbd6efc50466b818fc4e852eafe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70a55e7dbbd6efc50466b818fc4e852eafe" kindref="member">USIC_U2C1</ref></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}<ref refid="_usic_8h_1aace034603afb99f890b4655a6aec7c70" kindref="member">USIC_ChannelType</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="214" refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96" kindref="member">USIC_SRType</ref></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217" refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a5a7ccd4ffb33d8659df7dfc87b56c12f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a5a7ccd4ffb33d8659df7dfc87b56c12f" kindref="member">USIC_LOGICAL_SR0</ref>,</highlight></codeline>
+<codeline lineno="219" refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a28bb090c78022c8281f9e39e45baa7c6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a28bb090c78022c8281f9e39e45baa7c6" kindref="member">USIC_LOGICAL_SR1</ref>,</highlight></codeline>
+<codeline lineno="221" refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a9e06c23482044437de0aaaafbab19e17" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a9e06c23482044437de0aaaafbab19e17" kindref="member">USIC_LOGICAL_SR2</ref>,</highlight></codeline>
+<codeline lineno="223" refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96ab1047ec65f587b639866408bb26f835b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96ab1047ec65f587b639866408bb26f835b" kindref="member">USIC_LOGICAL_SR3</ref>,</highlight></codeline>
+<codeline lineno="225" refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96af1d1933f2cbab7e95a7785735d2f58c8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96af1d1933f2cbab7e95a7785735d2f58c8" kindref="member">USIC_LOGICAL_SR4</ref>,</highlight></codeline>
+<codeline lineno="227" refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a6a112f8db95b226cff3952e8733ddf47" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96a6a112f8db95b226cff3952e8733ddf47" kindref="member">USIC_LOGICAL_SR5</ref></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}<ref refid="_usic_8h_1ad72c8ea5eb875f23e3b2d5bdd993df96" kindref="member">USIC_SRType</ref>;<sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" kindref="member">UART_ParityType</ref></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237" refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbeaa80d2d8ea61454045ebe71d155e85b3d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbeaa80d2d8ea61454045ebe71d155e85b3d" kindref="member">UART_PARITY_NONE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="239" refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead908a637b1dd23f93b149dd2d8bdfdb8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead908a637b1dd23f93b149dd2d8bdfdb8" kindref="member">UART_PARITY_EVEN</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="241" refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead90cc425f5ba447773a44a75be6593e2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbead90cc425f5ba447773a44a75be6593e2" kindref="member">UART_PARITY_ODD</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}<ref refid="_usic_8h_1a133d537c1f7e5042967df4115c53dcbe" kindref="member">UART_ParityType</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" kindref="member">UART_StopBitType</ref></highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250" refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56aefa59a66582bfd03fc2e8ab588d0c8fb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56aefa59a66582bfd03fc2e8ab588d0c8fb" kindref="member">UART_ONE_STOPBIT</ref>,</highlight></codeline>
+<codeline lineno="252" refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56a165df68f856515f3bd3c19fd5de6c3d7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56a165df68f856515f3bd3c19fd5de6c3d7" kindref="member">UART_TWO_STOPBIT</ref></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}<ref refid="_usic_8h_1a29edaab5c24304a4b92bc53f8fa4ca56" kindref="member">UART_StopBitType</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339af" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339af" kindref="member">UART_ModeType</ref></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="261" refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afac4497e1f2bbf3bf37b20442b60a75cfd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afac4497e1f2bbf3bf37b20442b60a75cfd" kindref="member">UART_FULLDUPLEX</ref>,</highlight></codeline>
+<codeline lineno="263" refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afa4b820379fe57d1aafa992f7125a47c51" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afa4b820379fe57d1aafa992f7125a47c51" kindref="member">UART_HALFDUPLEX</ref>,</highlight></codeline>
+<codeline lineno="265" refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afa2f86fac4035ecbdab6c783fd4e641550" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afa2f86fac4035ecbdab6c783fd4e641550" kindref="member">UART_LOOPBACK</ref>,</highlight></codeline>
+<codeline lineno="267" refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afae2a6c50e6280a1bafc85318b134b24fc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339afae2a6c50e6280a1bafc85318b134b24fc" kindref="member">UART_IRDA</ref></highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}<ref refid="_usic_8h_1a704fbdcc9e2ddfa5989b9042938339af" kindref="member">UART_ModeType</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="275"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Constant<sp/>Declarations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="276"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="280"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extern<sp/>Variables<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="281"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="285"><highlight class="comment">**<sp/>FUNCTION<sp/>PROTOTYPES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="286"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USIC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/UART001/Usic.h"/>
+  </compounddef>
+</doxygen>

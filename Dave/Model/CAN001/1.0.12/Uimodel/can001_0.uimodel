@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ifx.davex.uimodel:UIDataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ifx.davex.uimodel="com.ifx.davex.uimodel">
+  <controls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="DefaultPage" displayName="CAN Configuration" className="IfxGroupBox" controlId="1321435873578">
+    <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+    <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group52" displayName="Node Configuration" className="IfxGroupBox" controlId="1321436290906">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwnodeloopbackmode" displayName="Enable Loop Back mode" labelRequired="false" className="EnumerationType" paramName="app/can001/0/can001_erwnodeloopbackmode:Enable Loop Back mode" controlId="1321436317203">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="LEFT"/>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_irwnodenomsgobjs" displayName="Number of message objects" className="IntegerType" paramName="app/can001/0/can001_irwnodenomsgobjs:Number of message objects" controlId="1321438101296">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        <conversionType>dec</conversionType>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group59" displayName="Baud Rate Configuration" className="IfxGroupBox" controlId="1321438747515">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_iromcanclock" displayName="MultiCAN Module Frequency" readonly="true" className="IntegerType" paramName="app/can001/0/can001_iromcanclock:MultiCAN Module Frequency" controlId="1326946572421" defaultType="MHz" customControl="true">
+          <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+          <conversionType>MHz</conversionType>
+        </subControls>
+        <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_irwnodereqbaud" displayName="Required Baudrate" className="IntegerType" paramName="app/can001/0/can001_irwnodereqbaud:Required Baudrate" controlId="1326946577828" defaultType="Kbaud" customControl="true">
+          <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+          <conversionType>Kbaud</conversionType>
+        </subControls>
+        <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_ironoderealbaud" displayName="Real Baudrate" readonly="true" className="IntegerType" paramName="app/can001/0/can001_ironoderealbaud:Real Baudrate" controlId="1326946581390" defaultType="Kbaud" customControl="true">
+          <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+          <conversionType>Kbaud</conversionType>
+        </subControls>
+        <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_ironodebaudpre" displayName="Baud rate Prescaler" readonly="true" className="IntegerType" paramName="app/can001/0/can001_ironodebaudpre:Baud rate Prescalar" controlId="1332927537187">
+          <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+          <conversionType>dec</conversionType>
+        </subControls>
+        <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group71" displayName="Advanced Baud Rate Settings" className="IfxGroupBox" controlId="1332927585515">
+          <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+          <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwbaudadvancedset" displayName="Enable Advanced Baudrate settings" labelRequired="false" className="EnumerationType" paramName="app/can001/0/can001_erwbaudadvancedset:Enable Advanced Baudrate settings" controlId="1332927615406">
+            <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+          </subControls>
+          <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwnodediv8" displayName="Divide the module clock by 8" labelRequired="false" className="EnumerationType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwbaudadvancedset/0&quot;) == &quot;1&quot;) {&#xD;&#xA;    CM.setEnable(true); &#xD;&#xA;}else {&#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_erwnodediv8:Divide the module clock by 8" controlId="1332927625828">
+            <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+          </subControls>
+          <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_irnodesyncsegment" displayName="Synchronization Segment[tq]" readonly="true" className="IntegerType" paramName="app/can001/0/can001_irnodesyncsegment:Synchronization Segment[tq]" controlId="1332935169937">
+            <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+            <conversionType>dec</conversionType>
+          </subControls>
+          <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_irwnodetimeseg1 " displayName="Time segment before Sample Point value TSEG1[tq]" className="IntegerType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwbaudadvancedset/0&quot;) == &quot;1&quot;) {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(true); &#xD;&#xA;}else {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_irwnodetimeseg1 :Time segment before Sample Point value TSEG1[tq]" controlId="1332935205468">
+            <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+            <conversionType>dec</conversionType>
+          </subControls>
+          <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_irwnodetimeseg2" displayName="Time segment after Sample Point value TSEG2[tq]" className="IntegerType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwbaudadvancedset/0&quot;) == &quot;1&quot;) {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(true); &#xD;&#xA;}else {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_irwnodetimeseg2:Time segment after Sample Point value TSEG2[tq]" controlId="1332935218953">
+            <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+            <conversionType>dec</conversionType>
+          </subControls>
+          <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_irwnodesyncjumpwidth" displayName="Synchronization jump width [tq]" className="IntegerType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwbaudadvancedset/0&quot;) == &quot;1&quot;) {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(true); &#xD;&#xA;}else {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_irwnodesyncjumpwidth:Synchronization jump width [tq]" controlId="1332935252921">
+            <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+            <conversionType>dec</conversionType>
+          </subControls>
+          <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_irnodesamplepoint" displayName="Sample point of the total bit time [%]" readonly="true" className="IntegerType" paramName="app/can001/0/can001_irnodesamplepoint:Sample point of the total bit time [%]" controlId="1332935301828">
+            <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData" horizontalAlignment="RIGHT"/>
+            <conversionType>dec</conversionType>
+          </subControls>
+          <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+        </subControls>
+        <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group40" displayName="Node Interrupt Control" className="IfxGroupBox" controlId="1326947523421">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwnodealertinterrupt" displayName="Enable Node Alert Interrupt(ALIE)" labelRequired="false" className="EnumerationType" paramName="app/can001/0/can001_erwnodealertinterrupt:Enable Node Alert Interrupt(ALIE)" controlId="1326947788781">
+          <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        </subControls>
+        <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+      </subControls>
+      <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+    </subControls>
+    <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+  </controls>
+  <controls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Page5" displayName="Message Configuration" className="IfxGroupBox" controlId="1321439796250">
+    <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+    <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwnodemsgconfigsel" displayName="Logical message object selection" className="EnumerationType" paramName="app/can001/0/can001_erwnodemsgconfigsel:Logical message object selection" controlId="1321439902640">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+    </subControls>
+    <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgobj" displayName="Select Message Object Type" className="EnumerationType" paramName="app/can001/0/can001_erwmsgobj:Select Message Object Type" controlId="1321439921609">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+    </subControls>
+    <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgidextension" displayName="Identifier Type Selection(IDE)" className="EnumerationType" paramName="app/can001/0/can001_erwmsgidextension:Identifier Type Selection(IDE)" controlId="1332945323093">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+    </subControls>
+    <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group24" displayName="Identifier(11-bit/29-bit)" className="IfxGroupBox" controlId="1332945419140">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgstdidentifier" displayName="Standard Identifier (11bit)" className="IntegerType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwmsgidextension/0&quot;) == &quot;1&quot;) {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(true); &#xD;&#xA;}else {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_erwmsgstdidentifier:Standard Identifier (11bit)" controlId="1332945472578" defaultType="hex">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        <conversionType>dec</conversionType>
+        <conversionType>hex</conversionType>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgextidentifier" displayName="Extended Identifier (29bit)" className="IntegerType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwmsgidextension/1&quot;) == &quot;1&quot;) {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(true); &#xD;&#xA;}else {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_erwmsgextidentifier:Extended Identifier (29bit)" controlId="1332945494359" defaultType="hex">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        <conversionType>dec</conversionType>
+        <conversionType>hex</conversionType>
+      </subControls>
+      <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+    </subControls>
+    <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group84" displayName="Acceptance Mask" className="IfxGroupBox" controlId="1332945590125">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgidextensionmsk" displayName="Acceptance Mask" labelRequired="false" className="EnumerationType" paramName="app/can001/0/can001_erwmsgidextensionmsk:Acceptance Mask" controlId="1332945612750">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgstdmask" displayName="Standard Acceptanace Mask (11bit)" className="IntegerType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwmsgidextension/0&quot;) == &quot;1&quot; || CM.getParamValue(&quot;app/can001/0/can001_erwmsgidextensionmsk/0&quot;) == &quot;1&quot; ) { &#xD;&#xA;    &#x9;CM.setVisible(true); &#xD;&#xA;    &#x9;CM.setEnable(true);  &#xD;&#xA;}else {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_erwmsgstdmask:Standard Acceptanace Mask (11bit)" controlId="1332945659609" defaultType="hex">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        <conversionType>dec</conversionType>
+        <conversionType>hex</conversionType>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgextmask" displayName="Extended Acceptanace Mask(29 bit)" className="IntegerType" constraint="if(CM.getParamValue(&quot;app/can001/0/can001_erwmsgidextension/1&quot;) == &quot;1&quot; || CM.getParamValue(&quot;app/can001/0/can001_erwmsgidextensionmsk/0&quot;) == &quot;1&quot; ) { &#xD;&#xA;    &#x9;CM.setVisible(true); &#xD;&#xA;    &#x9;CM.setEnable(true);  &#xD;&#xA;}else {&#xD;&#xA;    CM.setVisible(true); &#xD;&#xA;    CM.setEnable(false); &#xD;&#xA;}" paramName="app/can001/0/can001_erwmsgextmask:Extended Acceptanace Mask(29 bit)" controlId="1332945662953" defaultType="hex">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+        <conversionType>dec</conversionType>
+        <conversionType>hex</conversionType>
+      </subControls>
+      <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+    </subControls>
+    <subControls xsi:type="com.ifx.davex.uimodel:CompoundWidget" propertyId="Group35" displayName="Message Object Interrupt Control" className="IfxGroupBox" controlId="1332945668875">
+      <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgrecintrpt" displayName="Enable Receive Interrupt" className="EnumerationType" paramName="app/can001/0/can001_erwmsgrecintrpt:Enable Receive Interrupt" controlId="1332945726250">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      </subControls>
+      <subControls xsi:type="com.ifx.davex.uimodel:SimpleWidget" propertyId="app/can001/0/can001_erwmsgtransintrpt" displayName="Enable Transmit Interrupt" className="EnumerationType" paramName="app/can001/0/can001_erwmsgtransintrpt:Enable Transmit Interrupt" controlId="1332945729890">
+        <layoutData xsi:type="com.ifx.davex.uimodel:IfxGridData"/>
+      </subControls>
+      <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout" numColumns="2"/>
+    </subControls>
+    <layout xsi:type="com.ifx.davex.uimodel:IfxGridLayout"/>
+  </controls>
+</com.ifx.davex.uimodel:UIDataModel>

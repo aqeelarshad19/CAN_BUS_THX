@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_c9b0c446f2f9b17410fc4f71ce2aab3f" kind="dir">
+    <compoundname>LIBS</compoundname>
+    <innerfile refid="_c_c_u8_p_w_m_l_i_b_8d">CCU8PWMLIB.d</innerfile>
+    <innerfile refid="_m_o_t_o_r_l_i_b_8d">MOTORLIB.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/Dave/Generated/src/LIBS/"/>
+  </compounddef>
+</doxygen>

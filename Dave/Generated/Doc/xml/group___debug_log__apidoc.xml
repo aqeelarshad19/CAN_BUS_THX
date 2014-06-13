@@ -1,0 +1,662 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="group___debug_log__apidoc" kind="group">
+    <compoundname>DebugLog_apidoc</compoundname>
+    <title>DebugLog_apidoc</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___debug_log__apidoc_1ga3aa39627fec73bd825c093a57762ba4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugLog_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>DebugLog_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes the debuglog app&apos;s global data structures and registers callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>Service ID: 0x01</para><para><simplesect kind="return"><para>None <bold>Reentrant: yes</bold><linebreak/>
+ <bold>Sync/Async: Synchronous</bold> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="370"/>
+      </memberdef>
+      <memberdef kind="function" id="group___debug_log__apidoc_1ga1d40c61f4e7b75865d5b336ae3322bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugLog_Logging</definition>
+        <argsstring>(uint32_t Severity_Level, uint8_t GroupID, uint8_t MessageID, uint8_t Length, const uint8_t *Message)</argsstring>
+        <name>DebugLog_Logging</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Severity_Level</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>GroupID</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>MessageID</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Length</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+<para>This API is mapped to the MACROS. The first parameter is appended by the macro. </para>        </briefdescription>
+        <detaileddescription>
+<para>Service ID: 0x01</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Severity_Level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Severity level of the MEssage </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">GroupID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">MessageID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message / Error ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the Message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Message</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None <bold>Reentrant: yes</bold><linebreak/>
+ <bold>Sync/Async: Synchronous</bold> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="418"/>
+      </memberdef>
+      <memberdef kind="function" id="group___debug_log__apidoc_1ga69dadcdf96b5f29dc579b4cd51e3d23c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t DebugLog_RegisterCallBack</definition>
+        <argsstring>(uint8_t groupid, CmdCallback Callback)</argsstring>
+        <name>DebugLog_RegisterCallBack</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>groupid</declname>
+        </param>
+        <param>
+          <type><ref refid="group___debug_log__publicparam_1gaac9b3def7a280195821668c0edee93b2" kindref="member">CmdCallback</ref></type>
+          <declname>Callback</declname>
+        </param>
+        <briefdescription>
+<para>The APP&apos;s uses this API to register their callbacks with debuglog. Debuglog will call the appropriate callback and forwards the message from the host. </para>        </briefdescription>
+        <detaileddescription>
+<para>Service ID: 0x02</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">groupid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback to register.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status_t <bold>Reentrant: yes</bold><linebreak/>
+ <bold>Sync/Async: Synchronous</bold> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="392"/>
+      </memberdef>
+      <memberdef kind="function" id="group___debug_log__apidoc_1gaec53801ee2c63cbc9e7fe83847135831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t DebugLog_UARTCallBack</definition>
+        <argsstring>(void *Param)</argsstring>
+        <name>DebugLog_UARTCallBack</name>
+        <param>
+          <type>void *</type>
+          <declname>Param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="422"/>
+      </memberdef>
+      <memberdef kind="function" id="group___debug_log__apidoc_1gad3c73503050cd9ba82cac803bfaceab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t DebugLog_UARTInit</definition>
+        <argsstring>(void *Handle)</argsstring>
+        <name>DebugLog_UARTInit</name>
+        <param>
+          <type>void *</type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="420"/>
+      </memberdef>
+      <memberdef kind="function" id="group___debug_log__apidoc_1ga16ff0ff8fa989ee573e7c792ba62bb9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status_t</type>
+        <definition>status_t DebugLog_UARTWrite</definition>
+        <argsstring>(void *Handle, uint32_t Len, uint8_t *Buffer)</argsstring>
+        <name>DebugLog_UARTWrite</name>
+        <param>
+          <type>void *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>Buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="421"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga5b74dea0d29d1ce68942ede2b61a6688" prot="public" static="no">
+        <name>CRITICAL</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="564" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gabe048c093ef80eb68b7e062e27221999" prot="public" static="no">
+        <name>DBG001_CRITICAL</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="611" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga1c4f9523c11f11e14aa3c90e40c78735" prot="public" static="no">
+        <name>DBG001_ERROR</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="614" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gad1e7755042f06ab4e461a905992a7c6e" prot="public" static="no">
+        <name>DBG001_FUNCTION_ENTRY</name>
+        <param><defname>GID</defname></param>
+        <param><defname>Status</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="626" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga73ebbab104a6baacfc6ea3878a39c61e" prot="public" static="no">
+        <name>DBG001_FUNCTION_EXIT</name>
+        <param><defname>GID</defname></param>
+        <param><defname>Status</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro for logging function stop </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="628" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga826fead424587c693a521e78c06f8046" prot="public" static="no">
+        <name>DBG001_I</name>
+        <param><defname>e</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="586" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gabee5db98e3512cbbdca4738488cf9c59" prot="public" static="no">
+        <name>DBG001_ID</name>
+        <param><defname>e</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="604" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gac8bb64166ccfd02fad9e70044f30f9ac" prot="public" static="no">
+        <name>DBG001_IG</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="587" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gaeb44f32feb06d467cd01a8b3227f6189" prot="public" static="no">
+        <name>DBG001_IGH</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <param><defname>h</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="590" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga1f6239c84a6b0042a23ed8c3af905973" prot="public" static="no">
+        <name>DBG001_IGHP</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <param><defname>h</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="593" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga92f998b4cf16004fa99ca06d11d90b29" prot="public" static="no">
+        <name>DBG001_IGP</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="591" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gaf6c73e5083dcdb716a3a2f759e45c06d" prot="public" static="no">
+        <name>DBG001_IH</name>
+        <param><defname>e</defname></param>
+        <param><defname>h</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="588" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gab79ec5f5e4ac706815e9dc035e946fc5" prot="public" static="no">
+        <name>DBG001_IHP</name>
+        <param><defname>e</defname></param>
+        <param><defname>h</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="592" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga75a071fd72a6fd5fc2505d48d1c15002" prot="public" static="no">
+        <name>DBG001_INFO</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="620" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga78aec6ed1aa57213e7dbbadf0640bd47" prot="public" static="no">
+        <name>DBG001_IP</name>
+        <param><defname>e</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="589" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gaab49f8a292adaa354226486f9b3e97af" prot="public" static="no">
+        <name>DBG001_IS</name>
+        <param><defname>e</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="605" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gac8b6a711e06cf7b7cad16a16918c1303" prot="public" static="no">
+        <name>DBG001_ISG</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="606" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga7f3608f0d7e22c8c5fae895c0b7b1f41" prot="public" static="no">
+        <name>DBG001_N</name>
+        <param><defname>e</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="595" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga1c3c5440b722e9660df24d94c37553af" prot="public" static="no">
+        <name>DBG001_NG</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="596" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga5da7ee42cf51b66dae666ec2d6d1b965" prot="public" static="no">
+        <name>DBG001_NGH</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <param><defname>h</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="599" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gaa59dcbfa2f297db6e78baa81667f6119" prot="public" static="no">
+        <name>DBG001_NGHP</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <param><defname>h</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="602" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga8e2be211b626bb1c0e96a1a2b66aeaaf" prot="public" static="no">
+        <name>DBG001_NGP</name>
+        <param><defname>e</defname></param>
+        <param><defname>g</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="600" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gaca4310b7c660c401bcae79a891b6ed61" prot="public" static="no">
+        <name>DBG001_NH</name>
+        <param><defname>e</defname></param>
+        <param><defname>h</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="597" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gad5d09bc2e137a1e19c82c02893fb198c" prot="public" static="no">
+        <name>DBG001_NHP</name>
+        <param><defname>e</defname></param>
+        <param><defname>h</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="601" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga8600cdfcc284b365475d01eafd02d38d" prot="public" static="no">
+        <name>DBG001_NP</name>
+        <param><defname>e</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>/* empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="598" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga7ee5ef9a9e3c93ebfe890be593619e3c" prot="public" static="no">
+        <name>DBG001_RegisterCallBack</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="579" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gaa4ca52bb3a523bacf8d64a9f7d4758f2" prot="public" static="no">
+        <name>DBG001_SAFETY_CRITICAL</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="608" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gacc98a1053d546f6243005bc2e30b5e9f" prot="public" static="no">
+        <name>DBG001_TRACE</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="623" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga42a3470e833d279c4f89543b6cffab6a" prot="public" static="no">
+        <name>DBG001_WARNING</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="617" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga9deb302be0d1e44cf2a50dd0b689877a" prot="public" static="no">
+        <name>ERROR</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="567" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="567" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a3e8baab1eee0750a8d7310e58420bcaf" compoundref="_c_a_n001_8c" startline="888" endline="912">CAN001_ClearMOFlagStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1a6daaddccea102728a1428ee9e2c59b68" compoundref="_c_a_n001_8c" startline="940" endline="958">CAN001_ClearMOPndRegisterBit</referencedby>
+        <referencedby refid="_c_a_n001_8c_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" compoundref="_c_a_n001_8c" startline="484" endline="521">CAN001_ConfigMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gabdb93492b3d390ff27c50fb0bc660bc7" prot="public" static="no">
+        <name>INFO</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="573" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga12d8253578a3b5315a7b83a8f8d36187" prot="public" static="no">
+        <name>SAFETY_CRITICAL</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="561" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1gae24ee405cf0bb57371ce0555cf3479fd" prot="public" static="no">
+        <name>TRACE</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="576" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__apidoc_1ga9829780919877121311b26fdf4eb9092" prot="public" static="no">
+        <name>WARNING</name>
+        <param><defname>groupid</defname></param>
+        <param><defname>messageid</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="570" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

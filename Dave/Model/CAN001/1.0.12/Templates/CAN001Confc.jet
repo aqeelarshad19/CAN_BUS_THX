@@ -1,0 +1,140 @@
+<%@ jet package="CodeGenerator" class="can001confc_template"
+imports="java.util.* com.ifx.davex.appjetinteract.App2JetInterface" %>
+<% App2JetInterface app = (App2JetInterface) argument; %>
+<% String AppBaseuri = "app/can001/";%>
+/*CODE_BLOCK_BEGIN[CAN001_Conf.c]*/
+/*******************************************************************************
+ Copyright (c) 2014, Infineon Technologies AG                                 **
+ All rights reserved.                                                         **
+                                                                              **
+ Redistribution and use in source and binary forms, with or without           **
+ modification,are permitted provided that the following conditions are met:   **
+                                                                              **
+ *Redistributions of source code must retain the above copyright notice,      **
+ this list of conditions and the following disclaimer.                        **
+ *Redistributions in binary form must reproduce the above copyright notice,   **
+ this list of conditions and the following disclaimer in the documentation    **
+ and/or other materials provided with the distribution.                       **
+ *Neither the name of the copyright holders nor the names of its contributors **
+ may be used to endorse or promote products derived from this software without** 
+ specific prior written permission.                                           **
+                                                                              **
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"  **
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE    **
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE   **
+ ARE  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE   **
+ LIABLE  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR         **
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF         **
+ SUBSTITUTE GOODS OR  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS    **
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN      **
+ CONTRACT, STRICT LIABILITY,OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)       **
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE   **
+ POSSIBILITY OF SUCH DAMAGE.                                                  **
+                                                                              **
+ To improve the quality of the software, users are encouraged to share        **
+ modifications, enhancements or bug fixes with Infineon Technologies AG       **
+ dave@infineon.com).                                                          **
+                                                                              **
+********************************************************************************
+**                                                                            **
+**                                                                            **
+** PLATFORM : Infineon XMC4000 Series   			                          **
+**                                                                            **
+** COMPILER : Compiler Independent                                            **
+**                                                                            **
+** AUTHOR   : App Developer                                                   **
+**                                                                            **
+** MAY BE CHANGED BY USER [yes/no]: Yes                                       **
+**                                                                            **
+**                                                                            **
+*******************************************************************************/
+/**
+ * @file CAN001_Conf.c
+ *
+ * @App Version CAN001 <<%= app.getAppVersion(AppBaseuri)%>> 
+ * @brief  CAN001 App Handle definition based on UI selection.
+ *
+ */
+#include <DAVE3.h>
+<% String MappedUri = null; %>
+<% String MappedUriMo = null; %>
+<% String appInst  = null; %>
+<% String nodeInst = null; %>
+<% String moInst = null; %>
+<% String CanMOuri = "peripheral/can/0/mo/"; %>
+<% String appInst1  = null; %>
+
+<% ArrayList<String> appsList = (ArrayList<String>)(app.getApps("app/can001/"));
+ for (String appIns : appsList ) {
+ appInst = appIns.substring(appIns.lastIndexOf("/")+1);%>
+<% MappedUri = app.getMappedUri(AppBaseuri + appInst + "/node"); %>
+<% if((MappedUri != null) && (MappedUri != "")) { %>
+<% nodeInst = MappedUri.substring(MappedUri.lastIndexOf("/")+1).trim(); %>
+/* Node<%= nodeInst%> Handle structure */
+const CAN001_HandleType CAN001_Handle<%= appInst%> =
+{
+<% int brp = app.getIntegerValue(AppBaseuri + appInst + "/can001_ironodebaudpre"); %>
+	.BaudRate = {0x<%= Integer.toHexString(brp) %>, /* Baud rate Prescaler value */
+	             0x<%= app.getHexValue(AppBaseuri + appInst + "/node/nbtr/sjw") %>, /* Synchronization Jump Width */
+	             0x<%= app.getHexValue(AppBaseuri + appInst + "/node/nbtr/tseg1") %>, /* Time segment 1 */
+	             0x<%= app.getHexValue(AppBaseuri + appInst + "/node/nbtr/tseg2") %>, /* Time segment 2 */
+	             <%= app.getHexValue(AppBaseuri + appInst + "/node/nbtr/div8") %>,  /* Divide prescaler by 8 */
+	             },
+	.CanNodeRegs = CAN_NODE<%= nodeInst%>, /* Node register offset value */
+	.NodeID = <%= nodeInst%>,              /* Current node number */
+	.LoopBackModeEn = <%= app.getHexValue(AppBaseuri + appInst + "/node/npcr/lbm") %>, /* Loop back mode selection*/
+	.NodeMONo = <%= app.getIntegerValue(AppBaseuri + appInst + "/can001_irwnodenomsgobjs") %>, /* Total message object allocated to node list */
+<% MappedUriMo = app.getMappedUri(AppBaseuri + appInst +"/message1"); %>
+<% moInst = MappedUriMo.substring(MappedUriMo.lastIndexOf("/")+1).trim(); %>   
+	.FirstMOMapping = <%= moInst%>
+};
+<% } %>
+<% else { %>
+// NODE IS NOT MAPPED
+<% } %>
+
+<% int mono = app.getIntegerValue(AppBaseuri + appInst + "/can001_irwnodenomsgobjs"); %>
+<% for (int Msg=1; Msg<=mono; Msg++) { %>
+<% MappedUri = app.getMappedUri(AppBaseuri + appInst +"/message" + Msg + "/mofcr"); %>
+<% if((MappedUri != null) && (MappedUri != "")) { %>
+/* Node<%= nodeInst%> LMO<%=Msg %> handle structure */
+CAN001_MessageHandleType CAN001_MessageHandle<%= appInst%>_<%=Msg %> =
+{
+<% int idextval = app.getIntegerValue(AppBaseuri + appInst +"/message" + Msg + "/moar/ide"); %>
+<% int idextval4 = app.getIntegerValue(AppBaseuri + appInst +"/message" + Msg + "/moar/id"); %>
+<% if (idextval == 1) {%>
+  	.Identifier = 0x<%= app.getHexValue(AppBaseuri + appInst +"/message" + Msg + "/moar/id") %>,  /* Message identifier mask */
+<%} else {%>
+<% int idextval5 = idextval4>>18; %>
+  	.Identifier = 0x<%= Integer.toHexString(idextval5) %>,
+<%}%>	
+<% int idextval2 = app.getIntegerValue(AppBaseuri + appInst +"/message" + Msg + "/moamr/am"); %>
+<% int idemask = app.getIntegerValue(AppBaseuri + appInst +"/message" + Msg + "/moamr/mide"); %>
+<% if (idemask == 0) {%>
+	.IDMask = 0x<%= app.getHexValue(AppBaseuri + appInst +"/message" + Msg + "/moamr/am") %>,
+<%} else {%>
+	<% if (idextval == 1) {%>
+  	.IDMask = 0x<%= app.getHexValue(AppBaseuri + appInst +"/message" + Msg + "/moamr/am") %>,  /* Message identifier mask */
+	<%} else {%>
+	<% int idextval3 = idextval2>>18; %>
+  	.IDMask = 0x<%= Integer.toHexString(idextval3) %>,
+	<%}%>
+<%}%>	
+	.IDEMask = <%=idemask%>,	
+	.IDExten = <%= app.getHexValue(AppBaseuri + appInst +"/message" + Msg + "/moar/ide") %>, /* Message identifier Type */
+	.DataLength = 0,
+	.MsgObjEN = CAN001_ENABLE,
+	.MsgObjType = (CAN_MsgType)<%= app.getHexValue(AppBaseuri + appInst +"/message" + Msg + "/mostat/dir") %>
+};
+<% } %>
+<% else { %>
+// MESSAGE<%=Msg%> IS NOT MAPPED
+<% } %>
+
+<%} %>
+
+<%} %>
+
+
+/*CODE_BLOCK_END*/ 
+

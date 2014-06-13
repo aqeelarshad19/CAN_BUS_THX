@@ -1,0 +1,3909 @@
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 3
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 6
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.file	"Main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.comm	Timer_WaitId,4,4
+  20              		.comm	TimerId,4,4
+  21              		.comm	TimerId1Sec,4,4
+  22              		.global	Timer_Wait_Expired
+  23              		.bss
+  26              	Timer_Wait_Expired:
+  27 0000 00       		.space	1
+  28              		.global	Timer_Flag
+  31              	Timer_Flag:
+  32 0001 00       		.space	1
+  33              		.global	Timer_Flag_1sec
+  36              	Timer_Flag_1sec:
+  37 0002 00       		.space	1
+  38              		.global	time_secs
+  41              	time_secs:
+  42 0003 00       		.space	1
+  43              		.global	PID_Desc
+  44              		.data
+  45              		.align	2
+  48              	PID_Desc:
+  49 0000 50494430 		.ascii	"PID00-21\000"
+  49      302D3231 
+  49      00
+  50 0009 53746174 		.ascii	"Stat DTC\000"
+  50      20445443 
+  50      00
+  51 0012 46727A20 		.ascii	"Frz DTC\000"
+  51      44544300 
+  52 001a 00       		.space	1
+  53 001b 4675656C 		.ascii	"Fuel SS\000"
+  53      20535300 
+  54 0023 00       		.space	1
+  55 0024 456E6720 		.ascii	"Eng Load\000"
+  55      4C6F6164 
+  55      00
+  56 002d 436F6F6C 		.ascii	"CoolantT\000"
+  56      616E7454 
+  56      00
+  57 0036 53542046 		.ascii	"ST F%T 1\000"
+  57      25542031 
+  57      00
+  58 003f 4C542046 		.ascii	"LT F%T 1\000"
+  58      25542031 
+  58      00
+  59 0048 53542046 		.ascii	"ST F%T 2\000"
+  59      25542032 
+  59      00
+  60 0051 4C542046 		.ascii	"LT F%T 2\000"
+  60      25542032 
+  60      00
+  61 005a 4675656C 		.ascii	"Fuel Prs\000"
+  61      20507273 
+  61      00
+  62 0063 20204D41 		.ascii	"  MAP  \000"
+  62      50202000 
+  63 006b 00       		.space	1
+  64 006c 20205250 		.ascii	"  RPM  \000"
+  64      4D202000 
+  65 0074 00       		.space	1
+  66 0075 20537065 		.ascii	" Speed \000"
+  66      65642000 
+  67 007d 00       		.space	1
+  68 007e 54696D69 		.ascii	"Timing A\000"
+  68      6E672041 
+  68      00
+  69 0087 496E7461 		.ascii	"Intake T\000"
+  69      6B652054 
+  69      00
+  70 0090 4D414620 		.ascii	"MAF rate\000"
+  70      72617465 
+  70      00
+  71 0099 5468726F 		.ascii	"Throttle\000"
+  71      74746C65 
+  71      00
+  72 00a2 436D6420 		.ascii	"Cmd SAS\000"
+  72      53415300 
+  73 00aa 00       		.space	1
+  74 00ab 4F787920 		.ascii	"Oxy Sens\000"
+  74      53656E73 
+  74      00
+  75 00b4 4F787920 		.ascii	"Oxy B1S1\000"
+  75      42315331 
+  75      00
+  76 00bd 4F787920 		.ascii	"Oxy B1S2\000"
+  76      42315332 
+  76      00
+  77 00c6 4F787920 		.ascii	"Oxy B1S3\000"
+  77      42315333 
+  77      00
+  78 00cf 4F787920 		.ascii	"Oxy B1S4\000"
+  78      42315334 
+  78      00
+  79 00d8 4F787920 		.ascii	"Oxy B2S1\000"
+  79      42325331 
+  79      00
+  80 00e1 4F787920 		.ascii	"Oxy B2S2\000"
+  80      42325332 
+  80      00
+  81 00ea 4F787920 		.ascii	"Oxy B2S3\000"
+  81      42325333 
+  81      00
+  82 00f3 4F787920 		.ascii	"Oxy B2S4\000"
+  82      42325334 
+  82      00
+  83 00fc 4F424420 		.ascii	"OBD Std\000"
+  83      53746400 
+  84 0104 00       		.space	1
+  85 0105 4F787920 		.ascii	"Oxy Sens\000"
+  85      53656E73 
+  85      00
+  86 010e 41757849 		.ascii	"AuxInpt\000"
+  86      6E707400 
+  87 0116 00       		.space	1
+  88 0117 52756E20 		.ascii	"Run Time\000"
+  88      54696D65 
+  88      00
+  89 0120 50494432 		.ascii	"PID21-40\000"
+  89      312D3430 
+  89      00
+  90 0129 44697374 		.ascii	"Dist MIL\000"
+  90      204D494C 
+  90      00
+  91 0132 46525020 		.ascii	"FRP RMF\000"
+  91      524D4600 
+  92 013a 00       		.space	1
+  93 013b 46525020 		.ascii	"FRP Dies\000"
+  93      44696573 
+  93      00
+  94 0144 4F787953 		.ascii	"OxyS1 V\000"
+  94      31205600 
+  95 014c 00       		.space	1
+  96 014d 4F787953 		.ascii	"OxyS2 V\000"
+  96      32205600 
+  97 0155 00       		.space	1
+  98 0156 4F787953 		.ascii	"OxyS3 V\000"
+  98      33205600 
+  99 015e 00       		.space	1
+ 100 015f 4F787953 		.ascii	"OxyS4 V\000"
+ 100      34205600 
+ 101 0167 00       		.space	1
+ 102 0168 4F787953 		.ascii	"OxyS5 V\000"
+ 102      35205600 
+ 103 0170 00       		.space	1
+ 104 0171 4F787953 		.ascii	"OxyS6 V\000"
+ 104      36205600 
+ 105 0179 00       		.space	1
+ 106 017a 4F787953 		.ascii	"OxyS7 V\000"
+ 106      37205600 
+ 107 0182 00       		.space	1
+ 108 0183 4F787953 		.ascii	"OxyS8 V\000"
+ 108      38205600 
+ 109 018b 00       		.space	1
+ 110 018c 436D6420 		.ascii	"Cmd EGR\000"
+ 110      45475200 
+ 111 0194 00       		.space	1
+ 112 0195 45475220 		.ascii	"EGR Err\000"
+ 112      45727200 
+ 113 019d 00       		.space	1
+ 114 019e 436D6420 		.ascii	"Cmd EP\000"
+ 114      455000
+ 115 01a5 0000     		.space	2
+ 116 01a7 4675656C 		.ascii	"Fuel LI\000"
+ 116      204C4900 
+ 117 01af 00       		.space	1
+ 118 01b0 5761726D 		.ascii	"WarmupCC\000"
+ 118      75704343 
+ 118      00
+ 119 01b9 44697374 		.ascii	"Dist CC\000"
+ 119      20434300 
+ 120 01c1 00       		.space	1
+ 121 01c2 45766170 		.ascii	"Evap SVP\000"
+ 121      20535650 
+ 121      00
+ 122 01cb 4261726F 		.ascii	"Barometr\000"
+ 122      6D657472 
+ 122      00
+ 123 01d4 4F787953 		.ascii	"OxyS1 C\000"
+ 123      31204300 
+ 124 01dc 00       		.space	1
+ 125 01dd 4F787953 		.ascii	"OxyS2 C\000"
+ 125      32204300 
+ 126 01e5 00       		.space	1
+ 127 01e6 4F787953 		.ascii	"OxyS3 C\000"
+ 127      33204300 
+ 128 01ee 00       		.space	1
+ 129 01ef 4F787953 		.ascii	"OxyS4 C\000"
+ 129      34204300 
+ 130 01f7 00       		.space	1
+ 131 01f8 4F787953 		.ascii	"OxyS5 C\000"
+ 131      35204300 
+ 132 0200 00       		.space	1
+ 133 0201 4F787953 		.ascii	"OxyS6 C\000"
+ 133      36204300 
+ 134 0209 00       		.space	1
+ 135 020a 4F787953 		.ascii	"OxyS7 C\000"
+ 135      37204300 
+ 136 0212 00       		.space	1
+ 137 0213 4F787953 		.ascii	"OxyS8 C\000"
+ 137      38204300 
+ 138 021b 00       		.space	1
+ 139 021c 43205420 		.ascii	"C T B1S1\000"
+ 139      42315331 
+ 139      00
+ 140 0225 43205420 		.ascii	"C T B1S2\000"
+ 140      42315332 
+ 140      00
+ 141 022e 43205420 		.ascii	"C T B2S1\000"
+ 141      42325331 
+ 141      00
+ 142 0237 43205420 		.ascii	"C T B2S2\000"
+ 142      42325332 
+ 142      00
+ 143 0240 50494434 		.ascii	"PID41-60\000"
+ 143      312D3630 
+ 143      00
+ 144 0249 204D5374 		.ascii	" MStDC\000"
+ 144      444300
+ 145 0250 0000     		.space	2
+ 146 0252 4374726C 		.ascii	"Ctrl M V\000"
+ 146      204D2056 
+ 146      00
+ 147 025b 41627320 		.ascii	"Abs L V\000"
+ 147      4C205600 
+ 148 0263 00       		.space	1
+ 149 0264 436D6420 		.ascii	"Cmd E R\000"
+ 149      45205200 
+ 150 026c 00       		.space	1
+ 151 026d 52205468 		.ascii	"R ThrotP\000"
+ 151      726F7450 
+ 151      00
+ 152 0276 416D6220 		.ascii	"Amb Temp\000"
+ 152      54656D70 
+ 152      00
+ 153 027f 41636320 		.ascii	"Acc PP B\000"
+ 153      50502042 
+ 153      00
+ 154 0288 41636320 		.ascii	"Acc PP C\000"
+ 154      50502043 
+ 154      00
+ 155 0291 41636320 		.ascii	"Acc PP D\000"
+ 155      50502044 
+ 155      00
+ 156 029a 41636320 		.ascii	"Acc PP E\000"
+ 156      50502045 
+ 156      00
+ 157 02a3 41636320 		.ascii	"Acc PP F\000"
+ 157      50502046 
+ 157      00
+ 158 02ac 436D6420 		.ascii	"Cmd T A\000"
+ 158      54204100 
+ 159 02b4 00       		.space	1
+ 160 02b5 54204D49 		.ascii	"T MIL On\000"
+ 160      4C204F6E 
+ 160      00
+ 161 02be 54205443 		.ascii	"T TC Crl\000"
+ 161      2043726C 
+ 161      00
+ 162 02c7 20203078 		.ascii	"  0x4F\000"
+ 162      344600
+ 163 02ce 0000     		.space	2
+ 164 02d0 20203078 		.ascii	"  0x50\000"
+ 164      353000
+ 165 02d7 0000     		.space	2
+ 166 02d9 4675656C 		.ascii	"Fuel Typ\000"
+ 166      20547970 
+ 166      00
+ 167 02e2 45746879 		.ascii	"Ethyl F%\000"
+ 167      6C204625 
+ 167      00
+ 168 02eb 00       		.ascii	"\000"
+ 169 02ec 00000000 		.space	8
+ 169      00000000 
+ 170 02f4 00       		.ascii	"\000"
+ 171 02f5 00000000 		.space	8
+ 171      00000000 
+ 172 02fd 00       		.ascii	"\000"
+ 173 02fe 00000000 		.space	8
+ 173      00000000 
+ 174 0306 00       		.ascii	"\000"
+ 175 0307 00000000 		.space	8
+ 175      00000000 
+ 176 030f 00       		.ascii	"\000"
+ 177 0310 00000000 		.space	8
+ 177      00000000 
+ 178 0318 00       		.ascii	"\000"
+ 179 0319 00000000 		.space	8
+ 179      00000000 
+ 180 0321 00       		.ascii	"\000"
+ 181 0322 00000000 		.space	8
+ 181      00000000 
+ 182 032a 00       		.ascii	"\000"
+ 183 032b 00000000 		.space	8
+ 183      00000000 
+ 184 0333 00       		.ascii	"\000"
+ 185 0334 00000000 		.space	8
+ 185      00000000 
+ 186 033c 00       		.ascii	"\000"
+ 187 033d 00000000 		.space	8
+ 187      00000000 
+ 188 0345 00       		.ascii	"\000"
+ 189 0346 00000000 		.space	8
+ 189      00000000 
+ 190 034e 00       		.ascii	"\000"
+ 191 034f 00000000 		.space	8
+ 191      00000000 
+ 192 0357 00       		.ascii	"\000"
+ 193 0358 00000000 		.space	8
+ 193      00000000 
+ 194 0360 00       		.ascii	"\000"
+ 195 0361 00000000 		.space	8
+ 195      00000000 
+ 196 0369 00       		.ascii	"\000"
+ 197 036a 00000000 		.space	8
+ 197      00000000 
+ 198 0372 00       		.ascii	"\000"
+ 199 0373 00000000 		.space	8
+ 199      00000000 
+ 200 037b 00       		.ascii	"\000"
+ 201 037c 00000000 		.space	8
+ 201      00000000 
+ 202 0384 00       		.ascii	"\000"
+ 203 0385 00000000 		.space	8
+ 203      00000000 
+ 204 038d 00       		.ascii	"\000"
+ 205 038e 00000000 		.space	8
+ 205      00000000 
+ 206 0396 00       		.ascii	"\000"
+ 207 0397 00000000 		.space	8
+ 207      00000000 
+ 208 039f 00       		.ascii	"\000"
+ 209 03a0 00000000 		.space	8
+ 209      00000000 
+ 210 03a8 00       		.ascii	"\000"
+ 211 03a9 00000000 		.space	8
+ 211      00000000 
+ 212 03b1 00       		.ascii	"\000"
+ 213 03b2 00000000 		.space	8
+ 213      00000000 
+ 214 03ba 00       		.ascii	"\000"
+ 215 03bb 00000000 		.space	8
+ 215      00000000 
+ 216 03c3 00       		.ascii	"\000"
+ 217 03c4 00000000 		.space	8
+ 217      00000000 
+ 218 03cc 00       		.ascii	"\000"
+ 219 03cd 00000000 		.space	8
+ 219      00000000 
+ 220 03d5 00       		.ascii	"\000"
+ 221 03d6 00000000 		.space	8
+ 221      00000000 
+ 222 03de 00       		.ascii	"\000"
+ 223 03df 00000000 		.space	8
+ 223      00000000 
+ 224 03e7 00       		.ascii	"\000"
+ 225 03e8 00000000 		.space	8
+ 225      00000000 
+ 226 03f0 00       		.ascii	"\000"
+ 227 03f1 00000000 		.space	8
+ 227      00000000 
+ 228 03f9 00       		.ascii	"\000"
+ 229 03fa 00000000 		.space	8
+ 229      00000000 
+ 230 0402 00       		.ascii	"\000"
+ 231 0403 00000000 		.space	8
+ 231      00000000 
+ 232 040b 00       		.ascii	"\000"
+ 233 040c 00000000 		.space	8
+ 233      00000000 
+ 234 0414 00       		.ascii	"\000"
+ 235 0415 00000000 		.space	8
+ 235      00000000 
+ 236 041d 00       		.ascii	"\000"
+ 237 041e 00000000 		.space	8
+ 237      00000000 
+ 238 0426 00       		.ascii	"\000"
+ 239 0427 00000000 		.space	8
+ 239      00000000 
+ 240 042f 00       		.ascii	"\000"
+ 241 0430 00000000 		.space	8
+ 241      00000000 
+ 242 0438 00       		.ascii	"\000"
+ 243 0439 00000000 		.space	8
+ 243      00000000 
+ 244 0441 00       		.ascii	"\000"
+ 245 0442 00000000 		.space	8
+ 245      00000000 
+ 246 044a 00       		.ascii	"\000"
+ 247 044b 00000000 		.space	8
+ 247      00000000 
+ 248 0453 00       		.ascii	"\000"
+ 249 0454 00000000 		.space	8
+ 249      00000000 
+ 250 045c 00       		.ascii	"\000"
+ 251 045d 00000000 		.space	8
+ 251      00000000 
+ 252 0465 00       		.ascii	"\000"
+ 253 0466 00000000 		.space	8
+ 253      00000000 
+ 254 046e 00       		.ascii	"\000"
+ 255 046f 00000000 		.space	8
+ 255      00000000 
+ 256 0477 00       		.ascii	"\000"
+ 257 0478 00000000 		.space	8
+ 257      00000000 
+ 258 0480 00       		.ascii	"\000"
+ 259 0481 00000000 		.space	8
+ 259      00000000 
+ 260 0489 00       		.ascii	"\000"
+ 261 048a 00000000 		.space	8
+ 261      00000000 
+ 262 0492 00       		.ascii	"\000"
+ 263 0493 00000000 		.space	8
+ 263      00000000 
+ 264 049b 00       		.ascii	"\000"
+ 265 049c 00000000 		.space	8
+ 265      00000000 
+ 266 04a4 00       		.ascii	"\000"
+ 267 04a5 00000000 		.space	8
+ 267      00000000 
+ 268 04ad 00       		.ascii	"\000"
+ 269 04ae 00000000 		.space	8
+ 269      00000000 
+ 270 04b6 00       		.ascii	"\000"
+ 271 04b7 00000000 		.space	8
+ 271      00000000 
+ 272 04bf 00       		.ascii	"\000"
+ 273 04c0 00000000 		.space	8
+ 273      00000000 
+ 274 04c8 00       		.ascii	"\000"
+ 275 04c9 00000000 		.space	8
+ 275      00000000 
+ 276 04d1 00       		.ascii	"\000"
+ 277 04d2 00000000 		.space	8
+ 277      00000000 
+ 278 04da 00       		.ascii	"\000"
+ 279 04db 00000000 		.space	8
+ 279      00000000 
+ 280 04e3 00       		.ascii	"\000"
+ 281 04e4 00000000 		.space	8
+ 281      00000000 
+ 282 04ec 00       		.ascii	"\000"
+ 283 04ed 00000000 		.space	8
+ 283      00000000 
+ 284 04f5 00       		.ascii	"\000"
+ 285 04f6 00000000 		.space	8
+ 285      00000000 
+ 286 04fe 00       		.ascii	"\000"
+ 287 04ff 00000000 		.space	8
+ 287      00000000 
+ 288 0507 00       		.ascii	"\000"
+ 289 0508 00000000 		.space	8
+ 289      00000000 
+ 290 0510 00       		.ascii	"\000"
+ 291 0511 00000000 		.space	8
+ 291      00000000 
+ 292 0519 00       		.ascii	"\000"
+ 293 051a 00000000 		.space	8
+ 293      00000000 
+ 294 0522 00       		.ascii	"\000"
+ 295 0523 00000000 		.space	8
+ 295      00000000 
+ 296 052b 00       		.ascii	"\000"
+ 297 052c 00000000 		.space	8
+ 297      00000000 
+ 298 0534 00       		.ascii	"\000"
+ 299 0535 00000000 		.space	8
+ 299      00000000 
+ 300 053d 00       		.ascii	"\000"
+ 301 053e 00000000 		.space	8
+ 301      00000000 
+ 302 0546 00       		.ascii	"\000"
+ 303 0547 00000000 		.space	8
+ 303      00000000 
+ 304 054f 00       		.ascii	"\000"
+ 305 0550 00000000 		.space	8
+ 305      00000000 
+ 306 0558 00       		.ascii	"\000"
+ 307 0559 00000000 		.space	8
+ 307      00000000 
+ 308 0561 00       		.ascii	"\000"
+ 309 0562 00000000 		.space	8
+ 309      00000000 
+ 310 056a 00       		.ascii	"\000"
+ 311 056b 00000000 		.space	8
+ 311      00000000 
+ 312 0573 00       		.ascii	"\000"
+ 313 0574 00000000 		.space	8
+ 313      00000000 
+ 314 057c 00       		.ascii	"\000"
+ 315 057d 00000000 		.space	8
+ 315      00000000 
+ 316 0585 00       		.ascii	"\000"
+ 317 0586 00000000 		.space	8
+ 317      00000000 
+ 318 058e 00       		.ascii	"\000"
+ 319 058f 00000000 		.space	8
+ 319      00000000 
+ 320 0597 00       		.ascii	"\000"
+ 321 0598 00000000 		.space	8
+ 321      00000000 
+ 322 05a0 00       		.ascii	"\000"
+ 323 05a1 00000000 		.space	8
+ 323      00000000 
+ 324 05a9 00       		.ascii	"\000"
+ 325 05aa 00000000 		.space	8
+ 325      00000000 
+ 326 05b2 00       		.ascii	"\000"
+ 327 05b3 00000000 		.space	8
+ 327      00000000 
+ 328 05bb 00       		.ascii	"\000"
+ 329 05bc 00000000 		.space	8
+ 329      00000000 
+ 330 05c4 00       		.ascii	"\000"
+ 331 05c5 00000000 		.space	8
+ 331      00000000 
+ 332 05cd 00       		.ascii	"\000"
+ 333 05ce 00000000 		.space	8
+ 333      00000000 
+ 334 05d6 00       		.ascii	"\000"
+ 335 05d7 00000000 		.space	8
+ 335      00000000 
+ 336 05df 00       		.ascii	"\000"
+ 337 05e0 00000000 		.space	8
+ 337      00000000 
+ 338 05e8 00       		.ascii	"\000"
+ 339 05e9 00000000 		.space	8
+ 339      00000000 
+ 340 05f1 00       		.ascii	"\000"
+ 341 05f2 00000000 		.space	8
+ 341      00000000 
+ 342 05fa 00       		.ascii	"\000"
+ 343 05fb 00000000 		.space	8
+ 343      00000000 
+ 344 0603 00       		.ascii	"\000"
+ 345 0604 00000000 		.space	8
+ 345      00000000 
+ 346 060c 00       		.ascii	"\000"
+ 347 060d 00000000 		.space	8
+ 347      00000000 
+ 348 0615 00       		.ascii	"\000"
+ 349 0616 00000000 		.space	8
+ 349      00000000 
+ 350 061e 00       		.ascii	"\000"
+ 351 061f 00000000 		.space	8
+ 351      00000000 
+ 352 0627 00       		.ascii	"\000"
+ 353 0628 00000000 		.space	8
+ 353      00000000 
+ 354 0630 00       		.ascii	"\000"
+ 355 0631 00000000 		.space	8
+ 355      00000000 
+ 356 0639 00       		.ascii	"\000"
+ 357 063a 00000000 		.space	8
+ 357      00000000 
+ 358 0642 00       		.ascii	"\000"
+ 359 0643 00000000 		.space	8
+ 359      00000000 
+ 360 064b 00       		.ascii	"\000"
+ 361 064c 00000000 		.space	8
+ 361      00000000 
+ 362 0654 00       		.ascii	"\000"
+ 363 0655 00000000 		.space	8
+ 363      00000000 
+ 364 065d 00       		.ascii	"\000"
+ 365 065e 00000000 		.space	8
+ 365      00000000 
+ 366 0666 00       		.ascii	"\000"
+ 367 0667 00000000 		.space	8
+ 367      00000000 
+ 368 066f 00       		.ascii	"\000"
+ 369 0670 00000000 		.space	8
+ 369      00000000 
+ 370 0678 00       		.ascii	"\000"
+ 371 0679 00000000 		.space	8
+ 371      00000000 
+ 372 0681 00       		.ascii	"\000"
+ 373 0682 00000000 		.space	8
+ 373      00000000 
+ 374 068a 00       		.ascii	"\000"
+ 375 068b 00000000 		.space	8
+ 375      00000000 
+ 376 0693 00       		.ascii	"\000"
+ 377 0694 00000000 		.space	8
+ 377      00000000 
+ 378 069c 00       		.ascii	"\000"
+ 379 069d 00000000 		.space	8
+ 379      00000000 
+ 380 06a5 00       		.ascii	"\000"
+ 381 06a6 00000000 		.space	8
+ 381      00000000 
+ 382 06ae 00       		.ascii	"\000"
+ 383 06af 00000000 		.space	8
+ 383      00000000 
+ 384 06b7 00       		.ascii	"\000"
+ 385 06b8 00000000 		.space	8
+ 385      00000000 
+ 386 06c0 00       		.ascii	"\000"
+ 387 06c1 00000000 		.space	8
+ 387      00000000 
+ 388 06c9 00       		.ascii	"\000"
+ 389 06ca 00000000 		.space	8
+ 389      00000000 
+ 390 06d2 00       		.ascii	"\000"
+ 391 06d3 00000000 		.space	8
+ 391      00000000 
+ 392 06db 00       		.ascii	"\000"
+ 393 06dc 00000000 		.space	8
+ 393      00000000 
+ 394 06e4 00       		.ascii	"\000"
+ 395 06e5 00000000 		.space	8
+ 395      00000000 
+ 396 06ed 00       		.ascii	"\000"
+ 397 06ee 00000000 		.space	8
+ 397      00000000 
+ 398 06f6 00       		.ascii	"\000"
+ 399 06f7 00000000 		.space	8
+ 399      00000000 
+ 400 06ff 00       		.ascii	"\000"
+ 401 0700 00000000 		.space	8
+ 401      00000000 
+ 402 0708 00       		.ascii	"\000"
+ 403 0709 00000000 		.space	8
+ 403      00000000 
+ 404 0711 00       		.ascii	"\000"
+ 405 0712 00000000 		.space	8
+ 405      00000000 
+ 406 071a 00       		.ascii	"\000"
+ 407 071b 00000000 		.space	8
+ 407      00000000 
+ 408 0723 00       		.ascii	"\000"
+ 409 0724 00000000 		.space	8
+ 409      00000000 
+ 410 072c 00       		.ascii	"\000"
+ 411 072d 00000000 		.space	8
+ 411      00000000 
+ 412 0735 00       		.ascii	"\000"
+ 413 0736 00000000 		.space	8
+ 413      00000000 
+ 414 073e 00       		.ascii	"\000"
+ 415 073f 00000000 		.space	8
+ 415      00000000 
+ 416 0747 00       		.ascii	"\000"
+ 417 0748 00000000 		.space	8
+ 417      00000000 
+ 418 0750 00       		.ascii	"\000"
+ 419 0751 00000000 		.space	8
+ 419      00000000 
+ 420 0759 00       		.ascii	"\000"
+ 421 075a 00000000 		.space	8
+ 421      00000000 
+ 422 0762 00       		.ascii	"\000"
+ 423 0763 00000000 		.space	8
+ 423      00000000 
+ 424 076b 00       		.ascii	"\000"
+ 425 076c 00000000 		.space	8
+ 425      00000000 
+ 426 0774 00       		.ascii	"\000"
+ 427 0775 00000000 		.space	8
+ 427      00000000 
+ 428 077d 00       		.ascii	"\000"
+ 429 077e 00000000 		.space	8
+ 429      00000000 
+ 430 0786 00       		.ascii	"\000"
+ 431 0787 00000000 		.space	8
+ 431      00000000 
+ 432 078f 00       		.ascii	"\000"
+ 433 0790 00000000 		.space	8
+ 433      00000000 
+ 434 0798 00       		.ascii	"\000"
+ 435 0799 00000000 		.space	8
+ 435      00000000 
+ 436 07a1 00       		.ascii	"\000"
+ 437 07a2 00000000 		.space	8
+ 437      00000000 
+ 438 07aa 00       		.ascii	"\000"
+ 439 07ab 00000000 		.space	8
+ 439      00000000 
+ 440 07b3 00       		.ascii	"\000"
+ 441 07b4 00000000 		.space	8
+ 441      00000000 
+ 442 07bc 00       		.ascii	"\000"
+ 443 07bd 00000000 		.space	8
+ 443      00000000 
+ 444 07c5 00       		.ascii	"\000"
+ 445 07c6 00000000 		.space	8
+ 445      00000000 
+ 446 07ce 00       		.ascii	"\000"
+ 447 07cf 00000000 		.space	8
+ 447      00000000 
+ 448 07d7 00       		.ascii	"\000"
+ 449 07d8 00000000 		.space	8
+ 449      00000000 
+ 450 07e0 00       		.ascii	"\000"
+ 451 07e1 00000000 		.space	8
+ 451      00000000 
+ 452 07e9 00       		.ascii	"\000"
+ 453 07ea 00000000 		.space	8
+ 453      00000000 
+ 454 07f2 00       		.ascii	"\000"
+ 455 07f3 00000000 		.space	8
+ 455      00000000 
+ 456 07fb 00       		.ascii	"\000"
+ 457 07fc 00000000 		.space	8
+ 457      00000000 
+ 458 0804 00       		.ascii	"\000"
+ 459 0805 00000000 		.space	8
+ 459      00000000 
+ 460 080d 00       		.ascii	"\000"
+ 461 080e 00000000 		.space	8
+ 461      00000000 
+ 462 0816 00       		.ascii	"\000"
+ 463 0817 00000000 		.space	8
+ 463      00000000 
+ 464 081f 4F757473 		.ascii	"OutsideT\000"
+ 464      69646554 
+ 464      00
+ 465 0828 496E7369 		.ascii	"Inside T\000"
+ 465      64652054 
+ 465      00
+ 466 0831 4F757457 		.ascii	"OutWaste\000"
+ 466      61737465 
+ 466      00
+ 467 083a 54727057 		.ascii	"TrpWaste\000"
+ 467      61737465 
+ 467      00
+ 468 0843 546E6B57 		.ascii	"TnkWaste\000"
+ 468      61737465 
+ 468      00
+ 469 084c 4F757420 		.ascii	"Out Cost\000"
+ 469      436F7374 
+ 469      00
+ 470 0855 54727020 		.ascii	"Trp Cost\000"
+ 470      436F7374 
+ 470      00
+ 471 085e 546E6B20 		.ascii	"Tnk Cost\000"
+ 471      436F7374 
+ 471      00
+ 472 0867 4F757420 		.ascii	"Out Time\000"
+ 472      54696D65 
+ 472      00
+ 473 0870 4E6F2044 		.ascii	"No Disp\000"
+ 473      69737000 
+ 474 0878 00       		.space	1
+ 475 0879 496E7374 		.ascii	"InstCons\000"
+ 475      436F6E73 
+ 475      00
+ 476 0882 546E6B20 		.ascii	"Tnk Cons\000"
+ 476      436F6E73 
+ 476      00
+ 477 088b 546E6B20 		.ascii	"Tnk Fuel\000"
+ 477      4675656C 
+ 477      00
+ 478 0894 546E6B20 		.ascii	"Tnk Dist\000"
+ 478      44697374 
+ 478      00
+ 479 089d 44697374 		.ascii	"Dist2MT\000"
+ 479      324D5400 
+ 480 08a5 00       		.space	1
+ 481 08a6 54727020 		.ascii	"Trp Cons\000"
+ 481      436F6E73 
+ 481      00
+ 482 08af 54727020 		.ascii	"Trp Fuel\000"
+ 482      4675656C 
+ 482      00
+ 483 08b8 54727020 		.ascii	"Trp Dist\000"
+ 483      44697374 
+ 483      00
+ 484 08c1 42617474 		.ascii	"Batt Vlt\000"
+ 484      20566C74 
+ 484      00
+ 485 08ca 4F757420 		.ascii	"Out Cons\000"
+ 485      436F6E73 
+ 485      00
+ 486 08d3 4F757420 		.ascii	"Out Fuel\000"
+ 486      4675656C 
+ 486      00
+ 487 08dc 4F757420 		.ascii	"Out Dist\000"
+ 487      44697374 
+ 487      00
+ 488 08e5 43616E20 		.ascii	"Can Stat\000"
+ 488      53746174 
+ 488      00
+ 489 08ee 5049445F 		.ascii	"PID_SEC\000"
+ 489      53454300 
+ 490 08f6 00       		.space	1
+ 491 08f7 45636F20 		.ascii	"Eco Vis\000"
+ 491      56697300 
+ 492 08ff 00       		.space	1
+ 493              		.global	obd_std_strings
+ 494              		.align	2
+ 497              	obd_std_strings:
+ 498 0900 4F424432 		.ascii	"OBD2CARB\000"
+ 498      43415242 
+ 498      00
+ 499 0909 00       		.space	1
+ 500 090a 4F424445 		.ascii	"OBDEPA\000"
+ 500      504100
+ 501 0911 000000   		.space	3
+ 502 0914 4F424445 		.ascii	"OBDEPA&2\000"
+ 502      50412632 
+ 502      00
+ 503 091d 00       		.space	1
+ 504 091e 4F424431 		.ascii	"OBD1\000"
+ 504      00
+ 505 0923 00000000 		.space	5
+ 505      00
+ 506 0928 4E4F204F 		.ascii	"NO OBD\000"
+ 506      424400
+ 507 092f 000000   		.space	3
+ 508 0932 454F4244 		.ascii	"EOBD\000"
+ 508      00
+ 509 0937 00000000 		.space	5
+ 509      00
+ 510 093c 454F4244 		.ascii	"EOBD&ODB2\000"
+ 510      264F4442 
+ 510      3200
+ 511 0946 454F4244 		.ascii	"EOBD&EPA\000"
+ 511      26455041 
+ 511      00
+ 512 094f 00       		.space	1
+ 513 0950 45264550 		.ascii	"E&EPA&2\000"
+ 513      41263200 
+ 514 0958 0000     		.space	2
+ 515 095a 4A4F4244 		.ascii	"JOBD\000"
+ 515      00
+ 516 095f 00000000 		.space	5
+ 516      00
+ 517 0964 4A4F4244 		.ascii	"JOBD&2\000"
+ 517      263200
+ 518 096b 000000   		.space	3
+ 519 096e 4A26454F 		.ascii	"J&EOBD\000"
+ 519      424400
+ 520 0975 000000   		.space	3
+ 521 0978 4A26454F 		.ascii	"J&EOBD&2\000"
+ 521      42442632 
+ 521      00
+ 522 0981 00       		.space	1
+ 523 0982 4555524F 		.ascii	"EURO4B1\000"
+ 523      34423100 
+ 524 098a 0000     		.space	2
+ 525 098c 4555524F 		.ascii	"EURO5B2\000"
+ 525      35423200 
+ 526 0994 0000     		.space	2
+ 527 0996 4555524F 		.ascii	"EURO C\000"
+ 527      204300
+ 528 099d 000000   		.space	3
+ 529 09a0 454D4400 		.ascii	"EMD\000"
+ 530 09a4 00000000 		.space	6
+ 530      0000
+ 531              		.global	pid_reslen
+ 532 09aa 0000     		.align	2
+ 535              	pid_reslen:
+ 536 09ac 04       		.byte	4
+ 537 09ad 04       		.byte	4
+ 538 09ae 02       		.byte	2
+ 539 09af 02       		.byte	2
+ 540 09b0 01       		.byte	1
+ 541 09b1 01       		.byte	1
+ 542 09b2 01       		.byte	1
+ 543 09b3 01       		.byte	1
+ 544 09b4 01       		.byte	1
+ 545 09b5 01       		.byte	1
+ 546 09b6 01       		.byte	1
+ 547 09b7 01       		.byte	1
+ 548 09b8 02       		.byte	2
+ 549 09b9 01       		.byte	1
+ 550 09ba 01       		.byte	1
+ 551 09bb 01       		.byte	1
+ 552 09bc 02       		.byte	2
+ 553 09bd 01       		.byte	1
+ 554 09be 01       		.byte	1
+ 555 09bf 01       		.byte	1
+ 556 09c0 02       		.byte	2
+ 557 09c1 02       		.byte	2
+ 558 09c2 02       		.byte	2
+ 559 09c3 02       		.byte	2
+ 560 09c4 02       		.byte	2
+ 561 09c5 02       		.byte	2
+ 562 09c6 02       		.byte	2
+ 563 09c7 02       		.byte	2
+ 564 09c8 01       		.byte	1
+ 565 09c9 01       		.byte	1
+ 566 09ca 01       		.byte	1
+ 567 09cb 04       		.byte	4
+ 568 09cc 04       		.byte	4
+ 569 09cd 02       		.byte	2
+ 570 09ce 02       		.byte	2
+ 571 09cf 02       		.byte	2
+ 572 09d0 04       		.byte	4
+ 573 09d1 04       		.byte	4
+ 574 09d2 04       		.byte	4
+ 575 09d3 04       		.byte	4
+ 576 09d4 04       		.byte	4
+ 577 09d5 04       		.byte	4
+ 578 09d6 04       		.byte	4
+ 579 09d7 04       		.byte	4
+ 580 09d8 01       		.byte	1
+ 581 09d9 01       		.byte	1
+ 582 09da 01       		.byte	1
+ 583 09db 01       		.byte	1
+ 584 09dc 01       		.byte	1
+ 585 09dd 02       		.byte	2
+ 586 09de 02       		.byte	2
+ 587 09df 01       		.byte	1
+ 588 09e0 04       		.byte	4
+ 589 09e1 04       		.byte	4
+ 590 09e2 04       		.byte	4
+ 591 09e3 04       		.byte	4
+ 592 09e4 04       		.byte	4
+ 593 09e5 04       		.byte	4
+ 594 09e6 04       		.byte	4
+ 595 09e7 04       		.byte	4
+ 596 09e8 02       		.byte	2
+ 597 09e9 02       		.byte	2
+ 598 09ea 02       		.byte	2
+ 599 09eb 02       		.byte	2
+ 600 09ec 04       		.byte	4
+ 601 09ed 08       		.byte	8
+ 602 09ee 02       		.byte	2
+ 603 09ef 02       		.byte	2
+ 604 09f0 02       		.byte	2
+ 605 09f1 01       		.byte	1
+ 606 09f2 01       		.byte	1
+ 607 09f3 01       		.byte	1
+ 608 09f4 01       		.byte	1
+ 609 09f5 01       		.byte	1
+ 610 09f6 01       		.byte	1
+ 611 09f7 01       		.byte	1
+ 612 09f8 01       		.byte	1
+ 613 09f9 02       		.byte	2
+ 614 09fa 02       		.byte	2
+ 615              		.comm	ECU_Test,256,4
+ 616              		.comm	CanRecMsgObj,144,4
+ 617              		.comm	CanTxMsgObj,24,4
+ 618              		.global	Data_Control_Frame
+ 619 09fb 00       		.align	2
+ 622              	Data_Control_Frame:
+ 623 09fc 30       		.byte	48
+ 624 09fd 00       		.byte	0
+ 625 09fe 55       		.byte	85
+ 626 09ff 00       		.byte	0
+ 627 0a00 00       		.byte	0
+ 628 0a01 00       		.byte	0
+ 629 0a02 00       		.byte	0
+ 630 0a03 00       		.byte	0
+ 631              		.global	Data
+ 632              		.align	2
+ 635              	Data:
+ 636 0a04 02       		.byte	2
+ 637 0a05 01       		.byte	1
+ 638 0a06 20       		.byte	32
+ 639 0a07 00       		.byte	0
+ 640 0a08 00       		.byte	0
+ 641 0a09 00       		.byte	0
+ 642 0a0a 00       		.byte	0
+ 643 0a0b 00       		.byte	0
+ 644              		.global	data_uart
+ 645              		.align	2
+ 648              	data_uart:
+ 649 0a0c 4F424420 		.ascii	"OBD II TEST \012\015\000"
+ 649      49492054 
+ 649      45535420 
+ 649      0A0D00
+ 650              		.global	can_uart_error
+ 651 0a1b 00       		.align	2
+ 654              	can_uart_error:
+ 655 0a1c 4572726F 		.ascii	"Error While receiving CAN Packet\000"
+ 655      72205768 
+ 655      696C6520 
+ 655      72656365 
+ 655      6976696E 
+ 656              		.global	data_uart_end
+ 657 0a3d 000000   		.align	2
+ 660              	data_uart_end:
+ 661 0a40 3D3D3D3D 		.ascii	"====\012\015\000"
+ 661      0A0D00
+ 662              		.comm	can_uart_buffer,50,4
+ 663              		.comm	PID_Val,1,1
+ 664              		.comm	MODE_Val,1,1
+ 665              		.comm	Data_Len,1,1
+ 666              		.comm	ECU_Val,2,2
+ 667              		.global	Engine_RPM
+ 668 0a47 00       		.bss
+ 669              		.align	2
+ 672              	Engine_RPM:
+ 673 0004 00000000 		.space	4
+ 674              		.global	Vehicle_Speed
+ 675              		.align	2
+ 678              	Vehicle_Speed:
+ 679 0008 00000000 		.space	4
+ 680              		.global	Fuel_Level
+ 681              		.align	2
+ 684              	Fuel_Level:
+ 685 000c 00000000 		.space	4
+ 686              		.global	VIN_Flag
+ 689              	VIN_Flag:
+ 690 0010 00       		.space	1
+ 691              		.global	CAN_Rx_Flag
+ 694              	CAN_Rx_Flag:
+ 695 0011 00       		.space	1
+ 696              		.global	CAN_Tx_FLAG
+ 699              	CAN_Tx_FLAG:
+ 700 0012 00       		.space	1
+ 701              		.global	CAN_RX_Pkt_Count
+ 704              	CAN_RX_Pkt_Count:
+ 705 0013 00       		.space	1
+ 706              		.global	temp
+ 709              	temp:
+ 710 0014 00       		.space	1
+ 711              		.comm	Sniffer_Buffer,30,4
+ 712 0015 000000   		.section	.rodata
+ 713              		.align	2
+ 714              	.LC0:
+ 715 0000 536E6966 		.ascii	"Sniffer \012\015\000"
+ 715      66657220 
+ 715      0A0D00
+ 716              		.section	.text.main,"ax",%progbits
+ 717              		.align	2
+ 718              		.global	main
+ 719              		.thumb
+ 720              		.thumb_func
+ 722              	main:
+ 723              	.LFB117:
+ 724              		.file 1 "../Main.c"
+   1:../Main.c     **** /*
+   2:../Main.c     ****  * Main.c
+   3:../Main.c     ****  *
+   4:../Main.c     ****  *  Created on: May 19, 2014
+   5:../Main.c     ****  *      Author: Aqeel
+   6:../Main.c     ****  */
+   7:../Main.c     **** #include <DAVE3.h>			//Declarations from DAVE3 Code Generation (includes SFR declaration)
+   8:../Main.c     **** #include "Timer.h"
+   9:../Main.c     **** #include "OBDIICANBS.h"
+  10:../Main.c     **** #include <stdio.h>
+  11:../Main.c     **** //#include <stdlib.h>
+  12:../Main.c     **** #include <string.h>
+  13:../Main.c     **** #include <newlib.h>
+  14:../Main.c     **** #define Sniffer
+  15:../Main.c     **** #ifdef Sniffer
+  16:../Main.c     **** uint8_t Sniffer_Buffer[30];
+  17:../Main.c     **** #endif
+  18:../Main.c     **** 
+  19:../Main.c     **** void delay(void);
+  20:../Main.c     **** uint8_t StoreData(uint8_t Mode);
+  21:../Main.c     **** void PrintData(uint8_t Param,uint8_t ECU_Index);
+  22:../Main.c     **** void print_Uart(char Str[]);
+  23:../Main.c     **** bool is_pid_supported(unsigned char pid, unsigned char mode,uint8_t ECU_Index);
+  24:../Main.c     **** //void TimerOneSec(void * args);
+  25:../Main.c     **** //void TimerInt(void * args);
+  26:../Main.c     **** //void TimerWaitISR (void * args);
+  27:../Main.c     **** 
+  28:../Main.c     **** uint8_t Get_PID(uint16_t TimeToWait,uint8_t Mode_Req,uint8_t PID_Req,uint8_t ShowOP);
+  29:../Main.c     **** uint8_t Get_VIN(uint8_t TimeToWait);
+  30:../Main.c     **** //CAN001_MessageHandleType CanTxMsgObj;
+  31:../Main.c     **** int main(void)
+  32:../Main.c     **** {
+ 725              		.loc 1 32 0
+ 726              		.cfi_startproc
+ 727              		@ args = 0, pretend = 0, frame = 16
+ 728              		@ frame_needed = 1, uses_anonymous_args = 0
+ 729 0000 80B5     		push	{r7, lr}
+ 730              	.LCFI0:
+ 731              		.cfi_def_cfa_offset 8
+ 732              		.cfi_offset 7, -8
+ 733              		.cfi_offset 14, -4
+ 734 0002 84B0     		sub	sp, sp, #16
+ 735              	.LCFI1:
+ 736              		.cfi_def_cfa_offset 24
+ 737 0004 00AF     		add	r7, sp, #0
+ 738              	.LCFI2:
+ 739              		.cfi_def_cfa_register 7
+  33:../Main.c     **** 	status_t status;		// Declaration of return variable for DAVE3 APIs (toggle comment if required)
+  34:../Main.c     **** 
+  35:../Main.c     **** 
+  36:../Main.c     **** 	uint8_t Btn1;
+  37:../Main.c     **** //	uint8_t VIN_Supp[] = "VIN NOT Supported.... \n\r";
+  38:../Main.c     **** //	uint8_t CALID_Supp[] = "CALID NOT Supported...\n\r";
+  39:../Main.c     **** 	uint8_t ECU_Index=0;
+ 740              		.loc 1 39 0
+ 741 0006 4FF00003 		mov	r3, #0
+ 742 000a FB73     		strb	r3, [r7, #15]
+  40:../Main.c     **** 
+  41:../Main.c     **** 	DAVE_Init();			// Initialization of DAVE Apps
+ 743              		.loc 1 41 0
+ 744 000c FFF7FEFF 		bl	DAVE_Init
+  42:../Main.c     ****     TimerId = SYSTM001_CreateTimer(50,SYSTM001_ONE_SHOT,TimerInt,NULL);
+ 745              		.loc 1 42 0
+ 746 0010 4FF03200 		mov	r0, #50
+ 747 0014 4FF00001 		mov	r1, #0
+ 748 0018 40F20002 		movw	r2, #:lower16:TimerInt
+ 749 001c C0F20002 		movt	r2, #:upper16:TimerInt
+ 750 0020 4FF00003 		mov	r3, #0
+ 751 0024 FFF7FEFF 		bl	SYSTM001_CreateTimer
+ 752 0028 0246     		mov	r2, r0
+ 753 002a 40F20003 		movw	r3, #:lower16:TimerId
+ 754 002e C0F20003 		movt	r3, #:upper16:TimerId
+ 755 0032 1A60     		str	r2, [r3, #0]
+  43:../Main.c     **** //    TimerId1Sec = SYSTM001_CreateTimer(2000,SYSTM001_PERIODIC,TimerOneSec,NULL);
+  44:../Main.c     ****     Timer_WaitId=SYSTM001_CreateTimer(4000,SYSTM001_ONE_SHOT,TimerWaitISR,NULL);
+ 756              		.loc 1 44 0
+ 757 0034 4FF47A60 		mov	r0, #4000
+ 758 0038 4FF00001 		mov	r1, #0
+ 759 003c 40F20002 		movw	r2, #:lower16:TimerWaitISR
+ 760 0040 C0F20002 		movt	r2, #:upper16:TimerWaitISR
+ 761 0044 4FF00003 		mov	r3, #0
+ 762 0048 FFF7FEFF 		bl	SYSTM001_CreateTimer
+ 763 004c 0246     		mov	r2, r0
+ 764 004e 40F20003 		movw	r3, #:lower16:Timer_WaitId
+ 765 0052 C0F20003 		movt	r3, #:upper16:Timer_WaitId
+ 766 0056 1A60     		str	r2, [r3, #0]
+  45:../Main.c     **** 
+  46:../Main.c     **** 
+  47:../Main.c     **** 
+  48:../Main.c     ****     CanTxMsgObj.Identifier=FUNC_PID_REQUEST;
+ 767              		.loc 1 48 0
+ 768 0058 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 769 005c C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 770 0060 40F2DF72 		movw	r2, #2015
+ 771 0064 1A60     		str	r2, [r3, #0]
+  49:../Main.c     **** 	CanTxMsgObj.DataLength=8;
+ 772              		.loc 1 49 0
+ 773 0066 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 774 006a C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 775 006e 4FF00802 		mov	r2, #8
+ 776 0072 9A72     		strb	r2, [r3, #10]
+  50:../Main.c     **** 	CanTxMsgObj.data[0]=Data[0];
+ 777              		.loc 1 50 0
+ 778 0074 40F20003 		movw	r3, #:lower16:Data
+ 779 0078 C0F20003 		movt	r3, #:upper16:Data
+ 780 007c 1A78     		ldrb	r2, [r3, #0]	@ zero_extendqisi2
+ 781 007e 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 782 0082 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 783 0086 DA72     		strb	r2, [r3, #11]
+  51:../Main.c     **** 	CanTxMsgObj.data[1]=Data[1];
+ 784              		.loc 1 51 0
+ 785 0088 40F20003 		movw	r3, #:lower16:Data
+ 786 008c C0F20003 		movt	r3, #:upper16:Data
+ 787 0090 5A78     		ldrb	r2, [r3, #1]	@ zero_extendqisi2
+ 788 0092 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 789 0096 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 790 009a 1A73     		strb	r2, [r3, #12]
+  52:../Main.c     **** 	CanTxMsgObj.data[2]=Data[2];
+ 791              		.loc 1 52 0
+ 792 009c 40F20003 		movw	r3, #:lower16:Data
+ 793 00a0 C0F20003 		movt	r3, #:upper16:Data
+ 794 00a4 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2
+ 795 00a6 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 796 00aa C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 797 00ae 5A73     		strb	r2, [r3, #13]
+  53:../Main.c     **** 	CanTxMsgObj.data[3]=Data[3];
+ 798              		.loc 1 53 0
+ 799 00b0 40F20003 		movw	r3, #:lower16:Data
+ 800 00b4 C0F20003 		movt	r3, #:upper16:Data
+ 801 00b8 DA78     		ldrb	r2, [r3, #3]	@ zero_extendqisi2
+ 802 00ba 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 803 00be C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 804 00c2 9A73     		strb	r2, [r3, #14]
+  54:../Main.c     **** 	CanTxMsgObj.data[4]=Data[4];
+ 805              		.loc 1 54 0
+ 806 00c4 40F20003 		movw	r3, #:lower16:Data
+ 807 00c8 C0F20003 		movt	r3, #:upper16:Data
+ 808 00cc 1A79     		ldrb	r2, [r3, #4]	@ zero_extendqisi2
+ 809 00ce 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 810 00d2 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 811 00d6 DA73     		strb	r2, [r3, #15]
+  55:../Main.c     **** 	CanTxMsgObj.data[5]=Data[5];
+ 812              		.loc 1 55 0
+ 813 00d8 40F20003 		movw	r3, #:lower16:Data
+ 814 00dc C0F20003 		movt	r3, #:upper16:Data
+ 815 00e0 5A79     		ldrb	r2, [r3, #5]	@ zero_extendqisi2
+ 816 00e2 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 817 00e6 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 818 00ea 1A74     		strb	r2, [r3, #16]
+  56:../Main.c     **** 	CanTxMsgObj.data[6]=Data[6];
+ 819              		.loc 1 56 0
+ 820 00ec 40F20003 		movw	r3, #:lower16:Data
+ 821 00f0 C0F20003 		movt	r3, #:upper16:Data
+ 822 00f4 9A79     		ldrb	r2, [r3, #6]	@ zero_extendqisi2
+ 823 00f6 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 824 00fa C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 825 00fe 5A74     		strb	r2, [r3, #17]
+  57:../Main.c     **** 	CanTxMsgObj.data[7]=Data[7];
+ 826              		.loc 1 57 0
+ 827 0100 40F20003 		movw	r3, #:lower16:Data
+ 828 0104 C0F20003 		movt	r3, #:upper16:Data
+ 829 0108 DA79     		ldrb	r2, [r3, #7]	@ zero_extendqisi2
+ 830 010a 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 831 010e C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 832 0112 9A74     		strb	r2, [r3, #18]
+  58:../Main.c     **** 	CanTxMsgObj.IDExten=STANDARDTYPE;
+ 833              		.loc 1 58 0
+ 834 0114 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 835 0118 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 836 011c 4FF00002 		mov	r2, #0
+ 837 0120 1A72     		strb	r2, [r3, #8]
+  59:../Main.c     **** 	CanTxMsgObj.MsgObjEN=CAN001_ENABLE;
+ 838              		.loc 1 59 0
+ 839 0122 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 840 0126 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 841 012a 4FF00102 		mov	r2, #1
+ 842 012e DA74     		strb	r2, [r3, #19]
+  60:../Main.c     **** 	CanTxMsgObj.MsgObjType=TRANSMSGOBJ;
+ 843              		.loc 1 60 0
+ 844 0130 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 845 0134 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 846 0138 4FF00102 		mov	r2, #1
+ 847 013c 1A75     		strb	r2, [r3, #20]
+  61:../Main.c     **** 	CanTxMsgObj.IDMask=0x00;
+ 848              		.loc 1 61 0
+ 849 013e 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 850 0142 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 851 0146 4FF00002 		mov	r2, #0
+ 852 014a 5A60     		str	r2, [r3, #4]
+  62:../Main.c     **** 	CanTxMsgObj.IDExten=0x00;
+ 853              		.loc 1 62 0
+ 854 014c 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 855 0150 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 856 0154 4FF00002 		mov	r2, #0
+ 857 0158 1A72     		strb	r2, [r3, #8]
+  63:../Main.c     **** 
+  64:../Main.c     **** 	status=CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 858              		.loc 1 64 0
+ 859 015a 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 860 015e C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 861 0162 40F20001 		movw	r1, #:lower16:CanTxMsgObj
+ 862 0166 C0F20001 		movt	r1, #:upper16:CanTxMsgObj
+ 863 016a 4FF00102 		mov	r2, #1
+ 864 016e FFF7FEFF 		bl	CAN001_ConfigMsgObj
+ 865 0172 B860     		str	r0, [r7, #8]
+  65:../Main.c     **** 	  /* Update data value to be transmitted by  Node "Request" in message object 1 (LM01) with ID 0x2
+  66:../Main.c     **** 	  CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 866              		.loc 1 66 0
+ 867 0174 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 868 0178 C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 869 017c 4FF00101 		mov	r1, #1
+ 870 0180 4FF00802 		mov	r2, #8
+ 871 0184 40F20003 		movw	r3, #:lower16:Data
+ 872 0188 C0F20003 		movt	r3, #:upper16:Data
+ 873 018c FFF7FEFF 		bl	CAN001_UpdateMODataRegisters
+  67:../Main.c     **** 	  /* Send Data frame with ID 0x255 on chip internal CAN bus (Loop-Back Mode) */
+  68:../Main.c     **** //	  status=CAN001_SendDataFrame(&CAN001_Handle0,1); //
+  69:../Main.c     **** 
+  70:../Main.c     **** 	  Btn1 = IO004_ReadPin(IO004_Handle1);
+ 874              		.loc 1 70 0
+ 875 0190 40F20003 		movw	r3, #:lower16:IO004_Handle1
+ 876 0194 C0F20003 		movt	r3, #:upper16:IO004_Handle1
+ 877 0198 5B68     		ldr	r3, [r3, #4]
+ 878 019a 5A6A     		ldr	r2, [r3, #36]
+ 879 019c 40F20003 		movw	r3, #:lower16:IO004_Handle1
+ 880 01a0 C0F20003 		movt	r3, #:upper16:IO004_Handle1
+ 881 01a4 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
+ 882 01a6 22FA03F3 		lsr	r3, r2, r3
+ 883 01aa DBB2     		uxtb	r3, r3
+ 884 01ac 03F00103 		and	r3, r3, #1
+ 885 01b0 FB71     		strb	r3, [r7, #7]
+  71:../Main.c     **** 	  IO004_SetOutputValue(IO004_Handle0,1);
+ 886              		.loc 1 71 0
+ 887 01b2 40F20003 		movw	r3, #:lower16:IO004_Handle0
+ 888 01b6 C0F20003 		movt	r3, #:upper16:IO004_Handle0
+ 889 01ba 5A68     		ldr	r2, [r3, #4]
+ 890 01bc 40F20003 		movw	r3, #:lower16:IO004_Handle0
+ 891 01c0 C0F20003 		movt	r3, #:upper16:IO004_Handle0
+ 892 01c4 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
+ 893 01c6 4FF00101 		mov	r1, #1
+ 894 01ca 01FA03F3 		lsl	r3, r1, r3
+ 895 01ce 5360     		str	r3, [r2, #4]
+  72:../Main.c     **** 	  IO004_SetOutputValue(IO004_Handle2,1);
+ 896              		.loc 1 72 0
+ 897 01d0 40F20003 		movw	r3, #:lower16:IO004_Handle2
+ 898 01d4 C0F20003 		movt	r3, #:upper16:IO004_Handle2
+ 899 01d8 5A68     		ldr	r2, [r3, #4]
+ 900 01da 40F20003 		movw	r3, #:lower16:IO004_Handle2
+ 901 01de C0F20003 		movt	r3, #:upper16:IO004_Handle2
+ 902 01e2 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
+ 903 01e4 4FF00101 		mov	r1, #1
+ 904 01e8 01FA03F3 		lsl	r3, r1, r3
+ 905 01ec 5360     		str	r3, [r2, #4]
+  73:../Main.c     **** //	  printf("hello world");
+  74:../Main.c     **** //	  UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&data_uart, (uint32_t)strlen(data_uart));
+  75:../Main.c     **** #ifndef Sniffer
+  76:../Main.c     **** 	  for(double i=0;i<5000;i++);
+  77:../Main.c     **** 	  print_Uart("M0 P00 \n\r");
+  78:../Main.c     **** 	  Get_PID(1000,MODE_CURR_DATA,PID_SUPPORT00,PRINT_NOTHING);
+  79:../Main.c     **** 		for(double i=0;i<5000;i++);
+  80:../Main.c     **** 	  print_Uart("M0 P20 \n\r");
+  81:../Main.c     **** 	  Get_PID(1000,MODE_CURR_DATA,PID_SUPPORT20,PRINT_NOTHING);
+  82:../Main.c     **** 	for(double i=0;i<5000;i++);
+  83:../Main.c     **** 		print_Uart("M9 P00 \n\r");
+  84:../Main.c     **** 		Get_PID(1000,MODE_REQ_VIN,PID_SUPPORT00,PRINT_NOTHING);
+  85:../Main.c     **** 	for(double i=0;i<5000;i++);
+  86:../Main.c     **** 		print_Uart("M9 P02 \n\r");
+  87:../Main.c     **** 		Get_PID(2000,MODE_REQ_VIN,VIN_NUM,PRINT_ECU_INFO);
+  88:../Main.c     **** //		for(double i=0;i<5000;i++);
+  89:../Main.c     **** //			print_Uart("M9 P04 \n\r");
+  90:../Main.c     **** //			Get_PID(2000,MODE_REQ_VIN,CAL_ID,PRINT_ECU_INFO);
+  91:../Main.c     **** 
+  92:../Main.c     **** 		if(is_pid_supported(FUEL_LEVEL, MODE_CURR_DATA,0)||(is_pid_supported(FUEL_LEVEL, MODE_CURR_DATA,1
+  93:../Main.c     **** 			print_Uart("PID2F=1 \n\r");
+  94:../Main.c     **** 		else
+  95:../Main.c     **** 			print_Uart("PID2F=0 \n\r");
+  96:../Main.c     **** #else
+  97:../Main.c     **** 		  print_Uart("Sniffer \n\r");
+ 906              		.loc 1 97 0
+ 907 01ee 40F20000 		movw	r0, #:lower16:.LC0
+ 908 01f2 C0F20000 		movt	r0, #:upper16:.LC0
+ 909 01f6 FFF7FEFF 		bl	print_Uart
+ 910              	.L2:
+  98:../Main.c     **** #endif
+  99:../Main.c     **** 	  while(1){
+ 100:../Main.c     **** //		  if(!(IO004_ReadPin(IO004_Handle1)))
+ 101:../Main.c     **** //		SYSTM001_StartTimer (TimerId1Sec);
+ 102:../Main.c     **** //		  else if()
+ 103:../Main.c     **** #ifndef Sniffer
+ 104:../Main.c     **** 		  {
+ 105:../Main.c     **** 			for(double i=0;i<5000;i++);
+ 106:../Main.c     **** 		 //print_Uart("M0 P00 \n\r");
+ 107:../Main.c     **** 		  Get_PID(500,MODE_CURR_DATA,ENGINE_RPM,PRINT_NOTHING);
+ 108:../Main.c     **** 			for(double i=0;i<5000;i++);
+ 109:../Main.c     **** 		//print_Uart("M0 P20 \n\r");
+ 110:../Main.c     **** 		  Get_PID(500,MODE_CURR_DATA,VEHICLE_SPEED,PRINT_NOTHING);
+ 111:../Main.c     **** 		for(double i=0;i<5000;i++);
+ 112:../Main.c     **** 		//print_Uart("M9 P00 \n\r");
+ 113:../Main.c     **** 			Get_PID(500,MODE_CURR_DATA,FUEL_LEVEL,PRINT_NOTHING);
+ 114:../Main.c     **** 			for(double i=0;i<5000;i++);
+ 115:../Main.c     **** 			//print_Uart("M9 P00 \n\r");
+ 116:../Main.c     **** 				Get_PID(500,MODE_CURR_DATA,RUNTIME_START,PRINT_VEHICAL_DATA);
+ 117:../Main.c     **** 				delay();
+ 118:../Main.c     **** 		  }
+ 119:../Main.c     **** #endif
+ 120:../Main.c     **** 	  }
+ 911              		.loc 1 120 0 discriminator 1
+ 912 01fa FEE7     		b	.L2
+ 913              		.cfi_endproc
+ 914              	.LFE117:
+ 916              		.section	.rodata
+ 917 000b 00       		.align	2
+ 918              	.LC1:
+ 919 000c 49443D78 		.ascii	"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X "
+ 919      252E3458 
+ 919      2C443D25 
+ 919      2E325820 
+ 919      252E3258 
+ 920 003f 0D0A00   		.ascii	"\015\012\000"
+ 921              		.section	.text.CAN0_1_IRQHandler,"ax",%progbits
+ 922              		.align	2
+ 923              		.global	CAN0_1_IRQHandler
+ 924              		.thumb
+ 925              		.thumb_func
+ 927              	CAN0_1_IRQHandler:
+ 928              	.LFB118:
+ 121:../Main.c     **** 	  	return 0;
+ 122:../Main.c     **** 	  }
+ 123:../Main.c     **** //
+ 124:../Main.c     **** //
+ 125:../Main.c     **** //////	  while(!(ECU_Test[ECU_Index].Uconnection));	//wait till we get a reply from a CAN transceiv
+ 126:../Main.c     **** ////	  while(CAN_RX_Pkt_Count--)
+ 127:../Main.c     **** ////	  {
+ 128:../Main.c     **** ////	  StoreData(CAN_RX_Pkt_Count);
+ 129:../Main.c     **** ////	  PrintData(CAN_RX_Pkt_Count,PRINT_ECU_INFO);
+ 130:../Main.c     **** ////	  }
+ 131:../Main.c     **** ////	  for(double i=0;i<5000;i++);
+ 132:../Main.c     **** ////	  Data[2]=OBD_STD; /*Supported OBD STD*/
+ 133:../Main.c     **** ////	  CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 134:../Main.c     **** ////	  CAN001_SendDataFrame(&CAN001_Handle0,1);
+ 135:../Main.c     **** //
+ 136:../Main.c     **** ////	  //Send  VIN Number Query
+ 137:../Main.c     **** ////		for(double i=0;i<5000;i++);
+ 138:../Main.c     **** ////		Data[1]=MODE_REQ_VIN;
+ 139:../Main.c     **** ////		Data[2]=0x00;
+ 140:../Main.c     **** ////		CanTxMsgObj.Identifier=FUNC_PID_REQUEST;
+ 141:../Main.c     **** ////		CanTxMsgObj.data[1]=Data[1];
+ 142:../Main.c     **** ////		CanTxMsgObj.data[2]=Data[2];
+ 143:../Main.c     **** ////		status=CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 144:../Main.c     **** ////
+ 145:../Main.c     **** ////		CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 146:../Main.c     **** ////		CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 147:../Main.c     **** //		for(double i=0;i<50000;i++);
+ 148:../Main.c     **** //		Get_VIN(4000);
+ 149:../Main.c     **** //
+ 150:../Main.c     **** //	while(1)
+ 151:../Main.c     **** //	{
+ 152:../Main.c     **** //		if(!(IO004_ReadPin(IO004_Handle1)))
+ 153:../Main.c     **** //			SYSTM001_StartTimer (TimerId1Sec);
+ 154:../Main.c     **** //		if(time_secs>4 && CAN_Tx_FLAG)//if(!(IO004_ReadPin(IO004_Handle1)))
+ 155:../Main.c     **** //		{
+ 156:../Main.c     **** //	//			CanTxMsgObj.data[2]=0x1F;
+ 157:../Main.c     **** //				Data[1]=MODE_CURR_DATA;
+ 158:../Main.c     **** //				Data[2]=ENGINE_RPM;
+ 159:../Main.c     **** //				CanTxMsgObj.Identifier=FUNC_PID_REQUEST;
+ 160:../Main.c     **** //				CanTxMsgObj.data[1]=Data[1];
+ 161:../Main.c     **** //				CanTxMsgObj.data[2]=Data[2];
+ 162:../Main.c     **** //				status=CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 163:../Main.c     **** //				CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 164:../Main.c     **** //				CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 165:../Main.c     **** //				//sending 2nd Frame
+ 166:../Main.c     **** //				 for(double i=0;i<5000;i++);
+ 167:../Main.c     **** //				IO004_SetOutputValue(IO004_Handle0,1);
+ 168:../Main.c     **** //				Data[1]=MODE_CURR_DATA;
+ 169:../Main.c     **** //				Data[2]=VEHICLE_SPEED;
+ 170:../Main.c     **** //				CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 171:../Main.c     **** //				CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 172:../Main.c     **** //			//}
+ 173:../Main.c     **** ////				 for(double i=0;i<5000;i++);
+ 174:../Main.c     **** ////				IO004_SetOutputValue(IO004_Handle0,1);
+ 175:../Main.c     **** ////				Data[1]=MODE_CURR_DATA;
+ 176:../Main.c     **** ////				Data[2]=FUEL_LEVEL;
+ 177:../Main.c     **** ////				CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 178:../Main.c     **** ////				CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 179:../Main.c     **** //				CAN_Tx_FLAG=FALSE;
+ 180:../Main.c     **** //		}
+ 181:../Main.c     **** //		if(time_secs==1 && CAN_Tx_FLAG)
+ 182:../Main.c     **** //		{
+ 183:../Main.c     **** //			//Sending 3rd frame
+ 184:../Main.c     **** ////				Data[1]=MODE_REQ_VIN;
+ 185:../Main.c     **** ////				Data[2]=0x0A;
+ 186:../Main.c     **** ////				CanTxMsgObj.Identifier=FUNC_PID_REQUEST;
+ 187:../Main.c     **** ////				CanTxMsgObj.data[1]=Data[1];
+ 188:../Main.c     **** ////				CanTxMsgObj.data[2]=Data[2];
+ 189:../Main.c     **** ////				status=CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 190:../Main.c     **** ////				CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 191:../Main.c     **** ////				CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 192:../Main.c     **** //				CAN_Tx_FLAG=FALSE;
+ 193:../Main.c     **** //		}
+ 194:../Main.c     **** //		else if (time_secs==2 && CAN_Tx_FLAG)
+ 195:../Main.c     **** //		{
+ 196:../Main.c     **** ////			Data[1]=MODE_REQ_VIN;
+ 197:../Main.c     **** ////			Data[2]=VIN_NUM;
+ 198:../Main.c     **** ////			CanTxMsgObj.Identifier=FUNC_PID_REQUEST;
+ 199:../Main.c     **** ////			CanTxMsgObj.data[1]=Data[1];
+ 200:../Main.c     **** ////			CanTxMsgObj.data[2]=Data[2];
+ 201:../Main.c     **** ////			status=CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 202:../Main.c     **** ////			CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 203:../Main.c     **** ////			CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 204:../Main.c     **** ////			CAN_Tx_FLAG=FALSE;
+ 205:../Main.c     **** //		}
+ 206:../Main.c     **** //		else if (time_secs==3 && CAN_Tx_FLAG)
+ 207:../Main.c     **** //		{
+ 208:../Main.c     **** //			for(double i=0;i<5000;i++);
+ 209:../Main.c     **** //			Data[1]=MODE_REQ_VIN;
+ 210:../Main.c     **** //			Data[2]=CAL_ID;
+ 211:../Main.c     **** //			CanTxMsgObj.Identifier=FUNC_PID_REQUEST;
+ 212:../Main.c     **** //			CanTxMsgObj.data[1]=Data[1];
+ 213:../Main.c     **** //			CanTxMsgObj.data[2]=Data[2];
+ 214:../Main.c     **** //			status=CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 215:../Main.c     **** ////
+ 216:../Main.c     **** //			CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 217:../Main.c     **** //			CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 218:../Main.c     **** //			CAN_Tx_FLAG=FALSE;
+ 219:../Main.c     **** //		}
+ 220:../Main.c     **** //
+ 221:../Main.c     **** //		else if(CAN_RX_Pkt_Count)
+ 222:../Main.c     **** //		{
+ 223:../Main.c     **** //			//temp++;
+ 224:../Main.c     **** //			CAN_RX_Pkt_Count--;	//RX Buffer FIFO Empty.
+ 225:../Main.c     **** //			CAN_Rx_Flag=FALSE;
+ 226:../Main.c     **** //			if(CAN_Rx_Flag==CAN_PACKET_RX_ERROR)
+ 227:../Main.c     **** //				status=UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(c
+ 228:../Main.c     **** //
+ 229:../Main.c     **** //			ECU_Val=CanRecMsgObj[CAN_RX_Pkt_Count].Identifier;
+ 230:../Main.c     **** //			ECU_Index=ECU_Val-0x7E8;
+ 231:../Main.c     **** //			Data_Len=CanRecMsgObj[CAN_RX_Pkt_Count].data[0];
+ 232:../Main.c     **** //			MODE_Val=((CanRecMsgObj[CAN_RX_Pkt_Count].data[1])-(0x40));
+ 233:../Main.c     **** //			PID_Val=CanRecMsgObj[CAN_RX_Pkt_Count].data[2];
+ 234:../Main.c     **** ////			sprintf(can_uart_buffer,"ECU ID=0x%.4X PID=0x%.2X M=0x%.2X\n\r",ECU_Val,PID_Val,MODE_Val);
+ 235:../Main.c     **** ////			status=UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen
+ 236:../Main.c     **** ////			delay();
+ 237:../Main.c     **** //			if(MODE_Val==MODE_CURR_DATA)
+ 238:../Main.c     **** //			{
+ 239:../Main.c     **** //				switch (PID_Val)//PID query Message is same in response
+ 240:../Main.c     **** //				{
+ 241:../Main.c     **** //				case PID_SUPPORT00:
+ 242:../Main.c     **** //					sprintf(can_uart_buffer,"PIDs=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n",CanRecMsgObj[CAN_RX_Pkt_Count
+ 243:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer[0], (uint32_t)strlen(can
+ 244:../Main.c     **** //					break;
+ 245:../Main.c     **** //				case COOLANT_TEMP:
+ 246:../Main.c     **** //					sprintf(can_uart_buffer,"COOLANT_TEMP = %d C.  \r\n ",(CanRecMsgObj[CAN_RX_Pkt_Count].data[3
+ 247:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer[0], (uint32_t)strlen(can
+ 248:../Main.c     **** //					break;
+ 249:../Main.c     **** //
+ 250:../Main.c     **** //				case OBD_STD:
+ 251:../Main.c     **** //					sprintf(can_uart_buffer,"%s=%s,\r\n",PID_Desc[PID_Val],obd_std_strings[CanRecMsgObj[CAN_RX_P
+ 252:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer[0], (uint32_t)strlen(can
+ 253:../Main.c     **** //					break;
+ 254:../Main.c     **** //				case ENGINE_RPM:
+ 255:../Main.c     **** //					Engine_RPM=((float)(((float)CanRecMsgObj[CAN_RX_Pkt_Count].data[3]*256)+CanRecMsgObj[CAN_RX_
+ 256:../Main.c     **** //					sprintf(&can_uart_buffer[0],"%s=%0.2f RPM,\r\n",PID_Desc[PID_Val],Engine_RPM);
+ 257:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (char*)&can_uart_buffer[0], (uint32_t)strlen(can_ua
+ 258:../Main.c     **** //					break;
+ 259:../Main.c     **** //				case VEHICLE_SPEED:
+ 260:../Main.c     **** //					Vehicle_Speed=CanRecMsgObj[CAN_RX_Pkt_Count].data[3];
+ 261:../Main.c     **** //					sprintf(&can_uart_buffer[0],"%s=%0.2f KM,\r\n",PID_Desc[PID_Val],Vehicle_Speed);
+ 262:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (char*)&can_uart_buffer[0], (uint32_t)strlen(can_ua
+ 263:../Main.c     **** //					break;
+ 264:../Main.c     **** //				case FUEL_LEVEL:
+ 265:../Main.c     **** //					Fuel_Level=(float)(((float)CanRecMsgObj[CAN_RX_Pkt_Count].data[3]*100)/255);
+ 266:../Main.c     **** //					sprintf(&can_uart_buffer[0],"%s=%0.2f % ,\r\n",PID_Desc[PID_Val],Fuel_Level);
+ 267:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (char*)&can_uart_buffer[0], (uint32_t)strlen(can_ua
+ 268:../Main.c     **** //					break;
+ 269:../Main.c     **** //
+ 270:../Main.c     **** //				default:
+ 271:../Main.c     **** //					sprintf(can_uart_buffer,"data=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n",CanRecMsgObj[CAN_RX_Pkt_Count
+ 272:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(can_ua
+ 273:../Main.c     **** //					break;
+ 274:../Main.c     **** //				}
+ 275:../Main.c     **** //			}
+ 276:../Main.c     **** //			else if(MODE_Val==MODE_DTC)
+ 277:../Main.c     **** //			{
+ 278:../Main.c     **** //			switch(PID_Val)
+ 279:../Main.c     **** //				{
+ 280:../Main.c     **** //					case PID_SUPPORT00:
+ 281:../Main.c     **** //						sprintf(can_uart_buffer,"PIDs=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n",CanRecMsgObj[CAN_RX_Pkt_Coun
+ 282:../Main.c     **** //						status=UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strle
+ 283:../Main.c     **** //						break;
+ 284:../Main.c     **** //					default:
+ 285:../Main.c     **** //						sprintf(can_uart_buffer,"data=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n",CanRecMsgObj[CAN_RX_Pkt_Coun
+ 286:../Main.c     **** //						status=UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strle
+ 287:../Main.c     **** //						break;
+ 288:../Main.c     **** //				}
+ 289:../Main.c     **** //			}
+ 290:../Main.c     **** //			else if(MODE_Val==MODE_REQ_VIN)
+ 291:../Main.c     **** //			{
+ 292:../Main.c     **** //				switch(PID_Val)
+ 293:../Main.c     **** //				{
+ 294:../Main.c     **** //				case PID_SUPPORT00:
+ 295:../Main.c     **** //				sprintf(can_uart_buffer,"PIDs=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n",CanRecMsgObj[CAN_RX_Pkt_Count]
+ 296:../Main.c     **** //				status=UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(
+ 297:../Main.c     **** //				break;
+ 298:../Main.c     **** //				default:
+ 299:../Main.c     **** //				sprintf(can_uart_buffer,"data=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n",CanRecMsgObj[CAN_RX_Pkt_Count]
+ 300:../Main.c     **** //				status=UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(
+ 301:../Main.c     **** //				break;
+ 302:../Main.c     **** //				}
+ 303:../Main.c     **** //			}
+ 304:../Main.c     **** //			else if(Data_Len&0x10)// First Frame for VIN Check
+ 305:../Main.c     **** //			{
+ 306:../Main.c     **** //
+ 307:../Main.c     **** //				memcpy(ECU_Test[ECU_Index].VIN_Num,&CanRecMsgObj[CAN_RX_Pkt_Count].data[2],6);
+ 308:../Main.c     **** //				sprintf(can_uart_buffer,"CAL=x%.2X,%c,%c,%c,%c,%c,%c,\r\n",CanRecMsgObj[CAN_RX_Pkt_Count].dat
+ 309:../Main.c     **** //				UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(can_uar
+ 310:../Main.c     **** //
+ 311:../Main.c     **** //			}
+ 312:../Main.c     **** //			else if(Data_Len&0x20)
+ 313:../Main.c     **** //			{
+ 314:../Main.c     **** //				switch (Data_Len)
+ 315:../Main.c     **** //				{
+ 316:../Main.c     **** //				case 0x21:
+ 317:../Main.c     **** //					memcpy(&ECU_Test[ECU_Index].VIN_Num[6],&CanRecMsgObj[CAN_RX_Pkt_Count].data[1],8);
+ 318:../Main.c     **** //					sprintf(can_uart_buffer,"CAL=%c,%c,%c,%c,%c,%c,%c,\r\n",CanRecMsgObj[CAN_RX_Pkt_Count].data[
+ 319:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(can_ua
+ 320:../Main.c     **** //					break;
+ 321:../Main.c     **** //				case 0x22:
+ 322:../Main.c     **** //					memcpy(&ECU_Test[ECU_Index].VIN_Num[6+8],&CanRecMsgObj[CAN_RX_Pkt_Count].data[1],8);
+ 323:../Main.c     **** //					sprintf(can_uart_buffer,"CAL=%c,%c,%c,%c,%c,%c,%c,\r\n",CanRecMsgObj[CAN_RX_Pkt_Count].data[
+ 324:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(can_ua
+ 325:../Main.c     **** //					//sprintf(can_uart_buffer,"VIN=%s\r\n",ECU_Test[ECU_Index].VIN_Num);
+ 326:../Main.c     **** //					//UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(can_
+ 327:../Main.c     **** //					break;
+ 328:../Main.c     **** //				case 0x23:
+ 329:../Main.c     **** //					memcpy(&ECU_Test[ECU_Index].VIN_Num[6+8+8],&CanRecMsgObj[CAN_RX_Pkt_Count].data[1],8);
+ 330:../Main.c     **** //					sprintf(can_uart_buffer,"CAL=%s\r\n",ECU_Test[ECU_Index].VIN_Num);
+ 331:../Main.c     **** //					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(can_ua
+ 332:../Main.c     **** //					break;
+ 333:../Main.c     **** //				}
+ 334:../Main.c     **** //			}
+ 335:../Main.c     **** //			else{
+ 336:../Main.c     **** //				sprintf(can_uart_buffer,"R=x%.2X,x%.2X,x%.2X,x%.2X,x%.2X,x%.2X,x%.2X,x%.2X\r\n",CanRecMsgObj[
+ 337:../Main.c     **** //				status=UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_buffer, (uint32_t)strlen(
+ 338:../Main.c     **** //			}
+ 339:../Main.c     **** //			UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&data_uart_end, (uint32_t)strlen(data_uart_
+ 340:../Main.c     **** //		}
+ 341:../Main.c     **** //		else
+ 342:../Main.c     **** //		{
+ 343:../Main.c     **** //			  /* Send Data frame with ID 0x255 on chip internal CAN bus (Loop-Back Mode) */
+ 344:../Main.c     **** //			//CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 345:../Main.c     **** //			  IO004_SetOutputValue(IO004_Handle0,0);
+ 346:../Main.c     **** //		}
+ 347:../Main.c     **** //		for(double i=0;i<8000;i++);
+ 348:../Main.c     **** ////		status=UART001_WriteDataMultiple(&UART001_Handle0, (uint16_t*)&data_uart, (uint32_t)sizeof(da
+ 349:../Main.c     **** //
+ 350:../Main.c     **** //	      //wait till data frame is received.
+ 351:../Main.c     **** ////	       while(!(CAN001_GetMOFlagStatus(&CAN001_Handle0,1,RECEIVE_PENDING)))
+ 352:../Main.c     **** ////	       {}
+ 353:../Main.c     **** //	       // Read CAN message to handle CanRecMsgObj
+ 354:../Main.c     **** ////	       CAN001_ReadMsgObj(&CAN001_Handle0,&CanTxMsgObj,1);
+ 355:../Main.c     **** //	}
+ 356:../Main.c     **** //	return 0;
+ 357:../Main.c     **** //}
+ 358:../Main.c     **** 
+ 359:../Main.c     **** /*    if(Status == DAVEApp_SUCCESS)
+ 360:../Main.c     ****  *    {
+ 361:../Main.c     ****  *      //wait till data frame is received.
+ 362:../Main.c     ****  *      while(!(CAN001_GetMOFlagStatus(&CAN001_Handle0,1,RECEIVE_PENDING)))
+ 363:../Main.c     ****  *      {}
+ 364:../Main.c     ****  *      // Read CAN message to handle CanRecMsgObj
+ 365:../Main.c     ****  *      CAN001_ReadMsgObj(&CAN001_Handle0,&CanRecMsgObj,1);
+ 366:../Main.c     ****  *    }
+ 367:../Main.c     ****  */
+ 368:../Main.c     **** // CAN RX INTERRUPT ISR
+ 369:../Main.c     **** void EventHandlerCAN001_0()
+ 370:../Main.c     **** 
+ 371:../Main.c     **** 	{
+ 929              		.loc 1 371 0
+ 930              		.cfi_startproc
+ 931              		@ args = 0, pretend = 0, frame = 0
+ 932              		@ frame_needed = 1, uses_anonymous_args = 0
+ 933 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
+ 934              	.LCFI3:
+ 935              		.cfi_def_cfa_offset 28
+ 936              		.cfi_offset 4, -28
+ 937              		.cfi_offset 5, -24
+ 938              		.cfi_offset 6, -20
+ 939              		.cfi_offset 7, -16
+ 940              		.cfi_offset 8, -12
+ 941              		.cfi_offset 9, -8
+ 942              		.cfi_offset 14, -4
+ 943 0004 89B0     		sub	sp, sp, #36
+ 944              	.LCFI4:
+ 945              		.cfi_def_cfa_offset 64
+ 946 0006 08AF     		add	r7, sp, #32
+ 947              	.LCFI5:
+ 948              		.cfi_def_cfa 7, 32
+ 372:../Main.c     **** 	//CAN_RX_Pkt_Count++;
+ 373:../Main.c     **** //		/* Check transmit pending status in LMO1 */
+ 374:../Main.c     **** //		if(CAN001_GetMOFlagStatus(&CAN001_Handle0,1,TRANSMIT_PENDING) == CAN_SET)
+ 375:../Main.c     **** //		{
+ 376:../Main.c     **** //			/* Clear the flag */
+ 377:../Main.c     **** //			CAN001_ClearMOFlagStatus(&CAN001_Handle0,1,TRANSMIT_PENDING);
+ 378:../Main.c     **** //		}
+ 379:../Main.c     **** 		/* Check receive pending status in LMO2 */
+ 380:../Main.c     **** 		if(CAN001_GetMOFlagStatus(&CAN001_Handle0,2,RECEIVE_PENDING) == CAN_SET)
+ 949              		.loc 1 380 0
+ 950 0008 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 951 000c C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 952 0010 4FF00201 		mov	r1, #2
+ 953 0014 4FF00102 		mov	r2, #1
+ 954 0018 FFF7FEFF 		bl	CAN001_GetMOFlagStatus
+ 955 001c 0346     		mov	r3, r0
+ 956 001e 012B     		cmp	r3, #1
+ 957 0020 40F04C81 		bne	.L4
+ 381:../Main.c     **** 		{
+ 382:../Main.c     **** 			/* Clear the flag */
+ 383:../Main.c     **** 			CAN001_ClearMOFlagStatus(&CAN001_Handle0,2,RECEIVE_PENDING);
+ 958              		.loc 1 383 0
+ 959 0024 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 960 0028 C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 961 002c 4FF00201 		mov	r1, #2
+ 962 0030 4FF00102 		mov	r2, #1
+ 963 0034 FFF7FEFF 		bl	CAN001_ClearMOFlagStatus
+ 384:../Main.c     **** 			/* Read the received Message object and stores in variable CanRecMsgObj */
+ 385:../Main.c     **** 			CAN001_ReadMsgObj(&CAN001_Handle0,&CanRecMsgObj[CAN_RX_Pkt_Count],2);
+ 964              		.loc 1 385 0
+ 965 0038 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 966 003c C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 967 0040 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 968 0042 1A46     		mov	r2, r3
+ 969 0044 1346     		mov	r3, r2
+ 970 0046 4FEA4303 		lsl	r3, r3, #1
+ 971 004a 9B18     		adds	r3, r3, r2
+ 972 004c 4FEAC303 		lsl	r3, r3, #3
+ 973 0050 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 974 0054 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 975 0058 9B18     		adds	r3, r3, r2
+ 976 005a 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 977 005e C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 978 0062 1946     		mov	r1, r3
+ 979 0064 4FF00202 		mov	r2, #2
+ 980 0068 FFF7FEFF 		bl	CAN001_ReadMsgObj
+ 386:../Main.c     **** #ifndef Sniffer
+ 387:../Main.c     **** 			if((CanRecMsgObj[CAN_RX_Pkt_Count].Identifier==0x7e8) |(CanRecMsgObj[CAN_RX_Pkt_Count].Identifie
+ 388:../Main.c     **** 			{
+ 389:../Main.c     **** 				if(CanRecMsgObj[CAN_RX_Pkt_Count].data[0]==0x10)
+ 390:../Main.c     **** 				SYSTM001_StartTimer (TimerId);
+ 391:../Main.c     **** 				/* Switch on LED Pin 1.1  to indicate that the requested message is received*/
+ 392:../Main.c     **** 				IO004_TogglePin(IO004_Handle2);
+ 393:../Main.c     **** 				CAN_Rx_Flag=CAN_PACKET_RECEIVED;
+ 394:../Main.c     **** 				CAN_RX_Pkt_Count++;
+ 395:../Main.c     **** //				if(	CAN_RX_Pkt_Count)
+ 396:../Main.c     **** 			}
+ 397:../Main.c     **** #endif
+ 398:../Main.c     **** #ifdef Sniffer
+ 399:../Main.c     **** 			if((CanRecMsgObj[CAN_RX_Pkt_Count].data[2]!=0x0C) && ((CanRecMsgObj[CAN_RX_Pkt_Count].data[1]!=0
+ 981              		.loc 1 399 0
+ 982 006c 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 983 0070 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 984 0074 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 985 0076 1946     		mov	r1, r3
+ 986 0078 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 987 007c C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 988 0080 0B46     		mov	r3, r1
+ 989 0082 4FEA4303 		lsl	r3, r3, #1
+ 990 0086 5B18     		adds	r3, r3, r1
+ 991 0088 4FEAC303 		lsl	r3, r3, #3
+ 992 008c D318     		adds	r3, r2, r3
+ 993 008e 03F10A03 		add	r3, r3, #10
+ 994 0092 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 995 0094 0C2B     		cmp	r3, #12
+ 996 0096 00F01181 		beq	.L4
+ 997              		.loc 1 399 0 is_stmt 0 discriminator 1
+ 998 009a 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 999 009e C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1000 00a2 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1001 00a4 1946     		mov	r1, r3
+ 1002 00a6 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1003 00aa C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1004 00ae 0B46     		mov	r3, r1
+ 1005 00b0 4FEA4303 		lsl	r3, r3, #1
+ 1006 00b4 5B18     		adds	r3, r3, r1
+ 1007 00b6 4FEAC303 		lsl	r3, r3, #3
+ 1008 00ba D318     		adds	r3, r2, r3
+ 1009 00bc 03F10903 		add	r3, r3, #9
+ 1010 00c0 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 1011 00c2 412B     		cmp	r3, #65
+ 1012 00c4 16D1     		bne	.L5
+ 1013 00c6 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1014 00ca C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1015 00ce 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1016 00d0 1946     		mov	r1, r3
+ 1017 00d2 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1018 00d6 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1019 00da 0B46     		mov	r3, r1
+ 1020 00dc 4FEA4303 		lsl	r3, r3, #1
+ 1021 00e0 5B18     		adds	r3, r3, r1
+ 1022 00e2 4FEAC303 		lsl	r3, r3, #3
+ 1023 00e6 D318     		adds	r3, r2, r3
+ 1024 00e8 03F10903 		add	r3, r3, #9
+ 1025 00ec DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 1026 00ee 012B     		cmp	r3, #1
+ 1027 00f0 00F0E480 		beq	.L4
+ 1028              	.L5:
+ 400:../Main.c     **** 			{
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1029              		.loc 1 401 0 is_stmt 1
+ 1030 00f4 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1031 00f8 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1032 00fc 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1033 00fe 1946     		mov	r1, r3
+ 1034 0100 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1035 0104 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1036 0108 0B46     		mov	r3, r1
+ 1037 010a 4FEA4303 		lsl	r3, r3, #1
+ 1038 010e 5B18     		adds	r3, r3, r1
+ 1039 0110 4FEAC303 		lsl	r3, r3, #3
+ 1040 0114 D318     		adds	r3, r2, r3
+ 1041 0116 1D68     		ldr	r5, [r3, #0]
+ 1042 0118 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1043 011c C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1044 0120 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1045 0122 1946     		mov	r1, r3
+ 1046 0124 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1047 0128 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1048 012c 0B46     		mov	r3, r1
+ 1049 012e 4FEA4303 		lsl	r3, r3, #1
+ 1050 0132 5B18     		adds	r3, r3, r1
+ 1051 0134 4FEAC303 		lsl	r3, r3, #3
+ 1052 0138 D318     		adds	r3, r2, r3
+ 1053 013a 03F10803 		add	r3, r3, #8
+ 1054 013e DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 1055 0140 1C46     		mov	r4, r3
+ 402:../Main.c     **** 					CanRecMsgObj[CAN_RX_Pkt_Count].data[1],CanRecMsgObj[CAN_RX_Pkt_Count].data[2],CanRecMsgObj[CAN
+ 1056              		.loc 1 402 0
+ 1057 0142 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1058 0146 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1059 014a 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1060 014c 1946     		mov	r1, r3
+ 1061 014e 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1062 0152 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1063 0156 0B46     		mov	r3, r1
+ 1064 0158 4FEA4303 		lsl	r3, r3, #1
+ 1065 015c 5B18     		adds	r3, r3, r1
+ 1066 015e 4FEAC303 		lsl	r3, r3, #3
+ 1067 0162 D318     		adds	r3, r2, r3
+ 1068 0164 03F10903 		add	r3, r3, #9
+ 1069 0168 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1070              		.loc 1 401 0
+ 1071 016a 9946     		mov	r9, r3
+ 1072              		.loc 1 402 0
+ 1073 016c 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1074 0170 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1075 0174 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1076 0176 1946     		mov	r1, r3
+ 1077 0178 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1078 017c C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1079 0180 0B46     		mov	r3, r1
+ 1080 0182 4FEA4303 		lsl	r3, r3, #1
+ 1081 0186 5B18     		adds	r3, r3, r1
+ 1082 0188 4FEAC303 		lsl	r3, r3, #3
+ 1083 018c D318     		adds	r3, r2, r3
+ 1084 018e 03F10A03 		add	r3, r3, #10
+ 1085 0192 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1086              		.loc 1 401 0
+ 1087 0194 9846     		mov	r8, r3
+ 1088              		.loc 1 402 0
+ 1089 0196 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1090 019a C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1091 019e 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1092 01a0 1946     		mov	r1, r3
+ 1093 01a2 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1094 01a6 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1095 01aa 0B46     		mov	r3, r1
+ 1096 01ac 4FEA4303 		lsl	r3, r3, #1
+ 1097 01b0 5B18     		adds	r3, r3, r1
+ 1098 01b2 4FEAC303 		lsl	r3, r3, #3
+ 1099 01b6 D318     		adds	r3, r2, r3
+ 1100 01b8 03F10B03 		add	r3, r3, #11
+ 1101 01bc DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1102              		.loc 1 401 0
+ 1103 01be 9C46     		mov	ip, r3
+ 1104              		.loc 1 402 0
+ 1105 01c0 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1106 01c4 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1107 01c8 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1108 01ca 1946     		mov	r1, r3
+ 1109 01cc 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1110 01d0 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1111 01d4 0B46     		mov	r3, r1
+ 1112 01d6 4FEA4303 		lsl	r3, r3, #1
+ 1113 01da 5B18     		adds	r3, r3, r1
+ 1114 01dc 4FEAC303 		lsl	r3, r3, #3
+ 1115 01e0 D318     		adds	r3, r2, r3
+ 1116 01e2 03F10C03 		add	r3, r3, #12
+ 1117 01e6 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1118              		.loc 1 401 0
+ 1119 01e8 9E46     		mov	lr, r3
+ 1120              		.loc 1 402 0
+ 1121 01ea 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1122 01ee C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1123 01f2 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1124 01f4 1946     		mov	r1, r3
+ 1125 01f6 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1126 01fa C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1127 01fe 0B46     		mov	r3, r1
+ 1128 0200 4FEA4303 		lsl	r3, r3, #1
+ 1129 0204 5B18     		adds	r3, r3, r1
+ 1130 0206 4FEAC303 		lsl	r3, r3, #3
+ 1131 020a D318     		adds	r3, r2, r3
+ 1132 020c 03F10D03 		add	r3, r3, #13
+ 1133 0210 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1134              		.loc 1 401 0
+ 1135 0212 1E46     		mov	r6, r3
+ 1136              		.loc 1 402 0
+ 1137 0214 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1138 0218 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1139 021c 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1140 021e 1946     		mov	r1, r3
+ 1141 0220 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1142 0224 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1143 0228 0B46     		mov	r3, r1
+ 1144 022a 4FEA4303 		lsl	r3, r3, #1
+ 1145 022e 5B18     		adds	r3, r3, r1
+ 1146 0230 4FEAC303 		lsl	r3, r3, #3
+ 1147 0234 D318     		adds	r3, r2, r3
+ 1148 0236 03F10E03 		add	r3, r3, #14
+ 1149 023a DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1150              		.loc 1 401 0
+ 1151 023c 1846     		mov	r0, r3
+ 403:../Main.c     **** 					CanRecMsgObj[CAN_RX_Pkt_Count].data[7]);
+ 1152              		.loc 1 403 0
+ 1153 023e 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1154 0242 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1155 0246 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1156 0248 1946     		mov	r1, r3
+ 1157 024a 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1158 024e C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1159 0252 0B46     		mov	r3, r1
+ 1160 0254 4FEA4303 		lsl	r3, r3, #1
+ 1161 0258 5B18     		adds	r3, r3, r1
+ 1162 025a 4FEAC303 		lsl	r3, r3, #3
+ 1163 025e D318     		adds	r3, r2, r3
+ 1164 0260 03F10F03 		add	r3, r3, #15
+ 1165 0264 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 401:../Main.c     **** 			sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgOb
+ 1166              		.loc 1 401 0
+ 1167 0266 CDF80090 		str	r9, [sp, #0]
+ 1168 026a CDF80480 		str	r8, [sp, #4]
+ 1169 026e CDF808C0 		str	ip, [sp, #8]
+ 1170 0272 CDF80CE0 		str	lr, [sp, #12]
+ 1171 0276 0496     		str	r6, [sp, #16]
+ 1172 0278 0590     		str	r0, [sp, #20]
+ 1173 027a 0693     		str	r3, [sp, #24]
+ 1174 027c 40F20000 		movw	r0, #:lower16:Sniffer_Buffer
+ 1175 0280 C0F20000 		movt	r0, #:upper16:Sniffer_Buffer
+ 1176 0284 40F20001 		movw	r1, #:lower16:.LC1
+ 1177 0288 C0F20001 		movt	r1, #:upper16:.LC1
+ 1178 028c 2A46     		mov	r2, r5
+ 1179 028e 2346     		mov	r3, r4
+ 1180 0290 FFF7FEFF 		bl	sprintf
+ 404:../Main.c     **** 			UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&Sniffer_Buffer, (uint32_t)strlen(Sniffer_Buf
+ 1181              		.loc 1 404 0
+ 1182 0294 40F20000 		movw	r0, #:lower16:Sniffer_Buffer
+ 1183 0298 C0F20000 		movt	r0, #:upper16:Sniffer_Buffer
+ 1184 029c FFF7FEFF 		bl	strlen
+ 1185 02a0 0346     		mov	r3, r0
+ 1186 02a2 03F10103 		add	r3, r3, #1
+ 1187 02a6 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 1188 02aa C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 1189 02ae 40F20001 		movw	r1, #:lower16:Sniffer_Buffer
+ 1190 02b2 C0F20001 		movt	r1, #:upper16:Sniffer_Buffer
+ 1191 02b6 1A46     		mov	r2, r3
+ 1192 02b8 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 1193              	.L4:
+ 405:../Main.c     **** 			}
+ 406:../Main.c     **** #endif
+ 407:../Main.c     **** //			ECU_Test[ECU_Index].Uconnection=TRUE;
+ 408:../Main.c     **** 			//temp++;
+ 409:../Main.c     **** 		}
+ 410:../Main.c     **** 		/* Check for Node error */
+ 411:../Main.c     **** 		if(CAN001_GetNodeFlagStatus(&CAN001_Handle0,CAN001_ALERT_STATUS) == CAN_SET)
+ 1194              		.loc 1 411 0
+ 1195 02bc 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 1196 02c0 C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 1197 02c4 4FF02001 		mov	r1, #32
+ 1198 02c8 FFF7FEFF 		bl	CAN001_GetNodeFlagStatus
+ 1199 02cc 0346     		mov	r3, r0
+ 1200 02ce 012B     		cmp	r3, #1
+ 1201 02d0 0ED1     		bne	.L3
+ 412:../Main.c     **** 		{
+ 413:../Main.c     **** 			/* Clear the flag */
+ 414:../Main.c     **** 			CAN001_ClearNodeFlagStatus(&CAN001_Handle0,CAN001_ALERT_STATUS);
+ 1202              		.loc 1 414 0
+ 1203 02d2 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 1204 02d6 C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 1205 02da 4FF02001 		mov	r1, #32
+ 1206 02de FFF7FEFF 		bl	CAN001_ClearNodeFlagStatus
+ 415:../Main.c     **** 			CAN_Rx_Flag=CAN_PACKET_RX_ERROR;
+ 1207              		.loc 1 415 0
+ 1208 02e2 40F20003 		movw	r3, #:lower16:CAN_Rx_Flag
+ 1209 02e6 C0F20003 		movt	r3, #:upper16:CAN_Rx_Flag
+ 1210 02ea 4FF00202 		mov	r2, #2
+ 1211 02ee 1A70     		strb	r2, [r3, #0]
+ 1212              	.L3:
+ 416:../Main.c     **** 		}
+ 417:../Main.c     **** 	}
+ 1213              		.loc 1 417 0
+ 1214 02f0 07F10407 		add	r7, r7, #4
+ 1215 02f4 BD46     		mov	sp, r7
+ 1216 02f6 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
+ 1217              		.cfi_endproc
+ 1218              	.LFE118:
+ 1220              		.global	__aeabi_dadd
+ 1221              		.global	__aeabi_dcmplt
+ 1222 02fa 00BF     		.section	.text.delay,"ax",%progbits
+ 1223              		.align	2
+ 1224              		.global	delay
+ 1225              		.thumb
+ 1226              		.thumb_func
+ 1228              	delay:
+ 1229              	.LFB119:
+ 418:../Main.c     **** void delay(void)
+ 419:../Main.c     **** {
+ 1230              		.loc 1 419 0
+ 1231              		.cfi_startproc
+ 1232              		@ args = 0, pretend = 0, frame = 8
+ 1233              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1234 0000 80B5     		push	{r7, lr}
+ 1235              	.LCFI6:
+ 1236              		.cfi_def_cfa_offset 8
+ 1237              		.cfi_offset 7, -8
+ 1238              		.cfi_offset 14, -4
+ 1239 0002 82B0     		sub	sp, sp, #8
+ 1240              	.LCFI7:
+ 1241              		.cfi_def_cfa_offset 16
+ 1242 0004 00AF     		add	r7, sp, #0
+ 1243              	.LCFI8:
+ 1244              		.cfi_def_cfa_register 7
+ 1245              	.LBB2:
+ 420:../Main.c     **** for(double i=0;i<5000;i++);
+ 1246              		.loc 1 420 0
+ 1247 0006 4FF00002 		mov	r2, #0
+ 1248 000a 4FF00003 		mov	r3, #0
+ 1249 000e C7E90023 		strd	r2, [r7]
+ 1250 0012 0DE0     		b	.L8
+ 1251              	.L9:
+ 1252              		.loc 1 420 0 is_stmt 0 discriminator 2
+ 1253 0014 D7E90001 		ldrd	r0, [r7]
+ 1254 0018 4FF00002 		mov	r2, #0
+ 1255 001c 4FF00003 		mov	r3, #0
+ 1256 0020 C3F6F073 		movt	r3, 16368
+ 1257 0024 FFF7FEFF 		bl	__aeabi_dadd
+ 1258 0028 0246     		mov	r2, r0
+ 1259 002a 0B46     		mov	r3, r1
+ 1260 002c C7E90023 		strd	r2, [r7]
+ 1261              	.L8:
+ 1262              		.loc 1 420 0 discriminator 1
+ 1263 0030 D7E90001 		ldrd	r0, [r7]
+ 1264 0034 06A3     		adr	r3, .L10
+ 1265 0036 D3E90023 		ldrd	r2, [r3]
+ 1266 003a FFF7FEFF 		bl	__aeabi_dcmplt
+ 1267 003e 0346     		mov	r3, r0
+ 1268 0040 002B     		cmp	r3, #0
+ 1269 0042 E7D1     		bne	.L9
+ 1270              	.LBE2:
+ 421:../Main.c     **** }
+ 1271              		.loc 1 421 0 is_stmt 1
+ 1272 0044 07F10807 		add	r7, r7, #8
+ 1273 0048 BD46     		mov	sp, r7
+ 1274 004a 80BD     		pop	{r7, pc}
+ 1275              	.L11:
+ 1276 004c AFF30080 		.align	3
+ 1277              	.L10:
+ 1278 0050 00000000 		.word	0
+ 1279 0054 0088B340 		.word	1085507584
+ 1280              		.cfi_endproc
+ 1281              	.LFE119:
+ 1283              		.section	.text.StoreData,"ax",%progbits
+ 1284              		.align	2
+ 1285              		.global	StoreData
+ 1286              		.thumb
+ 1287              		.thumb_func
+ 1289              	StoreData:
+ 1290              	.LFB120:
+ 422:../Main.c     **** 
+ 423:../Main.c     **** uint8_t StoreData(uint8_t Pid)
+ 424:../Main.c     **** {
+ 1291              		.loc 1 424 0
+ 1292              		.cfi_startproc
+ 1293              		@ args = 0, pretend = 0, frame = 24
+ 1294              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1295 0000 80B5     		push	{r7, lr}
+ 1296              	.LCFI9:
+ 1297              		.cfi_def_cfa_offset 8
+ 1298              		.cfi_offset 7, -8
+ 1299              		.cfi_offset 14, -4
+ 1300 0002 86B0     		sub	sp, sp, #24
+ 1301              	.LCFI10:
+ 1302              		.cfi_def_cfa_offset 32
+ 1303 0004 00AF     		add	r7, sp, #0
+ 1304              	.LCFI11:
+ 1305              		.cfi_def_cfa_register 7
+ 1306 0006 0346     		mov	r3, r0
+ 1307 0008 FB71     		strb	r3, [r7, #7]
+ 425:../Main.c     **** 
+ 426:../Main.c     **** 	uint8_t Data_Rx[8];
+ 427:../Main.c     **** 	uint8_t Error=1;
+ 1308              		.loc 1 427 0
+ 1309 000a 4FF00103 		mov	r3, #1
+ 1310 000e FB75     		strb	r3, [r7, #23]
+ 428:../Main.c     **** 	uint8_t ECU_Index=0;
+ 1311              		.loc 1 428 0
+ 1312 0010 4FF00003 		mov	r3, #0
+ 1313 0014 BB75     		strb	r3, [r7, #22]
+ 429:../Main.c     **** 	memcpy(Data_Rx,&CanRecMsgObj[CAN_RX_Pkt_Count].data[0],8);
+ 1314              		.loc 1 429 0
+ 1315 0016 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1316 001a C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1317 001e 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1318 0020 1A46     		mov	r2, r3
+ 1319 0022 1346     		mov	r3, r2
+ 1320 0024 4FEA4303 		lsl	r3, r3, #1
+ 1321 0028 9B18     		adds	r3, r3, r2
+ 1322 002a 4FEAC303 		lsl	r3, r3, #3
+ 1323 002e 03F10802 		add	r2, r3, #8
+ 1324 0032 40F20003 		movw	r3, #:lower16:CanRecMsgObj
+ 1325 0036 C0F20003 		movt	r3, #:upper16:CanRecMsgObj
+ 1326 003a D318     		adds	r3, r2, r3
+ 1327 003c 03F10302 		add	r2, r3, #3
+ 1328 0040 07F10C03 		add	r3, r7, #12
+ 1329 0044 1068     		ldr	r0, [r2, #0]	@ unaligned
+ 1330 0046 5168     		ldr	r1, [r2, #4]	@ unaligned
+ 1331 0048 03C3     		stmia	r3!, {r0, r1}
+ 430:../Main.c     **** 	if(CAN_Rx_Flag==CAN_PACKET_RX_ERROR)
+ 1332              		.loc 1 430 0
+ 1333 004a 40F20003 		movw	r3, #:lower16:CAN_Rx_Flag
+ 1334 004e C0F20003 		movt	r3, #:upper16:CAN_Rx_Flag
+ 1335 0052 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1336 0054 022B     		cmp	r3, #2
+ 1337 0056 04D1     		bne	.L13
+ 431:../Main.c     **** 		return Error=CAN_PACKET_RX_ERROR;
+ 1338              		.loc 1 431 0
+ 1339 0058 4FF00203 		mov	r3, #2
+ 1340 005c FB75     		strb	r3, [r7, #23]
+ 1341 005e FB7D     		ldrb	r3, [r7, #23]	@ zero_extendqisi2
+ 1342 0060 F2E2     		b	.L46
+ 1343              	.L13:
+ 432:../Main.c     **** 		//UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(can_uart_e
+ 433:../Main.c     **** 	else
+ 434:../Main.c     **** 		{
+ 435:../Main.c     **** 			ECU_Val=CanRecMsgObj[CAN_RX_Pkt_Count].Identifier;
+ 1344              		.loc 1 435 0
+ 1345 0062 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 1346 0066 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 1347 006a 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1348 006c 1946     		mov	r1, r3
+ 1349 006e 40F20002 		movw	r2, #:lower16:CanRecMsgObj
+ 1350 0072 C0F20002 		movt	r2, #:upper16:CanRecMsgObj
+ 1351 0076 0B46     		mov	r3, r1
+ 1352 0078 4FEA4303 		lsl	r3, r3, #1
+ 1353 007c 5B18     		adds	r3, r3, r1
+ 1354 007e 4FEAC303 		lsl	r3, r3, #3
+ 1355 0082 D318     		adds	r3, r2, r3
+ 1356 0084 1B68     		ldr	r3, [r3, #0]
+ 1357 0086 9AB2     		uxth	r2, r3
+ 1358 0088 40F20003 		movw	r3, #:lower16:ECU_Val
+ 1359 008c C0F20003 		movt	r3, #:upper16:ECU_Val
+ 1360 0090 1A80     		strh	r2, [r3, #0]	@ movhi
+ 436:../Main.c     **** 			ECU_Index=ECU_Val-0x7E8;
+ 1361              		.loc 1 436 0
+ 1362 0092 40F20003 		movw	r3, #:lower16:ECU_Val
+ 1363 0096 C0F20003 		movt	r3, #:upper16:ECU_Val
+ 1364 009a 1B88     		ldrh	r3, [r3, #0]
+ 1365 009c DBB2     		uxtb	r3, r3
+ 1366 009e 03F11803 		add	r3, r3, #24
+ 1367 00a2 BB75     		strb	r3, [r7, #22]
+ 437:../Main.c     **** 			ECU_Test[ECU_Index].ECU_Add=ECU_Val;
+ 1368              		.loc 1 437 0
+ 1369 00a4 B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1370 00a6 40F20003 		movw	r3, #:lower16:ECU_Val
+ 1371 00aa C0F20003 		movt	r3, #:upper16:ECU_Val
+ 1372 00ae 1A88     		ldrh	r2, [r3, #0]
+ 1373 00b0 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1374 00b4 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1375 00b8 4FEAC111 		lsl	r1, r1, #7
+ 1376 00bc 5B18     		adds	r3, r3, r1
+ 1377 00be 5A80     		strh	r2, [r3, #2]	@ movhi
+ 438:../Main.c     **** 			Data_Len=Data_Rx[0];
+ 1378              		.loc 1 438 0
+ 1379 00c0 3A7B     		ldrb	r2, [r7, #12]	@ zero_extendqisi2
+ 1380 00c2 40F20003 		movw	r3, #:lower16:Data_Len
+ 1381 00c6 C0F20003 		movt	r3, #:upper16:Data_Len
+ 1382 00ca 1A70     		strb	r2, [r3, #0]
+ 439:../Main.c     **** 			MODE_Val=(Data_Rx[1]-0x40);
+ 1383              		.loc 1 439 0
+ 1384 00cc 7B7B     		ldrb	r3, [r7, #13]	@ zero_extendqisi2
+ 1385 00ce A3F14003 		sub	r3, r3, #64
+ 1386 00d2 DAB2     		uxtb	r2, r3
+ 1387 00d4 40F20003 		movw	r3, #:lower16:MODE_Val
+ 1388 00d8 C0F20003 		movt	r3, #:upper16:MODE_Val
+ 1389 00dc 1A70     		strb	r2, [r3, #0]
+ 440:../Main.c     **** 			PID_Val=Data_Rx[2];
+ 1390              		.loc 1 440 0
+ 1391 00de BA7B     		ldrb	r2, [r7, #14]	@ zero_extendqisi2
+ 1392 00e0 40F20003 		movw	r3, #:lower16:PID_Val
+ 1393 00e4 C0F20003 		movt	r3, #:upper16:PID_Val
+ 1394 00e8 1A70     		strb	r2, [r3, #0]
+ 441:../Main.c     **** 
+ 442:../Main.c     **** 			if(MODE_Val==MODE_CURR_DATA)
+ 1395              		.loc 1 442 0
+ 1396 00ea 40F20003 		movw	r3, #:lower16:MODE_Val
+ 1397 00ee C0F20003 		movt	r3, #:upper16:MODE_Val
+ 1398 00f2 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1399 00f4 012B     		cmp	r3, #1
+ 1400 00f6 40F07A81 		bne	.L15
+ 443:../Main.c     **** 			{
+ 444:../Main.c     **** 				switch (PID_Val)//PID query Message is same in response
+ 1401              		.loc 1 444 0
+ 1402 00fa 40F20003 		movw	r3, #:lower16:PID_Val
+ 1403 00fe C0F20003 		movt	r3, #:upper16:PID_Val
+ 1404 0102 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1405 0104 402B     		cmp	r3, #64
+ 1406 0106 00F26281 		bhi	.L16
+ 1407 010a 01A2     		adr	r2, .L26
+ 1408 010c 52F823F0 		ldr	pc, [r2, r3, lsl #2]
+ 1409              		.align	2
+ 1410              	.L26:
+ 1411 0110 15020000 		.word	.L17+1
+ 1412 0114 CF030000 		.word	.L16+1
+ 1413 0118 CF030000 		.word	.L16+1
+ 1414 011c CF030000 		.word	.L16+1
+ 1415 0120 CF030000 		.word	.L16+1
+ 1416 0124 B1020000 		.word	.L18+1
+ 1417 0128 CF030000 		.word	.L16+1
+ 1418 012c CF030000 		.word	.L16+1
+ 1419 0130 CF030000 		.word	.L16+1
+ 1420 0134 CF030000 		.word	.L16+1
+ 1421 0138 CF030000 		.word	.L16+1
+ 1422 013c CF030000 		.word	.L16+1
+ 1423 0140 13030000 		.word	.L19+1
+ 1424 0144 4B030000 		.word	.L20+1
+ 1425 0148 CF030000 		.word	.L16+1
+ 1426 014c CF030000 		.word	.L16+1
+ 1427 0150 CF030000 		.word	.L16+1
+ 1428 0154 CF030000 		.word	.L16+1
+ 1429 0158 CF030000 		.word	.L16+1
+ 1430 015c CF030000 		.word	.L16+1
+ 1431 0160 CF030000 		.word	.L16+1
+ 1432 0164 CF030000 		.word	.L16+1
+ 1433 0168 CF030000 		.word	.L16+1
+ 1434 016c CF030000 		.word	.L16+1
+ 1435 0170 CF030000 		.word	.L16+1
+ 1436 0174 CF030000 		.word	.L16+1
+ 1437 0178 CF030000 		.word	.L16+1
+ 1438 017c CF030000 		.word	.L16+1
+ 1439 0180 D1020000 		.word	.L21+1
+ 1440 0184 CF030000 		.word	.L16+1
+ 1441 0188 CF030000 		.word	.L16+1
+ 1442 018c 99030000 		.word	.L22+1
+ 1443 0190 49020000 		.word	.L23+1
+ 1444 0194 CF030000 		.word	.L16+1
+ 1445 0198 CF030000 		.word	.L16+1
+ 1446 019c CF030000 		.word	.L16+1
+ 1447 01a0 CF030000 		.word	.L16+1
+ 1448 01a4 CF030000 		.word	.L16+1
+ 1449 01a8 CF030000 		.word	.L16+1
+ 1450 01ac CF030000 		.word	.L16+1
+ 1451 01b0 CF030000 		.word	.L16+1
+ 1452 01b4 CF030000 		.word	.L16+1
+ 1453 01b8 CF030000 		.word	.L16+1
+ 1454 01bc CF030000 		.word	.L16+1
+ 1455 01c0 CF030000 		.word	.L16+1
+ 1456 01c4 CF030000 		.word	.L16+1
+ 1457 01c8 CF030000 		.word	.L16+1
+ 1458 01cc 65030000 		.word	.L24+1
+ 1459 01d0 CF030000 		.word	.L16+1
+ 1460 01d4 CF030000 		.word	.L16+1
+ 1461 01d8 CF030000 		.word	.L16+1
+ 1462 01dc CF030000 		.word	.L16+1
+ 1463 01e0 CF030000 		.word	.L16+1
+ 1464 01e4 CF030000 		.word	.L16+1
+ 1465 01e8 CF030000 		.word	.L16+1
+ 1466 01ec CF030000 		.word	.L16+1
+ 1467 01f0 CF030000 		.word	.L16+1
+ 1468 01f4 CF030000 		.word	.L16+1
+ 1469 01f8 CF030000 		.word	.L16+1
+ 1470 01fc CF030000 		.word	.L16+1
+ 1471 0200 CF030000 		.word	.L16+1
+ 1472 0204 CF030000 		.word	.L16+1
+ 1473 0208 CF030000 		.word	.L16+1
+ 1474 020c CF030000 		.word	.L16+1
+ 1475 0210 7D020000 		.word	.L25+1
+ 1476              	.L17:
+ 445:../Main.c     **** 				{
+ 446:../Main.c     **** 				case PID_SUPPORT00:
+ 447:../Main.c     **** 					ECU_Test[ECU_Index].pid01to20_support=(unsigned long)((Data_Rx[3]<<24)|(Data_Rx[4]<<16)|(Data_
+ 1477              		.loc 1 447 0
+ 1478 0214 B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1479 0216 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1480 0218 4FEA0362 		lsl	r2, r3, #24
+ 1481 021c 3B7C     		ldrb	r3, [r7, #16]	@ zero_extendqisi2
+ 1482 021e 4FEA0343 		lsl	r3, r3, #16
+ 1483 0222 1A43     		orrs	r2, r2, r3
+ 1484 0224 7B7C     		ldrb	r3, [r7, #17]	@ zero_extendqisi2
+ 1485 0226 4FEA0323 		lsl	r3, r3, #8
+ 1486 022a 1A43     		orrs	r2, r2, r3
+ 1487 022c BB7C     		ldrb	r3, [r7, #18]	@ zero_extendqisi2
+ 1488 022e 1343     		orrs	r3, r3, r2
+ 1489 0230 1A46     		mov	r2, r3
+ 1490 0232 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1491 0236 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1492 023a 4FEAC111 		lsl	r1, r1, #7
+ 1493 023e 5B18     		adds	r3, r3, r1
+ 1494 0240 03F10403 		add	r3, r3, #4
+ 1495 0244 1A60     		str	r2, [r3, #0]
+ 448:../Main.c     **** 					break;
+ 1496              		.loc 1 448 0
+ 1497 0246 FEE1     		b	.L29
+ 1498              	.L23:
+ 449:../Main.c     **** 				case PID_SUPPORT20:
+ 450:../Main.c     **** 					ECU_Test[ECU_Index].pid21to40_support=(unsigned long)((Data_Rx[3]<<24)|(Data_Rx[4]<<16)|(Data_
+ 1499              		.loc 1 450 0
+ 1500 0248 B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1501 024a FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1502 024c 4FEA0362 		lsl	r2, r3, #24
+ 1503 0250 3B7C     		ldrb	r3, [r7, #16]	@ zero_extendqisi2
+ 1504 0252 4FEA0343 		lsl	r3, r3, #16
+ 1505 0256 1A43     		orrs	r2, r2, r3
+ 1506 0258 7B7C     		ldrb	r3, [r7, #17]	@ zero_extendqisi2
+ 1507 025a 4FEA0323 		lsl	r3, r3, #8
+ 1508 025e 1A43     		orrs	r2, r2, r3
+ 1509 0260 BB7C     		ldrb	r3, [r7, #18]	@ zero_extendqisi2
+ 1510 0262 1343     		orrs	r3, r3, r2
+ 1511 0264 1A46     		mov	r2, r3
+ 1512 0266 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1513 026a C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1514 026e 4FEAC111 		lsl	r1, r1, #7
+ 1515 0272 5B18     		adds	r3, r3, r1
+ 1516 0274 03F10803 		add	r3, r3, #8
+ 1517 0278 1A60     		str	r2, [r3, #0]
+ 451:../Main.c     **** 					break;
+ 1518              		.loc 1 451 0
+ 1519 027a E4E1     		b	.L29
+ 1520              	.L25:
+ 452:../Main.c     **** 				case PID_SUPPORT40:
+ 453:../Main.c     **** 					ECU_Test[ECU_Index].pid41to60_support=(unsigned long)((Data_Rx[3]<<24)|(Data_Rx[4]<<16)|(Data_
+ 1521              		.loc 1 453 0
+ 1522 027c B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1523 027e FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1524 0280 4FEA0362 		lsl	r2, r3, #24
+ 1525 0284 3B7C     		ldrb	r3, [r7, #16]	@ zero_extendqisi2
+ 1526 0286 4FEA0343 		lsl	r3, r3, #16
+ 1527 028a 1A43     		orrs	r2, r2, r3
+ 1528 028c 7B7C     		ldrb	r3, [r7, #17]	@ zero_extendqisi2
+ 1529 028e 4FEA0323 		lsl	r3, r3, #8
+ 1530 0292 1A43     		orrs	r2, r2, r3
+ 1531 0294 BB7C     		ldrb	r3, [r7, #18]	@ zero_extendqisi2
+ 1532 0296 1343     		orrs	r3, r3, r2
+ 1533 0298 1A46     		mov	r2, r3
+ 1534 029a 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1535 029e C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1536 02a2 4FEAC111 		lsl	r1, r1, #7
+ 1537 02a6 5B18     		adds	r3, r3, r1
+ 1538 02a8 03F10C03 		add	r3, r3, #12
+ 1539 02ac 1A60     		str	r2, [r3, #0]
+ 454:../Main.c     **** 					break;
+ 1540              		.loc 1 454 0
+ 1541 02ae CAE1     		b	.L29
+ 1542              	.L18:
+ 455:../Main.c     **** 				case COOLANT_TEMP:
+ 456:../Main.c     **** 					ECU_Test[ECU_Index].Coolant_Temp=(Data_Rx[3]-40);
+ 1543              		.loc 1 456 0
+ 1544 02b0 B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1545 02b2 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1546 02b4 A3F12803 		sub	r3, r3, #40
+ 1547 02b8 DAB2     		uxtb	r2, r3
+ 1548 02ba 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1549 02be C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1550 02c2 4FEAC111 		lsl	r1, r1, #7
+ 1551 02c6 5B18     		adds	r3, r3, r1
+ 1552 02c8 03F14803 		add	r3, r3, #72
+ 1553 02cc 5A71     		strb	r2, [r3, #5]
+ 457:../Main.c     **** 					break;
+ 1554              		.loc 1 457 0
+ 1555 02ce BAE1     		b	.L29
+ 1556              	.L21:
+ 458:../Main.c     **** 				case OBD_STD:
+ 459:../Main.c     **** 					memcpy(ECU_Test[ECU_Index].ODB_Std,&obd_std_strings[Data_Rx[3]],10);
+ 1557              		.loc 1 459 0
+ 1558 02d0 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1559 02d2 4FEAC313 		lsl	r3, r3, #7
+ 1560 02d6 03F11002 		add	r2, r3, #16
+ 1561 02da 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1562 02de C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1563 02e2 D318     		adds	r3, r2, r3
+ 1564 02e4 03F10401 		add	r1, r3, #4
+ 1565 02e8 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1566 02ea 1A46     		mov	r2, r3
+ 1567 02ec 1346     		mov	r3, r2
+ 1568 02ee 4FEA8303 		lsl	r3, r3, #2
+ 1569 02f2 9B18     		adds	r3, r3, r2
+ 1570 02f4 4FEA4303 		lsl	r3, r3, #1
+ 1571 02f8 40F20002 		movw	r2, #:lower16:obd_std_strings
+ 1572 02fc C0F20002 		movt	r2, #:upper16:obd_std_strings
+ 1573 0300 9A18     		adds	r2, r3, r2
+ 1574 0302 0B46     		mov	r3, r1
+ 1575 0304 1068     		ldr	r0, [r2, #0]	@ unaligned
+ 1576 0306 5168     		ldr	r1, [r2, #4]	@ unaligned
+ 1577 0308 1860     		str	r0, [r3, #0]	@ unaligned
+ 1578 030a 5960     		str	r1, [r3, #4]	@ unaligned
+ 1579 030c 1289     		ldrh	r2, [r2, #8]	@ unaligned
+ 1580 030e 1A81     		strh	r2, [r3, #8]	@ unaligned
+ 460:../Main.c     **** 					break;
+ 1581              		.loc 1 460 0
+ 1582 0310 99E1     		b	.L29
+ 1583              	.L19:
+ 461:../Main.c     **** 				case ENGINE_RPM:
+ 462:../Main.c     **** 					ECU_Test[ECU_Index].Engine_RPM=(float)(((Data_Rx[3]*256)+Data_Rx[4])/4);
+ 1584              		.loc 1 462 0
+ 1585 0312 BA7D     		ldrb	r2, [r7, #22]	@ zero_extendqisi2
+ 1586 0314 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1587 0316 4FEA0321 		lsl	r1, r3, #8
+ 1588 031a 3B7C     		ldrb	r3, [r7, #16]	@ zero_extendqisi2
+ 1589 031c CB18     		adds	r3, r1, r3
+ 1590 031e 002B     		cmp	r3, #0
+ 1591 0320 01DA     		bge	.L28
+ 1592 0322 03F10303 		add	r3, r3, #3
+ 1593              	.L28:
+ 1594 0326 4FEAA303 		asr	r3, r3, #2
+ 1595 032a 07EE103A 		fmsr	s14, r3	@ int
+ 1596 032e F8EEC77A 		fsitos	s15, s14
+ 1597 0332 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1598 0336 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1599 033a 4FEAC212 		lsl	r2, r2, #7
+ 1600 033e 9B18     		adds	r3, r3, r2
+ 1601 0340 03F14803 		add	r3, r3, #72
+ 1602 0344 C3ED007A 		fsts	s15, [r3, #0]
+ 463:../Main.c     **** 					break;
+ 1603              		.loc 1 463 0
+ 1604 0348 7DE1     		b	.L29
+ 1605              	.L20:
+ 464:../Main.c     **** 				case VEHICLE_SPEED:
+ 465:../Main.c     **** 					ECU_Test[ECU_Index].Vehicle_speed=Data_Rx[3];
+ 1606              		.loc 1 465 0
+ 1607 034a B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1608 034c FA7B     		ldrb	r2, [r7, #15]	@ zero_extendqisi2
+ 1609 034e 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1610 0352 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1611 0356 4FEAC111 		lsl	r1, r1, #7
+ 1612 035a 5B18     		adds	r3, r3, r1
+ 1613 035c 03F14803 		add	r3, r3, #72
+ 1614 0360 1A71     		strb	r2, [r3, #4]
+ 466:../Main.c     **** 					break;
+ 1615              		.loc 1 466 0
+ 1616 0362 70E1     		b	.L29
+ 1617              	.L24:
+ 467:../Main.c     **** 				case FUEL_LEVEL:
+ 468:../Main.c     **** 					ECU_Test[ECU_Index].Feul_Level=(float)(((float)Data_Rx[3]*100)/255);//A*100/255
+ 1618              		.loc 1 468 0
+ 1619 0364 BA7D     		ldrb	r2, [r7, #22]	@ zero_extendqisi2
+ 1620 0366 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1621 0368 07EE903A 		fmsr	s15, r3	@ int
+ 1622 036c B8EE677A 		fuitos	s14, s15
+ 1623 0370 DFEDB87A 		flds	s15, .L50
+ 1624 0374 27EE277A 		fmuls	s14, s14, s15
+ 1625 0378 DFEDB77A 		flds	s15, .L50+4
+ 1626 037c C7EE277A 		fdivs	s15, s14, s15
+ 1627 0380 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1628 0384 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1629 0388 4FEAC212 		lsl	r2, r2, #7
+ 1630 038c 9B18     		adds	r3, r3, r2
+ 1631 038e 03F15003 		add	r3, r3, #80
+ 1632 0392 C3ED007A 		fsts	s15, [r3, #0]
+ 469:../Main.c     **** 					break;
+ 1633              		.loc 1 469 0
+ 1634 0396 56E1     		b	.L29
+ 1635              	.L22:
+ 470:../Main.c     **** 				case RUNTIME_START:
+ 471:../Main.c     **** 					ECU_Test[ECU_Index].Engine_Run_Time=(float)((Data_Rx[3]*256)+Data_Rx[4]);//A*100/255
+ 1636              		.loc 1 471 0
+ 1637 0398 B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1638 039a FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1639 039c 4FEA0322 		lsl	r2, r3, #8
+ 1640 03a0 3B7C     		ldrb	r3, [r7, #16]	@ zero_extendqisi2
+ 1641 03a2 D318     		adds	r3, r2, r3
+ 1642 03a4 07EE103A 		fmsr	s14, r3	@ int
+ 1643 03a8 F8EEC77A 		fsitos	s15, s14
+ 1644 03ac FCEEE77A 		ftouizs	s15, s15
+ 1645 03b0 17EE903A 		fmrs	r3, s15	@ int
+ 1646 03b4 9AB2     		uxth	r2, r3
+ 1647 03b6 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1648 03ba C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1649 03be 4FEAC111 		lsl	r1, r1, #7
+ 1650 03c2 5B18     		adds	r3, r3, r1
+ 1651 03c4 03F14803 		add	r3, r3, #72
+ 1652 03c8 DA80     		strh	r2, [r3, #6]	@ movhi
+ 472:../Main.c     **** 					break;
+ 1653              		.loc 1 472 0
+ 1654 03ca 00BF     		nop
+ 1655 03cc 3BE1     		b	.L29
+ 1656              	.L16:
+ 473:../Main.c     **** 				default:
+ 474:../Main.c     **** 					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(can_uart_
+ 1657              		.loc 1 474 0
+ 1658 03ce 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 1659 03d2 C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 1660 03d6 40F20001 		movw	r1, #:lower16:can_uart_error
+ 1661 03da C0F20001 		movt	r1, #:upper16:can_uart_error
+ 1662 03de 4FF01002 		mov	r2, #16
+ 1663 03e2 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 475:../Main.c     **** 					Error=MODE_CURR_DATA;
+ 1664              		.loc 1 475 0
+ 1665 03e6 4FF00103 		mov	r3, #1
+ 1666 03ea FB75     		strb	r3, [r7, #23]
+ 1667 03ec 2BE1     		b	.L29
+ 1668              	.L15:
+ 476:../Main.c     **** 				}
+ 477:../Main.c     **** 			}
+ 478:../Main.c     **** 		else if(MODE_Val==MODE_REQ_VIN)
+ 1669              		.loc 1 478 0
+ 1670 03ee 40F20003 		movw	r3, #:lower16:MODE_Val
+ 1671 03f2 C0F20003 		movt	r3, #:upper16:MODE_Val
+ 1672 03f6 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1673 03f8 092B     		cmp	r3, #9
+ 1674 03fa 31D1     		bne	.L30
+ 479:../Main.c     **** 		{
+ 480:../Main.c     **** 			switch (PID_Val)//PID query Message is same in response
+ 1675              		.loc 1 480 0
+ 1676 03fc 40F20003 		movw	r3, #:lower16:PID_Val
+ 1677 0400 C0F20003 		movt	r3, #:upper16:PID_Val
+ 1678 0404 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1679 0406 002B     		cmp	r3, #0
+ 1680 0408 1AD1     		bne	.L47
+ 1681              	.L32:
+ 481:../Main.c     **** 			{
+ 482:../Main.c     **** 			case PID_SUPPORT00:
+ 483:../Main.c     **** 				ECU_Test[ECU_Index].pid01to20M09_support=(unsigned long)((Data_Rx[3]<<24)|(Data_Rx[4]<<16)|(Dat
+ 1682              		.loc 1 483 0
+ 1683 040a B97D     		ldrb	r1, [r7, #22]	@ zero_extendqisi2
+ 1684 040c FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 1685 040e 4FEA0362 		lsl	r2, r3, #24
+ 1686 0412 3B7C     		ldrb	r3, [r7, #16]	@ zero_extendqisi2
+ 1687 0414 4FEA0343 		lsl	r3, r3, #16
+ 1688 0418 1A43     		orrs	r2, r2, r3
+ 1689 041a 7B7C     		ldrb	r3, [r7, #17]	@ zero_extendqisi2
+ 1690 041c 4FEA0323 		lsl	r3, r3, #8
+ 1691 0420 1A43     		orrs	r2, r2, r3
+ 1692 0422 BB7C     		ldrb	r3, [r7, #18]	@ zero_extendqisi2
+ 1693 0424 1343     		orrs	r3, r3, r2
+ 1694 0426 1A46     		mov	r2, r3
+ 1695 0428 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1696 042c C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1697 0430 4FEAC111 		lsl	r1, r1, #7
+ 1698 0434 5B18     		adds	r3, r3, r1
+ 1699 0436 03F11003 		add	r3, r3, #16
+ 1700 043a 1A60     		str	r2, [r3, #0]
+ 484:../Main.c     **** 				break;
+ 1701              		.loc 1 484 0
+ 1702 043c 00BF     		nop
+ 1703 043e 02E1     		b	.L29
+ 1704              	.L47:
+ 485:../Main.c     **** 			default:
+ 486:../Main.c     **** 				UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(can_uart_e
+ 1705              		.loc 1 486 0
+ 1706 0440 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 1707 0444 C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 1708 0448 40F20001 		movw	r1, #:lower16:can_uart_error
+ 1709 044c C0F20001 		movt	r1, #:upper16:can_uart_error
+ 1710 0450 4FF01002 		mov	r2, #16
+ 1711 0454 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 487:../Main.c     **** 				Error=MODE_REQ_VIN;
+ 1712              		.loc 1 487 0
+ 1713 0458 4FF00903 		mov	r3, #9
+ 1714 045c FB75     		strb	r3, [r7, #23]
+ 1715 045e F2E0     		b	.L29
+ 1716              	.L30:
+ 488:../Main.c     **** 			}
+ 489:../Main.c     **** 		}
+ 490:../Main.c     **** 		else if(Data_Len&0x10)// First Frame for VIN Check
+ 1717              		.loc 1 490 0
+ 1718 0460 40F20003 		movw	r3, #:lower16:Data_Len
+ 1719 0464 C0F20003 		movt	r3, #:upper16:Data_Len
+ 1720 0468 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1721 046a 03F01003 		and	r3, r3, #16
+ 1722 046e 002B     		cmp	r3, #0
+ 1723 0470 2ED0     		beq	.L34
+ 491:../Main.c     **** 		{
+ 492:../Main.c     **** 			if(Pid==VIN_NUM)
+ 1724              		.loc 1 492 0
+ 1725 0472 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 1726 0474 022B     		cmp	r3, #2
+ 1727 0476 16D1     		bne	.L35
+ 493:../Main.c     **** 			memcpy(ECU_Test[ECU_Index].VIN_Num,&Data_Rx[2],6);
+ 1728              		.loc 1 493 0
+ 1729 0478 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1730 047a 4FEAC313 		lsl	r3, r3, #7
+ 1731 047e 03F15002 		add	r2, r3, #80
+ 1732 0482 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1733 0486 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1734 048a D318     		adds	r3, r2, r3
+ 1735 048c 03F10402 		add	r2, r3, #4
+ 1736 0490 07F10C03 		add	r3, r7, #12
+ 1737 0494 03F10203 		add	r3, r3, #2
+ 1738 0498 1046     		mov	r0, r2
+ 1739 049a 1946     		mov	r1, r3
+ 1740 049c 4FF00602 		mov	r2, #6
+ 1741 04a0 FFF7FEFF 		bl	memcpy
+ 1742 04a4 CFE0     		b	.L29
+ 1743              	.L35:
+ 494:../Main.c     **** 			else
+ 495:../Main.c     **** 			memcpy(ECU_Test[ECU_Index].CAL_Id,&Data_Rx[2],6);
+ 1744              		.loc 1 495 0
+ 1745 04a6 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1746 04a8 4FEAC313 		lsl	r3, r3, #7
+ 1747 04ac 03F16802 		add	r2, r3, #104
+ 1748 04b0 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1749 04b4 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1750 04b8 D218     		adds	r2, r2, r3
+ 1751 04ba 07F10C03 		add	r3, r7, #12
+ 1752 04be 03F10203 		add	r3, r3, #2
+ 1753 04c2 1046     		mov	r0, r2
+ 1754 04c4 1946     		mov	r1, r3
+ 1755 04c6 4FF00602 		mov	r2, #6
+ 1756 04ca FFF7FEFF 		bl	memcpy
+ 1757 04ce BAE0     		b	.L29
+ 1758              	.L34:
+ 496:../Main.c     **** 		}
+ 497:../Main.c     **** 		else if(Data_Len&0x20)
+ 1759              		.loc 1 497 0
+ 1760 04d0 40F20003 		movw	r3, #:lower16:Data_Len
+ 1761 04d4 C0F20003 		movt	r3, #:upper16:Data_Len
+ 1762 04d8 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1763 04da 03F02003 		and	r3, r3, #32
+ 1764 04de 002B     		cmp	r3, #0
+ 1765 04e0 00F0B180 		beq	.L29
+ 498:../Main.c     **** 		{
+ 499:../Main.c     **** 			if(Pid==VIN_NUM)
+ 1766              		.loc 1 499 0
+ 1767 04e4 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 1768 04e6 022B     		cmp	r3, #2
+ 1769 04e8 5AD1     		bne	.L36
+ 500:../Main.c     **** 				switch (Data_Len)
+ 1770              		.loc 1 500 0
+ 1771 04ea 40F20003 		movw	r3, #:lower16:Data_Len
+ 1772 04ee C0F20003 		movt	r3, #:upper16:Data_Len
+ 1773 04f2 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1774 04f4 222B     		cmp	r3, #34
+ 1775 04f6 18D0     		beq	.L39
+ 1776 04f8 232B     		cmp	r3, #35
+ 1777 04fa 2BD0     		beq	.L40
+ 1778 04fc 212B     		cmp	r3, #33
+ 1779 04fe 3FD1     		bne	.L48
+ 1780              	.L38:
+ 501:../Main.c     **** 				{
+ 502:../Main.c     **** 				case 0x21:
+ 503:../Main.c     **** 					memcpy(&ECU_Test[ECU_Index].VIN_Num[6],&Data_Rx[0],8);
+ 1781              		.loc 1 503 0
+ 1782 0500 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1783 0502 4FEAC313 		lsl	r3, r3, #7
+ 1784 0506 03F15602 		add	r2, r3, #86
+ 1785 050a 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1786 050e C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1787 0512 D318     		adds	r3, r2, r3
+ 1788 0514 03F10402 		add	r2, r3, #4
+ 1789 0518 07F10C03 		add	r3, r7, #12
+ 1790 051c 1046     		mov	r0, r2
+ 1791 051e 1946     		mov	r1, r3
+ 1792 0520 4FF00802 		mov	r2, #8
+ 1793 0524 FFF7FEFF 		bl	memcpy
+ 504:../Main.c     **** 					break;
+ 1794              		.loc 1 504 0
+ 1795 0528 8DE0     		b	.L29
+ 1796              	.L39:
+ 505:../Main.c     **** 				case 0x22:
+ 506:../Main.c     **** 					memcpy(&ECU_Test[ECU_Index].VIN_Num[6+8],&Data_Rx[0],8);
+ 1797              		.loc 1 506 0
+ 1798 052a BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1799 052c 4FEAC313 		lsl	r3, r3, #7
+ 1800 0530 03F15E02 		add	r2, r3, #94
+ 1801 0534 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1802 0538 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1803 053c D318     		adds	r3, r2, r3
+ 1804 053e 03F10402 		add	r2, r3, #4
+ 1805 0542 07F10C03 		add	r3, r7, #12
+ 1806 0546 1046     		mov	r0, r2
+ 1807 0548 1946     		mov	r1, r3
+ 1808 054a 4FF00802 		mov	r2, #8
+ 1809 054e FFF7FEFF 		bl	memcpy
+ 507:../Main.c     **** 					break;
+ 1810              		.loc 1 507 0
+ 1811 0552 78E0     		b	.L29
+ 1812              	.L40:
+ 508:../Main.c     **** 				case 0x23:
+ 509:../Main.c     **** 					memcpy(&ECU_Test[ECU_Index].VIN_Num[6+8+8],&Data_Rx[0],8);
+ 1813              		.loc 1 509 0
+ 1814 0554 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1815 0556 4FEAC313 		lsl	r3, r3, #7
+ 1816 055a 03F16602 		add	r2, r3, #102
+ 1817 055e 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1818 0562 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1819 0566 D318     		adds	r3, r2, r3
+ 1820 0568 03F10402 		add	r2, r3, #4
+ 1821 056c 07F10C03 		add	r3, r7, #12
+ 1822 0570 1046     		mov	r0, r2
+ 1823 0572 1946     		mov	r1, r3
+ 1824 0574 4FF00802 		mov	r2, #8
+ 1825 0578 FFF7FEFF 		bl	memcpy
+ 510:../Main.c     **** 					break;
+ 1826              		.loc 1 510 0
+ 1827 057c 00BF     		nop
+ 1828 057e 62E0     		b	.L29
+ 1829              	.L48:
+ 511:../Main.c     **** 				default:
+ 512:../Main.c     **** 					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(can_uart_
+ 1830              		.loc 1 512 0
+ 1831 0580 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 1832 0584 C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 1833 0588 40F20001 		movw	r1, #:lower16:can_uart_error
+ 1834 058c C0F20001 		movt	r1, #:upper16:can_uart_error
+ 1835 0590 4FF01002 		mov	r2, #16
+ 1836 0594 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 513:../Main.c     **** 					Error=MODE_REQ_VIN;
+ 1837              		.loc 1 513 0
+ 1838 0598 4FF00903 		mov	r3, #9
+ 1839 059c FB75     		strb	r3, [r7, #23]
+ 1840 059e 52E0     		b	.L29
+ 1841              	.L36:
+ 514:../Main.c     **** 				}
+ 515:../Main.c     **** 			else
+ 516:../Main.c     **** 			switch (Data_Len)
+ 1842              		.loc 1 516 0
+ 1843 05a0 40F20003 		movw	r3, #:lower16:Data_Len
+ 1844 05a4 C0F20003 		movt	r3, #:upper16:Data_Len
+ 1845 05a8 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1846 05aa 222B     		cmp	r3, #34
+ 1847 05ac 16D0     		beq	.L44
+ 1848 05ae 232B     		cmp	r3, #35
+ 1849 05b0 27D0     		beq	.L45
+ 1850 05b2 212B     		cmp	r3, #33
+ 1851 05b4 38D1     		bne	.L49
+ 1852              	.L43:
+ 517:../Main.c     **** 				{
+ 518:../Main.c     **** 				case 0x21:
+ 519:../Main.c     **** 					memcpy(&ECU_Test[ECU_Index].CAL_Id[6],&Data_Rx[0],8);
+ 1853              		.loc 1 519 0
+ 1854 05b6 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1855 05b8 4FEAC313 		lsl	r3, r3, #7
+ 1856 05bc 03F16E02 		add	r2, r3, #110
+ 1857 05c0 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1858 05c4 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1859 05c8 D218     		adds	r2, r2, r3
+ 1860 05ca 07F10C03 		add	r3, r7, #12
+ 1861 05ce 1046     		mov	r0, r2
+ 1862 05d0 1946     		mov	r1, r3
+ 1863 05d2 4FF00802 		mov	r2, #8
+ 1864 05d6 FFF7FEFF 		bl	memcpy
+ 520:../Main.c     **** 					break;
+ 1865              		.loc 1 520 0
+ 1866 05da 34E0     		b	.L29
+ 1867              	.L44:
+ 521:../Main.c     **** 				case 0x22:
+ 522:../Main.c     **** 					memcpy(&ECU_Test[ECU_Index].CAL_Id[6+8],&Data_Rx[0],8);
+ 1868              		.loc 1 522 0
+ 1869 05dc BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1870 05de 4FEAC313 		lsl	r3, r3, #7
+ 1871 05e2 03F17602 		add	r2, r3, #118
+ 1872 05e6 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1873 05ea C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1874 05ee D218     		adds	r2, r2, r3
+ 1875 05f0 07F10C03 		add	r3, r7, #12
+ 1876 05f4 1046     		mov	r0, r2
+ 1877 05f6 1946     		mov	r1, r3
+ 1878 05f8 4FF00802 		mov	r2, #8
+ 1879 05fc FFF7FEFF 		bl	memcpy
+ 523:../Main.c     **** 					break;
+ 1880              		.loc 1 523 0
+ 1881 0600 21E0     		b	.L29
+ 1882              	.L45:
+ 524:../Main.c     **** 				case 0x23:
+ 525:../Main.c     **** 					memcpy(&ECU_Test[ECU_Index].CAL_Id[6+8+8],&Data_Rx[0],8);
+ 1883              		.loc 1 525 0
+ 1884 0602 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1885 0604 4FEAC313 		lsl	r3, r3, #7
+ 1886 0608 03F17E02 		add	r2, r3, #126
+ 1887 060c 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1888 0610 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1889 0614 D218     		adds	r2, r2, r3
+ 1890 0616 07F10C03 		add	r3, r7, #12
+ 1891 061a 1046     		mov	r0, r2
+ 1892 061c 1946     		mov	r1, r3
+ 1893 061e 4FF00802 		mov	r2, #8
+ 1894 0622 FFF7FEFF 		bl	memcpy
+ 526:../Main.c     **** 					break;
+ 1895              		.loc 1 526 0
+ 1896 0626 0EE0     		b	.L29
+ 1897              	.L49:
+ 527:../Main.c     **** 				default:
+ 528:../Main.c     **** 					UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(can_uart_
+ 1898              		.loc 1 528 0
+ 1899 0628 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 1900 062c C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 1901 0630 40F20001 		movw	r1, #:lower16:can_uart_error
+ 1902 0634 C0F20001 		movt	r1, #:upper16:can_uart_error
+ 1903 0638 4FF01002 		mov	r2, #16
+ 1904 063c FFF7FEFF 		bl	UART001_WriteDataBytes
+ 529:../Main.c     **** 					Error=MODE_REQ_VIN;
+ 1905              		.loc 1 529 0
+ 1906 0640 4FF00903 		mov	r3, #9
+ 1907 0644 FB75     		strb	r3, [r7, #23]
+ 1908              	.L29:
+ 530:../Main.c     **** 				}
+ 531:../Main.c     **** 		}
+ 532:../Main.c     **** 
+ 533:../Main.c     **** 		return Error;
+ 1909              		.loc 1 533 0
+ 1910 0646 FB7D     		ldrb	r3, [r7, #23]	@ zero_extendqisi2
+ 1911              	.L46:
+ 534:../Main.c     **** 		}//first Else Ends here.
+ 535:../Main.c     **** }
+ 1912              		.loc 1 535 0
+ 1913 0648 1846     		mov	r0, r3
+ 1914 064a 07F11807 		add	r7, r7, #24
+ 1915 064e BD46     		mov	sp, r7
+ 1916 0650 80BD     		pop	{r7, pc}
+ 1917              	.L51:
+ 1918 0652 00BF     		.align	2
+ 1919              	.L50:
+ 1920 0654 0000C842 		.word	1120403456
+ 1921 0658 00007F43 		.word	1132396544
+ 1922              		.cfi_endproc
+ 1923              	.LFE120:
+ 1925              		.section	.rodata
+ 1926 0042 0000     		.align	2
+ 1927              	.LC2:
+ 1928 0044 4543553D 		.ascii	"ECU=x%.2X,PID_00=x%.8X\015\012\000"
+ 1928      78252E32 
+ 1928      582C5049 
+ 1928      445F3030 
+ 1928      3D78252E 
+ 1929 005d 000000   		.align	2
+ 1930              	.LC3:
+ 1931 0060 4543553D 		.ascii	"ECU=x%.2X,PID_20=x%.8X\015\012\000"
+ 1931      78252E32 
+ 1931      582C5049 
+ 1931      445F3230 
+ 1931      3D78252E 
+ 1932 0079 000000   		.align	2
+ 1933              	.LC4:
+ 1934 007c 4543553D 		.ascii	"ECU=x%.2X,PID_M9=x%.8X\015\012\000"
+ 1934      78252E32 
+ 1934      582C5049 
+ 1934      445F4D39 
+ 1934      3D78252E 
+ 1935 0095 000000   		.align	2
+ 1936              	.LC5:
+ 1937 0098 56494E3D 		.ascii	"VIN=%s\015\012\000"
+ 1937      25730D0A 
+ 1937      00
+ 1938              		.global	__aeabi_f2d
+ 1939 00a1 000000   		.align	2
+ 1940              	.LC6:
+ 1941 00a4 52504D3D 		.ascii	"RPM=%.2f,\011SPD=%d Km/h\015\012\000"
+ 1941      252E3266 
+ 1941      2C095350 
+ 1941      443D2564 
+ 1941      204B6D2F 
+ 1942              		.align	2
+ 1943              	.LC7:
+ 1944 00bc 4655454C 		.ascii	"FUEL=%.2f L,\011RUNTIME=%d s\015\012\000"
+ 1944      3D252E32 
+ 1944      66204C2C 
+ 1944      0952554E 
+ 1944      54494D45 
+ 1945              		.section	.text.PrintData,"ax",%progbits
+ 1946              		.align	2
+ 1947              		.global	PrintData
+ 1948              		.thumb
+ 1949              		.thumb_func
+ 1951              	PrintData:
+ 1952              	.LFB121:
+ 536:../Main.c     **** void PrintData(uint8_t Param,uint8_t ECU_Index)
+ 537:../Main.c     **** {
+ 1953              		.loc 1 537 0
+ 1954              		.cfi_startproc
+ 1955              		@ args = 0, pretend = 0, frame = 64
+ 1956              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1957 0000 B0B5     		push	{r4, r5, r7, lr}
+ 1958              	.LCFI12:
+ 1959              		.cfi_def_cfa_offset 16
+ 1960              		.cfi_offset 4, -16
+ 1961              		.cfi_offset 5, -12
+ 1962              		.cfi_offset 7, -8
+ 1963              		.cfi_offset 14, -4
+ 1964 0002 92B0     		sub	sp, sp, #72
+ 1965              	.LCFI13:
+ 1966              		.cfi_def_cfa_offset 88
+ 1967 0004 02AF     		add	r7, sp, #8
+ 1968              	.LCFI14:
+ 1969              		.cfi_def_cfa 7, 80
+ 1970 0006 0246     		mov	r2, r0
+ 1971 0008 0B46     		mov	r3, r1
+ 1972 000a FA71     		strb	r2, [r7, #7]
+ 1973 000c BB71     		strb	r3, [r7, #6]
+ 538:../Main.c     **** 	char buffer[50];
+ 539:../Main.c     **** 	switch(Param)
+ 1974              		.loc 1 539 0
+ 1975 000e FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 1976 0010 012B     		cmp	r3, #1
+ 1977 0012 06D0     		beq	.L55
+ 1978 0014 022B     		cmp	r3, #2
+ 1979 0016 00F0C580 		beq	.L56
+ 1980 001a 002B     		cmp	r3, #0
+ 1981 001c 00F04681 		beq	.L59
+ 1982 0020 37E1     		b	.L58
+ 1983              	.L55:
+ 540:../Main.c     **** 	{
+ 541:../Main.c     **** 	case PRINT_NOTHING:
+ 542:../Main.c     **** 		break;
+ 543:../Main.c     **** 	case PRINT_ECU_INFO:
+ 544:../Main.c     **** 		sprintf(&buffer[0],"ECU=x%.2X,PID_00=x%.8X\r\n",ECU_Test[ECU_Index].ECU_Add,ECU_Test[ECU_Index].p
+ 1984              		.loc 1 544 0
+ 1985 0022 BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 1986 0024 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1987 0028 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1988 002c 4FEAC212 		lsl	r2, r2, #7
+ 1989 0030 9B18     		adds	r3, r3, r2
+ 1990 0032 5B88     		ldrh	r3, [r3, #2]
+ 1991 0034 1A46     		mov	r2, r3
+ 1992 0036 B979     		ldrb	r1, [r7, #6]	@ zero_extendqisi2
+ 1993 0038 40F20003 		movw	r3, #:lower16:ECU_Test
+ 1994 003c C0F20003 		movt	r3, #:upper16:ECU_Test
+ 1995 0040 4FEAC111 		lsl	r1, r1, #7
+ 1996 0044 5B18     		adds	r3, r3, r1
+ 1997 0046 03F10403 		add	r3, r3, #4
+ 1998 004a 1B68     		ldr	r3, [r3, #0]
+ 1999 004c 07F10C01 		add	r1, r7, #12
+ 2000 0050 0846     		mov	r0, r1
+ 2001 0052 40F20001 		movw	r1, #:lower16:.LC2
+ 2002 0056 C0F20001 		movt	r1, #:upper16:.LC2
+ 2003 005a FFF7FEFF 		bl	sprintf
+ 545:../Main.c     **** 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
+ 2004              		.loc 1 545 0
+ 2005 005e 07F10C03 		add	r3, r7, #12
+ 2006 0062 1846     		mov	r0, r3
+ 2007 0064 FFF7FEFF 		bl	strlen
+ 2008 0068 0346     		mov	r3, r0
+ 2009 006a 03F10103 		add	r3, r3, #1
+ 2010 006e 07F10C02 		add	r2, r7, #12
+ 2011 0072 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2012 0076 C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2013 007a 1146     		mov	r1, r2
+ 2014 007c 1A46     		mov	r2, r3
+ 2015 007e FFF7FEFF 		bl	UART001_WriteDataBytes
+ 546:../Main.c     **** 		delay();
+ 2016              		.loc 1 546 0
+ 2017 0082 FFF7FEFF 		bl	delay
+ 547:../Main.c     **** 		sprintf(&buffer[0],"ECU=x%.2X,PID_20=x%.8X\r\n",ECU_Test[ECU_Index].ECU_Add,ECU_Test[ECU_Index].p
+ 2018              		.loc 1 547 0
+ 2019 0086 BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 2020 0088 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2021 008c C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2022 0090 4FEAC212 		lsl	r2, r2, #7
+ 2023 0094 9B18     		adds	r3, r3, r2
+ 2024 0096 5B88     		ldrh	r3, [r3, #2]
+ 2025 0098 1A46     		mov	r2, r3
+ 2026 009a B979     		ldrb	r1, [r7, #6]	@ zero_extendqisi2
+ 2027 009c 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2028 00a0 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2029 00a4 4FEAC111 		lsl	r1, r1, #7
+ 2030 00a8 5B18     		adds	r3, r3, r1
+ 2031 00aa 03F10803 		add	r3, r3, #8
+ 2032 00ae 1B68     		ldr	r3, [r3, #0]
+ 2033 00b0 07F10C01 		add	r1, r7, #12
+ 2034 00b4 0846     		mov	r0, r1
+ 2035 00b6 40F20001 		movw	r1, #:lower16:.LC3
+ 2036 00ba C0F20001 		movt	r1, #:upper16:.LC3
+ 2037 00be FFF7FEFF 		bl	sprintf
+ 548:../Main.c     **** 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
+ 2038              		.loc 1 548 0
+ 2039 00c2 07F10C03 		add	r3, r7, #12
+ 2040 00c6 1846     		mov	r0, r3
+ 2041 00c8 FFF7FEFF 		bl	strlen
+ 2042 00cc 0346     		mov	r3, r0
+ 2043 00ce 03F10103 		add	r3, r3, #1
+ 2044 00d2 07F10C02 		add	r2, r7, #12
+ 2045 00d6 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2046 00da C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2047 00de 1146     		mov	r1, r2
+ 2048 00e0 1A46     		mov	r2, r3
+ 2049 00e2 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 549:../Main.c     **** 		delay();
+ 2050              		.loc 1 549 0
+ 2051 00e6 FFF7FEFF 		bl	delay
+ 550:../Main.c     **** 		sprintf(&buffer[0],"ECU=x%.2X,PID_M9=x%.8X\r\n",ECU_Test[ECU_Index].ECU_Add,ECU_Test[ECU_Index].p
+ 2052              		.loc 1 550 0
+ 2053 00ea BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 2054 00ec 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2055 00f0 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2056 00f4 4FEAC212 		lsl	r2, r2, #7
+ 2057 00f8 9B18     		adds	r3, r3, r2
+ 2058 00fa 5B88     		ldrh	r3, [r3, #2]
+ 2059 00fc 1A46     		mov	r2, r3
+ 2060 00fe B979     		ldrb	r1, [r7, #6]	@ zero_extendqisi2
+ 2061 0100 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2062 0104 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2063 0108 4FEAC111 		lsl	r1, r1, #7
+ 2064 010c 5B18     		adds	r3, r3, r1
+ 2065 010e 03F11003 		add	r3, r3, #16
+ 2066 0112 1B68     		ldr	r3, [r3, #0]
+ 2067 0114 07F10C01 		add	r1, r7, #12
+ 2068 0118 0846     		mov	r0, r1
+ 2069 011a 40F20001 		movw	r1, #:lower16:.LC4
+ 2070 011e C0F20001 		movt	r1, #:upper16:.LC4
+ 2071 0122 FFF7FEFF 		bl	sprintf
+ 551:../Main.c     **** 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
+ 2072              		.loc 1 551 0
+ 2073 0126 07F10C03 		add	r3, r7, #12
+ 2074 012a 1846     		mov	r0, r3
+ 2075 012c FFF7FEFF 		bl	strlen
+ 2076 0130 0346     		mov	r3, r0
+ 2077 0132 03F10103 		add	r3, r3, #1
+ 2078 0136 07F10C02 		add	r2, r7, #12
+ 2079 013a 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2080 013e C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2081 0142 1146     		mov	r1, r2
+ 2082 0144 1A46     		mov	r2, r3
+ 2083 0146 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 552:../Main.c     **** 		delay();
+ 2084              		.loc 1 552 0
+ 2085 014a FFF7FEFF 		bl	delay
+ 553:../Main.c     **** 		sprintf(&buffer[0],"VIN=%s\r\n",ECU_Test[ECU_Index].VIN_Num);
+ 2086              		.loc 1 553 0
+ 2087 014e BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 2088 0150 4FEAC313 		lsl	r3, r3, #7
+ 2089 0154 03F15002 		add	r2, r3, #80
+ 2090 0158 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2091 015c C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2092 0160 D318     		adds	r3, r2, r3
+ 2093 0162 03F10403 		add	r3, r3, #4
+ 2094 0166 07F10C02 		add	r2, r7, #12
+ 2095 016a 1046     		mov	r0, r2
+ 2096 016c 40F20001 		movw	r1, #:lower16:.LC5
+ 2097 0170 C0F20001 		movt	r1, #:upper16:.LC5
+ 2098 0174 1A46     		mov	r2, r3
+ 2099 0176 FFF7FEFF 		bl	sprintf
+ 554:../Main.c     **** 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
+ 2100              		.loc 1 554 0
+ 2101 017a 07F10C03 		add	r3, r7, #12
+ 2102 017e 1846     		mov	r0, r3
+ 2103 0180 FFF7FEFF 		bl	strlen
+ 2104 0184 0346     		mov	r3, r0
+ 2105 0186 03F10103 		add	r3, r3, #1
+ 2106 018a 07F10C02 		add	r2, r7, #12
+ 2107 018e 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2108 0192 C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2109 0196 1146     		mov	r1, r2
+ 2110 0198 1A46     		mov	r2, r3
+ 2111 019a FFF7FEFF 		bl	UART001_WriteDataBytes
+ 555:../Main.c     **** 		delay();
+ 2112              		.loc 1 555 0
+ 2113 019e FFF7FEFF 		bl	delay
+ 556:../Main.c     **** //		sprintf(&buffer[0],"CAL ID=%s\r\n",ECU_Test[ECU_Index].CAL_Id);
+ 557:../Main.c     **** //		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
+ 558:../Main.c     **** 		break;
+ 2114              		.loc 1 558 0
+ 2115 01a2 84E0     		b	.L52
+ 2116              	.L56:
+ 559:../Main.c     **** 	case PRINT_VEHICAL_DATA:
+ 560:../Main.c     **** 
+ 561:../Main.c     **** 		sprintf(&buffer[0],"RPM=%.2f,\tSPD=%d Km/h\r\n",ECU_Test[ECU_Index].Engine_RPM,ECU_Test[ECU_Index
+ 2117              		.loc 1 561 0
+ 2118 01a4 BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 2119 01a6 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2120 01aa C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2121 01ae 4FEAC212 		lsl	r2, r2, #7
+ 2122 01b2 9B18     		adds	r3, r3, r2
+ 2123 01b4 03F14803 		add	r3, r3, #72
+ 2124 01b8 1B68     		ldr	r3, [r3, #0]	@ float
+ 2125 01ba 1846     		mov	r0, r3	@ float
+ 2126 01bc FFF7FEFF 		bl	__aeabi_f2d
+ 2127 01c0 0446     		mov	r4, r0
+ 2128 01c2 0D46     		mov	r5, r1
+ 2129 01c4 BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 2130 01c6 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2131 01ca C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2132 01ce 4FEAC212 		lsl	r2, r2, #7
+ 2133 01d2 9B18     		adds	r3, r3, r2
+ 2134 01d4 03F14803 		add	r3, r3, #72
+ 2135 01d8 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
+ 2136 01da 1A46     		mov	r2, r3
+ 2137 01dc 07F10C03 		add	r3, r7, #12
+ 2138 01e0 0092     		str	r2, [sp, #0]
+ 2139 01e2 1846     		mov	r0, r3
+ 2140 01e4 40F20001 		movw	r1, #:lower16:.LC6
+ 2141 01e8 C0F20001 		movt	r1, #:upper16:.LC6
+ 2142 01ec 2246     		mov	r2, r4
+ 2143 01ee 2B46     		mov	r3, r5
+ 2144 01f0 FFF7FEFF 		bl	sprintf
+ 562:../Main.c     **** 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
+ 2145              		.loc 1 562 0
+ 2146 01f4 07F10C03 		add	r3, r7, #12
+ 2147 01f8 1846     		mov	r0, r3
+ 2148 01fa FFF7FEFF 		bl	strlen
+ 2149 01fe 0346     		mov	r3, r0
+ 2150 0200 03F10103 		add	r3, r3, #1
+ 2151 0204 07F10C02 		add	r2, r7, #12
+ 2152 0208 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2153 020c C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2154 0210 1146     		mov	r1, r2
+ 2155 0212 1A46     		mov	r2, r3
+ 2156 0214 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 563:../Main.c     **** 		delay();
+ 2157              		.loc 1 563 0
+ 2158 0218 FFF7FEFF 		bl	delay
+ 564:../Main.c     **** 		sprintf(&buffer[0],"FUEL=%.2f L,\tRUNTIME=%d s\r\n",ECU_Test[ECU_Index].Feul_Level,ECU_Test[ECU_I
+ 2159              		.loc 1 564 0
+ 2160 021c BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 2161 021e 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2162 0222 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2163 0226 4FEAC212 		lsl	r2, r2, #7
+ 2164 022a 9B18     		adds	r3, r3, r2
+ 2165 022c 03F15003 		add	r3, r3, #80
+ 2166 0230 1B68     		ldr	r3, [r3, #0]	@ float
+ 2167 0232 1846     		mov	r0, r3	@ float
+ 2168 0234 FFF7FEFF 		bl	__aeabi_f2d
+ 2169 0238 0446     		mov	r4, r0
+ 2170 023a 0D46     		mov	r5, r1
+ 2171 023c BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 2172 023e 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2173 0242 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2174 0246 4FEAC212 		lsl	r2, r2, #7
+ 2175 024a 9B18     		adds	r3, r3, r2
+ 2176 024c 03F14803 		add	r3, r3, #72
+ 2177 0250 DB88     		ldrh	r3, [r3, #6]
+ 2178 0252 1A46     		mov	r2, r3
+ 2179 0254 07F10C03 		add	r3, r7, #12
+ 2180 0258 0092     		str	r2, [sp, #0]
+ 2181 025a 1846     		mov	r0, r3
+ 2182 025c 40F20001 		movw	r1, #:lower16:.LC7
+ 2183 0260 C0F20001 		movt	r1, #:upper16:.LC7
+ 2184 0264 2246     		mov	r2, r4
+ 2185 0266 2B46     		mov	r3, r5
+ 2186 0268 FFF7FEFF 		bl	sprintf
+ 565:../Main.c     **** 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
+ 2187              		.loc 1 565 0
+ 2188 026c 07F10C03 		add	r3, r7, #12
+ 2189 0270 1846     		mov	r0, r3
+ 2190 0272 FFF7FEFF 		bl	strlen
+ 2191 0276 0346     		mov	r3, r0
+ 2192 0278 03F10103 		add	r3, r3, #1
+ 2193 027c 07F10C02 		add	r2, r7, #12
+ 2194 0280 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2195 0284 C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2196 0288 1146     		mov	r1, r2
+ 2197 028a 1A46     		mov	r2, r3
+ 2198 028c FFF7FEFF 		bl	UART001_WriteDataBytes
+ 566:../Main.c     **** 		break;
+ 2199              		.loc 1 566 0
+ 2200 0290 0DE0     		b	.L52
+ 2201              	.L58:
+ 567:../Main.c     **** 	default:
+ 568:../Main.c     **** 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(can_uart_err
+ 2202              		.loc 1 568 0
+ 2203 0292 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2204 0296 C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2205 029a 40F20001 		movw	r1, #:lower16:can_uart_error
+ 2206 029e C0F20001 		movt	r1, #:upper16:can_uart_error
+ 2207 02a2 4FF01002 		mov	r2, #16
+ 2208 02a6 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 2209 02aa 00E0     		b	.L52
+ 2210              	.L59:
+ 542:../Main.c     **** 		break;
+ 2211              		.loc 1 542 0
+ 2212 02ac 00BF     		nop
+ 2213              	.L52:
+ 569:../Main.c     **** 	}
+ 570:../Main.c     **** }
+ 2214              		.loc 1 570 0
+ 2215 02ae 07F14007 		add	r7, r7, #64
+ 2216 02b2 BD46     		mov	sp, r7
+ 2217 02b4 B0BD     		pop	{r4, r5, r7, pc}
+ 2218              		.cfi_endproc
+ 2219              	.LFE121:
+ 2221 02b6 00BF     		.section	.text.TimerInt,"ax",%progbits
+ 2222              		.align	2
+ 2223              		.global	TimerInt
+ 2224              		.thumb
+ 2225              		.thumb_func
+ 2227              	TimerInt:
+ 2228              	.LFB122:
+ 571:../Main.c     **** void TimerInt(void * args) {
+ 2229              		.loc 1 571 0
+ 2230              		.cfi_startproc
+ 2231              		@ args = 0, pretend = 0, frame = 8
+ 2232              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2233 0000 80B5     		push	{r7, lr}
+ 2234              	.LCFI15:
+ 2235              		.cfi_def_cfa_offset 8
+ 2236              		.cfi_offset 7, -8
+ 2237              		.cfi_offset 14, -4
+ 2238 0002 82B0     		sub	sp, sp, #8
+ 2239              	.LCFI16:
+ 2240              		.cfi_def_cfa_offset 16
+ 2241 0004 00AF     		add	r7, sp, #0
+ 2242              	.LCFI17:
+ 2243              		.cfi_def_cfa_register 7
+ 2244 0006 7860     		str	r0, [r7, #4]
+ 572:../Main.c     **** 	IO004_TogglePin(IO004_Handle2);
+ 2245              		.loc 1 572 0
+ 2246 0008 40F20003 		movw	r3, #:lower16:IO004_Handle2
+ 2247 000c C0F20003 		movt	r3, #:upper16:IO004_Handle2
+ 2248 0010 5A68     		ldr	r2, [r3, #4]
+ 2249 0012 40F20003 		movw	r3, #:lower16:IO004_Handle2
+ 2250 0016 C0F20003 		movt	r3, #:upper16:IO004_Handle2
+ 2251 001a 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
+ 2252 001c 4FF00111 		mov	r1, #65537
+ 2253 0020 01FA03F3 		lsl	r3, r1, r3
+ 2254 0024 5360     		str	r3, [r2, #4]
+ 573:../Main.c     **** 	Timer_Flag=TRUE;//	while(!);
+ 2255              		.loc 1 573 0
+ 2256 0026 40F20003 		movw	r3, #:lower16:Timer_Flag
+ 2257 002a C0F20003 		movt	r3, #:upper16:Timer_Flag
+ 2258 002e 4FF00102 		mov	r2, #1
+ 2259 0032 1A70     		strb	r2, [r3, #0]
+ 574:../Main.c     **** 	CanTxMsgObj.Identifier=PID_REQUEST;
+ 2260              		.loc 1 574 0
+ 2261 0034 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 2262 0038 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 2263 003c 4FF4FC62 		mov	r2, #2016
+ 2264 0040 1A60     		str	r2, [r3, #0]
+ 575:../Main.c     **** 	CanTxMsgObj.data[1]=Data_Control_Frame[1];
+ 2265              		.loc 1 575 0
+ 2266 0042 40F20003 		movw	r3, #:lower16:Data_Control_Frame
+ 2267 0046 C0F20003 		movt	r3, #:upper16:Data_Control_Frame
+ 2268 004a 5A78     		ldrb	r2, [r3, #1]	@ zero_extendqisi2
+ 2269 004c 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 2270 0050 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 2271 0054 1A73     		strb	r2, [r3, #12]
+ 576:../Main.c     **** 	CanTxMsgObj.data[2]=Data_Control_Frame[2];
+ 2272              		.loc 1 576 0
+ 2273 0056 40F20003 		movw	r3, #:lower16:Data_Control_Frame
+ 2274 005a C0F20003 		movt	r3, #:upper16:Data_Control_Frame
+ 2275 005e 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2
+ 2276 0060 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 2277 0064 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 2278 0068 5A73     		strb	r2, [r3, #13]
+ 577:../Main.c     **** 	CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 2279              		.loc 1 577 0
+ 2280 006a 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 2281 006e C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 2282 0072 40F20001 		movw	r1, #:lower16:CanTxMsgObj
+ 2283 0076 C0F20001 		movt	r1, #:upper16:CanTxMsgObj
+ 2284 007a 4FF00102 		mov	r2, #1
+ 2285 007e FFF7FEFF 		bl	CAN001_ConfigMsgObj
+ 578:../Main.c     **** 
+ 579:../Main.c     **** 	CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data_Control_Frame);
+ 2286              		.loc 1 579 0
+ 2287 0082 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 2288 0086 C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 2289 008a 4FF00101 		mov	r1, #1
+ 2290 008e 4FF00802 		mov	r2, #8
+ 2291 0092 40F20003 		movw	r3, #:lower16:Data_Control_Frame
+ 2292 0096 C0F20003 		movt	r3, #:upper16:Data_Control_Frame
+ 2293 009a FFF7FEFF 		bl	CAN001_UpdateMODataRegisters
+ 580:../Main.c     **** 	CAN001_SendDataFrame(&CAN001_Handle0,1); //
+ 2294              		.loc 1 580 0
+ 2295 009e 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 2296 00a2 C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 2297 00a6 4FF00101 		mov	r1, #1
+ 2298 00aa FFF7FEFF 		bl	CAN001_SendDataFrame
+ 581:../Main.c     **** 	SYSTM001_StopTimer(TimerId);
+ 2299              		.loc 1 581 0
+ 2300 00ae 40F20003 		movw	r3, #:lower16:TimerId
+ 2301 00b2 C0F20003 		movt	r3, #:upper16:TimerId
+ 2302 00b6 1B68     		ldr	r3, [r3, #0]
+ 2303 00b8 1846     		mov	r0, r3
+ 2304 00ba FFF7FEFF 		bl	SYSTM001_StopTimer
+ 582:../Main.c     **** 	SYSTM001_DeleteTimer(TimerId);
+ 2305              		.loc 1 582 0
+ 2306 00be 40F20003 		movw	r3, #:lower16:TimerId
+ 2307 00c2 C0F20003 		movt	r3, #:upper16:TimerId
+ 2308 00c6 1B68     		ldr	r3, [r3, #0]
+ 2309 00c8 1846     		mov	r0, r3
+ 2310 00ca FFF7FEFF 		bl	SYSTM001_DeleteTimer
+ 583:../Main.c     ****     TimerId = SYSTM001_CreateTimer(100,SYSTM001_ONE_SHOT,TimerInt,NULL);
+ 2311              		.loc 1 583 0
+ 2312 00ce 4FF06400 		mov	r0, #100
+ 2313 00d2 4FF00001 		mov	r1, #0
+ 2314 00d6 40F20002 		movw	r2, #:lower16:TimerInt
+ 2315 00da C0F20002 		movt	r2, #:upper16:TimerInt
+ 2316 00de 4FF00003 		mov	r3, #0
+ 2317 00e2 FFF7FEFF 		bl	SYSTM001_CreateTimer
+ 2318 00e6 0246     		mov	r2, r0
+ 2319 00e8 40F20003 		movw	r3, #:lower16:TimerId
+ 2320 00ec C0F20003 		movt	r3, #:upper16:TimerId
+ 2321 00f0 1A60     		str	r2, [r3, #0]
+ 584:../Main.c     **** }
+ 2322              		.loc 1 584 0
+ 2323 00f2 07F10807 		add	r7, r7, #8
+ 2324 00f6 BD46     		mov	sp, r7
+ 2325 00f8 80BD     		pop	{r7, pc}
+ 2326              		.cfi_endproc
+ 2327              	.LFE122:
+ 2329 00fa 00BF     		.section	.text.Get_PID,"ax",%progbits
+ 2330              		.align	2
+ 2331              		.global	Get_PID
+ 2332              		.thumb
+ 2333              		.thumb_func
+ 2335              	Get_PID:
+ 2336              	.LFB123:
+ 585:../Main.c     **** //void TimerOneSec(void * args){
+ 586:../Main.c     **** //	Timer_Flag_1sec=TRUE;
+ 587:../Main.c     **** //	CAN_Tx_FLAG=TRUE;
+ 588:../Main.c     **** //	time_secs++;
+ 589:../Main.c     **** //	}
+ 590:../Main.c     **** 
+ 591:../Main.c     **** uint8_t Get_PID(uint16_t TimeToWait,uint8_t Mode_Req,uint8_t PID_Req,uint8_t ShowOP)
+ 592:../Main.c     **** {
+ 2337              		.loc 1 592 0
+ 2338              		.cfi_startproc
+ 2339              		@ args = 0, pretend = 0, frame = 16
+ 2340              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2341 0000 80B5     		push	{r7, lr}
+ 2342              	.LCFI18:
+ 2343              		.cfi_def_cfa_offset 8
+ 2344              		.cfi_offset 7, -8
+ 2345              		.cfi_offset 14, -4
+ 2346 0002 84B0     		sub	sp, sp, #16
+ 2347              	.LCFI19:
+ 2348              		.cfi_def_cfa_offset 24
+ 2349 0004 00AF     		add	r7, sp, #0
+ 2350              	.LCFI20:
+ 2351              		.cfi_def_cfa_register 7
+ 2352 0006 F880     		strh	r0, [r7, #6]	@ movhi
+ 2353 0008 7971     		strb	r1, [r7, #5]
+ 2354 000a 3A71     		strb	r2, [r7, #4]
+ 2355 000c FB70     		strb	r3, [r7, #3]
+ 593:../Main.c     **** 	//Check IF VIN is Supported
+ 594:../Main.c     **** 	//SEND GETVIN
+ 595:../Main.c     **** 	//WAIT till get reply or timer expires
+ 596:../Main.c     **** 	//	  //Send  VIN Number Query
+ 597:../Main.c     **** 	uint8_t Error;
+ 598:../Main.c     **** 	uint8_t Data_Rx_Flag=FALSE;
+ 2356              		.loc 1 598 0
+ 2357 000e 4FF00003 		mov	r3, #0
+ 2358 0012 BB73     		strb	r3, [r7, #14]
+ 599:../Main.c     **** 	//ECU_Test[ECU_Index].ID_Req=PID_Req;	//so we can differentiate bw VIN & CALID
+ 600:../Main.c     **** 	Data[1]=Mode_Req;
+ 2359              		.loc 1 600 0
+ 2360 0014 40F20003 		movw	r3, #:lower16:Data
+ 2361 0018 C0F20003 		movt	r3, #:upper16:Data
+ 2362 001c 7A79     		ldrb	r2, [r7, #5]
+ 2363 001e 5A70     		strb	r2, [r3, #1]
+ 601:../Main.c     **** 	Data[2]=PID_Req;
+ 2364              		.loc 1 601 0
+ 2365 0020 40F20003 		movw	r3, #:lower16:Data
+ 2366 0024 C0F20003 		movt	r3, #:upper16:Data
+ 2367 0028 3A79     		ldrb	r2, [r7, #4]
+ 2368 002a 9A70     		strb	r2, [r3, #2]
+ 602:../Main.c     **** 	CanTxMsgObj.Identifier=FUNC_PID_REQUEST;
+ 2369              		.loc 1 602 0
+ 2370 002c 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 2371 0030 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 2372 0034 40F2DF72 		movw	r2, #2015
+ 2373 0038 1A60     		str	r2, [r3, #0]
+ 603:../Main.c     **** 	CanTxMsgObj.data[1]=Data[1];
+ 2374              		.loc 1 603 0
+ 2375 003a 40F20003 		movw	r3, #:lower16:Data
+ 2376 003e C0F20003 		movt	r3, #:upper16:Data
+ 2377 0042 5A78     		ldrb	r2, [r3, #1]	@ zero_extendqisi2
+ 2378 0044 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 2379 0048 C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 2380 004c 1A73     		strb	r2, [r3, #12]
+ 604:../Main.c     **** 	CanTxMsgObj.data[2]=Data[2];
+ 2381              		.loc 1 604 0
+ 2382 004e 40F20003 		movw	r3, #:lower16:Data
+ 2383 0052 C0F20003 		movt	r3, #:upper16:Data
+ 2384 0056 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2
+ 2385 0058 40F20003 		movw	r3, #:lower16:CanTxMsgObj
+ 2386 005c C0F20003 		movt	r3, #:upper16:CanTxMsgObj
+ 2387 0060 5A73     		strb	r2, [r3, #13]
+ 605:../Main.c     **** 	CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+ 2388              		.loc 1 605 0
+ 2389 0062 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 2390 0066 C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 2391 006a 40F20001 		movw	r1, #:lower16:CanTxMsgObj
+ 2392 006e C0F20001 		movt	r1, #:upper16:CanTxMsgObj
+ 2393 0072 4FF00102 		mov	r2, #1
+ 2394 0076 FFF7FEFF 		bl	CAN001_ConfigMsgObj
+ 606:../Main.c     **** 
+ 607:../Main.c     **** 	CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data);
+ 2395              		.loc 1 607 0
+ 2396 007a 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 2397 007e C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 2398 0082 4FF00101 		mov	r1, #1
+ 2399 0086 4FF00802 		mov	r2, #8
+ 2400 008a 40F20003 		movw	r3, #:lower16:Data
+ 2401 008e C0F20003 		movt	r3, #:upper16:Data
+ 2402 0092 FFF7FEFF 		bl	CAN001_UpdateMODataRegisters
+ 608:../Main.c     **** 	CAN001_SendDataFrame(&CAN001_Handle0,1);
+ 2403              		.loc 1 608 0
+ 2404 0096 40F20000 		movw	r0, #:lower16:CAN001_Handle0
+ 2405 009a C0F20000 		movt	r0, #:upper16:CAN001_Handle0
+ 2406 009e 4FF00101 		mov	r1, #1
+ 2407 00a2 FFF7FEFF 		bl	CAN001_SendDataFrame
+ 609:../Main.c     **** 
+ 610:../Main.c     **** 	Timer_WaitId = SYSTM001_CreateTimer(TimeToWait,SYSTM001_ONE_SHOT,TimerWaitISR,NULL);
+ 2408              		.loc 1 610 0
+ 2409 00a6 FB88     		ldrh	r3, [r7, #6]
+ 2410 00a8 1846     		mov	r0, r3
+ 2411 00aa 4FF00001 		mov	r1, #0
+ 2412 00ae 40F20002 		movw	r2, #:lower16:TimerWaitISR
+ 2413 00b2 C0F20002 		movt	r2, #:upper16:TimerWaitISR
+ 2414 00b6 4FF00003 		mov	r3, #0
+ 2415 00ba FFF7FEFF 		bl	SYSTM001_CreateTimer
+ 2416 00be 0246     		mov	r2, r0
+ 2417 00c0 40F20003 		movw	r3, #:lower16:Timer_WaitId
+ 2418 00c4 C0F20003 		movt	r3, #:upper16:Timer_WaitId
+ 2419 00c8 1A60     		str	r2, [r3, #0]
+ 611:../Main.c     **** 	Timer_Wait_Expired=FALSE;
+ 2420              		.loc 1 611 0
+ 2421 00ca 40F20003 		movw	r3, #:lower16:Timer_Wait_Expired
+ 2422 00ce C0F20003 		movt	r3, #:upper16:Timer_Wait_Expired
+ 2423 00d2 4FF00002 		mov	r2, #0
+ 2424 00d6 1A70     		strb	r2, [r3, #0]
+ 612:../Main.c     **** 	SYSTM001_StartTimer (Timer_WaitId);
+ 2425              		.loc 1 612 0
+ 2426 00d8 40F20003 		movw	r3, #:lower16:Timer_WaitId
+ 2427 00dc C0F20003 		movt	r3, #:upper16:Timer_WaitId
+ 2428 00e0 1B68     		ldr	r3, [r3, #0]
+ 2429 00e2 1846     		mov	r0, r3
+ 2430 00e4 FFF7FEFF 		bl	SYSTM001_StartTimer
+ 613:../Main.c     **** 
+ 614:../Main.c     **** 	while(!Timer_Wait_Expired)
+ 2431              		.loc 1 614 0
+ 2432 00e8 1CE0     		b	.L62
+ 2433              	.L63:
+ 615:../Main.c     **** 	{
+ 616:../Main.c     **** 		if(CAN_RX_Pkt_Count)
+ 2434              		.loc 1 616 0
+ 2435 00ea 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 2436 00ee C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 2437 00f2 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 2438 00f4 002B     		cmp	r3, #0
+ 2439 00f6 15D0     		beq	.L62
+ 617:../Main.c     **** 		{
+ 618:../Main.c     **** 			Data_Rx_Flag=TRUE;
+ 2440              		.loc 1 618 0
+ 2441 00f8 4FF00103 		mov	r3, #1
+ 2442 00fc BB73     		strb	r3, [r7, #14]
+ 619:../Main.c     **** 			CAN_RX_Pkt_Count--;
+ 2443              		.loc 1 619 0
+ 2444 00fe 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 2445 0102 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 2446 0106 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 2447 0108 03F1FF33 		add	r3, r3, #-1
+ 2448 010c DAB2     		uxtb	r2, r3
+ 2449 010e 40F20003 		movw	r3, #:lower16:CAN_RX_Pkt_Count
+ 2450 0112 C0F20003 		movt	r3, #:upper16:CAN_RX_Pkt_Count
+ 2451 0116 1A70     		strb	r2, [r3, #0]
+ 620:../Main.c     **** 			Error=StoreData(PID_Req);
+ 2452              		.loc 1 620 0
+ 2453 0118 3B79     		ldrb	r3, [r7, #4]	@ zero_extendqisi2
+ 2454 011a 1846     		mov	r0, r3
+ 2455 011c FFF7FEFF 		bl	StoreData
+ 2456 0120 0346     		mov	r3, r0
+ 2457 0122 FB73     		strb	r3, [r7, #15]
+ 2458              	.L62:
+ 614:../Main.c     **** 	while(!Timer_Wait_Expired)
+ 2459              		.loc 1 614 0 discriminator 1
+ 2460 0124 40F20003 		movw	r3, #:lower16:Timer_Wait_Expired
+ 2461 0128 C0F20003 		movt	r3, #:upper16:Timer_Wait_Expired
+ 2462 012c 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 2463 012e 002B     		cmp	r3, #0
+ 2464 0130 DBD0     		beq	.L63
+ 621:../Main.c     **** 		}
+ 622:../Main.c     **** 	}
+ 623:../Main.c     **** #ifndef Sniffer
+ 624:../Main.c     **** 	if(Data_Rx_Flag)
+ 625:../Main.c     **** 	{
+ 626:../Main.c     **** 		Data_Rx_Flag=FALSE;
+ 627:../Main.c     **** 	if(ShowOP==PRINT_ECU_INFO)
+ 628:../Main.c     **** 		{
+ 629:../Main.c     **** 			PrintData(PRINT_ECU_INFO,0);
+ 630:../Main.c     **** 			delay();
+ 631:../Main.c     **** 			PrintData(PRINT_ECU_INFO,1);
+ 632:../Main.c     **** 			delay();
+ 633:../Main.c     **** 		}
+ 634:../Main.c     **** 		else if(ShowOP==PRINT_VEHICAL_DATA)
+ 635:../Main.c     **** 		{
+ 636:../Main.c     **** 			PrintData(PRINT_VEHICAL_DATA,0);
+ 637:../Main.c     **** 		}
+ 638:../Main.c     **** 	}
+ 639:../Main.c     **** #endif
+ 640:../Main.c     **** 	return Error;
+ 2465              		.loc 1 640 0
+ 2466 0132 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 641:../Main.c     **** }
+ 2467              		.loc 1 641 0
+ 2468 0134 1846     		mov	r0, r3
+ 2469 0136 07F11007 		add	r7, r7, #16
+ 2470 013a BD46     		mov	sp, r7
+ 2471 013c 80BD     		pop	{r7, pc}
+ 2472              		.cfi_endproc
+ 2473              	.LFE123:
+ 2475 013e 00BF     		.section	.text.TimerWaitISR,"ax",%progbits
+ 2476              		.align	2
+ 2477              		.global	TimerWaitISR
+ 2478              		.thumb
+ 2479              		.thumb_func
+ 2481              	TimerWaitISR:
+ 2482              	.LFB124:
+ 642:../Main.c     **** 
+ 643:../Main.c     **** void TimerWaitISR (void * args)
+ 644:../Main.c     **** {
+ 2483              		.loc 1 644 0
+ 2484              		.cfi_startproc
+ 2485              		@ args = 0, pretend = 0, frame = 8
+ 2486              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2487 0000 80B5     		push	{r7, lr}
+ 2488              	.LCFI21:
+ 2489              		.cfi_def_cfa_offset 8
+ 2490              		.cfi_offset 7, -8
+ 2491              		.cfi_offset 14, -4
+ 2492 0002 82B0     		sub	sp, sp, #8
+ 2493              	.LCFI22:
+ 2494              		.cfi_def_cfa_offset 16
+ 2495 0004 00AF     		add	r7, sp, #0
+ 2496              	.LCFI23:
+ 2497              		.cfi_def_cfa_register 7
+ 2498 0006 7860     		str	r0, [r7, #4]
+ 645:../Main.c     **** 	Timer_Wait_Expired=TRUE;
+ 2499              		.loc 1 645 0
+ 2500 0008 40F20003 		movw	r3, #:lower16:Timer_Wait_Expired
+ 2501 000c C0F20003 		movt	r3, #:upper16:Timer_Wait_Expired
+ 2502 0010 4FF00102 		mov	r2, #1
+ 2503 0014 1A70     		strb	r2, [r3, #0]
+ 646:../Main.c     **** 	SYSTM001_StopTimer(Timer_WaitId);
+ 2504              		.loc 1 646 0
+ 2505 0016 40F20003 		movw	r3, #:lower16:Timer_WaitId
+ 2506 001a C0F20003 		movt	r3, #:upper16:Timer_WaitId
+ 2507 001e 1B68     		ldr	r3, [r3, #0]
+ 2508 0020 1846     		mov	r0, r3
+ 2509 0022 FFF7FEFF 		bl	SYSTM001_StopTimer
+ 647:../Main.c     **** 	SYSTM001_DeleteTimer(Timer_WaitId);
+ 2510              		.loc 1 647 0
+ 2511 0026 40F20003 		movw	r3, #:lower16:Timer_WaitId
+ 2512 002a C0F20003 		movt	r3, #:upper16:Timer_WaitId
+ 2513 002e 1B68     		ldr	r3, [r3, #0]
+ 2514 0030 1846     		mov	r0, r3
+ 2515 0032 FFF7FEFF 		bl	SYSTM001_DeleteTimer
+ 648:../Main.c     **** }
+ 2516              		.loc 1 648 0
+ 2517 0036 07F10807 		add	r7, r7, #8
+ 2518 003a BD46     		mov	sp, r7
+ 2519 003c 80BD     		pop	{r7, pc}
+ 2520              		.cfi_endproc
+ 2521              	.LFE124:
+ 2523 003e 00BF     		.section	.text.print_Uart,"ax",%progbits
+ 2524              		.align	2
+ 2525              		.global	print_Uart
+ 2526              		.thumb
+ 2527              		.thumb_func
+ 2529              	print_Uart:
+ 2530              	.LFB125:
+ 649:../Main.c     **** void print_Uart(char Str[])
+ 650:../Main.c     **** {
+ 2531              		.loc 1 650 0
+ 2532              		.cfi_startproc
+ 2533              		@ args = 0, pretend = 0, frame = 32
+ 2534              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2535 0000 80B5     		push	{r7, lr}
+ 2536              	.LCFI24:
+ 2537              		.cfi_def_cfa_offset 8
+ 2538              		.cfi_offset 7, -8
+ 2539              		.cfi_offset 14, -4
+ 2540 0002 88B0     		sub	sp, sp, #32
+ 2541              	.LCFI25:
+ 2542              		.cfi_def_cfa_offset 40
+ 2543 0004 00AF     		add	r7, sp, #0
+ 2544              	.LCFI26:
+ 2545              		.cfi_def_cfa_register 7
+ 2546 0006 7860     		str	r0, [r7, #4]
+ 651:../Main.c     **** char string[20];
+ 652:../Main.c     **** uint8_t length;
+ 653:../Main.c     **** length=strlen(Str);
+ 2547              		.loc 1 653 0
+ 2548 0008 7868     		ldr	r0, [r7, #4]
+ 2549 000a FFF7FEFF 		bl	strlen
+ 2550 000e 0346     		mov	r3, r0
+ 2551 0010 FB77     		strb	r3, [r7, #31]
+ 654:../Main.c     **** memcpy(&string[0],&Str[0],length);
+ 2552              		.loc 1 654 0
+ 2553 0012 FB7F     		ldrb	r3, [r7, #31]	@ zero_extendqisi2
+ 2554 0014 07F10802 		add	r2, r7, #8
+ 2555 0018 1046     		mov	r0, r2
+ 2556 001a 7968     		ldr	r1, [r7, #4]
+ 2557 001c 1A46     		mov	r2, r3
+ 2558 001e FFF7FEFF 		bl	memcpy
+ 655:../Main.c     **** UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&string, (uint32_t)sizeof(string)/2);
+ 2559              		.loc 1 655 0
+ 2560 0022 07F10803 		add	r3, r7, #8
+ 2561 0026 40F20000 		movw	r0, #:lower16:UART001_Handle0
+ 2562 002a C0F20000 		movt	r0, #:upper16:UART001_Handle0
+ 2563 002e 1946     		mov	r1, r3
+ 2564 0030 4FF00A02 		mov	r2, #10
+ 2565 0034 FFF7FEFF 		bl	UART001_WriteDataBytes
+ 656:../Main.c     **** }
+ 2566              		.loc 1 656 0
+ 2567 0038 07F12007 		add	r7, r7, #32
+ 2568 003c BD46     		mov	sp, r7
+ 2569 003e 80BD     		pop	{r7, pc}
+ 2570              		.cfi_endproc
+ 2571              	.LFE125:
+ 2573              		.section	.text.is_pid_supported,"ax",%progbits
+ 2574              		.align	2
+ 2575              		.global	is_pid_supported
+ 2576              		.thumb
+ 2577              		.thumb_func
+ 2579              	is_pid_supported:
+ 2580              	.LFB126:
+ 657:../Main.c     **** 
+ 658:../Main.c     **** 
+ 659:../Main.c     **** bool is_pid_supported(unsigned char pid, unsigned char mode,uint8_t ECU_Index)
+ 660:../Main.c     **** {
+ 2581              		.loc 1 660 0
+ 2582              		.cfi_startproc
+ 2583              		@ args = 0, pretend = 0, frame = 8
+ 2584              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2585              		@ link register save eliminated.
+ 2586 0000 80B4     		push	{r7}
+ 2587              	.LCFI27:
+ 2588              		.cfi_def_cfa_offset 4
+ 2589              		.cfi_offset 7, -4
+ 2590 0002 83B0     		sub	sp, sp, #12
+ 2591              	.LCFI28:
+ 2592              		.cfi_def_cfa_offset 16
+ 2593 0004 00AF     		add	r7, sp, #0
+ 2594              	.LCFI29:
+ 2595              		.cfi_def_cfa_register 7
+ 2596 0006 1346     		mov	r3, r2
+ 2597 0008 0246     		mov	r2, r0
+ 2598 000a FA71     		strb	r2, [r7, #7]
+ 2599 000c 0A46     		mov	r2, r1
+ 2600 000e BA71     		strb	r2, [r7, #6]
+ 2601 0010 7B71     		strb	r3, [r7, #5]
+ 661:../Main.c     **** 	  if(pid==0)
+ 2602              		.loc 1 661 0
+ 2603 0012 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 2604 0014 002B     		cmp	r3, #0
+ 2605 0016 02D1     		bne	.L68
+ 662:../Main.c     **** 		return TRUE;
+ 2606              		.loc 1 662 0
+ 2607 0018 4FF00103 		mov	r3, #1
+ 2608 001c 78E0     		b	.L69
+ 2609              	.L68:
+ 663:../Main.c     **** 	  else if(mode==MODE_CURR_DATA)
+ 2610              		.loc 1 663 0
+ 2611 001e BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 2612 0020 012B     		cmp	r3, #1
+ 2613 0022 56D1     		bne	.L70
+ 664:../Main.c     **** 	  {
+ 665:../Main.c     **** 	  if(pid<=0x20)
+ 2614              		.loc 1 665 0
+ 2615 0024 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 2616 0026 202B     		cmp	r3, #32
+ 2617 0028 19D8     		bhi	.L71
+ 666:../Main.c     **** 	  {
+ 667:../Main.c     **** 		if(1L<<(uint8_t)(0x20-pid) & ECU_Test[ECU_Index].pid01to20_support)
+ 2618              		.loc 1 667 0
+ 2619 002a FB79     		ldrb	r3, [r7, #7]
+ 2620 002c C3F12003 		rsb	r3, r3, #32
+ 2621 0030 DBB2     		uxtb	r3, r3
+ 2622 0032 4FF00102 		mov	r2, #1
+ 2623 0036 02FA03F3 		lsl	r3, r2, r3
+ 2624 003a 1A46     		mov	r2, r3
+ 2625 003c 7979     		ldrb	r1, [r7, #5]	@ zero_extendqisi2
+ 2626 003e 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2627 0042 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2628 0046 4FEAC111 		lsl	r1, r1, #7
+ 2629 004a 5B18     		adds	r3, r3, r1
+ 2630 004c 03F10403 		add	r3, r3, #4
+ 2631 0050 1B68     		ldr	r3, [r3, #0]
+ 2632 0052 1340     		ands	r3, r3, r2
+ 2633 0054 002B     		cmp	r3, #0
+ 2634 0056 59D0     		beq	.L72
+ 668:../Main.c     **** 		  return TRUE;
+ 2635              		.loc 1 668 0
+ 2636 0058 4FF00103 		mov	r3, #1
+ 2637 005c 58E0     		b	.L69
+ 2638              	.L71:
+ 669:../Main.c     **** 	  }
+ 670:../Main.c     **** 	  else
+ 671:../Main.c     **** 	  if(pid<=0x40)
+ 2639              		.loc 1 671 0
+ 2640 005e FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 2641 0060 402B     		cmp	r3, #64
+ 2642 0062 19D8     		bhi	.L73
+ 672:../Main.c     **** 	  {
+ 673:../Main.c     **** 		if(1L<<(uint8_t)(0x40-pid) & ECU_Test[ECU_Index].pid21to40_support)
+ 2643              		.loc 1 673 0
+ 2644 0064 FB79     		ldrb	r3, [r7, #7]
+ 2645 0066 C3F14003 		rsb	r3, r3, #64
+ 2646 006a DBB2     		uxtb	r3, r3
+ 2647 006c 4FF00102 		mov	r2, #1
+ 2648 0070 02FA03F3 		lsl	r3, r2, r3
+ 2649 0074 1A46     		mov	r2, r3
+ 2650 0076 7979     		ldrb	r1, [r7, #5]	@ zero_extendqisi2
+ 2651 0078 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2652 007c C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2653 0080 4FEAC111 		lsl	r1, r1, #7
+ 2654 0084 5B18     		adds	r3, r3, r1
+ 2655 0086 03F10803 		add	r3, r3, #8
+ 2656 008a 1B68     		ldr	r3, [r3, #0]
+ 2657 008c 1340     		ands	r3, r3, r2
+ 2658 008e 002B     		cmp	r3, #0
+ 2659 0090 3CD0     		beq	.L72
+ 674:../Main.c     **** 		  return TRUE;
+ 2660              		.loc 1 674 0
+ 2661 0092 4FF00103 		mov	r3, #1
+ 2662 0096 3BE0     		b	.L69
+ 2663              	.L73:
+ 675:../Main.c     **** 	  }
+ 676:../Main.c     **** 	  else
+ 677:../Main.c     **** 	  if(pid<=0x60)
+ 2664              		.loc 1 677 0
+ 2665 0098 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 2666 009a 602B     		cmp	r3, #96
+ 2667 009c 36D8     		bhi	.L72
+ 678:../Main.c     **** 	  {
+ 679:../Main.c     **** 		if(1L<<(uint8_t)(0x60-pid) & ECU_Test[ECU_Index].pid41to60_support)
+ 2668              		.loc 1 679 0
+ 2669 009e FB79     		ldrb	r3, [r7, #7]
+ 2670 00a0 C3F16003 		rsb	r3, r3, #96
+ 2671 00a4 DBB2     		uxtb	r3, r3
+ 2672 00a6 4FF00102 		mov	r2, #1
+ 2673 00aa 02FA03F3 		lsl	r3, r2, r3
+ 2674 00ae 1A46     		mov	r2, r3
+ 2675 00b0 7979     		ldrb	r1, [r7, #5]	@ zero_extendqisi2
+ 2676 00b2 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2677 00b6 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2678 00ba 4FEAC111 		lsl	r1, r1, #7
+ 2679 00be 5B18     		adds	r3, r3, r1
+ 2680 00c0 03F10C03 		add	r3, r3, #12
+ 2681 00c4 1B68     		ldr	r3, [r3, #0]
+ 2682 00c6 1340     		ands	r3, r3, r2
+ 2683 00c8 002B     		cmp	r3, #0
+ 2684 00ca 1FD0     		beq	.L72
+ 680:../Main.c     **** 		  return TRUE;
+ 2685              		.loc 1 680 0
+ 2686 00cc 4FF00103 		mov	r3, #1
+ 2687 00d0 1EE0     		b	.L69
+ 2688              	.L70:
+ 681:../Main.c     **** 	  }
+ 682:../Main.c     ****   }
+ 683:../Main.c     ****   else
+ 684:../Main.c     ****   if( mode==MODE_REQ_VIN)
+ 2689              		.loc 1 684 0
+ 2690 00d2 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 2691 00d4 092B     		cmp	r3, #9
+ 2692 00d6 19D1     		bne	.L72
+ 685:../Main.c     ****   {
+ 686:../Main.c     **** 		if(1L<<(uint8_t)(0x20-pid) & ECU_Test[ECU_Index].pid01to20M09_support)
+ 2693              		.loc 1 686 0
+ 2694 00d8 FB79     		ldrb	r3, [r7, #7]
+ 2695 00da C3F12003 		rsb	r3, r3, #32
+ 2696 00de DBB2     		uxtb	r3, r3
+ 2697 00e0 4FF00102 		mov	r2, #1
+ 2698 00e4 02FA03F3 		lsl	r3, r2, r3
+ 2699 00e8 1A46     		mov	r2, r3
+ 2700 00ea 7979     		ldrb	r1, [r7, #5]	@ zero_extendqisi2
+ 2701 00ec 40F20003 		movw	r3, #:lower16:ECU_Test
+ 2702 00f0 C0F20003 		movt	r3, #:upper16:ECU_Test
+ 2703 00f4 4FEAC111 		lsl	r1, r1, #7
+ 2704 00f8 5B18     		adds	r3, r3, r1
+ 2705 00fa 03F11003 		add	r3, r3, #16
+ 2706 00fe 1B68     		ldr	r3, [r3, #0]
+ 2707 0100 1340     		ands	r3, r3, r2
+ 2708 0102 002B     		cmp	r3, #0
+ 2709 0104 02D0     		beq	.L72
+ 687:../Main.c     **** 			  return TRUE;
+ 2710              		.loc 1 687 0
+ 2711 0106 4FF00103 		mov	r3, #1
+ 2712 010a 01E0     		b	.L69
+ 2713              	.L72:
+ 688:../Main.c     ****   }
+ 689:../Main.c     ****   return FALSE;
+ 2714              		.loc 1 689 0
+ 2715 010c 4FF00003 		mov	r3, #0
+ 2716              	.L69:
+ 690:../Main.c     **** }
+ 2717              		.loc 1 690 0
+ 2718 0110 1846     		mov	r0, r3
+ 2719 0112 07F10C07 		add	r7, r7, #12
+ 2720 0116 BD46     		mov	sp, r7
+ 2721 0118 80BC     		pop	{r7}
+ 2722 011a 7047     		bx	lr
+ 2723              		.cfi_endproc
+ 2724              	.LFE126:
+ 2726              		.text
+ 2727              	.Letext0:
+ 2728              		.file 2 "c:\\dave-3.1.10\\arm-gcc\\bin\\../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/i
+ 2729              		.file 3 "C:\\DAVE-3.1.10\\eclipse\\/../CMSIS/Infineon/XMC4500_series/Include/XMC4500.h"
+ 2730              		.file 4 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/L
+ 2731              		.file 5 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/C
+ 2732              		.file 6 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/C
+ 2733              		.file 7 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/I
+ 2734              		.file 8 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/U
+ 2735              		.file 9 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/U
+ 2736              		.file 10 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/
+ 2737              		.file 11 "../OBDIICANBS.h"
+ 2738              		.file 12 "C:\\DAVE-3.1.10\\eclipse\\/../CMSIS/Include/core_cm4.h"
+ 2739              		.file 13 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/
+ 2740              		.file 14 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/
+ 2741              		.file 15 "C:\\DAVE3_workspace\\ws3.1.10\\CAN_BUS_THX\\Dave\\Generated\\inc\\DAVESupport/../../inc/
+ 2742              		.file 16 "../Timer.h"
+DEFINED SYMBOLS
+                            *ABS*:00000000 Main.c
+                            *COM*:00000004 Timer_WaitId
+                            *COM*:00000004 TimerId
+                            *COM*:00000004 TimerId1Sec
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:26     .bss:00000000 Timer_Wait_Expired
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:27     .bss:00000000 $d
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:31     .bss:00000001 Timer_Flag
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:36     .bss:00000002 Timer_Flag_1sec
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:41     .bss:00000003 time_secs
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:48     .data:00000000 PID_Desc
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:45     .data:00000000 $d
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:497    .data:00000900 obd_std_strings
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:535    .data:000009ac pid_reslen
+                            *COM*:00000100 ECU_Test
+                            *COM*:00000090 CanRecMsgObj
+                            *COM*:00000018 CanTxMsgObj
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:622    .data:000009fc Data_Control_Frame
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:635    .data:00000a04 Data
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:648    .data:00000a0c data_uart
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:654    .data:00000a1c can_uart_error
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:660    .data:00000a40 data_uart_end
+                            *COM*:00000032 can_uart_buffer
+                            *COM*:00000001 PID_Val
+                            *COM*:00000001 MODE_Val
+                            *COM*:00000001 Data_Len
+                            *COM*:00000002 ECU_Val
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:672    .bss:00000004 Engine_RPM
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:678    .bss:00000008 Vehicle_Speed
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:684    .bss:0000000c Fuel_Level
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:689    .bss:00000010 VIN_Flag
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:694    .bss:00000011 CAN_Rx_Flag
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:699    .bss:00000012 CAN_Tx_FLAG
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:704    .bss:00000013 CAN_RX_Pkt_Count
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:709    .bss:00000014 temp
+                            *COM*:0000001e Sniffer_Buffer
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:713    .rodata:00000000 $d
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:714    .rodata:00000000 .LC0
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:717    .text.main:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:722    .text.main:00000000 main
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2227   .text.TimerInt:00000000 TimerInt
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2481   .text.TimerWaitISR:00000000 TimerWaitISR
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2529   .text.print_Uart:00000000 print_Uart
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:918    .rodata:0000000c .LC1
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:922    .text.CAN0_1_IRQHandler:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:927    .text.CAN0_1_IRQHandler:00000000 CAN0_1_IRQHandler
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1223   .text.delay:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1228   .text.delay:00000000 delay
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1278   .text.delay:00000050 $d
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1284   .text.StoreData:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1289   .text.StoreData:00000000 StoreData
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1411   .text.StoreData:00000110 $d
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1478   .text.StoreData:00000214 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1920   .text.StoreData:00000654 $d
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1927   .rodata:00000044 .LC2
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1930   .rodata:00000060 .LC3
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1933   .rodata:0000007c .LC4
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1936   .rodata:00000098 .LC5
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1940   .rodata:000000a4 .LC6
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1943   .rodata:000000bc .LC7
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1946   .text.PrintData:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:1951   .text.PrintData:00000000 PrintData
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2222   .text.TimerInt:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2330   .text.Get_PID:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2335   .text.Get_PID:00000000 Get_PID
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2476   .text.TimerWaitISR:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2524   .text.print_Uart:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2574   .text.is_pid_supported:00000000 $t
+C:\Users\Aqeel\AppData\Local\Temp\cc70f7BC.s:2579   .text.is_pid_supported:00000000 is_pid_supported
+                     .debug_frame:00000010 $d
+                           .group:00000000 wm4.1.592323046c84b12315b2713ce3886c0a
+                           .group:00000000 wm4.XMC4500.h.45.215f4b8c79f46c7645c15373868d08c0
+                           .group:00000000 wm4.core_cm4.h.47.41af406cb4cda82c972f112a9cd0a024
+                           .group:00000000 wm4.newlib.h.8.a9901dc52d1357e3e94003403d43f8b5
+                           .group:00000000 wm4.features.h.22.b72b3baab2bb2eab3661375590100b6b
+                           .group:00000000 wm4.config.h.193.5fb8ef056cdff92dec3dee9552839d8c
+                           .group:00000000 wm4._ansi.h.23.7aefdac4826acebbfc9f3822a0aeb14c
+                           .group:00000000 wm4.stdint.h.20.54ad762faa59e3c05491630641c8d8bf
+                           .group:00000000 wm4.core_cmInstr.h.39.3d3d1b4a79aef37532666dc6ee87c6ac
+                           .group:00000000 wm4.core_cm4_simd.h.43.b5d1d38735af6366227b4256d330cf13
+                           .group:00000000 wm4.core_cm4.h.178.e5ef5ce66d198d7f00f9d0076e267c41
+                           .group:00000000 wm4.system_XMC4500.h.29.827f68baa362c84f2abae4ab67dde7c9
+                           .group:00000000 wm4.XMC4500.h.198.8e022f279ff353ed081df898dc7b9cf3
+                           .group:00000000 wm4.stddef.h.40.50cf36416e06376af8a9dca28536f2e4
+                           .group:00000000 wm4.types.h.60.e75c47576398c648cdcf9000ace5e3d8
+                           .group:00000000 wm4.MULTIPLEXER.h.46.4a863fbae1c79f0db26da3ce2dc30d02
+                           .group:00000000 wm4.CCU8PWMLIB.h.74.725ec81203769525cc7a424597055f47
+                           .group:00000000 wm4.MOTORLIB.h.62.951091d95913dd2ff36d761323a1771d
+                           .group:00000000 wm4.DBG001.h.116.d6d9e7459a0faa3905c97c1d2edb339d
+                           .group:00000000 wm4.uc_id.h.35.a6c4837fad81477ba31967683332b8cc
+                           .group:00000000 wm4.CLK001_Const.h.50.e5e9c2ddc89f4cc9e7b93e9648fa94e4
+                           .group:00000000 wm4.CLK001_Conf.h.81.82a8db895dc146da001475dd68223522
+                           .group:00000000 wm4.CAN_Types.h.39.df7fb5ef31e40aa4065540aa5507b9c8
+                           .group:00000000 wm4.CAN001.h.81.2ffbbfa413249ddb098d31e13be0595a
+                           .group:00000000 wm4.CAN001_Conf.h.47.37054df7fc8e16acb44a84e615370b4e
+                           .group:00000000 wm4.CAN001.h.1182.045aa37f116a6d2f0e10a31ad28e326b
+                           .group:00000000 wm4.IO004.h.53.442ea5eb47ad9eedc675253aa35f3107
+                           .group:00000000 wm4.NVIC002_Conf.h.62.46009087f3f9db74b135a4eac7d54acd
+                           .group:00000000 wm4.Usic.h.54.8af9f733ba5771eeb374435d205ea54b
+                           .group:00000000 wm4.UART001_Conf.h.53.a7d7190bee783732e895eea70c8f4a1b
+                           .group:00000000 wm4.SYSTM001.h.64.6ecb31c49bc3e7691644fdcdfc11b5cd
+                           .group:00000000 wm4.OBDIICANBS.h.23.85242098247a3692356aab936c88cebc
+                           .group:00000000 wm4.stdio.h.31.f48311dde756a2aec27351b58a280fb9
+                           .group:00000000 wm4.stddef.h.161.e50ff8a9d5d1abbc15641da28ac571bf
+                           .group:00000000 wm4.stdarg.h.34.3a23a216c0c293b3d2ea2e89281481e6
+                           .group:00000000 wm4._default_types.h.6.5e12cd604db8ce00b62bb2f02708eaf3
+                           .group:00000000 wm4.lock.h.2.9bc98482741e5e2a9450b12934a684ea
+                           .group:00000000 wm4.stddef.h.161.c6104a0666cf681b6269ddc9b4f516d4
+                           .group:00000000 wm4.reent.h.16.9e42f0e588b85e70b2bf6572af57ce64
+                           .group:00000000 wm4.types.h.23.0d949686bbcadd1621462d4fa1f884f9
+                           .group:00000000 wm4.types.h.2.e9cec8c90ab35f77d9f499e06ae02400
+                           .group:00000000 wm4.types.h.80.1f2c84c0d57dd52dd9936095d9ac218e
+                           .group:00000000 wm4.stdio.h.2.4aa87247282eca6c8f36f9de33d8df1a
+                           .group:00000000 wm4.stdio.h.63.dfdea6580b080784d08faace69b6ed76
+                           .group:00000000 wm4.string.h.8.ef946ad0bc9ad5c970c365dcd1fc4b0a
+                           .group:00000000 wm4.string.h.86.d5c872ff52e2712c985b588a0ef39f3c
+
+UNDEFINED SYMBOLS
+DAVE_Init
+SYSTM001_CreateTimer
+CAN001_Handle0
+CAN001_ConfigMsgObj
+CAN001_UpdateMODataRegisters
+IO004_Handle1
+IO004_Handle0
+IO004_Handle2
+CAN001_GetMOFlagStatus
+CAN001_ClearMOFlagStatus
+CAN001_ReadMsgObj
+sprintf
+strlen
+UART001_Handle0
+UART001_WriteDataBytes
+CAN001_GetNodeFlagStatus
+CAN001_ClearNodeFlagStatus
+__aeabi_dadd
+__aeabi_dcmplt
+memcpy
+__aeabi_f2d
+CAN001_SendDataFrame
+SYSTM001_StopTimer
+SYSTM001_DeleteTimer
+SYSTM001_StartTimer

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_34ca6c2187a5c1647e006a45f58014af" kind="dir">
+    <compoundname>Lib</compoundname>
+    <innerfile refid="_system___libc_stubs_8d">System_LibcStubs.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Debug/Lib/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,891 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_i_o004_8h" kind="file">
+    <compoundname>IO004.h</compoundname>
+    <includes refid="_d_a_v_e3_8h" local="no">DAVE3.h</includes>
+    <includes refid="_i_o004___conf_8h" local="yes">IO004_Conf.h</includes>
+    <includedby refid="_d_a_v_e3_8h" local="yes">DAVE3.h</includedby>
+    <incdepgraph>
+      <node id="540">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="526">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="545">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="528">
+        <label>stdint.h</label>
+      </node>
+      <node id="542">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>IO004.h</label>
+        <link refid="IO004.h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="547" relation="include">
+        </childnode>
+      </node>
+      <node id="529">
+        <label>stddef.h</label>
+      </node>
+      <node id="544">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="537">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="530">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="538">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="541">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="536">
+        <label>uc_id.h</label>
+      </node>
+      <node id="539">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+      </node>
+      <node id="547">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="525">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
+        </childnode>
+      </node>
+      <node id="543">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+        <childnode refid="546" relation="include">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="535">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="551">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="550" relation="include">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+      </node>
+      <node id="556">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="548">
+        <label>IO004.h</label>
+        <link refid="IO004.h"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="565">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="568">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="561">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="553">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+      </node>
+      <node id="567">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="564">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="559">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="552">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="550" relation="include">
+        </childnode>
+      </node>
+      <node id="550">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="560">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="548" relation="include">
+        </childnode>
+      </node>
+      <node id="549">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="548" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+      </node>
+      <node id="562">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="557">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_i_o004___handle_type" prot="public">IO004_HandleType</innerclass>
+    <innerclass refid="struct_i_o004___p_o_r_t_s___type_def" prot="public">IO004_PORTS_TypeDef</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="enum" id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" prot="public" static="no">
+        <name>IO004_InputModeType</name>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6a82ce137dc177871b16558b424da4727f" prot="public">
+          <name>IO004_TRISTATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tri-state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6af6b659b8baab75581e61b97fb5cab5e5" prot="public">
+          <name>IO004_PULL_DOWN_DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Input pull-down device connected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ad43c37c60d8a862e7b6e2393793a3808" prot="public">
+          <name>IO004_PULL_UP_DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Input pull-up device connected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ae8ef9f1a88e54e15c512f487250422d1" prot="public">
+          <name>IO004_CONT_POLLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pn_OUTx continuously polls the input value </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6a6494e62a415fe288c065184c9d129686" prot="public">
+          <name>IO004_INV_TRISTATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inverted tri-state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6adaf0f38a913f268216fcfc92677e2573" prot="public">
+          <name>IO004_INV_PULL_DOWN_DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inverted Input pull-down device connected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ae77a08cbd57be94cbd59762d2905943c" prot="public">
+          <name>IO004_INV_PULL_UP_DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inverted Input pull-up device connected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6addd5c97922f92ad607ab6b12c6eb2f08" prot="public">
+          <name>IO004_INV_CONT_POLLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inverted Pn_OUTx continuously polls the input value </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This data type describes the Input Mode type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="122" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="121" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="enum" id="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" prot="public" static="no">
+        <name>IO004_OutputModeType</name>
+        <enumvalue id="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03a3e62c574c12cd455e30bec6dc882985c" prot="public">
+          <name>IO004_PUSHPULL</name>
+          <initializer>=0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Push pull output </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03acd7ea64dc1674ab7d0830daec73e569e" prot="public">
+          <name>IO004_OPENDRAIN</name>
+          <initializer>=0x18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Open drain output </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This data type describes the Output Mode type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="145" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="144" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="_i_o004_8h_1a28f5a6c6e2060ee071243b340db6a6c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO004_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>IO004_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes all the App instances based on user configuration</para><para><simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/><sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para><para>Inclusion of header file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="183" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" bodystart="128" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" prot="public" static="no">
+        <name>IO004_ReadPin</name>
+        <param><defname>Handle</defname></param>
+        <initializer>(((Handle.PortRegs-&gt;IN) &gt;&gt; Handle.PortPin) &amp; 1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro reads value at portpin.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value at Pin</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Value<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Value<sp/>=<sp/><ref refid="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" kindref="member">IO004_ReadPin</ref>(IO004_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="220" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_o004_8h_1a844e6f849d0fb87f86aa2b7e3d24c3e6" prot="public" static="no">
+        <name>IO004_SetPin</name>
+        <param><defname>Handle</defname></param>
+        <initializer>(Handle.PortRegs-&gt;OMR  = 1U &lt;&lt; Handle.PortPin)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro sets the chosen portpin to &apos;1&apos;.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1a844e6f849d0fb87f86aa2b7e3d24c3e6" kindref="member">IO004_SetPin</ref>(IO004_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting> <linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="245" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_o004_8h_1a4928fdc6515220949e20abca95e4b09c" prot="public" static="no">
+        <name>IO004_SetOutputValue</name>
+        <param><defname>Handle</defname></param>
+        <param><defname>Value</defname></param>
+        <initializer>(Handle.PortRegs-&gt;OMR = Value  ? (1U &lt;&lt; Handle.PortPin):(0x10000UL &lt;&lt; Handle.PortPin))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro sets the chosen portpin with the boolean value provided.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to Port Pin App Instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin Status(0/1)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO002_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1a4928fdc6515220949e20abca95e4b09c" kindref="member">IO004_SetOutputValue</ref>(IO004_Handle0,1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="269" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_o004_8h_1a6d8dcb0d29c79861b91bc62305d5db40" prot="public" static="no">
+        <name>IO004_ResetPin</name>
+        <param><defname>Handle</defname></param>
+        <initializer>(Handle.PortRegs-&gt;OMR  = 0x10000UL &lt;&lt; Handle.PortPin)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro sets the chosen portpin to &apos;0&apos;.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1a6d8dcb0d29c79861b91bc62305d5db40" kindref="member">IO004_ResetPin</ref>(IO004_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="294" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_o004_8h_1afe5d734514d7c79c308e6da1bcbe5a58" prot="public" static="no">
+        <name>IO004_TogglePin</name>
+        <param><defname>Handle</defname></param>
+        <initializer>(Handle.PortRegs-&gt;OMR  = 0x10001UL &lt;&lt; Handle.PortPin)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro toggles the chosen portpin.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1afe5d734514d7c79c308e6da1bcbe5a58" kindref="member">IO004_TogglePin</ref>(IO004_Handle0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="319" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_o004_8h_1ad4c46db3c4ccadd98572342d796092df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO004_DisableOutputDriver</definition>
+        <argsstring>(const IO004_HandleType *Handle, IO004_InputModeType Mode)</argsstring>
+        <name>IO004_DisableOutputDriver</name>
+        <param>
+          <type>const <ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" kindref="member">IO004_InputModeType</ref></type>
+          <declname>Mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The chosen portpin is configured as input. The following definitions for Mode are available:<linebreak/>
+ IO004_TRISTATE (no pull device connected)<linebreak/>
+ IO004_PULL_DOWN_DEVICE (pull-down device connected)<linebreak/>
+ IO004_PULL_UP_DEVICE (pull-up device connected)<linebreak/>
+ IO004_CONT_POLLING (Pn_OUTx continuously samples input value)<linebreak/>
+ IO004_INV_TRISTATE (Inverted no pull device connected)<linebreak/>
+ IO004_INV_PULL_DOWN_DEVICE (Inverted pull-down device connected)<linebreak/>
+ IO004_INV_IO004_PULL_UP_DEVICE(Inverted pull-up device connected)<linebreak/>
+ IO004_INV_CONT_POLLING (Pn_OUTx continuously samples input value)<linebreak/>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input selection(Pull-Down,Pull-Up,Inv-Pull-Down,Inv-Pull-Up) for chosen port pin</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1ad4c46db3c4ccadd98572342d796092df" kindref="member">IO004_DisableOutputDriver</ref>(&amp;IO004_Handle0,<ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ad43c37c60d8a862e7b6e2393793a3808" kindref="member">IO004_PULL_UP_DEVICE</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="357" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" bodystart="167" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="_i_o004_8h_1a3410f235266c64c6b27c3bafd598bd72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO004_EnableOutputDriver</definition>
+        <argsstring>(const IO004_HandleType *Handle, IO004_OutputModeType Mode)</argsstring>
+        <name>IO004_EnableOutputDriver</name>
+        <param>
+          <type>const <ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref> *</type>
+          <declname>Handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" kindref="member">IO004_OutputModeType</ref></type>
+          <declname>Mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The chosen portpin is configured as output. The following definitions for Mode are available: IO004_PUSHPULL (push-pull mode) IO004_OPENDRAIN (open drain mode)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to Port Pin App Instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Output Characteristic(Push-Pull,Open-Drain)for chosen port Pin</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<bold>Reentrant: NO </bold><linebreak/>
+</para><para><linebreak/>
+</para><para><bold>Example:</bold> <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DAVE_Init();<sp/></highlight><highlight class="comment">//<sp/>IO004_Init()<sp/>is<sp/>called<sp/>within<sp/>DAVE_Init()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="_i_o004_8h_1a3410f235266c64c6b27c3bafd598bd72" kindref="member">IO004_EnableOutputDriver</ref>(&amp;IO004_Handle0,<ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03acd7ea64dc1674ab7d0830daec73e569e" kindref="member">IO004_OPENDRAIN</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="387" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/IO004/IO004.c" bodystart="198" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file for Software_Controlled_IO_IO004 App. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2014<sp/>Infineon<sp/>Technologies<sp/>AG.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Infineon<sp/>Technologies<sp/>AG<sp/>(Infineon)<sp/>is<sp/>supplying<sp/>this<sp/>software<sp/>for<sp/>use<sp/>with</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Infineon’s<sp/>microcontrollers.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>can<sp/>be<sp/>freely<sp/>distributed<sp/>within<sp/>development<sp/>tools<sp/>that<sp/>are</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>supporting<sp/>such<sp/>microcontrollers.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;.<sp/><sp/>NO<sp/>WARRANTIES,<sp/>WHETHER<sp/>EXPRESS,<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>OR<sp/>STATUTORY,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>APPLY<sp/>TO<sp/>THIS<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>INFINEON<sp/>SHALL<sp/>NOT,<sp/>IN<sp/>ANY<sp/>CIRCUMSTANCES,<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>SPECIAL,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>FOR<sp/>ANY<sp/>REASON<sp/>WHATSOEVER.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000/XMC1000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">**<sp/>MAY<sp/>BE<sp/>CHANGED<sp/>BY<sp/>USER<sp/>[yes/no]:<sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">**<sp/>MODIFICATION<sp/>DATE<sp/>:<sp/>Jan<sp/>17,<sp/>2014<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">**<sp/>Initials<sp/><sp/><sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">**<sp/>SNR<sp/><sp/><sp/><sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment">/*<sp/>Revision<sp/>History<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>16<sp/>Mar<sp/>2013<sp/>v1.0.14<sp/><sp/>Modified<sp/>OMR<sp/>register<sp/>configuration<sp/>(Direct<sp/>assignment<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>without<sp/>reading)<sp/>to<sp/>upgrade<sp/>performance.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>17<sp/>Jan<sp/>2014<sp/>v1.0.20<sp/><sp/>C++<sp/>support<sp/>added.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IO004_H_</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IO004_H_</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Type<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="84" refid="struct_i_o004___p_o_r_t_s___type_def" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85" refid="struct_i_o004___p_o_r_t_s___type_def_1ae3f1cebeaa606065541ea7a1794ad405" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1ae3f1cebeaa606065541ea7a1794ad405" kindref="member">OUT</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" refkind="member"><highlight class="normal">__O<sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" kindref="member">OMR</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED1[2];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" kindref="member">IOCR0</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" kindref="member">IOCR4</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" kindref="member">IOCR8</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" kindref="member">IOCR12</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED2[1];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="struct_i_o004___p_o_r_t_s___type_def_1aa8c786d29e1c797069a75483d13574a5" refkind="member"><highlight class="normal">__I<sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1aa8c786d29e1c797069a75483d13574a5" kindref="member">IN</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED3[6];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" kindref="member">PDR0</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" kindref="member">PDR1</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED4[6];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="struct_i_o004___p_o_r_t_s___type_def_1a5e12b42ed302b54cc14be8de0e945f94" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1a5e12b42ed302b54cc14be8de0e945f94" kindref="member">PDISC</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">__I<sp/><sp/>uint32_t<sp/><sp/><sp/>RESERVED5[3];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="struct_i_o004___p_o_r_t_s___type_def_1afa59064b3cde2765cbebe62d34b1e8ba" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1afa59064b3cde2765cbebe62d34b1e8ba" kindref="member">PPS</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="struct_i_o004___p_o_r_t_s___type_def_1ab91a0ba6223e2b0ee23219815f004c45" refkind="member"><highlight class="normal">__IO<sp/>uint32_t<sp/><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def_1ab91a0ba6223e2b0ee23219815f004c45" kindref="member">HWSEL</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<ref refid="struct_i_o004___p_o_r_t_s___type_def" kindref="compound">IO004_PORTS_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="struct_i_o004___handle_type" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110" refid="struct_i_o004___handle_type_1a8c4e8c6e8e7540f8334af7ae47269bea" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_i_o004___handle_type_1a8c4e8c6e8e7540f8334af7ae47269bea" kindref="member">PortNr</ref>;</highlight></codeline>
+<codeline lineno="112" refid="struct_i_o004___handle_type_1a630c965da832175612b86ebc791666b8" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="struct_i_o004___handle_type_1a630c965da832175612b86ebc791666b8" kindref="member">PortPin</ref>;</highlight></codeline>
+<codeline lineno="114" refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_i_o004___p_o_r_t_s___type_def" kindref="compound">IO004_PORTS_TypeDef</ref>*<sp/><ref refid="struct_i_o004___handle_type_1aaa0a545d5c435d0c718aa70365b4dd77" kindref="member">PortRegs</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" kindref="member">IO004_InputModeType</ref></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6a82ce137dc177871b16558b424da4727f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6a82ce137dc177871b16558b424da4727f" kindref="member">IO004_TRISTATE</ref>,</highlight></codeline>
+<codeline lineno="126" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6af6b659b8baab75581e61b97fb5cab5e5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6af6b659b8baab75581e61b97fb5cab5e5" kindref="member">IO004_PULL_DOWN_DEVICE</ref>,</highlight></codeline>
+<codeline lineno="128" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ad43c37c60d8a862e7b6e2393793a3808" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ad43c37c60d8a862e7b6e2393793a3808" kindref="member">IO004_PULL_UP_DEVICE</ref>,</highlight></codeline>
+<codeline lineno="130" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ae8ef9f1a88e54e15c512f487250422d1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ae8ef9f1a88e54e15c512f487250422d1" kindref="member">IO004_CONT_POLLING</ref>,</highlight></codeline>
+<codeline lineno="132" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6a6494e62a415fe288c065184c9d129686" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6a6494e62a415fe288c065184c9d129686" kindref="member">IO004_INV_TRISTATE</ref>,</highlight></codeline>
+<codeline lineno="134" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6adaf0f38a913f268216fcfc92677e2573" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6adaf0f38a913f268216fcfc92677e2573" kindref="member">IO004_INV_PULL_DOWN_DEVICE</ref>,</highlight></codeline>
+<codeline lineno="136" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ae77a08cbd57be94cbd59762d2905943c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6ae77a08cbd57be94cbd59762d2905943c" kindref="member">IO004_INV_PULL_UP_DEVICE</ref>,</highlight></codeline>
+<codeline lineno="138" refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6addd5c97922f92ad607ab6b12c6eb2f08" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6addd5c97922f92ad607ab6b12c6eb2f08" kindref="member">IO004_INV_CONT_POLLING</ref>,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" kindref="member">IO004_InputModeType</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" kindref="member">IO004_OutputModeType</ref></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147" refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03a3e62c574c12cd455e30bec6dc882985c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03a3e62c574c12cd455e30bec6dc882985c" kindref="member">IO004_PUSHPULL</ref><sp/>=0x10,</highlight></codeline>
+<codeline lineno="149" refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03acd7ea64dc1674ab7d0830daec73e569e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03acd7ea64dc1674ab7d0830daec73e569e" kindref="member">IO004_OPENDRAIN</ref><sp/>=0x18</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}<ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" kindref="member">IO004_OutputModeType</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">**<sp/>FUNCTION<sp/>PROTOTYPES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="157"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="183"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1a28f5a6c6e2060ee071243b340db6a6c1" kindref="member">IO004_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_IO004_API_2&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO004_ReadPin(Handle<sp/>)<sp/>(((Handle.PortRegs-&gt;IN)<sp/>&gt;&gt;<sp/>Handle.PortPin)<sp/>&amp;<sp/>1U)</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_IO004_API_3&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="_i_o004_8h_1a844e6f849d0fb87f86aa2b7e3d24c3e6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO004_SetPin(Handle)<sp/>(Handle.PortRegs-&gt;OMR<sp/><sp/>=<sp/>1U<sp/>&lt;&lt;<sp/>Handle.PortPin)</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="269" refid="_i_o004_8h_1a4928fdc6515220949e20abca95e4b09c" refkind="member"><highlight class="preprocessor">#define<sp/>IO004_SetOutputValue(Handle,Value)<sp/>(Handle.PortRegs-&gt;OMR<sp/>=<sp/>Value<sp/><sp/>?<sp/>(1U<sp/>&lt;&lt;<sp/>Handle.PortPin):(0x10000UL<sp/>&lt;&lt;<sp/>Handle.PortPin))</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_IO004_API_4&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="_i_o004_8h_1a6d8dcb0d29c79861b91bc62305d5db40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO004_ResetPin(Handle)<sp/>(Handle.PortRegs-&gt;OMR<sp/><sp/>=<sp/>0x10000UL<sp/>&lt;&lt;<sp/>Handle.PortPin)</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&lt;&lt;&lt;DD_IO004_API_6&gt;&gt;&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="_i_o004_8h_1afe5d734514d7c79c308e6da1bcbe5a58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO004_TogglePin(Handle)<sp/>(Handle.PortRegs-&gt;OMR<sp/><sp/>=<sp/>0x10001UL<sp/>&lt;&lt;<sp/>Handle.PortPin)</highlight></codeline>
+<codeline lineno="320"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1ad4c46db3c4ccadd98572342d796092df" kindref="member">IO004_DisableOutputDriver</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref>*<sp/>Handle,<ref refid="_i_o004_8h_1a931c6b539dfcff853c64944f9b9517d6" kindref="member">IO004_InputModeType</ref><sp/>Mode);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i_o004_8h_1a3410f235266c64c6b27c3bafd598bd72" kindref="member">IO004_EnableOutputDriver</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_i_o004___handle_type" kindref="compound">IO004_HandleType</ref>*<sp/>Handle,<ref refid="_i_o004_8h_1a5326b2ef7b8d2b0f37c532299aeead03" kindref="member">IO004_OutputModeType</ref><sp/>Mode);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="comment">/*<sp/>Inclusion<sp/>of<sp/>App<sp/>config<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_o004___conf_8h" kindref="compound" tooltip="Configuration file generated based on UI settings of IO004 App.">IO004_Conf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="396"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="398"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IO004_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="399"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="comment">/*CODE_BLOCK_END*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h"/>
+  </compounddef>
+</doxygen>

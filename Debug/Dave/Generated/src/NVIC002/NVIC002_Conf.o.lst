@@ -1,0 +1,60 @@
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 3
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 6
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.file	"NVIC002_Conf.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	NVIC002_Handle0
+  20              		.section	.rodata
+  21              		.align	2
+  24              	NVIC002_Handle0:
+  25 0000 4D       		.byte	77
+  26 0001 3F       		.byte	63
+  27 0002 00       		.byte	0
+  28 0003 01       		.byte	1
+  29              		.global	NVIC002_HandleArray
+  30              		.data
+  31              		.align	2
+  34              	NVIC002_HandleArray:
+  35 0000 00000000 		.word	NVIC002_Handle0
+  36              		.text
+  37              	.Letext0:
+  38              		.file 1 "c:\\dave-3.1.10\\arm-gcc\\bin\\../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/i
+  39              		.file 2 "../Dave/Generated/src/NVIC002/../../inc/NVIC002/NVIC002.h"
+  40              		.file 3 "C:\\DAVE-3.1.10\\eclipse\\/../CMSIS/Include/core_cm4.h"
+  41              		.file 4 "../Dave/Generated/src/NVIC002/NVIC002_Conf.c"
+DEFINED SYMBOLS
+                            *ABS*:00000000 NVIC002_Conf.c
+C:\Users\Aqeel\AppData\Local\Temp\ccftcCwi.s:24     .rodata:00000000 NVIC002_Handle0
+C:\Users\Aqeel\AppData\Local\Temp\ccftcCwi.s:21     .rodata:00000000 $d
+C:\Users\Aqeel\AppData\Local\Temp\ccftcCwi.s:34     .data:00000000 NVIC002_HandleArray
+C:\Users\Aqeel\AppData\Local\Temp\ccftcCwi.s:31     .data:00000000 $d
+                           .group:00000000 wm4.1.592323046c84b12315b2713ce3886c0a
+                           .group:00000000 wm4.uc_id.h.35.a6c4837fad81477ba31967683332b8cc
+                           .group:00000000 wm4.XMC4500.h.45.215f4b8c79f46c7645c15373868d08c0
+                           .group:00000000 wm4.core_cm4.h.47.41af406cb4cda82c972f112a9cd0a024
+                           .group:00000000 wm4.newlib.h.8.a9901dc52d1357e3e94003403d43f8b5
+                           .group:00000000 wm4.features.h.22.b72b3baab2bb2eab3661375590100b6b
+                           .group:00000000 wm4.config.h.193.5fb8ef056cdff92dec3dee9552839d8c
+                           .group:00000000 wm4._ansi.h.23.7aefdac4826acebbfc9f3822a0aeb14c
+                           .group:00000000 wm4.stdint.h.20.54ad762faa59e3c05491630641c8d8bf
+                           .group:00000000 wm4.core_cmInstr.h.39.3d3d1b4a79aef37532666dc6ee87c6ac
+                           .group:00000000 wm4.core_cm4_simd.h.43.b5d1d38735af6366227b4256d330cf13
+                           .group:00000000 wm4.core_cm4.h.178.e5ef5ce66d198d7f00f9d0076e267c41
+                           .group:00000000 wm4.system_XMC4500.h.29.827f68baa362c84f2abae4ab67dde7c9
+                           .group:00000000 wm4.XMC4500.h.198.8e022f279ff353ed081df898dc7b9cf3
+                           .group:00000000 wm4.NVIC002_Conf.h.62.46009087f3f9db74b135a4eac7d54acd
+
+NO UNDEFINED SYMBOLS

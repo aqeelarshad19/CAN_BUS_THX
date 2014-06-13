@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="group___debug_log__publicparam" kind="group">
+    <compoundname>DebugLog_publicparam</compoundname>
+    <title>DebugLog_publicparam</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___debug_log__publicparam_1gabe6a6b0531c4297afa75b03282e91892" prot="public" static="no">
+        <name>DebugLog_AssertOptionType</name>
+        <enumvalue id="group___debug_log__publicparam_1ggabe6a6b0531c4297afa75b03282e91892a8a769b3f7ecd4155ecc29f5037e44d63" prot="public">
+          <name>BREAK_INSTRUCTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Stop the working </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1ggabe6a6b0531c4297afa75b03282e91892a3072b9446b579e5b7e97162141c79ff8" prot="public">
+          <name>SENDTO_DEBUGLOG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sends the debug message to host </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for Assert Options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="234" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___debug_log__publicparam_1gabe0053144a22fdfc487726d671e3cb3d" prot="public" static="no">
+        <name>DebugLog_ErrorType</name>
+        <enumvalue id="group___debug_log__publicparam_1ggabe0053144a22fdfc487726d671e3cb3daa74ed3c863d62b82ea0965962aa986e6" prot="public">
+          <name>DEBUGLOG_ERROR</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1ggabe0053144a22fdfc487726d671e3cb3da1abbfb7bbe79d90b377875d0c5907f82" prot="public">
+          <name>DEBUGLOG_PBC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1ggabe0053144a22fdfc487726d671e3cb3daf7534a86047937b6ce5d24691fb9e0e7" prot="public">
+          <name>DEBUGLOG_TRANSPORT_BUSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for Error Codes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="135" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="134" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___debug_log__publicparam_1gaf7999e83db023e8adc81cacb67e5a05a" prot="public" static="no">
+        <name>DebugLog_InvarientAssertionType</name>
+        <enumvalue id="group___debug_log__publicparam_1ggaf7999e83db023e8adc81cacb67e5a05aaf449a5f60caf22173c98ca91a6f506bd" prot="public">
+          <name>ALWAYS_ASSERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Assert always </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1ggaf7999e83db023e8adc81cacb67e5a05aaf01a12c3a16496ec3606ba306b113107" prot="public">
+          <name>CONDITIONAL_ASSERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>assert depends upon the condition </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1ggaf7999e83db023e8adc81cacb67e5a05aab87cdba71d586e185a0064fc1aa0c1a8" prot="public">
+          <name>NO_ASSERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Never assert </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for type of Assertion Type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="221" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="220" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___debug_log__publicparam_1ga113848697538ee557f442c963c84a600" prot="public" static="no">
+        <name>DebugLog_PhyicalInterfaceType</name>
+        <enumvalue id="group___debug_log__publicparam_1gga113848697538ee557f442c963c84a600ab81270ba54ae4586a18415e5a579633d" prot="public">
+          <name>UART</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1gga113848697538ee557f442c963c84a600afbc4c5b58e0adfc275d3fb97e4bbb005" prot="public">
+          <name>SIMPLE_CAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Simple Controller Area Network </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1gga113848697538ee557f442c963c84a600a8f0fce6ed9d0370f45ef72a7b469937c" prot="public">
+          <name>ETHERNET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ethernet </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1gga113848697538ee557f442c963c84a600a8700b04e3aad4e83acdcf4f693b1964a" prot="public">
+          <name>FILESYSTEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>File System </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for type of Physical Interface. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="181" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="180" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___debug_log__publicparam_1gacfa98ed816c6632a2b81c8697e38a174" prot="public" static="no">
+        <name>DebugLog_RuntimeFilterType</name>
+        <enumvalue id="group___debug_log__publicparam_1ggacfa98ed816c6632a2b81c8697e38a174a546232c212e259836d46a031b5f88d41" prot="public">
+          <name>DEBUGLOG_LEVEL_STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Static Runtime Filter </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1ggacfa98ed816c6632a2b81c8697e38a174aeca317f43449d3a8e4f94007a2541dd1" prot="public">
+          <name>DEBUGLOG_LEVEL_DYNAMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dynamic Run Time Filtering </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for type of Run time Filter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="210" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="209" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___debug_log__publicparam_1ga20fe5347f57b020dbe0eb15a398f3d07" prot="public" static="no">
+        <name>DebugLog_StaticFilterOptionsType</name>
+        <enumvalue id="group___debug_log__publicparam_1gga20fe5347f57b020dbe0eb15a398f3d07af00283f61ea5b939776a997381b7dd1f" prot="public">
+          <name>DEBUGLOG_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EMPTY: No message will be logged </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1gga20fe5347f57b020dbe0eb15a398f3d07a62e68914df97da6c4e1e2c364653f966" prot="public">
+          <name>DEBUGLOG_TRUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TRUE: All the messages will be logged </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___debug_log__publicparam_1gga20fe5347f57b020dbe0eb15a398f3d07a7a0c5a805eb60bda2c49f933417a15e2" prot="public">
+          <name>DEBUGLOG_FILTERING_MACRO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MACRO: Filtering will be decided by the macro formed by GroupID and Severity Level set in the GUI </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for type of Static Filter Options. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="196" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="195" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___debug_log__publicparam_1gaac9b3def7a280195821668c0edee93b2" prot="public" static="no">
+        <type>status_t(*</type>
+        <definition>typedef status_t(* CmdCallback)(void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>CmdCallback</name>
+        <briefdescription>
+<para>Typedef for the Callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="129" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___debug_log__publicparam_1gab2a6c3e1b5f6190a1cd3fea4d8cb7070" prot="public" static="no">
+        <name>DEBUGLOG_LEVEL_CRITICAL</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for Severity Type - SET TO CRITICAL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="172" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga9a74fe5da88f4c1c6e4e188a58271c93" prot="public" static="no">
+        <name>DEBUGLOG_LEVEL_ERROR</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for Severity Type - SET TO ERROR </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="170" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga54e26f837fc3ded1b7ceb541d624442a" prot="public" static="no">
+        <name>DEBUGLOG_LEVEL_INFO</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for Severity Type - SET TO INFO </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="166" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga0cc182d7080f99b5ebf1620218104d6c" prot="public" static="no">
+        <name>DEBUGLOG_LEVEL_NOTSET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for Severity Type - LEVEL NOT SET </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="162" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga425e97c1f546d4c7676a24dcd0ab87b9" prot="public" static="no">
+        <name>DEBUGLOG_LEVEL_SAFETY_CRITICAL</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for Severity Type - SET TO SAFETY CRITICAL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="174" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga8a4faec301069be683cb412f91b24f01" prot="public" static="no">
+        <name>DEBUGLOG_LEVEL_TRACE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for Severity Type - SET TO TRACE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="164" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga9c1a9679cf710100a0dcaa624e505727" prot="public" static="no">
+        <name>DEBUGLOG_LEVEL_WARNING</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for Severity Type - SET TO WARNING </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="168" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1gaee9717da379a99bc7053b9c767823594" prot="public" static="no">
+        <name>FUNCTION_ENTRY</name>
+        <param><defname>GID</defname></param>
+        <param><defname>Status</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro for Logging function start </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="116" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1gaee9717da379a99bc7053b9c767823594" prot="public" static="no">
+        <name>FUNCTION_ENTRY</name>
+        <param><defname>GID</defname></param>
+        <param><defname>Status</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro for Logging function start </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="581" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga797b47a5f221a46da15fa65a81c59ed6" prot="public" static="no">
+        <name>FUNCTION_EXIT</name>
+        <param><defname>GID</defname></param>
+        <param><defname>Status</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro for logging function stop </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="119" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__publicparam_1ga797b47a5f221a46da15fa65a81c59ed6" prot="public" static="no">
+        <name>FUNCTION_EXIT</name>
+        <param><defname>GID</defname></param>
+        <param><defname>Status</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro for logging function stop </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="583" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

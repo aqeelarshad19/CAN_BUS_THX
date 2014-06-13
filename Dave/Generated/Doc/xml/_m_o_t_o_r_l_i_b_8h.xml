@@ -1,0 +1,1122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_m_o_t_o_r_l_i_b_8h" kind="file">
+    <compoundname>MOTORLIB.h</compoundname>
+    <includes refid="_d_a_v_e3_8h" local="no">DAVE3.h</includes>
+    <includedby refid="_l_i_b_s_8h" local="yes">LIBS.h</includedby>
+    <includedby refid="_m_o_t_o_r_l_i_b_8c" local="yes">MOTORLIB.c</includedby>
+    <incdepgraph>
+      <node id="762">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="749">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="769">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="751">
+        <label>stdint.h</label>
+      </node>
+      <node id="766">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>stddef.h</label>
+      </node>
+      <node id="768">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="760">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="756">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="758">
+        <label>uc_id.h</label>
+      </node>
+      <node id="761">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="757">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>MOTORLIB.h</label>
+        <link refid="MOTORLIB.h"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="754">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="775">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+      </node>
+      <node id="778">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+      </node>
+      <node id="779">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="781">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="787">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="791">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="783">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="777">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="789">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="786">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="780">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="776">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+      </node>
+      <node id="774">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="782">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="781" relation="include">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="771">
+        <label>MOTORLIB.h</label>
+        <link refid="MOTORLIB.h"/>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" prot="public">MOTORLIBS_PIHandleType</innerclass>
+    <innerclass refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" prot="public">MOTORLIBS_PT1HandleType</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1a4a3d08f54bb1c23acd9f5afbfb6473e6" prot="public" static="no">
+        <name>MOTORLIBS_CLARKESCALE</name>
+        <initializer>(0x01U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is Clarke Transformation Scaling </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="77" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1a52d950961d257cf6dc73c7f9398c9e5e" prot="public" static="no">
+        <name>MOTORLIBS_INVSQRT3</name>
+        <initializer>(0x49E6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is Inverse of Square root of 3 (1/sqrt(3)*2^15) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="80" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1ac5d1a9cd387a228975abcd2a5034b3da" prot="public" static="no">
+        <name>MOTORLIBS_ANGLESCALE</name>
+        <initializer>(0x08U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is Angle Scaling - Convert 24 bit to 16 bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="83" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1a978e058c3e866008d019fa2496b3ed12" prot="public" static="no">
+        <name>MOTORLIBS_AMPSCALE</name>
+        <initializer>(0x08U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is Amplitude Scaling - Convert 24 bit to 16 bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="86" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1a7f4dd55f4dc16d12378812a79977bef2" prot="public" static="no">
+        <name>MOTORLIBS_PI_KPSCALE</name>
+        <initializer>(0x09U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is PI Controller KP Values SCaling </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="89" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1ae76ba1dde996d8a5cc7a210f13b022dc" prot="public" static="no">
+        <name>MOTORLIBS_PI_KISCALE</name>
+        <initializer>(0x0FU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is PI Controller KI Values SCaling </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="92" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1a7e358d82f13214a70c4953e3b86812bb" prot="public" static="no">
+        <name>MOTORLIBS_MIN_MAX_LIMIT</name>
+        <param><defname>Buffer</defname></param>
+        <param><defname>Limit1</defname></param>
+        <param><defname>Limit2</defname></param>
+        <initializer>((Buffer) &gt; (Limit1)) ? (Limit1) : (((Buffer) &lt; (Limit2))? (Limit2): (Buffer))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="95" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1acff93c902bdac8932697de6476164221" prot="public" static="no">
+        <name>MOTORLIBS_ABS</name>
+        <param><defname>x</defname></param>
+        <initializer>((x &gt; 0) ? x : -x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used to find out the absolute value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="97" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1aa0c21cb5e93a1cb92f89383a06d93e65" prot="public" static="no">
+        <name>CORDIC_K</name>
+        <initializer>1304065792U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is CORIDC K values used in SW CORIDC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="100" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_l_i_b_8h_1a9561ecc357470c34d80b92f95773bd65" prot="public" static="no">
+        <name>CORDIC_ITERATIONS</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is CORIDC Iteration, maximum values is 23 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="103" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858" prot="public" static="no">
+        <name>MOTORLIBS_CON_MPS</name>
+        <enumvalue id="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a46fb97b2dc7b57bb60e4f38cacca80c9" prot="public">
+          <name>MOTORLIBS_MPS_DIVBY1</name>
+          <initializer>= 0x00U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>After the last iteration of calculation the X &amp; Y values are divided by 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858adc3bda3c9429c4d77b032a2489ca0cfd" prot="public">
+          <name>MOTORLIBS_MPS_DIVBY2</name>
+          <initializer>= 0x01U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>After the last iteration of calculation the X &amp; Y values are divided by 2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a80cbca220625e55f6a5429c4f1ae8b7f" prot="public">
+          <name>MOTORLIBS_MPS_DIVBY4</name>
+          <initializer>= 0x02U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>After the last iteration of calculation the X &amp; Y values are divided by 4 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumerates magnitude prescaler value for calculated value of X &amp; Y </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="109" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="108" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1a051223cf07443bb318f57d8978dfc808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MOTORLIBS_PIController</definition>
+        <argsstring>(MOTORLIBS_PIHandleType *HandlePtr, int32_t RefValue, int32_t ActValue)</argsstring>
+        <name>MOTORLIBS_PIController</name>
+        <param>
+          <type><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" kindref="compound">MOTORLIBS_PIHandleType</ref> *</type>
+          <declname>HandlePtr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>RefValue</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>ActValue</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation of PI controller. PI Output = kp*error + Ki * integral of error. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">HandlePtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" kindref="compound">MOTORLIBS_PIHandleType</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">RefValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t which is reference value for PI controller </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ActValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t which is actual value for PI controller</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void <linebreak/>
+ <bold>Reentrancy: Yes</bold><linebreak/>
+</para></simplesect>
+<bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="230"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1a5d59b9d37857996c90e4f5ebacc3ac0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MOTORLIBS_PT1Controller</definition>
+        <argsstring>(MOTORLIBS_PT1HandleType *HandlePtr, int32_t ActValue)</argsstring>
+        <name>MOTORLIBS_PT1Controller</name>
+        <param>
+          <type><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref> *</type>
+          <declname>HandlePtr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>ActValue</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation of PT1 filter. Yn[3,2,1,0] =Yn-1[3,2,1,0] +Z1*(Xn -Yn-1[3,2]) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">HandlePtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PT1 Handle of the MOTORLIBS App </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ActValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t which is actual value for PT1 filter</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void <linebreak/>
+ <bold>Reentrancy: Yes</bold><linebreak/>
+</para></simplesect>
+<bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="246"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1a33c8fe57d22575eddf39de768a658389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MOTORLIBS_PT12Controller</definition>
+        <argsstring>(MOTORLIBS_PT1HandleType *HandlePtr, int32_t ActValue)</argsstring>
+        <name>MOTORLIBS_PT12Controller</name>
+        <param>
+          <type><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref> *</type>
+          <declname>HandlePtr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>ActValue</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation of PT12 filter. Yn[3,2,1,0] =Yn-1[3,2,1,0] +(Z1*Xn -Z2*Yn-1[3,2]) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">HandlePtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PT1 Handle of the MOTORLIBS App </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ActValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t which is actual value for PT1 filter</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void <linebreak/>
+ <bold>Reentrancy: Yes</bold><linebreak/>
+</para></simplesect>
+<bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="262"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1aeb09868b53110700e0864c3a0715d7bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_ClarkTransform</definition>
+        <argsstring>(int32_t Phase_A, int32_t Phase_B, int32_t *Ialpha)</argsstring>
+        <name>MOTORLIBS_ClarkTransform</name>
+        <param>
+          <type>int32_t</type>
+          <declname>Phase_A</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>Phase_B</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>Ialpha</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation of clark transform. Ialpha = Phase_A/2 Ibeta = (Phase_A+2*Phase_B)/(2*Sqrt(3)) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Phase_A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Phase_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Ialpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to int32_t.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int32_t <linebreak/>
+</para></simplesect>
+<bold>Reentrancy: Yes</bold><linebreak/>
+</para><para><bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="279"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1a46461be76b7ad34b881a2351134f5695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_ClarkTransform2</definition>
+        <argsstring>(int32_t Phase_A, int32_t Phase_B, int32_t Phase_C, int32_t *Ialpha)</argsstring>
+        <name>MOTORLIBS_ClarkTransform2</name>
+        <param>
+          <type>int32_t</type>
+          <declname>Phase_A</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>Phase_B</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>Phase_C</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>Ialpha</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation of clark transform. Ialpha = Phase_A/2 Ibeta = (Phase_B-Phase_C)/(2*Sqrt(3)) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Phase_A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Phase_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Phase_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Ialpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to int32_t.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int32_t <linebreak/>
+</para></simplesect>
+<bold>Reentrancy: Yes</bold><linebreak/>
+</para><para><bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="296"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1ac282d85d437bf843ddcdbe0ae2d416a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_ParkTransform</definition>
+        <argsstring>(int32_t Ialpha, int32_t Ibeta, int16_t Angle, int32_t *Iq)</argsstring>
+        <name>MOTORLIBS_ParkTransform</name>
+        <param>
+          <type>int32_t</type>
+          <declname>Ialpha</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>Ibeta</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>Angle</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>Iq</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation of park transform. Id =k*(Ialpha*cos(Anlge)+Ibeta*sin(Angle))/2 ; where k = 1.64767 Iq =k*(-Ialpha*sin(Anlge)+Ibeta*cos(Angle))/2 ; where k = 1.64767. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Ialpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Ibeta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int16_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Iq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to int32_t.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int32_t <linebreak/>
+</para></simplesect>
+<bold>Reentrancy: Yes</bold><linebreak/>
+</para><para><bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="313"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1a502bf3f902efda19425bc91ccc53f38c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_IParkTransform</definition>
+        <argsstring>(int32_t Vd, int32_t Vq, int16_t Angle, int32_t *Vbeta)</argsstring>
+        <name>MOTORLIBS_IParkTransform</name>
+        <param>
+          <type>int32_t</type>
+          <declname>Vd</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>Vq</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>Angle</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>Vbeta</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation of inverse park transform. Valpha = k*(Vd*cos(Anlge)- Vq*sin(Angle))/4 ; where k = 1.64767 Vbeta = k*(Vd*sin(Anlge)+Vq*cos(Angle))/4 ; where k = 1.64767. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Vd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Vq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int16_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Vbeta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to int32_t.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int32_t <linebreak/>
+</para></simplesect>
+<bold>Reentrancy: Yes</bold><linebreak/>
+</para><para><bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="332"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1aa86f50f9f5f4adfdb99e106f43947c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t MOTORLIBS_Car2Pol</definition>
+        <argsstring>(int32_t x, int32_t y, int16_t *Angle)</argsstring>
+        <name>MOTORLIBS_Car2Pol</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>Angle</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation cartesian to polar transform. Amlpitude = K * SQRT(x*x+y*y); where k = 1.64767 Angle = ATAN(y/x);. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to int16_t.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t <linebreak/>
+</para></simplesect>
+<bold>Reentrancy: Yes</bold><linebreak/>
+</para><para><bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="349"/>
+      </memberdef>
+      <memberdef kind="function" id="_m_o_t_o_r_l_i_b_8h_1ab8095b4ab1829b14c138fbc88a92d221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_Pol2Car</definition>
+        <argsstring>(int16_t Angle, uint32_t Amplitude, int32_t *X)</argsstring>
+        <name>MOTORLIBS_Pol2Car</name>
+        <param>
+          <type>int16_t</type>
+          <declname>Angle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Amplitude</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>X</declname>
+        </param>
+        <briefdescription>
+<para>This function is the implementation polar to cartesian transform. X = K * Amplitude* cos(Angle); where k = 1.64767 Y = K * Amplitude* sin(Angle); where k = 1.64767. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int16_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Amplitude</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uint32_t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to int32_t holding the x co-ordinate value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int32_t <linebreak/>
+</para></simplesect>
+<bold>Reentrancy: Yes</bold><linebreak/>
+</para><para><bold>Sync/Async: Synchronous</bold><linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="365"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all public data structures,enums and function prototypes for motor control library. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/><sp/>DAVE<sp/>App<sp/>Name<sp/>:<sp/>LIBS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Version:<sp/>1.0.28<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/><sp/>This<sp/>file<sp/>is<sp/>generated<sp/>by<sp/>DAVE,<sp/>User<sp/>modification<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/><sp/>overwritten<sp/>at<sp/>the<sp/>next<sp/>code<sp/>generation.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Infineon<sp/>Technologies<sp/>AG.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Infineon<sp/>Technologies<sp/>AG<sp/>(Infineon)<sp/>is<sp/>supplying<sp/>this<sp/>software<sp/>for<sp/>use<sp/>with</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Infineon&apos;s<sp/>microcontrollers.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>can<sp/>be<sp/>freely<sp/>distributed<sp/>within<sp/>development<sp/>tools<sp/>that<sp/>are</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>supporting<sp/>such<sp/>microcontrollers.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;.<sp/><sp/>NO<sp/>WARRANTIES,<sp/>WHETHER<sp/>EXPRESS,<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>OR<sp/>STATUTORY,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>APPLY<sp/>TO<sp/>THIS<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>INFINEON<sp/>SHALL<sp/>NOT,<sp/>IN<sp/>ANY<sp/>CIRCUMSTANCES,<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>SPECIAL,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>FOR<sp/>ANY<sp/>REASON<sp/>WHATSOEVER.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">**<sp/>PLATFORM<sp/>:<sp/>Infineon<sp/>XMC4000<sp/>Series<sp/>/XMC1000<sp/>Series<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">**<sp/>COMPILER<sp/>:<sp/>Compiler<sp/>Independent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**<sp/>AUTHOR<sp/><sp/><sp/>:<sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">**<sp/>MAY<sp/>BE<sp/>CHANGED<sp/>BY<sp/>USER<sp/>[yes/no]:<sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**<sp/>MODIFICATION<sp/>DATE<sp/>:<sp/>27<sp/>Sept,<sp/>2013<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author(s)<sp/>Identity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**<sp/>Initials<sp/><sp/><sp/><sp/><sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">**<sp/>---------------------------------------------------------------------------**</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">**<sp/>PA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>Developer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">/*<sp/>Revision<sp/>History</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>03<sp/>Apr<sp/>2013<sp/><sp/><sp/>v1.0.0<sp/><sp/><sp/><sp/>Initial<sp/>version</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>25<sp/>Apr<sp/>2013<sp/><sp/><sp/>v1.0.2<sp/><sp/><sp/><sp/>Added<sp/>support<sp/>for<sp/>XMC1302</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>29<sp/>May<sp/>2013<sp/><sp/><sp/>v1.0.12<sp/><sp/><sp/>Added<sp/>FOC<sp/>support<sp/>for<sp/>XMC1302</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>21<sp/>Jun<sp/>2013<sp/><sp/><sp/>v1.0.14<sp/><sp/><sp/>Added<sp/>support<sp/>for<sp/>XMC4400<sp/>and<sp/>XMC4200<sp/>device</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>24<sp/>Jul<sp/>2013<sp/><sp/><sp/>v1.0.18<sp/><sp/><sp/>Added<sp/>FOC<sp/>support<sp/>for<sp/>XMC4400<sp/>device</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/>27<sp/>Sept<sp/>2013<sp/><sp/>v1.0.21<sp/><sp/><sp/>Added<sp/>FOC<sp/>support<sp/>for<sp/>XMC45<sp/>&amp;<sp/>XMC42<sp/>device</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MOTORLIBS_H_</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MOTORLIBS_H_</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*Limit1<sp/>is<sp/>the<sp/>higher<sp/>limit<sp/>and<sp/>Limit2<sp/>is<sp/>the<sp/>lower<sp/>limit<sp/>and<sp/>Buffer<sp/>is<sp/>the<sp/>value<sp/>which<sp/>need<sp/>to<sp/>compare*/</highlight></codeline>
+<codeline lineno="77" refid="_m_o_t_o_r_l_i_b_8h_1a4a3d08f54bb1c23acd9f5afbfb6473e6" refkind="member"><highlight class="preprocessor">#define<sp/>MOTORLIBS_CLARKESCALE<sp/><sp/>(0x01U)</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="80" refid="_m_o_t_o_r_l_i_b_8h_1a52d950961d257cf6dc73c7f9398c9e5e" refkind="member"><highlight class="preprocessor">#define<sp/>MOTORLIBS_INVSQRT3<sp/>(0x49E6)</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="83" refid="_m_o_t_o_r_l_i_b_8h_1ac5d1a9cd387a228975abcd2a5034b3da" refkind="member"><highlight class="preprocessor">#define<sp/>MOTORLIBS_ANGLESCALE<sp/><sp/>(0x08U)</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="86" refid="_m_o_t_o_r_l_i_b_8h_1a978e058c3e866008d019fa2496b3ed12" refkind="member"><highlight class="preprocessor">#define<sp/>MOTORLIBS_AMPSCALE<sp/><sp/>(0x08U)</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="89" refid="_m_o_t_o_r_l_i_b_8h_1a7f4dd55f4dc16d12378812a79977bef2" refkind="member"><highlight class="preprocessor">#define<sp/>MOTORLIBS_PI_KPSCALE<sp/><sp/>(0x09U)</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="92" refid="_m_o_t_o_r_l_i_b_8h_1ae76ba1dde996d8a5cc7a210f13b022dc" refkind="member"><highlight class="preprocessor">#define<sp/>MOTORLIBS_PI_KISCALE<sp/><sp/>(0x0FU)</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*Limit1<sp/>is<sp/>the<sp/>higher<sp/>limit<sp/>and<sp/>Limit2<sp/>is<sp/>the<sp/>lower<sp/>limit<sp/>and<sp/>Buffer<sp/>is<sp/>the<sp/>value<sp/>which<sp/>need<sp/>to<sp/>compare*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTORLIBS_MIN_MAX_LIMIT(Buffer,Limit1,Limit2)<sp/>((Buffer)<sp/>&gt;<sp/>(Limit1))<sp/>?<sp/>(Limit1)<sp/>:<sp/>(((Buffer)<sp/>&lt;<sp/>(Limit2))?<sp/>(Limit2):<sp/>(Buffer))</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="97" refid="_m_o_t_o_r_l_i_b_8h_1acff93c902bdac8932697de6476164221" refkind="member"><highlight class="preprocessor">#define<sp/>MOTORLIBS_ABS(x)<sp/>((x<sp/>&gt;<sp/>0)<sp/>?<sp/>x<sp/>:<sp/>-x)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="100" refid="_m_o_t_o_r_l_i_b_8h_1aa0c21cb5e93a1cb92f89383a06d93e65" refkind="member"><highlight class="preprocessor">#define<sp/>CORDIC_K<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1304065792U</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="103" refid="_m_o_t_o_r_l_i_b_8h_1a9561ecc357470c34d80b92f95773bd65" refkind="member"><highlight class="preprocessor">#define<sp/>CORDIC_ITERATIONS<sp/><sp/><sp/>15</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="108" refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113" refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a46fb97b2dc7b57bb60e4f38cacca80c9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a46fb97b2dc7b57bb60e4f38cacca80c9" kindref="member">MOTORLIBS_MPS_DIVBY1</ref><sp/>=<sp/>0x00U,</highlight></codeline>
+<codeline lineno="117" refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858adc3bda3c9429c4d77b032a2489ca0cfd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858adc3bda3c9429c4d77b032a2489ca0cfd" kindref="member">MOTORLIBS_MPS_DIVBY2</ref><sp/>=<sp/>0x01U,</highlight></codeline>
+<codeline lineno="121" refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a80cbca220625e55f6a5429c4f1ae8b7f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858a80cbca220625e55f6a5429c4f1ae8b7f" kindref="member">MOTORLIBS_MPS_DIVBY4</ref><sp/>=<sp/>0x02U</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}<ref refid="_m_o_t_o_r_l_i_b_8h_1a19fd5d9d0b29e4839003237604112858" kindref="member">MOTORLIBS_CON_MPS</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENUMERATIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STRUCTURES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>******************************************************************************/</highlight></codeline>
+<codeline lineno="134" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" kindref="compound">MOTORLIBS_PIHandleType</ref></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ab910d3b2e8e091bb0593cc916da75be6" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ab910d3b2e8e091bb0593cc916da75be6" kindref="member">Kp</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1a9b845b50f6db3f230477cbfc2b5fefa0" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1a9b845b50f6db3f230477cbfc2b5fefa0" kindref="member">Ki</ref>;<sp/></highlight></codeline>
+<codeline lineno="147" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ad1a73a2640ec4b231950b2ed227b7f9b" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ad1a73a2640ec4b231950b2ed227b7f9b" kindref="member">Ibuf</ref>;<sp/></highlight></codeline>
+<codeline lineno="151" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1aa95afc8973bb6613e72b013178ea46eb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1aa95afc8973bb6613e72b013178ea46eb" kindref="member">Yimax</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1a35860db05b84edba00305a20ee4429ae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1a35860db05b84edba00305a20ee4429ae" kindref="member">Yimin</ref>;<sp/></highlight></codeline>
+<codeline lineno="159" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1af198395a7a5aecd2269c61addc8d9858" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int16_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1af198395a7a5aecd2269c61addc8d9858" kindref="member">Ymax</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ab0ff8a76b4df1daab4a2023665a72092" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int16_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1ab0ff8a76b4df1daab4a2023665a72092" kindref="member">Ymin</ref>;<sp/></highlight></codeline>
+<codeline lineno="167" refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1aa6e38849f60fac4e55ed0c74edc37545" refkind="member"><highlight class="normal"><sp/><sp/>int16_t<sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type_1aa6e38849f60fac4e55ed0c74edc37545" kindref="member">PiOutVal</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}<sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" kindref="compound">MOTORLIBS_PIHandleType</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="174" refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179" refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a86cadd023142bf7d64e958145205c592" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a86cadd023142bf7d64e958145205c592" kindref="member">Z1</ref>;</highlight></codeline>
+<codeline lineno="183" refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1ac07643a93470b9ed6fc9cc601c4035c1" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1ac07643a93470b9ed6fc9cc601c4035c1" kindref="member">Z2</ref>;</highlight></codeline>
+<codeline lineno="187" refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a04481f5a772c3e90e315721b75e8bcde" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a04481f5a772c3e90e315721b75e8bcde" kindref="member">Ymax</ref>;</highlight></codeline>
+<codeline lineno="191" refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a977edf0c6e32518991f2ffbebd4d0109" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a977edf0c6e32518991f2ffbebd4d0109" kindref="member">Ymin</ref>;</highlight></codeline>
+<codeline lineno="195" refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" kindref="member">PT1buf</ref>;</highlight></codeline>
+<codeline lineno="199" refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a2f1ee07c13acca0b5babf1714ec64409" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a2f1ee07c13acca0b5babf1714ec64409" kindref="member">PT1OutVal</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}<sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/>**FUNCTION<sp/>PROTOTYPES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="212"><highlight class="comment">*******************************************************************************/</highlight></codeline>
+<codeline lineno="225"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a051223cf07443bb318f57d8978dfc808" kindref="member" tooltip="This function is the implementation of PI controller. PI Output = kp*error + Ki * integral of error...">MOTORLIBS_PIController</ref></highlight></codeline>
+<codeline lineno="226"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_i_handle_type" kindref="compound">MOTORLIBS_PIHandleType</ref>*<sp/>HandlePtr,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>RefValue,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ActValue</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="242"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a5d59b9d37857996c90e4f5ebacc3ac0b" kindref="member" tooltip="This function is the implementation of PT1 filter. Yn[3,2,1,0] =Yn-1[3,2,1,0] +Z1*(Xn -Yn-1[3...">MOTORLIBS_PT1Controller</ref></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref>*<sp/>HandlePtr,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/>int32_t<sp/>ActValue</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a33c8fe57d22575eddf39de768a658389" kindref="member" tooltip="This function is the implementation of PT12 filter. Yn[3,2,1,0] =Yn-1[3,2,1,0] +(Z1*Xn -Z2*Yn-1[3...">MOTORLIBS_PT12Controller</ref></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">(</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kindref="compound">MOTORLIBS_PT1HandleType</ref>*<sp/>HandlePtr,</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/>int32_t<sp/>ActValue</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1aeb09868b53110700e0864c3a0715d7bc" kindref="member" tooltip="This function is the implementation of clark transform. Ialpha = Phase_A/2 Ibeta = (Phase_A+2*Phase_B...">MOTORLIBS_ClarkTransform</ref>(int32_t<sp/>Phase_A,<sp/>int32_t<sp/>Phase_B,<sp/>int32_t<sp/>*Ialpha<sp/>);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a46461be76b7ad34b881a2351134f5695" kindref="member" tooltip="This function is the implementation of clark transform. Ialpha = Phase_A/2 Ibeta = (Phase_B-Phase_C)/...">MOTORLIBS_ClarkTransform2</ref>(int32_t<sp/>Phase_A,<sp/>int32_t<sp/>Phase_B,<sp/>int32_t<sp/>Phase_C,<sp/>int32_t<sp/>*Ialpha<sp/>);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1ac282d85d437bf843ddcdbe0ae2d416a1" kindref="member" tooltip="This function is the implementation of park transform. Id =k*(Ialpha*cos(Anlge)+Ibeta*sin(Angle))/2 ;...">MOTORLIBS_ParkTransform</ref>(int32_t<sp/>Ialpha,int32_t<sp/>Ibeta,int16_t<sp/>Angle,int32_t<sp/>*Iq);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1a502bf3f902efda19425bc91ccc53f38c" kindref="member" tooltip="This function is the implementation of inverse park transform. Valpha = k*(Vd*cos(Anlge)- Vq*sin(Angl...">MOTORLIBS_IParkTransform</ref>(int32_t<sp/>Vd,int32_t<sp/>Vq,int16_t<sp/>Angle,int32_t<sp/>*Vbeta);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal">uint32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1aa86f50f9f5f4adfdb99e106f43947c25" kindref="member" tooltip="This function is the implementation cartesian to polar transform. Amlpitude = K * SQRT(x*x+y*y); wher...">MOTORLIBS_Car2Pol</ref>(int32_t<sp/>x,int32_t<sp/>y,<sp/>int16_t<sp/>*Angle);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal">int32_t<sp/><ref refid="_m_o_t_o_r_l_i_b_8h_1ab8095b4ab1829b14c138fbc88a92d221" kindref="member" tooltip="This function is the implementation polar to cartesian transform. X = K * Amplitude* cos(Angle); wher...">MOTORLIBS_Pol2Car</ref>(int16_t<sp/>Angle,uint32_t<sp/>Amplitude,<sp/>int32_t<sp/>*X);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MOTORLIBS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="371"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h"/>
+  </compounddef>
+</doxygen>

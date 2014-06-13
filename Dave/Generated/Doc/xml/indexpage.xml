@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>ProjectName:CAN_BUS_THX</title>
+    <detaileddescription>
+<para><orderedlist>
+<listitem>
+<para><ulink url="../html/files.html">List of files </ulink> </para></listitem>
+<listitem>
+<para><ulink url="../html/annotated.html">Data Structures</ulink> </para></listitem>
+</orderedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

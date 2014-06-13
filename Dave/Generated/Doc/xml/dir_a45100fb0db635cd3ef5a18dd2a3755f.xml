@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_a45100fb0db635cd3ef5a18dd2a3755f" kind="dir">
+    <compoundname>RESET001</compoundname>
+    <innerfile refid="_r_e_s_e_t001_8c">RESET001.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/src/RESET001/"/>
+  </compounddef>
+</doxygen>

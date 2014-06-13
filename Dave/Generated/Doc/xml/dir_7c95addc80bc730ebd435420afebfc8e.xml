@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_7c95addc80bc730ebd435420afebfc8e" kind="dir">
+    <compoundname>LIBS</compoundname>
+    <innerfile refid="_c_c_u8_p_w_m_l_i_b_8h">CCU8PWMLIB.h</innerfile>
+    <innerfile refid="_l_i_b_s_8h">LIBS.h</innerfile>
+    <innerfile refid="_m_o_t_o_r_l_i_b_8h">MOTORLIB.h</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/"/>
+  </compounddef>
+</doxygen>

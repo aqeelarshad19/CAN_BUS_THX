@@ -1,0 +1,118 @@
+<%@ jet package="CodeGenerator" class="can001confh_template"
+imports="java.util.* com.ifx.davex.appjetinteract.App2JetInterface" %>
+<% App2JetInterface app = (App2JetInterface) argument; %>
+
+<% String AppBaseuri = "app/can001/";%>
+/*CODE_BLOCK_BEGIN[CAN001_Conf.h]*/
+/**************************************************************************//**
+ *
+ * Copyright (C) 2014 Infineon Technologies AG. All rights reserved.
+ *
+ * Infineon Technologies AG (Infineon) is supplying this software for use with 
+ * Infineon's microcontrollers.  
+ * This file can be freely distributed within development tools that are 
+ * supporting such microcontrollers. 
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+ * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+ * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, 
+ * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+ *
+********************************************************************************
+**                                                                            **
+**                                                                            **
+** PLATFORM : Infineon XMC4000 Series   			                          **
+**                                                                            **
+** COMPILER : Compiler Independent                                            **
+**                                                                            **
+** AUTHOR   : App Developer                                                   **
+**                                                                            **
+** MAY BE CHANGED BY USER [yes/no]: Yes                                       **
+**                                                                            **
+**                                                                            **
+*******************************************************************************/
+
+/**
+ * @file CAN001_Conf.h
+ * 
+ * @App Version CAN001 <<%= app.getAppVersion(AppBaseuri)%>> 
+ * @brief  CAN001 App Handle declaration based on UI selection.
+ *
+ */
+ 
+ #ifndef CONF_CAN001_H_
+ #define CONF_CAN001_H_
+ 
+/* Support for C++ codebase */
+#ifdef __cplusplus
+extern "C" {
+#endif 
+
+#include <DAVE3.h>
+<% String MappedUri = null; %>
+<% String appInst  = null; %>
+<% String nodeInst = null; %>
+<% String moInst = null; %>
+<% String CanMOuri = "peripheral/can/0/mo/"; %>
+
+<% ArrayList<String> appsList = (ArrayList<String>)(app.getApps("app/can001/"));
+ for (String appIns : appsList ) {
+ appInst = appIns.substring(appIns.lastIndexOf("/")+1);%>
+ <% MappedUri = app.getMappedUri(AppBaseuri + appInst + "/node"); %>
+ <% if((MappedUri != null) && (MappedUri != "")) { %>
+ <% nodeInst = MappedUri.substring(MappedUri.lastIndexOf("/")+1).trim(); %>
+extern const CAN001_HandleType CAN001_Handle<%= appInst%>;
+ <% } %>
+ <% else { %>
+ // NODE IS NOT MAPPED
+ <% } %>
+ <% int mono = app.getIntegerValue(AppBaseuri + appInst + "/can001_irwnodenomsgobjs"); %>
+ <% for (int Msg=1; Msg<=mono; Msg++) { %>
+ <% MappedUri = app.getMappedUri(AppBaseuri + appInst +"/message" + Msg + "/mofcr"); %>
+ <% if((MappedUri != null) && (MappedUri != "")) { %>
+extern CAN001_MessageHandleType CAN001_MessageHandle<%= appInst%>_<%=Msg %>;
+ <% } %>
+ <% else { %>
+ // MESSAGE<%=Msg%> IS NOT MAPPED
+ <%}%>
+ <%} %>               
+<%}%>
+
+<% for (String appIns : appsList ) {
+ appInst = appIns.substring(appIns.lastIndexOf("/")+1);%>
+<% MappedUri = app.getMappedUri(AppBaseuri + appInst + "/node"); %>
+<% if((MappedUri != null) && (MappedUri != "")) { %>
+<% nodeInst = MappedUri.substring(MappedUri.lastIndexOf("/")+1).trim(); %>
+
+/* Macro to enable node<%= nodeInst%> initialisation exit macro */
+#define CAN_NODE<%= nodeInst%>_ENABLE
+/* Macro to access node<%= nodeInst%> registers */
+#define CAN001_Handle<%=appInst%>_NODE   CAN_NODE<%= nodeInst%>
+<% } %>
+<% else { %>
+// NODE IS NOT MAPPED
+<% } %>
+<% int mono = app.getIntegerValue(AppBaseuri + appInst + "/can001_irwnodenomsgobjs"); %>
+<% for (int Msg=1; Msg<=mono; Msg++) { %>
+<% MappedUri = app.getMappedUri(AppBaseuri + appInst +"/message" + Msg); %>
+<% if((MappedUri != null) && (MappedUri != "")) { %>
+<% moInst = MappedUri.substring(MappedUri.lastIndexOf("/")+1).trim(); %>
+/* Macro to access Node<%= nodeInst%> LMO<%=Msg %> register */
+#define CAN001_Handle<%=appInst%>_NODE_LMO<%=Msg %> CAN_MO<%= moInst%> 
+<% } %>
+<% else { %>
+// MESSAGE<%=Msg%> IS NOT MAPPED
+<% } %>
+<%} %>
+<%} %>
+
+/* Support for C++ codebase */
+#ifdef __cplusplus
+}
+#endif 
+
+#endif
+
+/*CODE_BLOCK_END*/ 
+

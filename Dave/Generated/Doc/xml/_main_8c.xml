@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_main_8c" kind="file">
+    <compoundname>Main.c</compoundname>
+    <includes refid="_d_a_v_e3_8h" local="no">DAVE3.h</includes>
+    <includes refid="_o_b_d_i_i_c_a_n_b_s_8h" local="yes">OBDIICANBS.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="703">
+        <label>CAN_Types.h</label>
+        <link refid="_c_a_n___types_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="710">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="691">
+        <label>stdint.h</label>
+      </node>
+      <node id="707">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+      </node>
+      <node id="712">
+        <label>OBDIICANBS.h</label>
+        <link refid="_o_b_d_i_i_c_a_n_b_s_8h_source"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>stddef.h</label>
+      </node>
+      <node id="709">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+      </node>
+      <node id="690">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="687">
+        <label>Main.c</label>
+        <link refid="Main.c"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="715">
+        <label>string.h</label>
+      </node>
+      <node id="700">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="701">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="704">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>uc_id.h</label>
+      </node>
+      <node id="702">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+      </node>
+      <node id="708">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="698">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>stdio.h</label>
+      </node>
+      <node id="713">
+        <label>inttypes.h</label>
+      </node>
+      <node id="696">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_main_8c_1adea4942436e69f34a476bf27703e3b42" prot="public" static="no">
+        <name>CAN_PACKET_RECEIVED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="22" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_main_8c_1a899e95f7a3408367210e13fc2d8611d0" prot="public" static="no">
+        <name>CAN_PACKET_RX_ERROR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="23" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_main_8c_1a76ac5ac39698c5701a3ebd31aca1c92f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_Rx_Flag</definition>
+        <argsstring></argsstring>
+        <name>CAN_Rx_Flag</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="19" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_main_8c_1a30956ddb528ad0eb351ef29b4dd741d2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_RX_Pkt_Count</definition>
+        <argsstring></argsstring>
+        <name>CAN_RX_Pkt_Count</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="20" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_main_8c_1a0085a4a43711a4d1f55a0eb481434019" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref></type>
+        <definition>CAN001_MessageHandleType CanRecMsgObj[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>CanRecMsgObj</name>
+        <briefdescription>
+<para>data structure where the received CAN message object is transferred to </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="18" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_main_8c_1a3cc119cb1a4beab046568bd21fcac3e5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="21" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_main_8c_1a341d33c536d663703208ab568f7d1e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void delay</definition>
+        <argsstring>(void)</argsstring>
+        <name>delay</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="24" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8c_1a7df207e84d553f1dabcc78f96f98d68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EventHandlerCAN001_0</definition>
+        <argsstring>()</argsstring>
+        <name>EventHandlerCAN001_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="242" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="240" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" line="28" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c" bodystart="27" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Main.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>May<sp/>19,<sp/>2014</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Aqeel</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Declarations<sp/>from<sp/>DAVE3<sp/>Code<sp/>Generation<sp/>(includes<sp/>SFR<sp/>declaration)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OBDIICANBS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>CanRecMsgObj[6];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">uint8_t<sp/>CAN_Rx_Flag=0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">uint8_t<sp/>CAN_RX_Pkt_Count=0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">uint8_t<sp/>temp=0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_PACKET_RECEIVED<sp/>1</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_PACKET_RX_ERROR<sp/>2</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>delay(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//CAN001_MessageHandleType<sp/>CanTxMsgObj;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>status_t<sp/>status;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Declaration<sp/>of<sp/>return<sp/>variable<sp/>for<sp/>DAVE3<sp/>APIs<sp/>(toggle<sp/>comment<sp/>if<sp/>required)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>Data[8]<sp/>=<sp/>{0x02,0x01,0x00,0x55,0x55,0x55,0x55,0x55};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>data_uart[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;OBD<sp/>II<sp/>TEST<sp/>\n\r&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>can_uart_error[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>While<sp/>receiving<sp/>CAN<sp/>Packet&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>data_uart_end[]=</highlight><highlight class="stringliteral">&quot;====\n\r&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>can_uart_buffer[50];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>PID_Val;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>MODE_Val;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>ECU_Val;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Engine_RPM=0;<sp/></highlight><highlight class="comment">//=0C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Vehicle_Speed=0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>Btn1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_a_n001___message_handle_type" kindref="compound">CAN001_MessageHandleType</ref><sp/>CanTxMsgObj;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>DAVE_Init();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialization<sp/>of<sp/>DAVE<sp/>Apps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1aaf7f5b0805c58511d90bcc2aec27ec1f" kindref="member">Identifier</ref>=FUNC_PID_REQUEST;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1ac47fe7fa9902f1232f8bec52c840666c" kindref="member">DataLength</ref>=8;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[0]=Data[0];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[1]=Data[1];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[2]=Data[2];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[3]=Data[3];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[4]=Data[4];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[5]=Data[5];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[6]=Data[6];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[7]=Data[7];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a6647ab12f9419bdad35de0288d268dde" kindref="member">IDExten</ref>=<ref refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755abcab54b37d7dfec0fd175198732965ba" kindref="member">STANDARDTYPE</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1aeb8a55dff97e577090d197939e21c0a5" kindref="member">MsgObjEN</ref>=<ref refid="_c_a_n001_8h_1aa57c6c45498a3c66e8d522d49a9fb772" kindref="member">CAN001_ENABLE</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1acc9aa2394ba4d8f72635b9cfe6a41f5e" kindref="member">MsgObjType</ref>=<ref refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78a4e0950690937ec9a19c3cf5277739cdd" kindref="member">TRANSMSGOBJ</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1ac0ddaf1b43f4fbf9b5eb0bf00129a289" kindref="member">IDMask</ref>=0x7FF;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgObj.<ref refid="struct_c_a_n001___message_handle_type_1a6647ab12f9419bdad35de0288d268dde" kindref="member">IDExten</ref>=0x00;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>status=<ref refid="_c_a_n001_8h_1ac5cd7b0d0e5631e7a9b70dd31e18cce0" kindref="member">CAN001_ConfigMsgObj</ref>(&amp;CAN001_Handle0,&amp;CanTxMsgObj,1U);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>data<sp/>value<sp/>to<sp/>be<sp/>transmitted<sp/>by<sp/><sp/>Node<sp/>&quot;Request&quot;<sp/>in<sp/>message<sp/>object<sp/>1<sp/>(LM01)<sp/>with<sp/>ID<sp/>0x255<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Send<sp/>Data<sp/>frame<sp/>with<sp/>ID<sp/>0x255<sp/>on<sp/>chip<sp/>internal<sp/>CAN<sp/>bus<sp/>(Loop-Back<sp/>Mode)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>infinite<sp/>loop<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Btn1<sp/>=<sp/><ref refid="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" kindref="member">IO004_ReadPin</ref>(IO004_Handle1);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_o004_8h_1a4928fdc6515220949e20abca95e4b09c" kindref="member">IO004_SetOutputValue</ref>(IO004_Handle0,1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_o004_8h_1a4928fdc6515220949e20abca95e4b09c" kindref="member">IO004_SetOutputValue</ref>(IO004_Handle2,1);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;data_uart,<sp/>(uint32_t)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_uart));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;5000;i++);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Data[2]=OBD_STD;<sp/></highlight><highlight class="comment">/*Supported<sp/>OBD<sp/>STD*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(<ref refid="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" kindref="member">IO004_ReadPin</ref>(IO004_Handle1)))</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;80000;i++);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(<ref refid="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" kindref="member">IO004_ReadPin</ref>(IO004_Handle1)))</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CanTxMsgObj.data[2]=0x1F;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[1]=MODE_CURR_DATA;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[2]=ENGINE_RPM;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CanTxMsgObj.data[2]=Data[2];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=CAN001_ConfigMsgObj(&amp;CAN001_Handle0,&amp;CanTxMsgObj,1U);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>data<sp/>value<sp/>to<sp/>be<sp/>transmitted<sp/>by<sp/><sp/>Node<sp/>&quot;Request&quot;<sp/>in<sp/>message<sp/>object<sp/>1<sp/>(LM01)<sp/>with<sp/>ID<sp/>0x255<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Send<sp/>Data<sp/>frame<sp/>with<sp/>ID<sp/>0x255<sp/>on<sp/>chip<sp/>internal<sp/>CAN<sp/>bus<sp/>(Loop-Back<sp/>Mode)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//sending<sp/>2nd<sp/>Frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;5000;i++);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_o004_8h_1a4928fdc6515220949e20abca95e4b09c" kindref="member">IO004_SetOutputValue</ref>(IO004_Handle0,1);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[1]=MODE_CURR_DATA;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[2]=VEHICLE_SPEED;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(<ref refid="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" kindref="member">IO004_ReadPin</ref>(IO004_Handle3)))</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;80000;i++);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(<ref refid="_i_o004_8h_1a1d38e98a379b21c57b26cabe71991b22" kindref="member">IO004_ReadPin</ref>(IO004_Handle3)))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Sending<sp/>3rd<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;5000;i++);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[1]=MODE_REQ_VIN;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[2]=VIN_MESS_COUNT;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;5000;i++);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[1]=MODE_REQ_VIN;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data[2]=VIN_NUM;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a68a886b4fc31200314a08ba112d063f8" kindref="member">CAN001_UpdateMODataRegisters</ref>(&amp;CAN001_Handle0,1,8,Data);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a7d87336df18913baaac93a9776c47e6e" kindref="member">CAN001_SendDataFrame</ref>(&amp;CAN001_Handle0,1);<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;5000;i++);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CAN_RX_Pkt_Count)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//temp++;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN_RX_Pkt_Count--;<sp/></highlight><highlight class="comment">//RX<sp/>Buffer<sp/>FIFO<sp/>Empty.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN_Rx_Flag=FALSE;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CAN_Rx_Flag==CAN_PACKET_RX_ERROR)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_error,<sp/>(uint32_t)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(can_uart_error)/2);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ECU_Val=CanRecMsgObj[CAN_RX_Pkt_Count].<ref refid="struct_c_a_n001___message_handle_type_1aaf7f5b0805c58511d90bcc2aec27ec1f" kindref="member">Identifier</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MODE_Val=((CanRecMsgObj[CAN_RX_Pkt_Count].<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[1])-(0x40));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PID_Val=CanRecMsgObj[CAN_RX_Pkt_Count].<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[2];</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;ECU<sp/>ID=0x%.4X<sp/>PID=0x%.2X<sp/>M=0x%.2X\n\r&quot;</highlight><highlight class="normal">,ECU_Val,PID_Val,MODE_Val);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delay();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(MODE_Val==MODE_CURR_DATA)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(PID_Val)</highlight><highlight class="comment">//PID<sp/>query<sp/>Message<sp/>is<sp/>same<sp/>in<sp/>response</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>PID_SUPPORT00:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;PIDs=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6]);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>COOLANT_TEMP:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;COOLANT_TEMP<sp/>=<sp/>%d<sp/>C.<sp/><sp/>\r\n<sp/>&quot;</highlight><highlight class="normal">,(CanRecMsgObj[CAN_RX_Pkt_Count].data[3])-(40));</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>OBD_STD:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;%s=%s,\r\n&quot;</highlight><highlight class="normal">,PID_Desc[PID_Val],obd_std_strings[CanRecMsgObj[CAN_RX_Pkt_Count].data[3]]);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ENGINE_RPM:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Engine_RPM=(((CanRecMsgObj[CAN_RX_Pkt_Count].<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[3]*256)+CanRecMsgObj[CAN_RX_Pkt_Count].data[3])/4);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;%s=%0.2f<sp/>RPM,\r\n&quot;</highlight><highlight class="normal">,PID_Desc[PID_Val],Engine_RPM);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>VEHICLE_SPEED:</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vehicle_Speed=CanRecMsgObj[CAN_RX_Pkt_Count].<ref refid="struct_c_a_n001___message_handle_type_1a7fe8f81d0901b29dc57c5b114b029019" kindref="member">data</ref>[3];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;%s=%0.2f<sp/>KM,\r\n&quot;</highlight><highlight class="normal">,PID_Desc[PID_Val],Vehicle_Speed);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;data=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6]);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(MODE_Val==MODE_DTC)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(PID_Val)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>PID_SUPPORT00:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;PIDs=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6]);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;data=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6]);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(MODE_Val==MODE_REQ_VIN)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(PID_Val)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>PID_SUPPORT00:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;PIDs=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6]);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>VIN_NUM:</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;VIN=%c,%c,%c,%c,%c,\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6],CanRecMsgObj[CAN_RX_Pkt_Count].data[7]);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;data=0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6]);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(can_uart_buffer,</highlight><highlight class="stringliteral">&quot;RXD=0x%.2X,0x%.2X,0x%.2X,0x%.2X,0x%.2X\r\n&quot;</highlight><highlight class="normal">,CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6],CanRecMsgObj[CAN_RX_Pkt_Count].data[7]);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status=<ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;can_uart_buffer,<sp/>(uint32_t)strlen(can_uart_buffer)+1);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_u_a_r_t001_8h_1a8f18b90baea892eaeb3a6bb7aa74d5db" kindref="member" tooltip="When FIFO is enabled, this function writes data to the USIC FIFO transmit buffer register, byte by byte, until the FIFO buffer is full and the &amp;quot;Count&amp;quot; value is greater than &amp;quot;0&amp;quot;. But when transmit FIFO is disabled, it writes a byte to the standard transmit buffer.">UART001_WriteDataBytes</ref>(&amp;UART001_Handle0,<sp/>(uint8_t*)&amp;data_uart_end,<sp/>(uint32_t)strlen(data_uart_end)+1);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Send<sp/>Data<sp/>frame<sp/>with<sp/>ID<sp/>0x255<sp/>on<sp/>chip<sp/>internal<sp/>CAN<sp/>bus<sp/>(Loop-Back<sp/>Mode)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CAN001_SendDataFrame(&amp;CAN001_Handle0,1);<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_o004_8h_1a4928fdc6515220949e20abca95e4b09c" kindref="member">IO004_SetOutputValue</ref>(IO004_Handle0,0);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;80000;i++);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>status=UART001_WriteDataMultiple(&amp;UART001_Handle0,<sp/>(uint16_t*)&amp;data_uart,<sp/>(uint32_t)sizeof(data_uart)/2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait<sp/>till<sp/>data<sp/>frame<sp/>is<sp/>received.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>while(!(CAN001_GetMOFlagStatus(&amp;CAN001_Handle0,1,RECEIVE_PENDING)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>CAN<sp/>message<sp/>to<sp/>handle<sp/>CanRecMsgObj</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN001_ReadMsgObj(&amp;CAN001_Handle0,&amp;CanTxMsgObj,1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/>if(Status<sp/>==<sp/>DAVEApp_SUCCESS)</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//wait<sp/>till<sp/>data<sp/>frame<sp/>is<sp/>received.</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>while(!(CAN001_GetMOFlagStatus(&amp;CAN001_Handle0,1,RECEIVE_PENDING)))</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Read<sp/>CAN<sp/>message<sp/>to<sp/>handle<sp/>CanRecMsgObj</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>CAN001_ReadMsgObj(&amp;CAN001_Handle0,&amp;CanRecMsgObj,1);</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CAN<sp/>RX<sp/>INTERRUPT<sp/>ISR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EventHandlerCAN001_0()</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CAN_RX_Pkt_Count++;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>Check<sp/>transmit<sp/>pending<sp/>status<sp/>in<sp/>LMO1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>if(CAN001_GetMOFlagStatus(&amp;CAN001_Handle0,1,TRANSMIT_PENDING)<sp/>==<sp/>CAN_SET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>Clear<sp/>the<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN001_ClearMOFlagStatus(&amp;CAN001_Handle0,1,TRANSMIT_PENDING);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>receive<sp/>pending<sp/>status<sp/>in<sp/>LMO2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_c_a_n001_8h_1a33cfce269fb266684be1431b7dc70933" kindref="member">CAN001_GetMOFlagStatus</ref>(&amp;CAN001_Handle0,2,<ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" kindref="member">RECEIVE_PENDING</ref>)<sp/>==<sp/><ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a00c42e532df2ce88528fd93eb7a2f99c" kindref="member">CAN_SET</ref>)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a3e8baab1eee0750a8d7310e58420bcaf" kindref="member">CAN001_ClearMOFlagStatus</ref>(&amp;CAN001_Handle0,2,<ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" kindref="member">RECEIVE_PENDING</ref>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>the<sp/>received<sp/>Message<sp/>object<sp/>and<sp/>stores<sp/>in<sp/>variable<sp/>CanRecMsgObj<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" kindref="member">CAN001_ReadMsgObj</ref>(&amp;CAN001_Handle0,&amp;CanRecMsgObj[CAN_RX_Pkt_Count],2);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Switch<sp/>on<sp/>LED<sp/>Pin<sp/>1.1<sp/><sp/>to<sp/>indicate<sp/>that<sp/>the<sp/>requested<sp/>message<sp/>is<sp/>received*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_i_o004_8h_1afe5d734514d7c79c308e6da1bcbe5a58" kindref="member">IO004_TogglePin</ref>(IO004_Handle2);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN_Rx_Flag=CAN_PACKET_RECEIVED;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN_RX_Pkt_Count++;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp++;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>for<sp/>Node<sp/>error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_c_a_n001_8h_1a41cc6c91f9def74cd9db7d29e9b500b3" kindref="member">CAN001_GetNodeFlagStatus</ref>(&amp;CAN001_Handle0,<ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9bad51e54ff815920a35aac7cd51ea8b" kindref="member">CAN001_ALERT_STATUS</ref>)<sp/>==<sp/><ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a00c42e532df2ce88528fd93eb7a2f99c" kindref="member">CAN_SET</ref>)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n001_8h_1aaa2383b3300ca5a8ab8501db8bd1effd" kindref="member">CAN001_ClearNodeFlagStatus</ref>(&amp;CAN001_Handle0,<ref refid="_c_a_n001_8h_1aff23690298b247619426653a71d5c378a9bad51e54ff815920a35aac7cd51ea8b" kindref="member">CAN001_ALERT_STATUS</ref>);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN_Rx_Flag=CAN_PACKET_RX_ERROR;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>delay(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>i=0;i&lt;10000;i++);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Main.c"/>
+  </compounddef>
+</doxygen>

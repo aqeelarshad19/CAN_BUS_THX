@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_fb8a841c04a2b7da4eff31f6a7d2e329" kind="dir">
+    <compoundname>CANGLOBAL</compoundname>
+    <innerfile refid="_c_a_n_g_l_o_b_a_l_8h">CANGLOBAL.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CANGLOBAL/"/>
+  </compounddef>
+</doxygen>

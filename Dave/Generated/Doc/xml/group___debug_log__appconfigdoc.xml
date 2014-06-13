@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="group___debug_log__appconfigdoc" kind="group">
+    <compoundname>DebugLog_appconfigdoc</compoundname>
+    <title>DebugLog_appconfigdoc</title>
+    <innerclass refid="struct_debug_log___command_from_host_type" prot="public">DebugLog_CommandFromHostType</innerclass>
+    <innerclass refid="struct_debug_log___g_u_i_configurable_type" prot="public">DebugLog_GUIConfigurableType</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___debug_log__appconfigdoc_1ga9c5d392fbc326b9c4d398f132ea2b687" prot="public" static="no">
+        <type>status_t(*</type>
+        <definition>typedef status_t(* PhyInterfaceInitFuncPtr)(void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>PhyInterfaceInitFuncPtr</name>
+        <briefdescription>
+<para>Function pointer for the Physical Interface Init Function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="305" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___debug_log__appconfigdoc_1ga9631d5be6590ed6b77c4297b7b74f535" prot="public" static="no">
+        <type>status_t(*</type>
+        <definition>typedef status_t(* PhyInterfaceWriteFuncPtr)(void *, uint32_t, uint8_t *)</definition>
+        <argsstring>)(void *, uint32_t, uint8_t *)</argsstring>
+        <name>PhyInterfaceWriteFuncPtr</name>
+        <briefdescription>
+<para>Function pointer for the Physical Interface Write Function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="310" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___debug_log__appconfigdoc_1ga76323d63c1fb50fb6d862efc9c6ed1f7" prot="public" static="no">
+        <name>ASSERT_OPTIONS</name>
+        <initializer><ref refid="group___debug_log__publicparam_1ggabe6a6b0531c4297afa75b03282e91892a3072b9446b579e5b7e97162141c79ff8" kindref="member">SENDTO_DEBUGLOG</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GUI Configurable element, send the messages to DebugLog </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="264" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__appconfigdoc_1ga1c347b65af2feb4b717fdc404e8cbcbc" prot="public" static="no">
+        <name>COMPILE_TIME_FILTER</name>
+        <initializer><ref refid="group___debug_log__publicparam_1ga0cc182d7080f99b5ebf1620218104d6c" kindref="member">DEBUGLOG_LEVEL_NOTSET</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>severity level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="255" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__appconfigdoc_1ga6855729de6b3c7d92fa7af7a6dcadd89" prot="public" static="no">
+        <name>INVARIENT_ASSERTION</name>
+        <initializer><ref refid="group___debug_log__publicparam_1ggaf7999e83db023e8adc81cacb67e5a05aab87cdba71d586e185a0064fc1aa0c1a8" kindref="member">NO_ASSERT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GUI Configurable element, no assertion </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="261" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__appconfigdoc_1gac60f68d55e472737b2890684e0d41ab9" prot="public" static="no">
+        <name>NO_OF_CHANNELS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GUI Configurable element, Number of Channels utilized in the DeugLog </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="252" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___debug_log__appconfigdoc_1ga99456f8e952b18ce4aba92418252bdaf" prot="public" static="no">
+        <name>PBC_SEVERITY</name>
+        <initializer><ref refid="group___debug_log__publicparam_1ga9c1a9679cf710100a0dcaa624e505727" kindref="member">DEBUGLOG_LEVEL_WARNING</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GUI Configurable element, PBC severity level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" line="258" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/DBG001/DBG001.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_2baba6f3b09b6f882a7ebc3847310009" kind="dir">
+    <compoundname>NVIC002</compoundname>
+    <innerfile refid="_n_v_i_c002_8h">NVIC002.h</innerfile>
+    <innerfile refid="_n_v_i_c002___conf_8h">NVIC002_Conf.h</innerfile>
+    <innerfile refid="_n_v_i_c002___extern_8h">NVIC002_Extern.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/NVIC002/"/>
+  </compounddef>
+</doxygen>

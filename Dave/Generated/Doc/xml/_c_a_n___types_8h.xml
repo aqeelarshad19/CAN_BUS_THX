@@ -1,0 +1,755 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_a_n___types_8h" kind="file">
+    <compoundname>CAN_Types.h</compoundname>
+    <includes refid="_d_a_v_e3_8h" local="no">DAVE3.h</includes>
+    <includedby refid="_c_a_n001_8h" local="yes">CAN001.h</includedby>
+    <incdepgraph>
+      <node id="146">
+        <label>CAN_Types.h</label>
+        <link refid="CAN_Types.h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>XMC4500.h</label>
+      </node>
+      <node id="168">
+        <label>UART001_Conf.h</label>
+        <link refid="_u_a_r_t001___conf_8h"/>
+      </node>
+      <node id="150">
+        <label>stdint.h</label>
+      </node>
+      <node id="165">
+        <label>../../inc/NVIC002/NVIC002.h</label>
+        <link refid="_n_v_i_c002_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>../../inc/IO004/IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>stddef.h</label>
+      </node>
+      <node id="167">
+        <label>Usic.h</label>
+        <link refid="_usic_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>../../inc/LIBS/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>../../inc/CLK001/CLK001.h</label>
+        <link refid="_c_l_k001_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>../../inc/DAVESupport/MULTIPLEXER.h</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8h"/>
+      </node>
+      <node id="160">
+        <label>../../inc/CANGLOBAL/CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>../../inc/DBG001/DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>uc_id.h</label>
+      </node>
+      <node id="161">
+        <label>../../inc/CAN001/CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>../../inc/UART001/UART001.h</label>
+        <link refid="_u_a_r_t001_8h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>UART001_Extern.h</label>
+        <link refid="_u_a_r_t001___extern_8h"/>
+      </node>
+      <node id="157">
+        <label>../../inc/RESET001/RESET001.h</label>
+        <link refid="_r_e_s_e_t001_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>../../inc/LIBS/LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="170">
+        <label>CAN_Types.h</label>
+        <link refid="CAN_Types.h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>CCU8PWMLIB.h</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8h"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>CCU8PWMLIB.c</label>
+        <link refid="_c_c_u8_p_w_m_l_i_b_8c"/>
+      </node>
+      <node id="181">
+        <label>IO004.h</label>
+        <link refid="_i_o004_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>MOTORLIB.c</label>
+        <link refid="_m_o_t_o_r_l_i_b_8c"/>
+      </node>
+      <node id="187">
+        <label>MULTIPLEXER.c</label>
+        <link refid="_m_u_l_t_i_p_l_e_x_e_r_8c"/>
+      </node>
+      <node id="190">
+        <label>Main.c</label>
+        <link refid="_main_8c_source"/>
+      </node>
+      <node id="183">
+        <label>CAN001.c</label>
+        <link refid="_c_a_n001_8c"/>
+      </node>
+      <node id="174">
+        <label>CANGLOBAL.h</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>IO004_Conf.c</label>
+        <link refid="_i_o004___conf_8c"/>
+      </node>
+      <node id="186">
+        <label>DAVE3.c</label>
+        <link refid="_d_a_v_e3_8c"/>
+      </node>
+      <node id="180">
+        <label>DBG001.h</label>
+        <link refid="_d_b_g001_8h_source"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>IO004.c</label>
+        <link refid="_i_o004_8c"/>
+      </node>
+      <node id="173">
+        <label>CAN001_Conf.h</label>
+        <link refid="_c_a_n001___conf_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>CAN001.h</label>
+        <link refid="_c_a_n001_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>CANGLOBAL.c</label>
+        <link refid="_c_a_n_g_l_o_b_a_l_8c"/>
+      </node>
+      <node id="182">
+        <label>IO004_Conf.h</label>
+        <link refid="_i_o004___conf_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>DAVE3.h</label>
+        <link refid="_d_a_v_e3_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>CAN001_Conf.c</label>
+        <link refid="_c_a_n001___conf_8c"/>
+      </node>
+      <node id="178">
+        <label>MOTORLIB.h</label>
+        <link refid="_m_o_t_o_r_l_i_b_8h"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>LIBS.h</label>
+        <link refid="_l_i_b_s_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <memberdef kind="enum" id="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78" prot="public" static="no">
+        <name>CAN_MsgType</name>
+        <enumvalue id="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78a3b90dbd0c322f709c72ec3a184eb10f2" prot="public">
+          <name>RECMSGOBJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive message object </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78a4e0950690937ec9a19c3cf5277739cdd" prot="public">
+          <name>TRANSMSGOBJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transmit message object </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains message object types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="96" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="96" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755" prot="public" static="no">
+        <name>CAN_FrameType</name>
+        <enumvalue id="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755abcab54b37d7dfec0fd175198732965ba" prot="public">
+          <name>STANDARDTYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Standard type identifier </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755aa6416b9f541d8aef2bf030849436041b" prot="public">
+          <name>EXTENDEDTYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Extended type identifier </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains message frame types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="110" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="110" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="enum" id="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" prot="public" static="no">
+        <name>CAN_MsgStatusType</name>
+        <enumvalue id="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" prot="public">
+          <name>RECEIVE_PENDING</name>
+          <initializer>= 1U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check Receive pending bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab854ca69d47f7272ee6d53163b6d3cc6" prot="public">
+          <name>TRANSMIT_PENDING</name>
+          <initializer>= 2U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check transmit pending bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ad2334a03756e7765d8b6e528721d2cb5" prot="public">
+          <name>NEW_DATA</name>
+          <initializer>= 8U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check New data bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78a250c579c6249f924396f316b24f11c31" prot="public">
+          <name>MESSAGE_LOST</name>
+          <initializer>= 16U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>To check message lost bit </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains message object status information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="125" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="125" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="enum" id="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4" prot="public" static="no">
+        <name>CAN_StatusType</name>
+        <enumvalue id="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a6ab974c1136b3d623cfa385c607333eb" prot="public">
+          <name>CAN_RESET</name>
+          <initializer>= 0U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN module Reset </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a00c42e532df2ce88528fd93eb7a2f99c" prot="public">
+          <name>CAN_SET</name>
+          <initializer>= 1U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive message object </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains CAN Status codes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="147" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="147" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="enum" id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931ca" prot="public" static="no">
+        <name>CAN_LastErrorCodeType</name>
+        <enumvalue id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caaf171881762b604932945ca39f1447e42" prot="public">
+          <name>CAN_NO_ERROR</name>
+          <initializer>= 0U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN transfer with no error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa24e545945bd8d9009cd2354da410d329" prot="public">
+          <name>CAN_STUFF_ERROR</name>
+          <initializer>= 1U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN transfer with stuff error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caaa52ded6cb61ddaf282c5a1a07475ee4b" prot="public">
+          <name>CAN_FORM_ERROR</name>
+          <initializer>= 2U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN transfer with form error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa052d38ff69a3d3ee2e185cedf748dde1" prot="public">
+          <name>CAN_ACK_ERROR</name>
+          <initializer>= 3U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN transfer with ack error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa9281d2ef074eaded7b3ceed50ef6533b" prot="public">
+          <name>CAN_BIT1_ERROR</name>
+          <initializer>= 4U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN transfer with bit1 error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caafd6381866e53d83f19c61ad78739fc36" prot="public">
+          <name>CAN_BIT0_ERROR</name>
+          <initializer>= 5U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN transfer with bit0 error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa78267cbd277b9b7768310d7840098e13" prot="public">
+          <name>CAN_CRC_ERROR</name>
+          <initializer>= 6U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN CRC error </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains CAN Bus Error codes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="161" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="161" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="enum" id="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6" prot="public" static="no">
+        <name>CAN_InterruptType</name>
+        <enumvalue id="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6a01ad36f9a9f5f54bf982f0068574c9ec" prot="public">
+          <name>CAN_ALERT_INTERRUPT</name>
+          <initializer>= CAN_NODE_NCR_ALIE_Msk</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enables Node Alert Interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6aecabeb519c28391cf3284fb927a79ca4" prot="public">
+          <name>CAN_LEC_INTERRUPT</name>
+          <initializer>= CAN_NODE_NCR_LECIE_Msk</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enables Last Error code Interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6a69cff304ec58bef8ddfa4a338f1a0390" prot="public">
+          <name>CAN_MO_TRANSMIT_INTERRUPT</name>
+          <initializer>= CAN_MO_MOFCR_TXIE_Msk</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enables MO transmit interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6aa400549c45e92629dc4b6d4a2643352e" prot="public">
+          <name>CAN_MO_RECEIVE_INTERRUPT</name>
+          <initializer>= CAN_MO_MOFCR_RXIE_Msk</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enables MO transmit interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration contains CAN interrupt type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="196" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="196" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_c_a_n___types_8h_1a58c94e3db291af7666029562ac5ac61e" prot="public" static="no">
+        <name>CAN_MACRO_GLOBAL_DEF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="57" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n___types_8h_1a48076aa5ac4e184e3098de93911703a6" prot="public" static="no">
+        <name>CAN_MO_MOAR_STDID_Msk</name>
+        <initializer>((0x000007FFUL)	&lt;&lt; CAN_MO_MOAR_STDID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="62" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n___types_8h_1a3462567f50a4b38e288b90e76f408e52" prot="public" static="no">
+        <name>CAN_MO_MOAR_STDID_Pos</name>
+        <initializer>(18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="60" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n___types_8h_1a8fb7410915ca07a2ea16e91ffe46e213" prot="public" static="no">
+        <name>CHECK_NEWDATA_BIT</name>
+        <param></param>
+        <initializer>(RD_REG(CAN_MOxRegs-&gt;MOSTAT, \
+                            CAN_MO_MOSTAT_NEWDAT_Msk, CAN_MO_MOSTAT_NEWDAT_Pos))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to check New data bit of message object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="82" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n___types_8h_1a6f6200e41d2d0cf263e7ab0f57e70847" prot="public" static="no">
+        <name>CHECK_RXPND_BIT</name>
+        <param></param>
+        <initializer>(RD_REG(CAN_MOxRegs-&gt;MOSTAT, \
+                           CAN_MO_MOSTAT_RXUPD_Msk, CAN_MO_MOSTAT_RXUPD_Pos))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to check receive pending bit of message object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="77" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a2ca41d6e601f94fcf3b8d59b1eeb5d44" compoundref="_c_a_n001_8c" startline="627" endline="717">CAN001_ReadMsgObj</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n___types_8h_1a5db4d5a87e671f966d02ef3390ccacc4" prot="public" static="no">
+        <name>GET_MO_OFFSET</name>
+        <param><defname>MsgObjnr</defname></param>
+        <initializer>((CAN_MO_TypeDef *)(CAN_BASE + \
+                                              0x1000UL + (MsgObjnr * 0x0020UL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to Calculate register offset value as per message object number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="67" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1aa5a37c13321cc60553c418c5828308b1" compoundref="_c_a_n001_8c" startline="440" endline="476">CAN001_NodeDeInit</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_c_a_n___types_8h_1a6500abb80c2aae80ff47839a9e371bb7" prot="public" static="no">
+        <name>GET_MSGPND_OFFSET</name>
+        <param><defname>NodeID</defname></param>
+        <initializer>((uint32_t*)((CAN_BASE + 0x00000140UL) + (NodeID * 4UL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to calculate message pending register offset value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" line="71" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="_c_a_n001_8c_1a6daaddccea102728a1428ee9e2c59b68" compoundref="_c_a_n001_8c" startline="940" endline="958">CAN001_ClearMOPndRegisterBit</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aea102a989fd23f0d96606b15b2bbe65e" compoundref="_c_a_n001_8c" startline="865" endline="879">CAN001_GetMOPndRegisterBitStatus</referencedby>
+        <referencedby refid="_c_a_n001_8c_1aa5a37c13321cc60553c418c5828308b1" compoundref="_c_a_n001_8c" startline="440" endline="476">CAN001_NodeDeInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file defines common enums and macros used by different CAN Apps. </para>    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2014 Infineon Technologies AG. All rights reserved.</para><para>Infineon Technologies AG (Infineon) is supplying this software for use with Infineon&apos;s microcontrollers. This file can be freely distributed within development tools that are supporting such microcontrollers.</para><para>THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;. NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER. <verbatim>                                                                       **
+                                                                       **
+</verbatim> PLATFORM : Infineon XMC4000 Series ** ** COMPILER : Compiler Independent ** ** AUTHOR : App Developer ** ** MAY BE CHANGED BY USER [yes/no]: Yes ** ** MODIFICATION DATE : Jan 20, 2014 ** ** </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">#ifndef<sp/>CAN_TYPES_H_</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_TYPES_H_</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Support<sp/>for<sp/>C++<sp/>codebase<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Include<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_a_v_e3_8h" kindref="compound" tooltip="This file contains all public data structures,enums and function prototypes.">DAVE3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Macro<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macro<sp/>to<sp/>avoid<sp/>multiple<sp/>re-definitions<sp/>of<sp/>the<sp/>CAN<sp/>global<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CAN_MACRO_GLOBAL_DEF</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_MACRO_GLOBAL_DEF</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Standard<sp/>ID<sp/>Bitposition<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>CAN_MO_MOAR_STDID_Pos<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(18)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Standard<sp/>ID<sp/>BitMask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>CAN_MO_MOAR_STDID_Msk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((0x000007FFUL)<sp/><sp/><sp/>&lt;&lt;<sp/>CAN_MO_MOAR_STDID_Pos)</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment">/*DD_SIMPLE_CAN_MACRO_1*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_c_a_n___types_8h_1a5db4d5a87e671f966d02ef3390ccacc4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_MO_OFFSET(MsgObjnr)<sp/>((CAN_MO_TypeDef<sp/>*)(CAN_BASE<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1000UL<sp/>+<sp/>(MsgObjnr<sp/>*<sp/>0x0020UL)))</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="70"><highlight class="comment">/*DD_SIMPLE_CAN_MACRO_2*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_c_a_n___types_8h_1a6500abb80c2aae80ff47839a9e371bb7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_MSGPND_OFFSET(NodeID)<sp/>((uint32_t*)((CAN_BASE<sp/>+<sp/>0x00000140UL)<sp/>+<sp/>(NodeID<sp/>*<sp/>4UL)))</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="comment">//#define<sp/>GET_MSGPND_OFFSET(NodeID)<sp/>((uint32_t*)((0x48014140U)<sp/>+<sp/>(NodeID<sp/>*<sp/>4)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="comment">/*DD_SIMPLE_CAN_MACRO_3*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_c_a_n___types_8h_1a6f6200e41d2d0cf263e7ab0f57e70847" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_RXPND_BIT()<sp/>(RD_REG(CAN_MOxRegs-&gt;MOSTAT,<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN_MO_MOSTAT_RXUPD_Msk,<sp/>CAN_MO_MOSTAT_RXUPD_Pos))</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment">/*DD_SIMPLE_CAN_MACRO_4*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="_c_a_n___types_8h_1a8fb7410915ca07a2ea16e91ffe46e213" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_NEWDATA_BIT()<sp/>(RD_REG(CAN_MOxRegs-&gt;MOSTAT,<sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN_MO_MOSTAT_NEWDAT_Msk,<sp/>CAN_MO_MOSTAT_NEWDAT_Pos))</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Type<sp/>Definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78" kindref="member">CAN_MsgType</ref>{</highlight></codeline>
+<codeline lineno="100" refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78a3b90dbd0c322f709c72ec3a184eb10f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78a3b90dbd0c322f709c72ec3a184eb10f2" kindref="member">RECMSGOBJ</ref>,</highlight></codeline>
+<codeline lineno="104" refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78a4e0950690937ec9a19c3cf5277739cdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78a4e0950690937ec9a19c3cf5277739cdd" kindref="member">TRANSMSGOBJ</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<ref refid="_c_a_n___types_8h_1ae5a43debd74b395db5dd39690e897f78" kindref="member">CAN_MsgType</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755" kindref="member">CAN_FrameType</ref>{</highlight></codeline>
+<codeline lineno="114" refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755abcab54b37d7dfec0fd175198732965ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755abcab54b37d7dfec0fd175198732965ba" kindref="member">STANDARDTYPE</ref>,</highlight></codeline>
+<codeline lineno="118" refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755aa6416b9f541d8aef2bf030849436041b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755aa6416b9f541d8aef2bf030849436041b" kindref="member">EXTENDEDTYPE</ref></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}<ref refid="_c_a_n___types_8h_1aa4291dd779e96fa11cced84c89204755" kindref="member">CAN_FrameType</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" kindref="member">CAN_MsgStatusType</ref>{</highlight></codeline>
+<codeline lineno="129" refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab1384558eaf5a56dcf637e4f814ec3c1" kindref="member">RECEIVE_PENDING</ref><sp/>=<sp/>1U,</highlight></codeline>
+<codeline lineno="133" refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab854ca69d47f7272ee6d53163b6d3cc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ab854ca69d47f7272ee6d53163b6d3cc6" kindref="member">TRANSMIT_PENDING</ref><sp/>=<sp/>2U,</highlight></codeline>
+<codeline lineno="137" refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ad2334a03756e7765d8b6e528721d2cb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78ad2334a03756e7765d8b6e528721d2cb5" kindref="member">NEW_DATA</ref><sp/>=<sp/>8U,</highlight></codeline>
+<codeline lineno="141" refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78a250c579c6249f924396f316b24f11c31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78a250c579c6249f924396f316b24f11c31" kindref="member">MESSAGE_LOST</ref><sp/>=<sp/>16U,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}<ref refid="_c_a_n___types_8h_1a3ab9cf3d4665584b0f695f3ced93ea78" kindref="member">CAN_MsgStatusType</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4" kindref="member">CAN_StatusType</ref><sp/>{</highlight></codeline>
+<codeline lineno="151" refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a6ab974c1136b3d623cfa385c607333eb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a6ab974c1136b3d623cfa385c607333eb" kindref="member">CAN_RESET</ref><sp/>=<sp/>0U,</highlight></codeline>
+<codeline lineno="155" refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a00c42e532df2ce88528fd93eb7a2f99c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4a00c42e532df2ce88528fd93eb7a2f99c" kindref="member">CAN_SET</ref><sp/>=<sp/>1U,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}<ref refid="_c_a_n___types_8h_1a37a3c5bdee73f6a650d5f909d1ce91a4" kindref="member">CAN_StatusType</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931ca" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931ca" kindref="member">CAN_LastErrorCodeType</ref><sp/>{</highlight></codeline>
+<codeline lineno="165" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caaf171881762b604932945ca39f1447e42" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caaf171881762b604932945ca39f1447e42" kindref="member">CAN_NO_ERROR</ref><sp/>=<sp/>0U,</highlight></codeline>
+<codeline lineno="169" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa24e545945bd8d9009cd2354da410d329" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa24e545945bd8d9009cd2354da410d329" kindref="member">CAN_STUFF_ERROR</ref><sp/>=<sp/>1U,</highlight></codeline>
+<codeline lineno="173" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caaa52ded6cb61ddaf282c5a1a07475ee4b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caaa52ded6cb61ddaf282c5a1a07475ee4b" kindref="member">CAN_FORM_ERROR</ref><sp/>=<sp/>2U,</highlight></codeline>
+<codeline lineno="177" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa052d38ff69a3d3ee2e185cedf748dde1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa052d38ff69a3d3ee2e185cedf748dde1" kindref="member">CAN_ACK_ERROR</ref><sp/>=<sp/>3U,</highlight></codeline>
+<codeline lineno="181" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa9281d2ef074eaded7b3ceed50ef6533b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa9281d2ef074eaded7b3ceed50ef6533b" kindref="member">CAN_BIT1_ERROR</ref><sp/>=<sp/>4U,</highlight></codeline>
+<codeline lineno="185" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caafd6381866e53d83f19c61ad78739fc36" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caafd6381866e53d83f19c61ad78739fc36" kindref="member">CAN_BIT0_ERROR</ref><sp/>=<sp/>5U,</highlight></codeline>
+<codeline lineno="189" refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa78267cbd277b9b7768310d7840098e13" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931caa78267cbd277b9b7768310d7840098e13" kindref="member">CAN_CRC_ERROR</ref><sp/>=<sp/>6U</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}<ref refid="_c_a_n___types_8h_1a138deb7b466a4ef5cc4caa5bb78931ca" kindref="member">CAN_LastErrorCodeType</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="196" refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6" kindref="member">CAN_InterruptType</ref><sp/>{</highlight></codeline>
+<codeline lineno="200" refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6a01ad36f9a9f5f54bf982f0068574c9ec" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6a01ad36f9a9f5f54bf982f0068574c9ec" kindref="member">CAN_ALERT_INTERRUPT</ref><sp/>=<sp/>CAN_NODE_NCR_ALIE_Msk,</highlight></codeline>
+<codeline lineno="204" refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6aecabeb519c28391cf3284fb927a79ca4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6aecabeb519c28391cf3284fb927a79ca4" kindref="member">CAN_LEC_INTERRUPT</ref><sp/>=<sp/>CAN_NODE_NCR_LECIE_Msk,</highlight></codeline>
+<codeline lineno="208" refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6a69cff304ec58bef8ddfa4a338f1a0390" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6a69cff304ec58bef8ddfa4a338f1a0390" kindref="member">CAN_MO_TRANSMIT_INTERRUPT</ref><sp/>=<sp/>CAN_MO_MOFCR_TXIE_Msk,</highlight></codeline>
+<codeline lineno="212" refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6aa400549c45e92629dc4b6d4a2643352e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6aa400549c45e92629dc4b6d4a2643352e" kindref="member">CAN_MO_RECEIVE_INTERRUPT</ref><sp/>=<sp/>CAN_MO_MOFCR_RXIE_Msk,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}<ref refid="_c_a_n___types_8h_1a416ebf885926acd92f835ee132ed8ac6" kindref="member">CAN_InterruptType</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="comment">/*<sp/>Support<sp/>for<sp/>C++<sp/>codebase<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#endif<sp/></highlight><highlight class="comment">/*<sp/>CAN_TYPES_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/CAN001/CAN_Types.h"/>
+  </compounddef>
+</doxygen>

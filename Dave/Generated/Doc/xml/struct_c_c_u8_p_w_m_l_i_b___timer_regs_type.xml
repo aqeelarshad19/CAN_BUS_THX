@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type" kind="struct" prot="public">
+    <compoundname>CCU8PWMLIB_TimerRegsType</compoundname>
+    <includes refid="_c_c_u8_p_w_m_l_i_b_8h" local="no">CCU8PWMLIB.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1afa0dba63433a1a95ef2468ef98df3a92" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CCU8PWMLIB_TimerRegsType::CompReg1</definition>
+        <argsstring></argsstring>
+        <name>CompReg1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure holds the values of the compare register, period register. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="372" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1a405f992894ebde948e1102947a068d03" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CCU8PWMLIB_TimerRegsType::CompReg2</definition>
+        <argsstring></argsstring>
+        <name>CompReg2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the compare register value of channel 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="376" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1a09031a6a419f5a05d09b25abd0a21d9c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CCU8PWMLIB_TimerRegsType::PeriodReg</definition>
+        <argsstring></argsstring>
+        <name>PeriodReg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the period register value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="380" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1a484af2b76146183c5beab30a2629e95b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CCU8PWMLIB_TimerRegsType::TimerReg</definition>
+        <argsstring></argsstring>
+        <name>TimerReg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the current timer register value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="384" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure holds the values of the compare register, period register. </para>    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" line="368" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/CCU8PWMLIB.h" bodystart="367" bodyend="385"/>
+    <listofallmembers>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1afa0dba63433a1a95ef2468ef98df3a92" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_TimerRegsType</scope><name>CompReg1</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1a405f992894ebde948e1102947a068d03" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_TimerRegsType</scope><name>CompReg2</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1a09031a6a419f5a05d09b25abd0a21d9c" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_TimerRegsType</scope><name>PeriodReg</name></member>
+      <member refid="struct_c_c_u8_p_w_m_l_i_b___timer_regs_type_1a484af2b76146183c5beab30a2629e95b" prot="public" virt="non-virtual"><scope>CCU8PWMLIB_TimerRegsType</scope><name>TimerReg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

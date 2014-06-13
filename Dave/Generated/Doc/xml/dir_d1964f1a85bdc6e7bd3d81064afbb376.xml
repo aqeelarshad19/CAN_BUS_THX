@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_d1964f1a85bdc6e7bd3d81064afbb376" kind="dir">
+    <compoundname>Startup</compoundname>
+    <innerfile refid="system___x_m_c4500_8c">system_XMC4500.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Startup/"/>
+  </compounddef>
+</doxygen>

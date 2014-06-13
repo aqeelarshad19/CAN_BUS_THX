@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_i_o004___p_o_r_t_s___type_def" kind="struct" prot="public">
+    <compoundname>IO004_PORTS_TypeDef</compoundname>
+    <includes refid="_i_o004_8h" local="no">IO004.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1ab91a0ba6223e2b0ee23219815f004c45" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::HWSEL</definition>
+        <argsstring></argsstring>
+        <name>HWSEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Pin Hardware Select Register Offset 0x00000074 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="101" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1aa8c786d29e1c797069a75483d13574a5" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t IO004_PORTS_TypeDef::IN</definition>
+        <argsstring></argsstring>
+        <name>IN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Input Register Offset 0x00000024 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="93" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::IOCR0</definition>
+        <argsstring></argsstring>
+        <name>IOCR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Input/Output Control Register 0 Offset 0x00000010 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="88" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" compoundref="_i_o004_8c" startline="167" endline="196">IO004_DisableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" compoundref="_i_o004_8c" startline="198" endline="227">IO004_EnableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" compoundref="_i_o004_8c" startline="128" endline="165">IO004_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::IOCR12</definition>
+        <argsstring></argsstring>
+        <name>IOCR12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Input/Output Control Register 12 Offset 0x0000001C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="91" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" compoundref="_i_o004_8c" startline="167" endline="196">IO004_DisableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" compoundref="_i_o004_8c" startline="198" endline="227">IO004_EnableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" compoundref="_i_o004_8c" startline="128" endline="165">IO004_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::IOCR4</definition>
+        <argsstring></argsstring>
+        <name>IOCR4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Input/Output Control Register 4 Offset 0x00000014 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="89" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" compoundref="_i_o004_8c" startline="167" endline="196">IO004_DisableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" compoundref="_i_o004_8c" startline="198" endline="227">IO004_EnableOutputDriver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::IOCR8</definition>
+        <argsstring></argsstring>
+        <name>IOCR8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Input/Output Control Register 8 Offset 0x00000018 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="90" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1ad4c46db3c4ccadd98572342d796092df" compoundref="_i_o004_8c" startline="167" endline="196">IO004_DisableOutputDriver</referencedby>
+        <referencedby refid="_i_o004_8c_1a3410f235266c64c6b27c3bafd598bd72" compoundref="_i_o004_8c" startline="198" endline="227">IO004_EnableOutputDriver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" prot="public" static="no" mutable="no">
+        <type>__O uint32_t</type>
+        <definition>__O uint32_t IO004_PORTS_TypeDef::OMR</definition>
+        <argsstring></argsstring>
+        <name>OMR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Output Modification Register Offset 0x00000004 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="86" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" compoundref="_i_o004_8c" startline="128" endline="165">IO004_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1ae3f1cebeaa606065541ea7a1794ad405" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::OUT</definition>
+        <argsstring></argsstring>
+        <name>OUT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Output Register Offset 0x00000000 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="85" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a5e12b42ed302b54cc14be8de0e945f94" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::PDISC</definition>
+        <argsstring></argsstring>
+        <name>PDISC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Pin Function Decision Control Register Offset 0x00000060 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="98" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::PDR0</definition>
+        <argsstring></argsstring>
+        <name>PDR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Pad Driver Mode 0 Register Offset 0x00000040 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="95" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" compoundref="_i_o004_8c" startline="128" endline="165">IO004_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::PDR1</definition>
+        <argsstring></argsstring>
+        <name>PDR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Pad Driver Mode 1 Register Offset 0x00000044 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="96" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="_i_o004_8c_1a28f5a6c6e2060ee071243b340db6a6c1" compoundref="_i_o004_8c" startline="128" endline="165">IO004_Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1afa59064b3cde2765cbebe62d34b1e8ba" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t IO004_PORTS_TypeDef::PPS</definition>
+        <argsstring></argsstring>
+        <name>PPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port 0 Pin Power Safe Register Offset 0x00000070 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="100" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a13832b3f028327d3e4556e59cb9441a2" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t IO004_PORTS_TypeDef::RESERVED1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="87" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1aca11152b9725ec40d9bdb845ebf50258" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t IO004_PORTS_TypeDef::RESERVED2[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="92" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1ac2564efcbe8dd24d1af18d0a46ec4ad3" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t IO004_PORTS_TypeDef::RESERVED3[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="94" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a58ba898222f4c2c4836e3fb4cff91e55" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t IO004_PORTS_TypeDef::RESERVED4[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="97" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_o004___p_o_r_t_s___type_def_1a51b40f27d8112253e2e71ef97ea41ddb" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t IO004_PORTS_TypeDef::RESERVED5[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="99" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>PORTS </para>    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" line="84" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/IO004/IO004.h" bodystart="84" bodyend="102"/>
+    <listofallmembers>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1ab91a0ba6223e2b0ee23219815f004c45" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>HWSEL</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1aa8c786d29e1c797069a75483d13574a5" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>IN</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1aac6fbb14a5e7fe951e932a9597d07633" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>IOCR0</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a6cf495b2afd4beac46b3e0840c38630f" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>IOCR12</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a63eba63d0f73df8346327a53ce0af7ea" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>IOCR4</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a4e9363a4b0e20cd8033f23cfa82c6d15" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>IOCR8</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a9811b974fd0df59155562638030e2eaa" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>OMR</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1ae3f1cebeaa606065541ea7a1794ad405" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>OUT</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a5e12b42ed302b54cc14be8de0e945f94" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>PDISC</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a1eef95d9a35ec9cd472adeecdd9f64f4" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>PDR0</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a851b24aae4dcb7de9b236e13c75d7013" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>PDR1</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1afa59064b3cde2765cbebe62d34b1e8ba" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>PPS</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a13832b3f028327d3e4556e59cb9441a2" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1aca11152b9725ec40d9bdb845ebf50258" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1ac2564efcbe8dd24d1af18d0a46ec4ad3" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a58ba898222f4c2c4836e3fb4cff91e55" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_i_o004___p_o_r_t_s___type_def_1a51b40f27d8112253e2e71ef97ea41ddb" prot="public" virt="non-virtual"><scope>IO004_PORTS_TypeDef</scope><name>RESERVED5</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

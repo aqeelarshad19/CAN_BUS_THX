@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ResourceModel:Peripheral xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ResourceModel="http://www.infineon.com/Davex/Resource.ecore" name="CAN" description="Controller Area Network Controller" URI="http://www.infineon.com/0.1.28/peripheral/can/0">
+  <provided xsi:type="ResourceModel:ResourceGroup" name="34" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.9"/>
+    <resourcesList name="mofcr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mofcr34" isResolved="true"/>
+    <resourcesList name="mofgpr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mofgpr34" isResolved="true"/>
+    <resourcesList name="moipr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moipr34" isResolved="true"/>
+    <resourcesList name="moamr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moamr34" isResolved="true"/>
+    <resourcesList name="moar" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moar34" isResolved="true"/>
+    <resourcesList name="modatal" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/modatal34" isResolved="true"/>
+    <resourcesList name="modatah" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/modatah34" isResolved="true"/>
+    <resourcesList name="moctr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moctr34" isResolved="true"/>
+    <resourcesList name="mostat" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mostat34" isResolved="true"/>
+    <resourcesList name="moipr_txinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moipr34/txinp" isResolved="true"/>
+    <resourcesList name="moipr_rxinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moipr34/rxinp" isResolved="true"/>
+    <resourcesList name="txinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/txinp34" isResolved="true"/>
+    <resourcesList name="rxinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/rxinp34" isResolved="true"/>
+    <resourcesList name="global_signal" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mo34_global_signal" isResolved="true"/>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="RXINP34" description="Multi CAN MO34 receive interrupt pointer" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/rxinp" signalType="SINGAL" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.34"/>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MOFCR34" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr" accessPermission="rw" addressOffset="0x1440" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.56"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 34 Function Control Register</toolTipHelpDescription>
+    <bitFields name="MMC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/mmc" maxValue="15" minValue="0" startPos="0" stopPos="3" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Message Mode Control</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0000" description="Standard Message Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0001" description="Receive FIFO Base Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0010" description="Transmit FIFO Base Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0011" description="Transmit FIFO Slave Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0100" description="Gateway Source Object"/>
+    </bitFields>
+    <bitFields name="GDFS" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/gdfs" maxValue="1" minValue="0" startPos="8" stopPos="8" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Gateway Data Frame Send</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="TXRQ is unchanged in the destination object."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="TXRQ is set in the gateway destination object after the internal transfer from the gateway source to the gateway destination object."/>
+    </bitFields>
+    <bitFields name="IDC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/idc" maxValue="1" minValue="0" startPos="9" stopPos="9" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Identifier Copy</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="The identifier of the gateway source object is not copied."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="The identifier of the gateway source object (after storing the received frame in the source) is copied to the gateway destination object."/>
+    </bitFields>
+    <bitFields name="DLCC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/dlcc" maxValue="1" minValue="0" startPos="10" stopPos="10" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Length Code Copy</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Data length code is not copied."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Data length code of the gateway source object (after storing the received frame in the source) is copied to the gateway destination object."/>
+    </bitFields>
+    <bitFields name="DATC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/datc" maxValue="1" minValue="0" startPos="11" stopPos="11" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Copy</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Data fields are not copied."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Data fields in registers MODATALn and MODATAHn of the gateway source object (after storing the received frame in the source) are copied to the gateway destination."/>
+    </bitFields>
+    <bitFields name="RXIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/rxie" maxValue="1" minValue="0" startPos="16" stopPos="16" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.58"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Receive Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message receive interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message receive interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="TXIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/txie" maxValue="1" minValue="0" startPos="17" stopPos="17" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.57"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transmit Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message transmit interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message transmit interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="OVIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/ovie" maxValue="1" minValue="0" startPos="18" stopPos="18" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Overflow Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="FIFO full interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="FIFO full interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="FRREN" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/frren" maxValue="1" minValue="0" startPos="20" stopPos="20" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Foreign Remote Request Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="TXRQ of message object n is set on reception of a matching Remote Frame."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="TXRQ of the message object referenced by the pointer CUR is set on reception of a matching Remote Frame."/>
+    </bitFields>
+    <bitFields name="RMM" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/rmm" maxValue="1" minValue="0" startPos="21" stopPos="21" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transmit Object Remote Monitoring</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Remote monitoring is disabled: Identifier, IDE bit, and DLC of message object n remain unchanged upon the reception of a matching Remote Frame."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Remote monitoring is enabled: Identifier, IDE bit, and DLC of a matching Remote Frame are copied to transmit object n in order to monitor incoming Remote Frames."/>
+    </bitFields>
+    <bitFields name="SDT" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/sdt" maxValue="1" minValue="0" startPos="22" stopPos="22" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Single Data Transfer</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="STT" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/stt" maxValue="1" minValue="0" startPos="23" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Single Transmit Trial</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DLC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mofcr/dlc" maxValue="15" minValue="0" startPos="24" stopPos="27" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Length Code</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MOIPR34" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moipr" accessPermission="rw" addressOffset="0x1448" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.59"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 34 Interrupt Pointer Register</toolTipHelpDescription>
+    <bitFields name="RXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moipr/rxinp" maxValue="7" minValue="0" startPos="0" stopPos="2" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Receive Interrupt Node Pointer</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+    </bitFields>
+    <bitFields name="TXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moipr/txinp" maxValue="7" minValue="0" startPos="4" stopPos="6" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transmit Interrupt Node Pointer</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+    </bitFields>
+    <bitFields name="MPN" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moipr/mpn" maxValue="255" minValue="0" startPos="8" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Message Pending Number</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="CFCVAL" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moipr/cfcval" maxValue="65535" minValue="0" startPos="16" stopPos="31" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Frame Counter Value</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="AM" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moamr/am" maxValue="536870911" minValue="0" startPos="0" stopPos="28" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="1fffffff"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.60"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Acceptance Mask for Message Identifier</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="MIDE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moamr/mide" maxValue="1" minValue="0" startPos="29" stopPos="29" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.61"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Acceptance Mask Bit for Message IDE Bit</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message object n accepts the reception of both, standard and extended frames."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message object n receives frames only with matching IDE bit."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="IDE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moar/ide" maxValue="1" minValue="0" startPos="29" stopPos="29" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.62"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Identifier Extension Bit of Message Object n</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message object n handles standard frames with 11-bit identifier."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message object n handles extended frames with 29-bit identifier."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="ID" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moar/id" maxValue="536870911" minValue="0" startPos="0" stopPos="28" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.63"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>CAN Identifier of Message Object n</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MODATAL34" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatal" accessPermission="rw" addressOffset="0x1450" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.64"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 34 Data Register Low</toolTipHelpDescription>
+    <bitFields name="DB0" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatal/db0" maxValue="255" minValue="0" startPos="0" stopPos="7" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 0 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB1" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatal/db1" maxValue="255" minValue="0" startPos="8" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 1 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB2" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatal/db2" maxValue="255" minValue="0" startPos="16" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 2 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB3" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatal/db3" maxValue="255" minValue="0" startPos="24" stopPos="31" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 3 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MODATAH34" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatah" accessPermission="rw" addressOffset="0x1454" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.65"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 34 Data Register High</toolTipHelpDescription>
+    <bitFields name="DB4" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatah/db4" maxValue="255" minValue="0" startPos="0" stopPos="7" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 4 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB5" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatah/db5" maxValue="255" minValue="0" startPos="8" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 5 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB6" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatah/db6" maxValue="255" minValue="0" startPos="16" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 6 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB7" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/modatah/db7" maxValue="255" minValue="0" startPos="24" stopPos="31" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 7 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="DIR" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/mostat/dir" maxValue="1" minValue="0" startPos="11" stopPos="11">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.66"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <toolTipHelpDescription>Message Direction</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Receive Object selected: With TXRQ&#xa0;=&#xa0;1, a Remote Frame with the identifier of message object n is scheduled for transmission. On reception of a Data Frame with matching identifier, the message is stored in message object n."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Transmit Object selected: If TXRQ&#xa0;=&#xa0;1, message object n is scheduled for transmission of a Data Frame. On reception of a Remote Frame with matching identifier, bit TXRQ is set."/>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="TXINP34" description="Multi CAN MO34 transmit interrupt pointer" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/txinp" signalType="SINGAL" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.67"/>
+  </provided>
+  <provided xsi:type="ResourceModel:ResourceGroup" name="35" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.10"/>
+    <resourcesList name="mofcr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mofcr35" isResolved="true"/>
+    <resourcesList name="mofgpr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mofgpr35" isResolved="true"/>
+    <resourcesList name="moipr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moipr35" isResolved="true"/>
+    <resourcesList name="moamr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moamr35" isResolved="true"/>
+    <resourcesList name="moar" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moar35" isResolved="true"/>
+    <resourcesList name="modatal" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/modatal35" isResolved="true"/>
+    <resourcesList name="modatah" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/modatah35" isResolved="true"/>
+    <resourcesList name="moctr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moctr35" isResolved="true"/>
+    <resourcesList name="mostat" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mostat35" isResolved="true"/>
+    <resourcesList name="moipr_txinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moipr35/txinp" isResolved="true"/>
+    <resourcesList name="moipr_rxinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/moipr35/rxinp" isResolved="true"/>
+    <resourcesList name="txinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/txinp35" isResolved="true"/>
+    <resourcesList name="rxinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/rxinp35" isResolved="true"/>
+    <resourcesList name="global_signal" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mo35_global_signal" isResolved="true"/>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="TXINP35" description="Multi CAN MO35 transmit interrupt pointer" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/txinp" signalType="SINGAL" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.37"/>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MOFCR35" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr" accessPermission="rw" addressOffset="0x1460" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.68"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 35 Function Control Register</toolTipHelpDescription>
+    <bitFields name="MMC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/mmc" maxValue="15" minValue="0" startPos="0" stopPos="3" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Message Mode Control</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0000" description="Standard Message Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0001" description="Receive FIFO Base Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0010" description="Transmit FIFO Base Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0011" description="Transmit FIFO Slave Object"/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0100" description="Gateway Source Object"/>
+    </bitFields>
+    <bitFields name="GDFS" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/gdfs" maxValue="1" minValue="0" startPos="8" stopPos="8" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Gateway Data Frame Send</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="TXRQ is unchanged in the destination object."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="TXRQ is set in the gateway destination object after the internal transfer from the gateway source to the gateway destination object."/>
+    </bitFields>
+    <bitFields name="IDC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/idc" maxValue="1" minValue="0" startPos="9" stopPos="9" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Identifier Copy</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="The identifier of the gateway source object is not copied."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="The identifier of the gateway source object (after storing the received frame in the source) is copied to the gateway destination object."/>
+    </bitFields>
+    <bitFields name="DLCC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/dlcc" maxValue="1" minValue="0" startPos="10" stopPos="10" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Length Code Copy</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Data length code is not copied."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Data length code of the gateway source object (after storing the received frame in the source) is copied to the gateway destination object."/>
+    </bitFields>
+    <bitFields name="DATC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/datc" maxValue="1" minValue="0" startPos="11" stopPos="11" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Copy</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Data fields are not copied."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Data fields in registers MODATALn and MODATAHn of the gateway source object (after storing the received frame in the source) are copied to the gateway destination."/>
+    </bitFields>
+    <bitFields name="RXIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/rxie" maxValue="1" minValue="0" startPos="16" stopPos="16" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.70"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+      <toolTipHelpDescription>Receive Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message receive interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message receive interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="TXIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/txie" maxValue="1" minValue="0" startPos="17" stopPos="17" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.69"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transmit Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message transmit interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message transmit interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="OVIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/ovie" maxValue="1" minValue="0" startPos="18" stopPos="18" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Overflow Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="FIFO full interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="FIFO full interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="FRREN" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/frren" maxValue="1" minValue="0" startPos="20" stopPos="20" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Foreign Remote Request Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="TXRQ of message object n is set on reception of a matching Remote Frame."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="TXRQ of the message object referenced by the pointer CUR is set on reception of a matching Remote Frame."/>
+    </bitFields>
+    <bitFields name="RMM" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/rmm" maxValue="1" minValue="0" startPos="21" stopPos="21" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transmit Object Remote Monitoring</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Remote monitoring is disabled: Identifier, IDE bit, and DLC of message object n remain unchanged upon the reception of a matching Remote Frame."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Remote monitoring is enabled: Identifier, IDE bit, and DLC of a matching Remote Frame are copied to transmit object n in order to monitor incoming Remote Frames."/>
+    </bitFields>
+    <bitFields name="SDT" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/sdt" maxValue="1" minValue="0" startPos="22" stopPos="22" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Single Data Transfer</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="STT" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/stt" maxValue="1" minValue="0" startPos="23" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Single Transmit Trial</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DLC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mofcr/dlc" maxValue="15" minValue="0" startPos="24" stopPos="27" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Length Code</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MOIPR35" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moipr" accessPermission="rw" addressOffset="0x1468" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.71"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 35 Interrupt Pointer Register</toolTipHelpDescription>
+    <bitFields name="RXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moipr/rxinp" maxValue="7" minValue="0" startPos="0" stopPos="2" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Receive Interrupt Node Pointer</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+    </bitFields>
+    <bitFields name="TXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moipr/txinp" maxValue="7" minValue="0" startPos="4" stopPos="6" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transmit Interrupt Node Pointer</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+    </bitFields>
+    <bitFields name="MPN" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moipr/mpn" maxValue="255" minValue="0" startPos="8" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Message Pending Number</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="CFCVAL" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moipr/cfcval" maxValue="65535" minValue="0" startPos="16" stopPos="31" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Frame Counter Value</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="AM" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moamr/am" maxValue="536870911" minValue="0" startPos="0" stopPos="28" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="1fffffff"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.72"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Acceptance Mask for Message Identifier</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="MIDE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moamr/mide" maxValue="1" minValue="0" startPos="29" stopPos="29" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.73"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Acceptance Mask Bit for Message IDE Bit</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message object n accepts the reception of both, standard and extended frames."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message object n receives frames only with matching IDE bit."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="IDE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moar/ide" maxValue="1" minValue="0" startPos="29" stopPos="29" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.74"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Identifier Extension Bit of Message Object n</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Message object n handles standard frames with 11-bit identifier."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Message object n handles extended frames with 29-bit identifier."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="ID" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moar/id" maxValue="536870911" minValue="0" startPos="0" stopPos="28" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.75"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>CAN Identifier of Message Object n</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MODATAL35" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatal" accessPermission="rw" addressOffset="0x1470" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.76"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 35 Data Register Low</toolTipHelpDescription>
+    <bitFields name="DB0" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatal/db0" maxValue="255" minValue="0" startPos="0" stopPos="7" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 0 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB1" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatal/db1" maxValue="255" minValue="0" startPos="8" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 1 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB2" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatal/db2" maxValue="255" minValue="0" startPos="16" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 2 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB3" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatal/db3" maxValue="255" minValue="0" startPos="24" stopPos="31" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 3 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="MODATAH35" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatah" accessPermission="rw" addressOffset="0x1474" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.77"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Message Object 35 Data Register High</toolTipHelpDescription>
+    <bitFields name="DB4" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatah/db4" maxValue="255" minValue="0" startPos="0" stopPos="7" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 4 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB5" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatah/db5" maxValue="255" minValue="0" startPos="8" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 5 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB6" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatah/db6" maxValue="255" minValue="0" startPos="16" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 6 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="DB7" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/modatah/db7" maxValue="255" minValue="0" startPos="24" stopPos="31" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Data Byte 7 of Message Object n</toolTipHelpDescription>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="DIR" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/mostat/dir" maxValue="1" minValue="0" startPos="11" stopPos="11">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.78"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Message Direction</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Receive Object selected: With TXRQ&#xa0;=&#xa0;1, a Remote Frame with the identifier of message object n is scheduled for transmission. On reception of a Data Frame with matching identifier, the message is stored in message object n."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Transmit Object selected: If TXRQ&#xa0;=&#xa0;1, message object n is scheduled for transmission of a Data Frame. On reception of a Remote Frame with matching identifier, bit TXRQ is set."/>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="RXINP35" description="Multi CAN MO35 receive interrupt pointer" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/rxinp" signalType="SINGAL" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.79"/>
+  </provided>
+  <provided xsi:type="ResourceModel:ResourceGroup" name="GLOBAL" URI="http://www.infineon.com/0.1.28/peripheral/can/0/global">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CANGLOBAL/1.0.12/canglobal_0.app#//@consumed.1"/>
+    <resourcesList name="panctr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/panctr" isResolved="true"/>
+    <resourcesList name="id" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/id" isResolved="true"/>
+    <resourcesList name="clc" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/clc" isResolved="true"/>
+    <resourcesList name="fdr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/fdr" isResolved="true"/>
+    <resourcesList name="mitr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mitr" isResolved="true"/>
+    <resourcesList name="mcr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mcr" isResolved="true"/>
+    <resourcesList name="mspnd0" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd0" isResolved="true"/>
+    <resourcesList name="mspnd1" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd1" isResolved="true"/>
+    <resourcesList name="mspnd2" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd2" isResolved="true"/>
+    <resourcesList name="mspnd3" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd3" isResolved="true"/>
+    <resourcesList name="mspnd4" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd4" isResolved="true"/>
+    <resourcesList name="mspnd5" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd5" isResolved="true"/>
+    <resourcesList name="mspnd6" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd6" isResolved="true"/>
+    <resourcesList name="mspnd7" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/mspnd7" isResolved="true"/>
+    <resourcesList name="msid0" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid0" isResolved="true"/>
+    <resourcesList name="msid1" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid1" isResolved="true"/>
+    <resourcesList name="msid2" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid2" isResolved="true"/>
+    <resourcesList name="msid3" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid3" isResolved="true"/>
+    <resourcesList name="msid4" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid4" isResolved="true"/>
+    <resourcesList name="msid5" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid5" isResolved="true"/>
+    <resourcesList name="msid6" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid6" isResolved="true"/>
+    <resourcesList name="msid7" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msid7" isResolved="true"/>
+    <resourcesList name="msimask" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/msimask" isResolved="true"/>
+    <resourcesList name="global_signal" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/global_signal" isResolved="true"/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="STEP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/global/fdr/step" maxValue="1023" minValue="0" startPos="0" stopPos="9" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CANGLOBAL/1.0.12/canglobal_0.app#//@consumed.4"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="400"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="400"/>
+    <toolTipHelpDescription>Step Value</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="DM" URI="http://www.infineon.com/0.1.28/peripheral/can/0/global/fdr/dm" maxValue="3" minValue="0" startPos="14" stopPos="15" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CANGLOBAL/1.0.12/canglobal_0.app#//@consumed.5"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <toolTipHelpDescription>Divider Mode</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="RXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moipr_rxinp" maxValue="7" minValue="0" startPos="0" stopPos="2" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <toolTipHelpDescription>Receive Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="TXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/35/moipr_txinp" maxValue="7" minValue="0" startPos="4" stopPos="6" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Transmit Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="RXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moipr_rxinp" maxValue="7" minValue="0" startPos="0" stopPos="2" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Receive Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="TXINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/mo/34/moipr_txinp" maxValue="7" minValue="0" startPos="4" stopPos="6" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Transmit Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="RXSEL" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/npcr_rxsel" maxValue="7" minValue="0" startPos="0" stopPos="2" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="2"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="2"/>
+    <toolTipHelpDescription>Receive Select</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="CFCINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nipr_cfcinp" maxValue="7" minValue="0" startPos="12" stopPos="14" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Frame Counter Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="LECINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nipr_lecinp" maxValue="7" minValue="0" startPos="4" stopPos="6" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Last Error Code Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="ALINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nipr_alinp" maxValue="7" minValue="0" startPos="0" stopPos="2" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Alert Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="TRINP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nipr_trinp" maxValue="7" minValue="0" startPos="8" stopPos="10" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Transfer OK Interrupt Node Pointer</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="Interrupt output line INT_O0 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b001" description="Interrupt output line INT_O1 is selected."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b111" description="Interrupt output line INT_O7 is selected."/>
+  </provided>
+  <provided xsi:type="ResourceModel:ResourceGroup" name="1" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.8"/>
+    <resourcesList name="ncr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/ncr1" isResolved="true"/>
+    <resourcesList name="nsr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/nsr1" isResolved="true"/>
+    <resourcesList name="npcr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/npcr1" isResolved="true"/>
+    <resourcesList name="nbtr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/nbtr1" isResolved="true"/>
+    <resourcesList name="necnt" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/necnt1" isResolved="true"/>
+    <resourcesList name="nfcr" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/nfcr1" isResolved="true"/>
+    <resourcesList name="list" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/list2" isResolved="true"/>
+    <resourcesList name="nipr_trinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/nipr1/trinp" isResolved="true"/>
+    <resourcesList name="nipr_lecinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/nipr1/lecinp" isResolved="true"/>
+    <resourcesList name="nipr_alinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/nipr1/alinp" isResolved="true"/>
+    <resourcesList name="nipr_cfcinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/nipr1/cfcinp" isResolved="true"/>
+    <resourcesList name="npcr_rxsel" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/npcr1/rxsel" isResolved="true"/>
+    <resourcesList name="rxd" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/rxd1" isResolved="true"/>
+    <resourcesList name="txd" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/txd1" isResolved="true"/>
+    <resourcesList name="trinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/trinp1" isResolved="true"/>
+    <resourcesList name="lecinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/lecinp1" isResolved="true"/>
+    <resourcesList name="alinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/alinp1" isResolved="true"/>
+    <resourcesList name="cfcinp" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/cfcinp1" isResolved="true"/>
+    <resourcesList name="global_signal" requiredResourceUri="http://www.infineon.com/0.1.28/peripheral/can/0/node1_global_signal" isResolved="true"/>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="TXD1" description="Multi CAN Node1 TXD pin" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/txd" signalType="SINGAL" direction="OUT" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.24"/>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="RXD1" description="Multi CAN Node1 RXD pin" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/rxd" signalType="SINGAL" direction="IN" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.29"/>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="ALINP1" description="Multi CAN Node1 alert interrupt" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/alinp" signalType="SINGAL" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.36"/>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="NCR1" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr" accessPermission="rw" addressOffset="0x0300" resetValue="00000001" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000001"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.44"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000001"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000001"/>
+    <toolTipHelpDescription>Node 1 Control Register</toolTipHelpDescription>
+    <bitFields name="INIT" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/init" maxValue="1" minValue="0" startPos="0" stopPos="0" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+      <toolTipHelpDescription>Node Initialization</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Resetting bit INIT enables the participation of the node in the CAN traffic. If the CAN node is in the bus-off state, the ongoing bus-off recovery (which does not depend on the INIT bit) is continued. With the end of the bus-off recovery sequence the CAN node is allowed to take part in the CAN traffic. If the CAN node is not in the bus-off state, a sequence of 11 consecutive recessive bits must be detected before the node is allowed to take part in the CAN traffic."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Setting this bit terminates the participation of this node in the CAN traffic. Any ongoing frame transfer is cancelled and the transmit line goes recessive. If the CAN node is in the bus-off state, then the running bus-off recovery sequence is continued. If the INIT bit is still set after the successful completion of the bus-off recovery sequence, i.e. after detecting 128 sequences of 11 consecutive recessive bits (11 1), then the CAN node leaves the bus-off state but remains inactive as long as INIT remains set."/>
+    </bitFields>
+    <bitFields name="TRIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/trie" maxValue="1" minValue="0" startPos="1" stopPos="1" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transfer Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Transfer interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Transfer interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="LECIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/lecie" maxValue="1" minValue="0" startPos="2" stopPos="2" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.46"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>LEC Indicated Error Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Last error code interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Last error code interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="ALIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/alie" maxValue="1" minValue="0" startPos="3" stopPos="3" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.45"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Alert Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Alert interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Alert interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="CANDIS" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/candis" maxValue="1" minValue="0" startPos="4" stopPos="4" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Disable</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="CCE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/cce" maxValue="1" minValue="0" startPos="6" stopPos="6" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Configuration Change Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="The Bit Timing Register, the Port Control Register, and the Error Counter Register may only be read. All attempts to modify them are ignored."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="The Bit Timing Register, the Port Control Register, and the Error Counter Register may be read and written."/>
+    </bitFields>
+    <bitFields name="CALM" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/calm" maxValue="1" minValue="0" startPos="7" stopPos="7" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Analyzer Mode</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="SUSEN" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/ncr/susen" maxValue="1" minValue="0" startPos="8" stopPos="8" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Suspend Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="An OCDS suspend trigger is ignored by the CAN node."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="An OCDS suspend trigger disables the CAN node: As soon as the CAN node becomes bus-idle or bus-off, bit INIT is internally forced to 1 to disable the CAN node. The actual value of bit INIT remains unchanged."/>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="LBM" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/npcr/lbm" maxValue="1" minValue="0" startPos="8" stopPos="8" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.47"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Loop-Back Mode</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="Loop-Back Mode is disabled."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="Loop-Back Mode is enabled. This node is connected to an internal (virtual) loop-back CAN bus. All CAN nodes which are in Loop-Back Mode are connected to this virtual CAN bus so that they can communicate with each other internally. The external transmit line is forced recessive in Loop-Back Mode."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="DIV8" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nbtr/div8" maxValue="1" minValue="0" startPos="15" stopPos="15" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.48"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <toolTipHelpDescription>Divide Prescaler Clock by 8</toolTipHelpDescription>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="A time quantum lasts (BRP+1) clock cycles."/>
+    <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="A time quantum lasts 8&#xa0;&#xa0;(BRP+1) clock cycles."/>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="TSEG1" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nbtr/tseg1" maxValue="15" minValue="0" startPos="8" stopPos="11" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.49"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="6"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="6"/>
+    <toolTipHelpDescription>Time Segment Before Sample Point</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="TSEG2" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nbtr/tseg2" maxValue="7" minValue="0" startPos="12" stopPos="14" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.50"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <toolTipHelpDescription>Time Segment After Sample Point</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="SJW" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nbtr/sjw" maxValue="3" minValue="0" startPos="6" stopPos="7" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.51"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="1"/>
+    <toolTipHelpDescription>(Re) Synchronization Jump Width</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:BitField" name="BRP" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nbtr/brp" maxValue="63" minValue="0" startPos="0" stopPos="5" accessPermission="rw">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.52"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="17"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="17"/>
+    <toolTipHelpDescription>Baud Rate Prescaler</toolTipHelpDescription>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="NECNT1" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/necnt" addressOffset="0x0314" resetValue="00600000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00600000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.53"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00600000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00600000"/>
+    <toolTipHelpDescription>Node 1 Error Counter Register</toolTipHelpDescription>
+    <bitFields name="REC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/necnt/rec" maxValue="255" minValue="0" startPos="0" stopPos="7" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Receive Error Counter</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="TEC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/necnt/tec" maxValue="255" minValue="0" startPos="8" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Transmit Error Counter</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="EWRNLVL" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/necnt/ewrnlvl" maxValue="255" minValue="0" startPos="16" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="60"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="60"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="60"/>
+      <toolTipHelpDescription>Error Warning Level</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="LETD" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/necnt/letd" maxValue="1" minValue="0" startPos="24" stopPos="24">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Last Error Transfer Direction</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="The last error occurred while the CAN node x was receiver (REC has been incremented)."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="The last error occurred while the CAN node x was transmitter (TEC has been incremented)."/>
+    </bitFields>
+    <bitFields name="LEINC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/necnt/leinc" maxValue="1" minValue="0" startPos="25" stopPos="25">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>Last Error Increment</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="The last error led to an error counter increment of 1."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="The last error led to an error counter increment of 8."/>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:RegisterParameter" name="NFCR1" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nfcr" accessPermission="rw" addressOffset="0x0318" resetValue="00000000" resetMask="0xFFFFFFFF">
+    <defaultValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.54"/>
+    <localValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <globalValue xsi:type="ResourceModel:IntegerValue" value="00000000"/>
+    <toolTipHelpDescription>Node 1 Frame Counter Register</toolTipHelpDescription>
+    <bitFields name="CFC" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nfcr/cfc" maxValue="65535" minValue="0" startPos="0" stopPos="15" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Frame Counter</toolTipHelpDescription>
+    </bitFields>
+    <bitFields name="CFSEL" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nfcr/cfsel" maxValue="7" minValue="0" startPos="16" stopPos="18" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Frame Count Selection</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b000" description="The frame counter is incremented (internally) at the beginning of a new bit time. The value is sampled during the SOF bit of a new frame. The sampled value is visible in the CFC field."/>
+    </bitFields>
+    <bitFields name="CFMOD" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nfcr/cfmod" maxValue="3" minValue="0" startPos="19" stopPos="20" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Frame Counter Mode</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b00" description="Frame Count Mode: The frame counter is incremented upon the reception and transmission of frames."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b01" description="Time Stamp Mode: The frame counter is used to count bit times."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b10" description="Bit Timing Mode: The frame counter is used for analysis of the bit timing."/>
+    </bitFields>
+    <bitFields name="CFCIE" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nfcr/cfcie" maxValue="1" minValue="0" startPos="22" stopPos="22" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Frame Count Interrupt Enable</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="CAN frame counter overflow interrupt is disabled."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="CAN frame counter overflow interrupt is enabled."/>
+    </bitFields>
+    <bitFields name="CFCOV" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/nfcr/cfcov" maxValue="1" minValue="0" startPos="23" stopPos="23" accessPermission="rw">
+      <defaultValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <localValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <globalValue xsi:type="ResourceModel:IntegerValue" value="0"/>
+      <toolTipHelpDescription>CAN Frame Counter Overflow Flag</toolTipHelpDescription>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b0" description="No overflow has occurred since last flag reset."/>
+      <enumValues xsi:type="ResourceModel:RegEnumValue" value="0b1" description="An overflow has occurred since last flag reset."/>
+    </bitFields>
+  </provided>
+  <provided xsi:type="ResourceModel:SignalDeclaration" name="LECINP1" description="Multi CAN Node1 last error code interrupt" URI="http://www.infineon.com/0.1.28/peripheral/can/0/node/1/lecinp" signalType="SINGAL" isVisible="true">
+    <upWardMappingList xsi:type="ResourceModel:ProxyResource" href="../CAN001/1.0.12/can001_0.app#//@consumed.55"/>
+  </provided>
+  <categoryDescription description="Controller Area Network Controller" name="CAN"/>
+</ResourceModel:Peripheral>

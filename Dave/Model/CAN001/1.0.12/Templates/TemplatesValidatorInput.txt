@@ -1,0 +1,5 @@
+InstanceCount_http://www.infineon.com/App/CAN001/1.0.0/ = 1
+
+//Pad 0
+MappedUri_http://www.infineon.com/App/CAN001/1.0.0/0/node = http://www.infineon.com/Port/0.1.28/P/0/PAD/0
+http://www.infineon.com/App/CAN001/1.0.0/0/CAN001_LoopBackMode = 0

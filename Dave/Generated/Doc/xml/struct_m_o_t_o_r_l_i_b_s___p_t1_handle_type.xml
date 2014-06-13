@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type" kind="struct" prot="public">
+    <compoundname>MOTORLIBS_PT1HandleType</compoundname>
+    <includes refid="_m_o_t_o_r_l_i_b_8h" local="no">MOTORLIB.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_PT1HandleType::PT1buf</definition>
+        <argsstring></argsstring>
+        <name>PT1buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the integral buffer of pt1 filter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="195" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a2f1ee07c13acca0b5babf1714ec64409" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_PT1HandleType::PT1OutVal</definition>
+        <argsstring></argsstring>
+        <name>PT1OutVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is PT1 filter output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="199" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a04481f5a772c3e90e315721b75e8bcde" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MOTORLIBS_PT1HandleType::Ymax</definition>
+        <argsstring></argsstring>
+        <name>Ymax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum limit of PT1 buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="187" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a977edf0c6e32518991f2ffbebd4d0109" prot="public" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t MOTORLIBS_PT1HandleType::Ymin</definition>
+        <argsstring></argsstring>
+        <name>Ymin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum limit of PT1 buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="191" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a86cadd023142bf7d64e958145205c592" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_PT1HandleType::Z1</definition>
+        <argsstring></argsstring>
+        <name>Z1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Filter constant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="179" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1ac07643a93470b9ed6fc9cc601c4035c1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t MOTORLIBS_PT1HandleType::Z2</definition>
+        <argsstring></argsstring>
+        <name>Z2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Filter constant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="183" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure holds the values of PT1 filter parameters. </para>    </detaileddescription>
+    <location file="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" line="175" bodyfile="C:/DAVE3_workspace/ws3.1.10/CAN_BUS_THX/Dave/Generated/inc/LIBS/MOTORLIB.h" bodystart="174" bodyend="201"/>
+    <listofallmembers>
+      <member refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1adfca7b7055f86a3bb284d90a2ce33de9" prot="public" virt="non-virtual"><scope>MOTORLIBS_PT1HandleType</scope><name>PT1buf</name></member>
+      <member refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a2f1ee07c13acca0b5babf1714ec64409" prot="public" virt="non-virtual"><scope>MOTORLIBS_PT1HandleType</scope><name>PT1OutVal</name></member>
+      <member refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a04481f5a772c3e90e315721b75e8bcde" prot="public" virt="non-virtual"><scope>MOTORLIBS_PT1HandleType</scope><name>Ymax</name></member>
+      <member refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a977edf0c6e32518991f2ffbebd4d0109" prot="public" virt="non-virtual"><scope>MOTORLIBS_PT1HandleType</scope><name>Ymin</name></member>
+      <member refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1a86cadd023142bf7d64e958145205c592" prot="public" virt="non-virtual"><scope>MOTORLIBS_PT1HandleType</scope><name>Z1</name></member>
+      <member refid="struct_m_o_t_o_r_l_i_b_s___p_t1_handle_type_1ac07643a93470b9ed6fc9cc601c4035c1" prot="public" virt="non-virtual"><scope>MOTORLIBS_PT1HandleType</scope><name>Z2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
