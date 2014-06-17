@@ -10,14 +10,14 @@
 handle_t Timer_WaitId;
 handle_t TimerId;
 handle_t TimerId1Sec;
-uint8_t Timer_Wait_Expired=FALSE;
-bool Timer_Flag=FALSE;
-bool Timer_Flag_1sec=FALSE;
-uint8_t time_secs=0;
+extern uint8_t Timer_Wait_Expired;
+extern bool Timer_Flag;
+extern bool Timer_Flag_1sec;
+extern uint8_t time_secs;
 
 void TimerOneSec(void * args);
 void TimerInt(void * args);
-void TimerWaitISR (void * args);
+//void TimerWaitISR (void * args);
 
 
 #endif /* TIMER_H_ */

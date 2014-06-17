@@ -11,9 +11,13 @@
 //#include <stdlib.h>
 #include <string.h>
 #include <newlib.h>
+#define Seat_Leon
+//#define Audi
 //#define Sniffer
 #ifdef Sniffer
 uint8_t Sniffer_Buffer[30];
+#else
+uint8_t CAN_RX_Buffer[30];
 #endif
 
 void delay(void);
@@ -37,6 +41,8 @@ int main(void)
 	uint8_t Data_USD3[8] 	= 	{0xA8,0xC0,0x00,0x10,0x00,0x03,0x01,0x80};	//A8 C0 00 10 00 03 01 80
 	uint8_t Data_DSC[8]  	= 	{0x02,0x10,0x03,0x00,0x00,0x00,0x00,0x00};	//02 10 03 00 00 00 00 00
 	uint8_t Data_ReadOdo[8] = 	{0x03,0x22,0x22,0x03,0x00,0x00,0x00,0x00};	//03 22 22 03 00 00 00 00
+	uint8_t Data_ReadUFO[8] = 	{0x03,0x22,0x22,0x61,0x00,0x00,0x00,0x00};	//03 22 22 61 00 00 00 00 //decode Whats this
+	uint8_t Data_ReadFIN[8] = 	{0x03,0x22,0xF1,0x90,0x00,0x00,0x00,0x00};	//03 22 F1 90 00 00 00 00	//FIN ISO 14229
 
 	uint8_t Btn1;
 //	uint8_t VIN_Supp[] = "VIN NOT Supported.... \n\r";
@@ -107,22 +113,27 @@ int main(void)
 //		  else if()
 #ifndef Sniffer
 		  {
-			for(double i=0;i<5000;i++);
-		 //print_Uart("M0 P00 \n\r");
-		  Get_PID(500,MODE_CURR_DATA,ENGINE_RPM,PRINT_NOTHING);
-			for(double i=0;i<5000;i++);
-		//print_Uart("M0 P20 \n\r");
-		  Get_PID(500,MODE_CURR_DATA,VEHICLE_SPEED,PRINT_NOTHING);
-		for(double i=0;i<5000;i++);
-		//print_Uart("M9 P00 \n\r");
-			Get_PID(500,MODE_CURR_DATA,FUEL_LEVEL,PRINT_NOTHING);
-			for(double i=0;i<5000;i++);
-			//print_Uart("M9 P00 \n\r");
-				Get_PID(500,MODE_CURR_DATA,RUNTIME_START,PRINT_VEHICAL_DATA);
-				delay();
 				for(double i=0;i<5000;i++);
+		//print_Uart("M0 P00 \n\r");
+				Get_PID(500,MODE_CURR_DATA,ENGINE_RPM,PRINT_NOTHING);
+				for(double i=0;i<5000;i++);
+		//print_Uart("M0 P20 \n\r");
+				Get_PID(500,MODE_CURR_DATA,RUNTIME_START,PRINT_NOTHING);
+		  	  for(double i=0;i<5000;i++);
+		//print_Uart("M9 P00 \n\r");
+		  	  Get_PID(500,MODE_CURR_DATA,FUEL_LEVEL,PRINT_NOTHING);
+				for(double i=0;i<5000;i++);
+		//print_Uart("M9 P00 \n\r");
+				Get_PID(500,MODE_CURR_DATA,VEHICLE_SPEED,PRINT_VEHICAL_DATA);
 				delay();
-				Send_Data(0x200,Data_USD1);
+
+				Timer_WaitId = SYSTM001_CreateTimer(3000,SYSTM001_ONE_SHOT,TimerWaitISR,NULL);
+				Timer_Wait_Expired=FALSE;
+				SYSTM001_StartTimer (Timer_WaitId);
+				while(!Timer_Wait_Expired);
+				for(double i=0;i<50000;i++);
+				delay();
+				Send_Data(0x0200,Data_USD1);
 				delay();
 				Send_Data(0x0200,Data_USD1);
 				delay();
@@ -137,6 +148,9 @@ int main(void)
 				Send_Data(0x0714,Data_DSC);
 				delay();
 				Send_Data(0x0714,Data_ReadOdo);
+				delay();
+				for(double i=0;i<500000;i++);
+				IO004_TogglePin(IO004_Handle0);
 		  }
 #endif
 	  }
@@ -184,10 +198,10 @@ void EventHandlerCAN001_0()
 //			else if((CanRecMsgObj[CAN_RX_Pkt_Count].Identifier==0x17F00010) );
 			else
 			{
-				sprintf(&Sniffer_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgObj[CAN_RX_Pkt_Count].Identifier,CanRecMsgObj[CAN_RX_Pkt_Count].data[0],\
-						CanRecMsgObj[CAN_RX_Pkt_Count].data[1],CanRecMsgObj[CAN_RX_Pkt_Count].data[2],CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6],\
-						CanRecMsgObj[CAN_RX_Pkt_Count].data[7]);
-				UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&Sniffer_Buffer, (uint32_t)strlen(Sniffer_Buffer)+1);
+				sprintf(&CAN_RX_Buffer[0],"ID=x%.4X,D=%.2X %.2X %.2X %.2X %.2X %.2X %.2X %.2X \r\n",CanRecMsgObj[CAN_RX_Pkt_Count].Identifier,CanRecMsgObj[CAN_RX_Pkt_Count].data[0],\
+						CanRecMsgObj[CAN_RX_Pkt_Count].data[1],CanRecMsgObj[CAN_RX_Pkt_Count].data[2],CanRecMsgObj[CAN_RX_Pkt_Count].data[3],CanRecMsgObj[CAN_RX_Pkt_Count].data[4],\
+						CanRecMsgObj[CAN_RX_Pkt_Count].data[5],CanRecMsgObj[CAN_RX_Pkt_Count].data[6],CanRecMsgObj[CAN_RX_Pkt_Count].data[7]);
+				UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&CAN_RX_Buffer, (uint32_t)strlen(CAN_RX_Buffer)+1);
 			}
 #endif
 #ifdef Sniffer
@@ -211,10 +225,10 @@ void EventHandlerCAN001_0()
 			CAN_Rx_Flag=CAN_PACKET_RX_ERROR;
 		}
 	}
-void delay(void)
-{
-for(double i=0;i<5000;i++);
-}
+//void delay(void)
+//{
+//for(double i=0;i<5000;i++);
+//}
 
 uint8_t StoreData(uint8_t Pid)
 {
@@ -361,23 +375,23 @@ void PrintData(uint8_t Param,uint8_t ECU_Index)
 		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&buffer, (uint32_t)strlen(buffer)+1);
 		break;
 	default:
-		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error, (uint32_t)sizeof(can_uart_error)/2);
+		UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&can_uart_error,(uint32_t)strlen(can_uart_error)+1);
 	}
 }
-void TimerInt(void * args) {
-	IO004_TogglePin(IO004_Handle2);
-	Timer_Flag=TRUE;//	while(!);
-	CanTxMsgObj.Identifier=PID_REQUEST;
-	CanTxMsgObj.data[1]=Data_Control_Frame[1];
-	CanTxMsgObj.data[2]=Data_Control_Frame[2];
-	CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
-
-	CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data_Control_Frame);
-	CAN001_SendDataFrame(&CAN001_Handle0,1); //
-	SYSTM001_StopTimer(TimerId);
-	SYSTM001_DeleteTimer(TimerId);
-    TimerId = SYSTM001_CreateTimer(100,SYSTM001_ONE_SHOT,TimerInt,NULL);
-}
+//void TimerInt(void * args) {
+//	IO004_TogglePin(IO004_Handle2);
+//	Timer_Flag=TRUE;//	while(!);
+//	CanTxMsgObj.Identifier=PID_REQUEST;
+//	CanTxMsgObj.data[1]=Data_Control_Frame[1];
+//	CanTxMsgObj.data[2]=Data_Control_Frame[2];
+//	CAN001_ConfigMsgObj(&CAN001_Handle0,&CanTxMsgObj,1U);
+//
+//	CAN001_UpdateMODataRegisters(&CAN001_Handle0,1,8,Data_Control_Frame);
+//	CAN001_SendDataFrame(&CAN001_Handle0,1); //
+//	SYSTM001_StopTimer(TimerId);
+//	SYSTM001_DeleteTimer(TimerId);
+//    TimerId = SYSTM001_CreateTimer(100,SYSTM001_ONE_SHOT,TimerInt,NULL);
+//}
 //void TimerOneSec(void * args){
 //	Timer_Flag_1sec=TRUE;
 //	CAN_Tx_FLAG=TRUE;
@@ -435,20 +449,20 @@ uint8_t Get_PID(uint16_t TimeToWait,uint8_t Mode_Req,uint8_t PID_Req,uint8_t Sho
 #endif
 	return Error;
 }
-
-void TimerWaitISR (void * args)
-{
-	Timer_Wait_Expired=TRUE;
-	SYSTM001_StopTimer(Timer_WaitId);
-	SYSTM001_DeleteTimer(Timer_WaitId);
-}
+//
+//void TimerWaitISR (void * args)
+//{
+//	Timer_Wait_Expired=TRUE;
+//	SYSTM001_StopTimer(Timer_WaitId);
+//	SYSTM001_DeleteTimer(Timer_WaitId);
+//}
 void print_Uart(char Str[])
 {
 char string[20];
 uint8_t length;
 length=strlen(Str);
 memcpy(&string[0],&Str[0],length);
-UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&string, (uint32_t)sizeof(string)/2);
+UART001_WriteDataBytes(&UART001_Handle0, (uint8_t*)&string, (uint32_t)strlen(string)+1);
 }
 
 
